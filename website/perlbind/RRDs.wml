@@ -1,0 +1,6 @@
+#include "$(ROOT)/.wml/template.inc" section=perlbind subsection=RRDs
+#use wml::fmt::pod
+
+<H1>Shared RRD Module</H1>
+
+<: print &wml_fmt_pod({ FILE => "$(ROOT)/../perl-shared/RRDs.pm"}); :>

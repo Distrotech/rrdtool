@@ -1,0 +1,34 @@
+#include "$(ROOT)/.wml/template.inc" section=frontends subsection=none
+
+<H1>Frontends</H1>
+
+<P>Using RRDtool from the command line or through its Perl bindings is
+pretty straight forward. But this will not buy you the solution to all your
+monitoring needs. RRDtool does not help you to organize your data
+acquisition and presentation. This is the point where the front ends come
+in. Some of these are tools which relie on rrdtool to functions, others are
+tools which can work nicely all on their own, and rrdtool is just an
+optional data graphing and logging addon.</P>
+
+<H2>Availability</H2>
+
+<P>To my knowledge these are the RRDtool frontends which are publicly
+available:</P>
+
+<UL>
+<LI><A HREF="bigsister.html">Tom Aebis's BigSister</A></LI>
+<LI><A HREF="cricket.html">Jeff Allen's Cricket</A></LI>
+<LI><A HREF="ntop.html">Luca Deri's Ntop</A></LI>
+<LI><A HREF="remstats.html">Thomas Erskine's remstats</A></LI>
+<LI><A HREF="rrgrapher.html">Dave Plonka's RRGrapher</A></LI>
+<LI><A HREF="nrg.html">Steve Rader's NRG</A></LI>
+<LI><A HREF="fwgold.html">Gianluca Rotoni's FwGold</A></LI>
+<LI><A HREF="hoth.html">Alexander Reelsen's Hoth</A></LI>
+<LI><A HREF="nmis.html">Keith Sinclair's NMIS</A></LI>
+<LI><A HREF="bronc.html">Chris Snell's Bronc</A></LI>
+<LI><A HREF="orca.html">Blair Zajac's Orca</A></LI>
+
+<LI><A HREF="slamon.html">Frank Harper's SLAMon</A></LI>
+</UL>
+
+<P>If you know others, please let me know. I will add them to the list</P>

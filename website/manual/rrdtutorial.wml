@@ -1,0 +1,6 @@
+#include "$(ROOT)/.wml/template.inc" section=tutorial subsection=cdeftut
+#use wml::fmt::pod
+
+<H1>CDEF Tutorial</H1>
+
+<: print &wml_fmt_pod({ FILE => "--podroot=$(ROOT)/../doc  --htmlroot=. --podpath=. $(ROOT)/../doc/rrdtutorial.pod"}); :>

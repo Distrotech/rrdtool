@@ -1,0 +1,52 @@
+trytime.o: trytime.c /usr/include/time.h \
+ /usr/include/sys/feature_tests.h /usr/include/sys/time.h \
+ /usr/include/sys/types.h /usr/include/sys/isa_defs.h \
+ /usr/include/sys/machtypes.h /usr/include/sys/int_types.h \
+ /usr/include/sys/select.h /usr/include/sys/siginfo.h \
+ /usr/include/sys/machsig.h /usr/include/stdio.h \
+ /usr/include/sys/va_list.h /usr/include/stdlib.h \
+ /usr/include/string.h ../../src/getopt.h ../../src/rrd_tool.h \
+ ../../config/config.h \
+ /usr/pack/gcc-2.95.2-to/sol26/lib/gcc-lib/sparc-sun-solaris2.6/2.95.2/include/math.h \
+ /usr/include/math.h /usr/include/floatingpoint.h \
+ /usr/include/sys/ieeefp.h /usr/include/float.h /usr/include/ieeefp.h \
+ /usr/include/errno.h /usr/include/sys/errno.h /usr/include/ctype.h \
+ /usr/include/sys/param.h /usr/include/sys/unistd.h \
+ /usr/include/unistd.h /usr/include/sys/times.h \
+ /usr/include/sys/resource.h ../../src/rrd.h ../../src/rrd_format.h \
+ ../../gd1.3/gd.h
+trytime.c :
+/usr/include/time.h :
+/usr/include/sys/feature_tests.h :
+/usr/include/sys/time.h :
+/usr/include/sys/types.h :
+/usr/include/sys/isa_defs.h :
+/usr/include/sys/machtypes.h :
+/usr/include/sys/int_types.h :
+/usr/include/sys/select.h :
+/usr/include/sys/siginfo.h :
+/usr/include/sys/machsig.h :
+/usr/include/stdio.h :
+/usr/include/sys/va_list.h :
+/usr/include/stdlib.h :
+/usr/include/string.h :
+../../src/getopt.h :
+../../src/rrd_tool.h :
+../../config/config.h :
+/usr/pack/gcc-2.95.2-to/sol26/lib/gcc-lib/sparc-sun-solaris2.6/2.95.2/include/math.h :
+/usr/include/math.h :
+/usr/include/floatingpoint.h :
+/usr/include/sys/ieeefp.h :
+/usr/include/float.h :
+/usr/include/ieeefp.h :
+/usr/include/errno.h :
+/usr/include/sys/errno.h :
+/usr/include/ctype.h :
+/usr/include/sys/param.h :
+/usr/include/sys/unistd.h :
+/usr/include/unistd.h :
+/usr/include/sys/times.h :
+/usr/include/sys/resource.h :
+../../src/rrd.h :
+../../src/rrd_format.h :
+../../gd1.3/gd.h :

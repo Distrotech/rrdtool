@@ -1,0 +1,10 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=edvard-01
+
+<H1>Link Status</H1>
+
+<P>by <A HREF="mailto:ed@cistron.net">Edvard Tuinder</A></P>
+
+<P>A fancy way of looking at our Link Status</P>
+
+<P><IMG SRC="edvard-01.png"></P>
+

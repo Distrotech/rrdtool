@@ -1,0 +1,6 @@
+#include "$(ROOT)/.wml/template.inc" section=manual subsection=rrdgraph
+#use wml::fmt::pod
+
+<H1>RRD GRAPH</H1>
+
+<:= &wml_fmt_pod({ FILE => "--podroot=$(ROOT)/.. --podpath=doc $(ROOT)/../doc/rrdgraph.pod"}); :>

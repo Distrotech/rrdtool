@@ -1,0 +1,18 @@
+#include "$(ROOT)/.wml/template.inc" section=tutorial subsection=none
+
+<H1>Tutorials</H1>
+
+<P>RRDtool is a new software concept. Contrary to many other Open Source
+projects this one is not tracking what is available in the commercial world,
+but it is a new approach to data logging and graphing problems.</P>
+
+<P>If you are new to the RRDtool it is quite likely that you will not be able to make
+do with the information available in the manual. Therefore I recommend everybody
+uses the tutorials as a starting point for exploring RRDtool and its functions.</P>
+
+<UL>
+<LI>The <A HREF="rrdtutorial.html">RRD Tutorial</A> by Alex van den Bogaerdt is best for getting started.</LI>
+<LI>The <A HREF="cdeftutorial.html">CDEF Tutorial</A> another one by Alex which is recommended for people who want to get the most out of RRDs graphing function.</LI>
+<LI>The <A HREF="rpntutorial.html">RPN Tutorial</A> by Steve Rader that helps those who have forgotten their HP days.</LI>
+</UL>
+

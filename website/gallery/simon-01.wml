@@ -1,0 +1,17 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=simon-01
+
+<H1>Fluxoscope</H1>
+
+<P>by <A HREF="http://www.switch.ch/misc/leinen/">Simon Leinen</A></P>
+
+<P><a href="http://www.switch.ch/lan/stat/fluxoscope/">Fluxoscope</a>
+is a system used by <a href="http://www.switch.ch/">SWITCH</a> for
+measurements of our external network traffic.  One of its products are
+graphs which represent, for each external connection, the protocol
+distribution of traffic over time.  The example graph shows the
+traffic distribution on our connection to UUnet (our main US transit
+provider) over a period of a week.  The "positive" part of the graph
+shows incoming traffic (what we receive from the US), the "negative"
+part corresponds to outgoing traffic (what we send them). </P>
+
+<P><IMG SRC="simon-01.png"></P>

@@ -1,0 +1,4 @@
+-DROOT~.
+-DIMGDOT_BASE~./.img/
+-DLOGO_BASE~./.img/
+-I.

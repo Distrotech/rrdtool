@@ -1,0 +1,21 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=bkw-01
+
+<H1>Portmaster</H1>
+
+<P>by <A HREF="mailto:bkw@bkw.org">Brian K. West</A></P>
+
+<P>I work for an ISP in southeastern Oklahoma,  One day the owner wanted to
+know the percentages of users connected at a certain carrier speeds.  So him
+and I started working on a perl script that would do this job.  What we did
+is setup a perl script that would snmpwalk every Lucent Portmaster we had
+and tally up the results and build the graph.  I also added the percent of
+totally port utilization with the black line on the graph.  As we found out
+less than 50% of our users do not connect at v.90 speeds.  I love rrdtool I
+write all of my rrdtool probes in perl and use all the perl bindings the
+add/build/update/graph... Its really quite easy once I realized how it
+worked.  MRTG was easy to learn but rrdtool was a totally different ball
+game.</P>
+
+<P><A HREF="bkw-01.pl">The Script for those who care</A></P>
+
+<P><IMG SRC="bkw-01.gif"></P>
