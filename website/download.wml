@@ -1,0 +1,32 @@
+#include "$(ROOT)/.wml/template.inc" section=download subsection=none
+
+<H1>RRDtool Download</H1>
+
+You can download RRD tool from several places:
+
+<H2>Primary Distribution Points</H2>
+
+<UL>
+ <LI><A HREF="http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub/?M=D">http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub</A></LI>
+# <LI><A HREF="http://www.caida.org/Tools/RRDtool/pub/">http://www.caida.org/Tools/RRDtool/pub/</A></LI>
+</UL>
+
+<H2>Mirror Sites</H2>
+
+<UL>
+  <LI><A HREF="ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/">ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
+  <LI><A HREF="ftp://ftp.grmbl.com/pub/webtools/rrdtool/">ftp://ftp.grmbl.com/pub/webtools/rrdtool/</A> (Bram Dumolin bram@grmbl.be)</LI>
+  <LI><A HREF="http://ftp.sunet.se/pub/network/monitoring/rrdtool/">http://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
+  <LI><A HREF="ftp://ftp.nutt.net.au/pub/rrdtool/">ftp://ftp.nutt.net.au/pub/rrdtool</A> (mirror@utopia.nutt.net.au)</LI>
+</UL>
+
+<H2>Binary Distributions</H2>
+
+<UL>
+  <LI>AIX 4.3.2 by <A HREF="mailto:Ciaran.Deignan@bull.net">Ciaran Deignan</A> -- <A HREF="http://www-frec.bull.com/cgi-bin/list_dir.cgi/download/aix432/">http://www-frec.bull.com/download/aix432/</A></LI>
+  <LI>Linux x86 RPM by <A HREF="mailto:hgomez@slib.fr">Henri Gomez</A> -- <A HREF="ftp://ftp.falsehope.com/home/gomez/rrdtool/">ftp://ftp.falsehope.com/home/gomez/rrdtool/</A></LI>
+</UL>
+
+If you want to provide a mirror site or are producing binaries for another
+platform, please drop a line to <A
+HREF="mailto:oetiker@ee.ethz.ch">oetiker@ee.ethz.ch</A>.

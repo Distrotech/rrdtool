@@ -1,0 +1,42 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=chris-01
+
+<H1>Weather Station</H1>
+
+<P>by <A HREF="mailto:chris@bikeworld.com">Chris Snell</A></P>
+
+<P>I work for Weathertools.com, here in San Antonio, TX USA.  Among other
+things, we sell weather stations that can be mounted on a roof of a
+building.  Some of these weather stations are wireless and solar powered
+and are able to measure temperature, wind speed, wind direction,
+barometric pressure and rainfall, as well as other things.  We have a
+demonstation unit up on our roof and I wanted to put some graphs of the
+readings on the web.  We've been graphing the readings using a
+Windows-based program but its <A
+HREF="http://www.bikeworld.com/trend.htm">graphs</a> just don't look all
+that cool.  I thought I could improve on them, so I scoured the 'Net and
+found some <A
+HREF="http://www.rdrop.com/cgi-bin/wiz3web">software</a> written by a guy
+named Alan Batie from Portland, Oregon USA.  His software (written on a
+FreeBSD box) pulls the data from the weather station over the station's
+serial port.  Alan is currently <A
+HREF="http://www.rdrop.com/mrtg/weather.html">graphing</A> his weather
+readings with MRTG but I wanted to take it a step further and graph mine
+with RRDtool.  So, I wrote a quick little Perl hack that reads the data
+from Alan's utility and then sends the data, via a HTTP request, to our
+colocated servers downtown.  The HTTP request is made to another Perl hack
+I wrote which runs under mod_perl.  This script takes the readings and
+stores them in an RRD file using the shared RRD Perl module, RRDs.  
+Finally, I needed a way to graph this data.  To do this, I used a program
+called <A HREF="http://bronc.blueaspen.com">Bronc</A>, which I wrote last
+year.  Bronc reads its configuration from a template and then generates
+graphs in real time (on-the-fly) using the RRDs Perl module.</P>
+
+<P><A
+HREF="http://bronc.blueaspen.com/breakdown.html?definition=5&dfile=definitions">
+<IMG SRC="chris-01temp.png" BORDER=0></A></P>
+
+<P><A
+HREF="http://bronc.blueaspen.com/breakdown.html?definition=6&dfile=definitions">
+<IMG SRC="chris-01wind.png" WIDTH=595 HEIGHT=286 BORDER=0></A>
+</P>
+

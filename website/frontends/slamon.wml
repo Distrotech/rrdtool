@@ -1,0 +1,26 @@
+#include "$(ROOT)/.wml/template.inc" section=frontends subsection=slamon
+
+<h1>SLAMon</h1>
+<p>by Frank Harper</p>
+
+<p>
+SLAMon is a front-end for RRDTool that allows you to calculate working
+hour and 24-by-7 availability for anything that you're currently
+monitoring with RRDTool. The graphs and reports can cover any time
+period you're interested in: daily, monthly, yearly, etc.
+</p>
+
+<p>
+Currently SLAMon doesn't directly do any monitoring itself. For that you
+need another front-end,  to create and update RRD files for each
+resource. The measurements contained in these files are used as input by
+SLAMon to calculate availability and update the corresponding
+availability RRDs.
+</p>
+
+<p>
+
+SLAMon is available at
+<a href="http://slamon.sourceforge.net">http://slamon.sourceforge.net</a>.
+
+</p>

@@ -1,0 +1,63 @@
+#include "$(ROOT)/.wml/template.inc" section=frontends subsection=bigsister
+
+<h1>Big Sister</h1>
+<p>by Thomas Aeby</p>
+
+<p>
+
+The Big Sister system and network monitor concentrates on
+detecting failing services and systems, displaying status
+overviews and alarming. As a means of providing diagnostic
+information to the system administrator Big Sister also
+collects trend data and uses RRDTool as a powerful and
+easy-to-use utility for storing and visualizing collected
+data.
+
+</p>
+
+<p>
+
+Big Sister's features include:
+
+</p>
+
+<ul>
+
+<li>
+
+detection of service or system failure via an agent
+
+</li>
+
+<li>
+
+alarming
+
+</li>
+
+<li>
+
+display of consolidated and/or detailed status overviews
+
+</li>
+
+<li>
+
+collection and visualization of system performance data via RRDTool
+
+</li>
+
+<li>
+
+interconnection of different Big Sister sites
+
+</li>
+
+</ul>
+
+<p>
+
+Big Sister is available at
+<a href="http://bigsister.graeff.com/">http://bigsister.graeff.com/</a>.
+
+</p>

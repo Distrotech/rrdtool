@@ -1,0 +1,2 @@
+rsync --copy-unsafe-links --verbose --times --delete --exclude pub --exclude='*~' -r . /home/oetiker/public_html/webtools/rrdtool
+#rsync --links --verbose --times --delete --exclude pub --exclude='*~' --rsh=ssh -r . tobi@ipn.caida.org:/ipn/web/Tools/RRDtool

@@ -1,0 +1,20 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=colleen-01
+
+<H1>Space Shuttle</H1>
+
+<P>by <A HREF="mailto:cmshanno@ucsd.edu">Colleen M. Shannon</A></P>
+
+<P>
+I worked for a NASA project called <A
+HREF="http://www.earthkam.ucsd.edu">EarthKAM</A> in southern California.
+Our project must monitor space shuttle telemetry both real-time and after 
+the mission has been completed.  The information is stored in a database,
+so rrdtool was the perfect solution - it's cgi interface allows generation 
+of web pages showing the status of incoming telemetry, and the perl module 
+allowed me to quickly create a user interface allowing users to display any 
+or all of the incoming information on whatever time scale they need.  
+rrdtool is awesome!
+</P>
+
+<P><IMG SRC="colleen-01.gif"></P>
+

@@ -1,0 +1,6 @@
+#include "$(ROOT)/.wml/template.inc" section=manual subsection=rrdtune
+#use wml::fmt::pod
+
+<H1>RRD TUNE</H1>
+
+<: print &wml_fmt_pod({ FILE => "--podroot=$(ROOT)/../doc $(ROOT)/../doc/rrdtune.pod"}); :>

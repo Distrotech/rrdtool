@@ -1,0 +1,19 @@
+#include "$(ROOT)/.wml/template.inc" section=news subsection=none
+
+<H1>News</H1>
+
+<H2>1999-02-04</H2>
+
+Updated Website with License section and CSS for better looks.
+
+<H2>1999-01-25</H2>
+
+Spell checked the web site and removed a few navigation quirks.
+
+<H2>1999-01-24</H2>
+
+Creation of the RRDtool logo and web site.
+
+<H2>1999-01-22</H2>
+
+Release of the second beta Version of RRDtool (0.99.1) 

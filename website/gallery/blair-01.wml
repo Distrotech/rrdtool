@@ -1,0 +1,62 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=blair-01
+
+<H1>Comprehensive\nMeasurements\nof a Web Server</H1>
+
+<P>by <A HREF="mailto:blair@akamai.com">Blair Zajac</A></P>
+
+<P><a href="http://www.gps.caltech.edu/~blair/orca/">Orca</a> is a
+general purpose tool for taking arbitrary numerical data in text files
+to generate daily through yearly plots.</P>
+
+<P>For sites with more than one system, Orca allows comparisons
+between different measurements on the same system and plotting the
+same measurement from different systems on the same page.  This allows
+easy problem identification and debugging when a working system is
+compared to a non-working system.</P>
+
+<P>The Orca plotting system is broken into two parts, a data
+measurement tool and the plotting tool.  One data gathering tool,
+orcallator.se, currently consists of a program that only runs on
+Solaris hosts and gathers CPU, disk, network, memory, etc usage
+information.  Orcallator.se is a single process program that gathers
+all system statistics, so it's nice to a busy system in that it
+doesn't impact the system by spawning many subprocesses as a shell
+script would.  Orcallator.se places the gathered information in a
+space separated text file.</P>
+
+<P>Orca, the Perl plotting tool, then reads these text files from one
+or most hosts and generates RRD files and an HTML tree of plots and
+pages.  Any data gathering tool that outputs data in an acceptable
+format can be used with Orca.  Orca reads a configuration file that
+specifies which data to read from the input text files and how to plot
+it.</P>
+
+<P>The plots below show a subset of the measurements for a single
+Solaris host running at Yahoo!/GeoCities.  Visit <a
+href="http://www.gps.caltech.edu/~blair/orca/orca-example/">this
+site</a> for a more complete example.</P>
+
+<img
+ src="blair-01-a.png"
+ alt="Average # Processes in Run Queue">
+<br>
+
+<img alt="CPU Usage"
+ src="blair-01-b.png">
+<br>
+
+<img alt="Web Server Hit Rate"
+ src="blair-01-c.png">
+<br>
+
+<img alt="Web Server File Size"
+ src="blair-01-d.png">
+<br>
+
+<img alt="Interface Bits Per Second"
+ src="blair-01-e.png">
+<br>
+
+<img alt="Disk Run Percent"
+ src="blair-01-f.png">
+<br>

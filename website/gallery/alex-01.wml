@@ -1,0 +1,32 @@
+#include "$(ROOT)/.wml/template.inc" section=gallery subsection=alex-01
+
+<H1>Billing Cross Check</H1>
+
+<P>by <A HREF="mailto:alex@ergens.op.Het.Net">Alex van den Bogaerdt</A></P>
+
+<P>
+Our internet provider does usage based billing.  Part of the bandwidth
+is at a fixed price, the remaining bandwidth is subject to UBB.</P>
+
+<P>The UBB works as follows:  every sample period the current bandwidth is
+calculated.  When it is above the UBB rate, the excess is used to build
+an average over a month.  This average is used to calculate the bill.</P>
+
+<P>I do trust the provider however I do not necessarily trust their billing
+system.  Therefore I need a way to check the bill.</P>
+
+<P>Normal usage would be to graph from the 1st of the previous month until
+the 1st of the current month.  RRDtool does all the calculations, using
+CDEF statements.  I use bash to collect the prices from a database, then
+start the RRDtool script with those variables filled in.</P>
+
+<P>The data that I used to create the image has been altered to protect
+our privacy and the providers pricing policy (meaning: its bogus data).
+It does show however how it works.  If I create the graph using correct
+values for start and end times, the only difference should be caused by
+rounding and by different polling times.</P>
+
+<P><IMG SRC="alex-01.png"></P>
+
+<P>If you are interested in the script generating this, get it
+<A HREF="alex-01.bash">here</A>.</P>
