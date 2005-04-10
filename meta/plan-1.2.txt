@@ -23,7 +23,7 @@ Stat  Info
 
 [OK]  Implement tab support for text fields. This will allow
       to use proportional fonts in labels and still have them
-      aliened across several lines.
+      aligned across several lines.
 
 [OK]  remove or fix pie-chart code in rrd_graph
 
