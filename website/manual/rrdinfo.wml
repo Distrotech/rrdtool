@@ -1,6 +1,0 @@
-#include "$(ROOT)/.wml/template.inc" section=manual subsection=rrdinfo
-#use wml::fmt::pod
-
-<H1>RRD INFO</H1>
-
-<: print &wml_fmt_pod({ FILE => "--podroot=$(ROOT)/../doc  --htmlroot=. --podpath=. $(ROOT)/../doc/rrdinfo.pod"}); :>
