@@ -1,0 +1,29 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "welcome">
+
+
+<H1>About RRDtool</H1>
+
+<H2>RRDtool</H2>
+
+<P>If you know MRTG, you can think of RRDtool as a reimplementation of MRTGs
+graphing and logging features. Magnitudes faster and more flexible than you ever
+thought possible</P>
+
+<P>RRD is the Acronym for Round Robin Database. RRD is a system to store and
+display time-series data (i.e. network bandwidth, machine-room temperature,
+server load average). It stores the data in a very compact way that will not
+expand over time, and it presents useful graphs by processing the data to
+enforce a certain data density. It can be used either via simple wrapper
+scripts (from shell or Perl) or via frontends that poll network devices and
+put a friendly user interface on it.</P>
+
+<H2>Get IT</H2>
+
+<P>RRDtool is available for <A HREF="download.html">download</A> from this site.
+Currently it compiles on a number of different Unix platforms as well as on
+NT. No binaries are officially provided at this point in time.</P>
+
+<H2>Project -- Happy Tobi</H2>
+
+<P>You like RRDtool? <A HREF="$(ROOT)/license.html">There is a simple way to show your appreciation</A>.</P>

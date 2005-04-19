@@ -1,0 +1,8 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "prog">
+
+<H1>RRDtool Programming</H1>
+
+<dl>
+#include "index.inc"
+</dl>
