@@ -1,10 +1,14 @@
 <nav:bar 0     main "">
  <nav:but welcome        "Welcome"                 index                         />
+ <nav:but spons          "Sponsorship"             sponsor                       />
+ <nav:but sup            "Support"                 support                       />
+ <nav:but gallery        "Gallery"                 gallery/index       gallery   />
  <nav:but doc            "Documentation"           doc/index 	       doc       />
  <nav:but tut            "Tutorials"               tut/index           tut       />
  <nav:but prog           "Programming"             prog/index          prog      />
  <nav:but down           "Download"                down                          />
- <nav:but sup            "Support"                 sup                           />
+ <nav:but rrdworld       "RRDworld"                rrdworld/index      rrdworld  />
+ <nav:but lic            "License"                 license                       />
  <nav:but cast           "Cast" 	           cast                          />
 </nav:bar>
 
@@ -20,14 +24,11 @@
 #include "prog/navbar.inc"
 </nav:bar>
 
-# <nav:bar 1 probe        "probe/">
-# #include "probe/navbar.inc"
-# </nav:bar>
+<nav:bar 1 gallery         "gallery/">
+#include "gallery/navbar.inc"
+</nav:bar>
 
-# <nav:bar 1 matcher      "matcher/">
-# #include "matcher/navbar.inc"
-# </nav:bar>
+<nav:bar 1 rrdworld         "rrdworld/">
+#include "rrdworld/navbar.inc"
+</nav:bar>
 
-# <nav:bar 1 lib		"lib/">
-# #include "lib/navbar.inc"
-# </nav:bar>

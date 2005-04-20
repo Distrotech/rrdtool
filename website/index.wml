@@ -4,26 +4,27 @@
 
 <H1>About RRDtool</H1>
 
-<H2>RRDtool</H2>
+<H2>Logging &amp; Graphing</H2>
 
-<P>If you know MRTG, you can think of RRDtool as a reimplementation of MRTGs
-graphing and logging features. Magnitudes faster and more flexible than you ever
-thought possible</P>
+<p>Some call it the industry standard data logging and graphing application.
+Others use it to write their very own full custom monitoring scripts.
+Most people will probably get in touch with RRDtool through some
+<a href="rrdworld.en.html">third party monitoring application</a>.</p>
 
 <P>RRD is the Acronym for Round Robin Database. RRD is a system to store and
 display time-series data (i.e. network bandwidth, machine-room temperature,
 server load average). It stores the data in a very compact way that will not
-expand over time, and it presents useful graphs by processing the data to
-enforce a certain data density. It can be used either via simple wrapper
-scripts (from shell or Perl) or via frontends that poll network devices and
-put a friendly user interface on it.</P>
+expand over time, and it can create beautiful graphs. It can be used
+via simple shell scripts or as a perl module.</P>
 
-<H2>Get IT</H2>
+<H2>Download</H2>
 
-<P>RRDtool is available for <A HREF="download.html">download</A> from this site.
+<P>RRDtool is available for <A HREF="download.en.html">download</A> from this site.
 Currently it compiles on a number of different Unix platforms as well as on
-NT. No binaries are officially provided at this point in time.</P>
+Windows.</P>
 
-<H2>Project -- Happy Tobi</H2>
+<H2>Sponsorship and Appreciators</H2>
 
-<P>You like RRDtool? <A HREF="$(ROOT)/license.html">There is a simple way to show your appreciation</A>.</P>
+<P>You like RRDtool? You want show your appreciation? You want to sponsor
+future development or a particular new feature? Check out our <A
+HREF="sponsor.en.html">Spnsorship and Appreciation</a> page.</P>
