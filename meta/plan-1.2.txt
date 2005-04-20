@@ -32,14 +32,14 @@ Stat  Info
 
 **--  Fix compiler warnings
 
-***-  Work on the looks of the graphs. Especially the grid setup.
+[OK]  Work on the looks of the graphs. Especially the grid setup.
 
-----  Update Tutorials with material about the new features
+**--  Update Tutorials with material about the new features
 
 *---  Check documentation for consistency
 
-----  Update Website for 1.2
+***-  Update Website for 1.2
 
-----  Write release notes with changes relative to 1.0
+[OK]  Write release notes with changes relative to 1.0
 
 ----  [ 2005-04-25 ] Publish RRDtool 1.2.0
