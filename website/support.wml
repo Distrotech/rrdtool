@@ -1,0 +1,37 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "support">
+	
+<H1>Support</H1>
+
+<p>Free support for RRDtool is handled via three special mailinglists:</p>
+
+<H2>rrd-announce mailing list</H2>
+
+<P>If you want to keep uptodate with the progress of RRDtool, subscribe to
+this LOW VOLUME list by sending a message with the subject 'subscribe' to <A
+HREF="mailto:rrd-announce-request@list.ee.ethz.ch?subject=subscribe">rrd-announce-request@list.ee.ethz.ch</A>.</P>
+
+<P>There is also an <A
+HREF="http://lists.ee.ethz.ch/rrd-announce/">archive</A> of past Traffic on
+this List</P>
+
+<P>Note, that posts to this list will be crossposted to the rrd-users and
+rrd-developers mailinglists.</P>
+
+<H2>rrd-users mailing list</H2>
+
+<P>If you are using RRDtool in your applications, subscribe to
+this list by sending a message with the subject 'subscribe' to <A
+HREF="mailto:rrd-users-request@list.ee.ethz.ch?subject=subscribe">rrd-users-request@list.ee.ethz.ch</A>.</P>
+
+<P>There is an <A HREF="http://lists.ee.ethz.ch/rrd-users/">archive</A> of
+past Traffic on this List</P>
+
+<H2>rrd-developers mailing list</H2>
+
+<P>If you are interested in working on the RRDtool code itself, subscribe to
+this list by sending a message with the subject 'subscribe' to <A
+HREF="mailto:rrd-developers-request@list.ee.ethz.ch?subject=subscribe">rrd-developers-request@list.ee.ethz.ch</A>.</P>
+
+<P>There is an <A
+HREF="http://lists.ee.ethz.ch/rrd-developers/">archive</A> of past Traffic on this List</P>

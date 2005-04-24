@@ -1,14 +1,14 @@
 <nav:bar 0     main "">
  <nav:but welcome        "Welcome"                 index                         />
- <nav:but spons          "Sponsorship"             sponsor                       />
- <nav:but sup            "Support"                 support                       />
- <nav:but gallery        "Gallery"                 gallery/index       gallery   />
+ <nav:but down           "Download"                down                          />
+ <nav:but license        "License"                 license                       />
  <nav:but doc            "Documentation"           doc/index 	       doc       />
  <nav:but tut            "Tutorials"               tut/index           tut       />
+ <nav:but support        "Support"                 support                       />
+ <nav:but sponsor        "Sponsorship"             sponsor                       />
+# <nav:but gallery        "Gallery"                 gallery/index       gallery   />
+# <nav:but rrdworld       "RRDworld"                rrdworld/index      rrdworld  />
  <nav:but prog           "Programming"             prog/index          prog      />
- <nav:but down           "Download"                down                          />
- <nav:but rrdworld       "RRDworld"                rrdworld/index      rrdworld  />
- <nav:but lic            "License"                 license                       />
  <nav:but cast           "Cast" 	           cast                          />
 </nav:bar>
 

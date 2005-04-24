@@ -15,7 +15,6 @@ pod2descr() {
 rm -f navbar.inc
 rm -f index.inc
 
-(cd $src/doc/;gmake pod)
 for pod in `cd $src/doc/;echo rrdtool.pod;ls *.pod|egrep -v 'tutorial|beginners|graph-old|bin_dec|rrdtool.pod|RRD|thread'`; do
  base=`echo $pod |sed 's,.pod,,'` 
  echo $base

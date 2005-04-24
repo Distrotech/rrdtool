@@ -1,0 +1,26 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "sponsor">
+
+
+<H1>Sponsorship</H1>
+
+<p>I do most of my work on RRDtool in my spare time, as time permits. This
+leads to quite slow development and long release cycles. This does not have
+to be this way. If you would like to see a special feature in RRDtool or
+just want to see quicker release cycles, please contact me (tobi@oetiker.ch)
+for an offer.</p>
+
+<h2>Sponsors</h2>
+
+<p>2005 - <b><a href="http://cablecom.com">Cablecom GmbH</a>, Switzerland</b> - sponsored the publication of RRDtool version 1.2.</p>
+
+<p>1999 - <b><a href="http://caida.org">CAIDA</a>, USA</b> - three month carte blanche to publish RRDtool 1.0</p>
+
+<p>you could be next</p>
+
+<h2>Hosting</h2>
+
+<p>I would also like to thank the Department of Information Technology and
+Electrical Engineering at the Swiss Federal Institute of Technology who
+allow me to use their network resources to publish RRDtool.</p>
+
