@@ -8,4 +8,9 @@
        <year> 2005 </year><month> 4 </month>
     <license> GPL </license>
 
+   <!-- Optional -->   
+
+   <livesite> http://somesite.blabla.plac </livesite> 
+      <email> max@example.com </email>
+
 </rrdworld>
