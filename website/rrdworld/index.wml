@@ -1,0 +1,28 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "rrdworld">
+
+
+<H1>RRD World</H1>
+
+<p>A whole ecosystem of tools have sprung up around rrdtool. From tiny
+add-ons to big applications or even replacements for rrdtool itself.</p>
+
+<h2>Applications</h2>
+
+<p>none yet</p>
+
+<h2>Add-Ons</h2>
+
+<p>none yet</p>
+
+<h2>Replacements</h2>
+
+<p>none yet</p>
+
+<h2>Add your own tool to this list</h2>
+
+<p>If you have written a tool that you would like to see listed in this index,
+please send me a little xml file describing your tool. Below you find an example:</p>
+
+#use wml::fmt::verbatim
+<verbatim-file src="entry.txt"/>

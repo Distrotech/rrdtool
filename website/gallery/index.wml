@@ -1,0 +1,20 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "gallery">
+
+
+<H1>RRDtool Gallery</H1>
+
+<p>Graphs can be informative or beautiful, or both. This page is for
+specimens of the last two categories. </p>
+
+<p>waiting for the first entry</p>
+
+<h2>Add your own graphs to this list</h2>
+
+<p>If you have created a graph you like, and you think I would like it too,
+please send me the image plus an xml file like the example below to be
+considered for addition to this page. Note that your graph must not be wider
+than 600 pixels.</p>
+
+#use wml::fmt::verbatim
+<verbatim-file src="entry.txt"/>

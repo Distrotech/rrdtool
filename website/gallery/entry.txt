@@ -1,0 +1,13 @@
+<entry>
+
+      <title> Virus Graph </name>
+     <author> Max Beispiel </author> 
+<description> The five most common critters of the week. </description>
+       <year> 2005 </year><month> 4 </month>
+
+   <!-- Optional -->   
+
+   <livesite> http://somesite.blabla.plac </livesite> 
+      <email> max@example.com </email>
+
+</entry>
