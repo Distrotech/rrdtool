@@ -23,6 +23,11 @@ via simple shell scripts or as a perl module.</P>
 Currently it compiles on a number of different Unix platforms as well as on
 Windows.</P>
 
+<h2>All new RRDtool 1.2 released</h2>
+
+<p>If you are curious about the new featuers in RRDtool 1.2. Check out the
+<a href="newin12.txt">RRDTOOL 1.2 NEWS</a> page.</p>
+
 <H2>Sponsorship and Appreciators</H2>
 
 <P>You like RRDtool? You want show your appreciation? You want to sponsor
