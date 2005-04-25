@@ -1,6 +1,6 @@
 <nav:bar 0     main "">
  <nav:but welcome        "Welcome"                 index                         />
- <nav:but down           "Download"                down                          />
+ <nav:but down           "Download"                download                      />
  <nav:but license        "License"                 license                       />
  <nav:but doc            "Documentation"           doc/index 	       doc       />
  <nav:but tut            "Tutorials"               tut/index           tut       />
