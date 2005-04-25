@@ -14,30 +14,10 @@ of it) under a license other than the GNU GPL.</P>
 <H2>Give Credit</H2>
 
 <P>One of the things I get out of RRDtool is 'Being Known in the Industry'.
-This only works if you give credit to RRDtool. This means that you
+This only works if you give credit. This means that you
 mention RRDtool on webpages and other publications containing graphs
 created with RRDtool. If possible, a link should be included in the
-publication, pointing to the RRDtool homepage. Best is to include the RRD
-TOOL logo on these pages.</P>
+publication, pointing to the RRDtool homepage. Best is to include one of the  RRD
+TOOL logos on the page.</P>
 
 <p><img src="$(ROOT)/inc/rrdtool-logo-dark.png"/>&nbsp;&nbsp;<img src="$(ROOT)/inc/rrdtool-logo-light.png"/></p>
-
-<H2>Make Tobi happy</H2>
-
-<P>I am giving RRDtool away for free. This does not mean, that I don't
-like getting appreciation for my program.  If you like RRDtool and
-want to show me your appreciation, have a look at
-my <A HREF="http://people.ee.ethz.ch/~oetiker/wish">media wishlist</A>. Please put your <B>eMail</B> address into the the Message area, so
-that I can thank you for your present. I do keep a list of People who sent
-me stuff. You can look at it <A
-HREF="http://people.ee.ethz.ch/~oetiker/webtools/appreciators.txt">here</A>. 
-</P>
-<P>
-<I>remember, information is not knowledge,<BR/>
-        knowledge is not wisdom<BR/>
-        wisdom is not truth<BR/>
-        truth is not  beauty<BR/>
-        beauty is not love<BR/>
-        love is not music<BR/>
-        music is the best</I><BR/>
--- frank zappa</p>
