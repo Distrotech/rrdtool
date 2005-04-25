@@ -1,0 +1,24 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "iana">
+
+<H1>The RRDtool Enterprise Tree</H1>
+
+<P>The IANA has assigned the Enterprise OID 1.3.6.1.4.1.<b>14697</b> to the
+RRDtool project. This enables us to give out sub OIDs to RRDtool
+frontends which need a place in the SNMP tree to place their own OIDs. If
+you want an OID for your project, please drop <a href="mailto:tobi@oetiker.ch">me</a> a line.<P>
+
+<P>The toplevel MIB defining the basic structure of our tree is <A
+href="RRDTOOL-SMI.txt">RRDTOOL-SMI</A></P>
+
+<H2>MIB Subregistrations</H2>
+
+<P>The following subregistrations have been accepted:</P>
+
+<UL>
+<LI><B>1</B> -- <A HREF="http://rrfw.sourceforge.net/">Round Robin Database Framework</A> -- <A HREF="http://rrfw.sourceforge.net/RRFW-MIB.txt">RRFW-MIB.txt</A>.</LI>
+<LI><B>2</B> -- MobileRRD RRD-implementation of KPN Mobile Contact Wim Siebring.</LI>
+</UL>
+
+<P>If you submit MIB modules, please <A HREF="http://wwwsnmp.cs.utwente.nl/ietf/mibs/validate/">validate</A> them
+before sending them to me. State in your mail that you have validated the MIB, or I will ask you todo it.</P>
