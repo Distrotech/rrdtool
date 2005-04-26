@@ -9,7 +9,7 @@
 <p>Some call it the industry standard data logging and graphing application.
 Others use it to write their very own full custom monitoring scripts.
 Most people will probably get in touch with RRDtool through some
-<a href="rrdworld.en.html">third party monitoring application</a>.</p>
+<a href="$(ROOT)/rrdworld/">third party monitoring applications</a>.</p>
 
 <P>RRD is the Acronym for Round Robin Database. RRD is a system to store and
 display time-series data (i.e. network bandwidth, machine-room temperature,
