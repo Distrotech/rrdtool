@@ -7,6 +7,10 @@
 <p>A whole ecosystem of tools have sprung up around rrdtool. From tiny
 add-ons to big applications or even replacements for rrdtool itself.</p>
 
+<p>You can checkout the <a
+href="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool-1.0.x/rrdworld/">old-site</a>
+while we wait for new material to arrive.</p>
+
 <h2>Applications</h2>
 
 <p>none yet</p>
