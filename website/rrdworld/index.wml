@@ -11,17 +11,15 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 href="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool-1.0.x/rrdworld/">old-site</a>
 while we wait for new material to arrive.</p>
 
+<h2>RRDtool Companions</h2>
+
+#include "drraw.xml"
+#include "rrd_merger.xml"
+#include "weathermap4rrd.xml"  
+
 <h2>Applications</h2>
 
-<p>none yet</p>
-
-<h2>Add-Ons</h2>
-
-<p>none yet</p>
-
-<h2>Replacements</h2>
-
-<p>none yet</p>
+#include "cacti.xml"
 
 <h2>Add your own tool to this list</h2>
 

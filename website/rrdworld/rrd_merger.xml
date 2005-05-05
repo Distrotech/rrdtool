@@ -1,0 +1,14 @@
+<rrdworld type="application" > <!-- Size 100x66 -->
+
+       <name> RRD Merger </name>
+     <author> Ivan Pintori </author>
+<description> RRD Merger is a perl script that merges 2 RRDs into a new one. </description>
+   <homepage> http://www.pintori.it/rrd-merger </homepage>
+       <year> 2005 </year><month> 5 </month>
+    <license> GPL </license>
+
+   <!-- Optional -->
+
+      <email> ivan@pintori.it </email>
+
+</rrdworld>

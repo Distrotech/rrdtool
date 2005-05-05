@@ -1,0 +1,37 @@
+
+<gallery image="uw-condor.png" >
+
+<title> UW-HEP Grid Computing Resources Graph </title>
+<author> Steve Rader </author> 
+<description> 
+This graph shows that the Linux Intel computing resources available
+for particle physics research at the University of Wisconsin
+provides 4.7 CPU <b>years</b> of computing power every day.  It's a
+combination of Condor pools managed by High Energy Physics, the
+Computer Science Department and the Grid Laboratory of Wisconsin.
+</description>
+
+<year> 2005 </year> <month> 5 </month>
+<livesite> http://nrg.hep.wisc.edu </livesite> 
+
+<email> rader@hep.wisc.edu </email>
+
+</gallery>
+
+
+<gallery image="uw-condor-use.png" >
+<title> UW-HEP Grid CPU Utilization Graph </title>
+<author> Steve Rader </author> 
+<description> 
+
+This graph shows the utilization of Linux Intel CPUs by particle
+physics researchers and other members of the Grid Laboratory of
+Wisconsin.
+
+</description>
+<year> 2005 </year> <month> 5 </month>
+<livesite> http://nrg.hep.wisc.edu </livesite> 
+<email> rader@hep.wisc.edu </email>
+
+</gallery>
+

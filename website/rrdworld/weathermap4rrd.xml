@@ -1,0 +1,15 @@
+<rrdworld type="application"
+       icon="weathermap4rrd.png" > <!-- Size 100x66 -->
+
+       <name> WeatherMap4RRD </name>
+     <author> Alexandre Fontelle </author>
+<description> Network Weathermap based on data from RRD files </description>
+   <homepage> http://weathermap4rrd.tropicalex.net/ </homepage> 
+       <year> 2005 </year><month> 1 </month>
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+       <email> afontelle@free.fr </email>
+
+</rrdworld>

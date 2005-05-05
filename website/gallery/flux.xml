@@ -1,0 +1,20 @@
+<gallery image="flux.png" >
+
+      <title> Fluxoscope Graph </title>
+     <author> Simon Leinen </author> 
+<description>  Fluxoscope is a system used by SWITCH for measurements of
+    our external network traffic. One of its products are graphs which
+    represent, for each external connection, the protocol distribution
+    of traffic over time. The example graph shows the traffic
+    distribution on one of our "upstream" or transit ISPs over a
+    period of a few hours. The "positive" part of the graph shows
+    incoming traffic (what we receive from the ISP), the "negative"
+    part corresponds to outgoing traffic (what we send them). </description>
+
+       <year> 2005 </year><month> 5 </month>
+      
+   <!-- Optional -->   
+
+      <email> simon@switch.ch </email>
+
+</gallery>

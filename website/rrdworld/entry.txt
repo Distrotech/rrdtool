@@ -1,6 +1,6 @@
-<rrdworld type="extension|application"
-       icon="rumble.png" > <!-- Size 100x66 -->
-
+<rrdworld type="companion|application|?????"
+          icon="rumble.png" > <!-- Size 100x66 -->
+ 
        <name> RRRRumble </name>
      <author> Peter Example </author>
 <description> Makes rrdtool rumble when new data is added </description>

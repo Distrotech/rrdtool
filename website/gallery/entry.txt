@@ -1,4 +1,4 @@
-<gallery image="graph.png" >
+<gallery image="graph.png" > <!-- no wider than 600 pixle -->
 
       <title> Virus Graph </title>
      <author> Max Beispiel </author> 

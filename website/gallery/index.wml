@@ -4,12 +4,9 @@
 
 <H1>RRDtool Gallery</H1>
 
-<p>Graphs can be informative or beautiful, or both. This page is for
-specimens of the last two categories. </p>
-
-<p>Waiting for the first entry. You can checkout the <a
-href="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool-1.0.x/gallery/">old-site</a>
-in the mean time.</p>
+#include "flux.xml"
+#include "spamd_rrdgraph.xml"
+#include "uw-hep-condor.xml"
 
 <h2>Add your own graphs to this list</h2>
 
