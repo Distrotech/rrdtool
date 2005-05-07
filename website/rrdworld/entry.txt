@@ -1,16 +1,16 @@
 <rrdworld type="companion|application|?????"
           icon="rumble.png" > <!-- Size 100x66 -->
  
-       <name> RRRRumble </name>
-     <author> Peter Example </author>
-<description> Makes rrdtool rumble when new data is added </description>
+       <name> Name of the Product </name>
+     <author> Who Created it </author>
+<description> A short description of the tool. 300 char max. </description>
    <homepage> http://somesite.blabla.plac </homepage> 
-       <year> 2005 </year><month> 4 </month>
+       <year> 2005 </year><month> 4 </month> <!-- Entry creation date -->
     <license> GPL </license>
 
    <!-- Optional -->   
 
    <livesite> http://somesite.blabla.plac </livesite> 
-      <email> max@example.com </email>
+      <email> max@example.com </email> <!-- Author contact -->
 
 </rrdworld>
