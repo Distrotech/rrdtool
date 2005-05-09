@@ -1,0 +1,251 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 30px;
+  padding: 0px;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+/* hide old stuff */
+.legacy {
+  display: none
+}
+
+/**************************
+ * layout              
+ **************************/
+table#frame  {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #1a1a1a;
+}
+
+table#frame td {
+        vertical-align: top;
+        margin: 0px;
+        padding: 0px;
+}
+
+
+/**************************
+ * body              
+ **************************/
+div#body {
+  color: white;
+  margin: 40px;
+  margin-top: 80px;
+}
+
+div#body h1 { 
+  color: #717fe5;
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.1em;
+  line-height: 1em;
+  font-size: 220%;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: #404040;
+}
+
+div#body h2 { 
+  color: white;
+  margin-top: 0.6em;
+  margin-bottom: 0.1em;
+}
+
+
+div#body a {
+  color: #4a71e4;
+}
+
+div#body a[name] {
+  color: white;
+}
+
+div#body a:hover {
+  color: #7b9dff;
+}
+
+div#body h2 a,
+div#body h3 a,
+div#body h4 a,
+div#body h5 a {
+  color: white;
+}
+
+div#body dl dd {
+  margin-left: 1.5em;
+}
+
+div#body dl dt {
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+div#body dl dt a {
+  text-decoration: none;
+}
+
+div#body dl p {
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+ 
+div#body pre {
+  border-style: solid;
+  border-color: #bfbfbf;
+  border-width: 1px;  
+  background-color: #606060;
+  padding: 1em;
+}
+
+div#body pre a{
+  color: white;
+}
+
+/**************************
+ * footer
+ **************************/
+table#frame td#footcell {
+}
+
+div#address  {
+  float: right;
+  margin: 30px;
+}
+
+div#address small {
+  color: #b0b0b0;
+  font-size: 90%;
+}
+
+div#address a {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+/**************************
+ * logo
+ **************************/
+
+div#logo {
+  position: absolute;
+  height: 62px;
+  width: 187px;
+  right: 80px;
+  top: 60px;
+  background-image: url("rrdtool-theme.png");
+}
+
+/**************************
+ * rrdworld
+ **************************/
+
+div.rrdworld h3 {
+  background: #202050;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+  padding: 3px;  
+}
+
+div.rrdworld {
+  border-style: solid;
+  border-color: #bfbfbf;
+  border-width: 1px;  
+  background-color: #404040;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+
+/**************************
+ * mirrors
+ **************************/
+
+div#mirrors {
+  padding: 3px;
+  padding-left: 40px;
+  font-size: 10px;
+}
+
+div#mirrors,
+div#mirrors a {
+  color: #606060;
+}
+
+
+/**************************
+ * menu              
+ **************************/
+table#frame td#leftcornercell,
+table#frame td#menucell {
+  width: 10%;
+  background-color: #606060;
+}
+
+div#menu {
+  font-weight: normal;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  width: 120px;
+  line-height: 1em;
+}
+
+div#menu li {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+div#menu li li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+div#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+div#menu ul ul a {
+  color: black;
+  text-decoration: none;
+}
+
+div#menu ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+div#menu ul ul { 
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+div#menu ul a,
+div#menu ul div.selected {
+  padding-left: 0px;
+}
+
+div#menu ul ul ul li {
+  padding-left: 1em;
+}
+
+div#menu a:hover {
+  color: #a6a4f5;
+}
+
+div#menu a:active {
+  color: #7b7aba;
+}
+
+div#menu li div.selected {
+  color: white;
+  font-weight: bold;
+}
+
