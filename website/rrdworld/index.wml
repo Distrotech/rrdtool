@@ -20,6 +20,7 @@ while we wait for new material to arrive.</p>
 <h2>Applications</h2>
 
 #include "cacti.xml"
+#include "sicm.xml"
 
 <h2>Add your own tool to this list</h2>
 

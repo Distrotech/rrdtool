@@ -1,0 +1,12 @@
+<rrdworld type="application" icon="" > <!-- Size 100x66 -->
+
+ <name> SICM - Simple Infrastructure Capacity Monitor </name>
+    <author> Thomas Price </author>
+<description> Written in Perl for Win32 & Linux (easily ported to other O/S's). SICM provides a template based ping & snmp
+front-end to RRDtool that is simple to implement & support, is flexible and provides www, menu driven presentation of the
+output as well as e-mail alerting. </description>
+<homepage> http://sicm.sourceforge.net </homepage>
+  <year> 2003 </year><month> 10 </month> <!-- Entry creation date -->
+<license> GPL </license>
+
+</rrdworld>
