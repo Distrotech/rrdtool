@@ -42,6 +42,14 @@ mobilerrd  OBJECT-IDENTITY
                  Contact w.a.siebring@kpn.com
                 "
 	::= { rrdtool 2 }
+	
+rrdmonitor  OBJECT-IDENTITY
+	STATUS	current
+	DESCRIPTION 
+		"The MIB module for SNMP variables specific to rrdmonitor project
+		Contact: skorza@gmail.com, rrdmonitor@10096.it
+                "
+	::= { rrdtool 3 }
 
 -- more to come if necessary.
 
