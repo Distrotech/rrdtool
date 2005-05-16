@@ -48,14 +48,15 @@
 <!-- ############################# -->
 <td id="bodycell">
 # all mirrors seem dead currently
-#<div id="mirrors">
-#<A HREF="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
+<div id="mirrors">
+<A HREF="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
+<A HREF="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
 #<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A>,<!--jason andrade <jason@dstc.edu.au>-->
 #<A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A>,<!--Hsun-Chang Chang <hsunchang@gmail.com>-->
 #<A HREF="http://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/<where/>">IE</A>,<!--Colm MacCárthaigh <colm.maccarthaigh@heanet.ie>-->
 #<A HREF="http://rrdtool.cyclone.se/<where/>">SE</A>,<!--Hans Engren <hans@cyclone.se>-->
 #<A HREF="http://rrdtool.trexle.com/<where/>">US</A>,<!--Hossam Hossny <hossam@trexle.com>-->
-#</div>
+</div>
 <div id="logo">
 <div class="legacy">
 RRDtool
