@@ -21,6 +21,7 @@ while we wait for new material to arrive.</p>
 
 #include "cacti.xml"
 #include "sicm.xml"
+#include "snmpgraph.xml"
 
 <h2>Add your own tool to this list</h2>
 
