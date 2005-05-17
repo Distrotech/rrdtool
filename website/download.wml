@@ -51,7 +51,8 @@ You can download RRD tool from several places:
   <LI>Solaris 8/9 SPARC/X86 <A HREF="mailto:ihsan@blastwave.org">Ihsan Dogan</A> -- <A HREF="http://www.blastwave.org/packages.php/rrdtool">http://www.blastwave.org/packages.php/rrdtool</A></LI>
 ##  <LI>Solaris 7 x86 <A HREF="mailto:rtfman@eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadx86.html">http://homepage.eircom.net/~rtfman/download/downloadx86.html</A></LI>
   <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
-  <LI>Windows <A HREF="pub/?M=D">http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/</a></LI>
+  <LI>Native Windows <A HREF="pub/?M=D">http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/</a></LI>
+  <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
 </UL>
 
 <H2>Anonymous SVN for RRDtool</H2>
