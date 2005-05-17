@@ -1,4 +1,3 @@
-
 RRDMONITOR-MIB DEFINITIONS ::= BEGIN
 
 IMPORTS
@@ -12,11 +11,12 @@ IMPORTS
 rrdmonitor MODULE-IDENTITY
 	LAST-UPDATED "200505160000Z"
 	ORGANIZATION 
-		"RrdMonitor project"
+		"RRDMonitor project"
 	CONTACT-INFO 
-		"aaa"
+		"contact 	info@rrdmonitor.net
+							http://rrdmonitor.net"
 	DESCRIPTION 
-		"The MIB module for SNMP variables specific to rrdmonitor project"
+		"The MIB module for SNMP variables specific to RRDMonitor project"
 ::= { rrdtool 3 }
 
 
@@ -24,40 +24,16 @@ EventType ::= TEXTUAL-CONVENTION
 	STATUS     current
 	DESCRIPTION 
 		"Defines the event type:
-		        warning      -- The monitor condition is first time met
-		        critical   -- The monitor condition is met again on the consequtive
-		                    monitorin cycle
-		        clear    -- The monitor condition is not met the first time after
-		                    event type set or repeat"
+		        warning    	-- The monitor condition is first time met
+		        critical   	-- The monitor condition is met again on the consequtive
+		                    		monitorin cycle
+		        clear    		-- The monitor condition is not met the first time after
+		                    		event type set or repeat"
 	SYNTAX  INTEGER {
 		warning (1),
 		critical (2),
 		clear (3)
 	}
-
-
-Path ::= TEXTUAL-CONVENTION
-	STATUS     current
-	DESCRIPTION 
-		"Path is the full name of the rrdmonitor datasource, containing its
-		        parent nodes separated by slashes"
-	SYNTAX  OCTET STRING (SIZE(1..512))
-
-
-Token ::= TEXTUAL-CONVENTION
-	STATUS     current
-	DESCRIPTION 
-		"Token is a short ID for the leaf or subtree of the rrdmonitor
-		        datasources hierarchy"
-	SYNTAX  OCTET STRING (SIZE(5..10))
-
-
-TreeName ::= TEXTUAL-CONVENTION
-	STATUS     current
-	DESCRIPTION 
-		"rrdmonitor system operates with several datasource trees
-		        identified by names"
-	SYNTAX  OCTET STRING (SIZE(1..512))
 
 
 rrdmonitorAlarmTable  OBJECT-TYPE
@@ -101,35 +77,11 @@ rrdmonitorMessage  OBJECT-TYPE
 		"The value of this object uniquely identifies this event entry."
 	::= { rrdmonitorAlarmEntry 2 }
 
-generic-cpu  NOTIFICATION-TYPE
+generic  NOTIFICATION-TYPE
 	OBJECTS { rrdmonitorEventType, 
 		rrdmonitorMessage }
 	STATUS     current
 	DESCRIPTION 
 		"The SNMP trap that is generated when an rrdmonitor monitor condition is changed for the leaf being monitored"
 	::= { rrdmonitor 2 }
-
-nokia3gsAttached  NOTIFICATION-TYPE
-	OBJECTS { rrdmonitorEventType, 
-		rrdmonitorMessage }
-	STATUS     current
-	DESCRIPTION 
-		"The SNMP trap that is generated when an rrdmonitor monitor condition is changed for the leaf being monitored"
-	::= { rrdmonitor 3 }
-
-nokia3gsActivePDP  NOTIFICATION-TYPE
-	OBJECTS { rrdmonitorEventType, 
-		rrdmonitorMessage }
-	STATUS     current
-	DESCRIPTION 
-		"The SNMP trap that is generated when an rrdmonitor monitor condition is changed for the leaf being monitored"
-	::= { rrdmonitor 4 }
-
-nokia3gsDNS  NOTIFICATION-TYPE
-	OBJECTS { rrdmonitorEventType, 
-		rrdmonitorMessage }
-	STATUS     current
-	DESCRIPTION 
-		"The SNMP trap that is generated when an rrdmonitor monitor condition is changed for the leaf being monitored"
-	::= { rrdmonitor 5 }
 END
