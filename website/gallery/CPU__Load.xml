@@ -3,57 +3,8 @@
      <author> Christoph Baumann </author> 
 <description> 
 Created with drraw from Christophe Kalt (See RRDtool Companions)
-Changing Colors and using the new Trend Funkion
+Changing Colors and using the new Trend Funkion.
 </description>
        <year> 2005 </year><month> 5 </month> <!-- creation date -->
       <email> christoph.baumann@coop.ch </email>
 </gallery>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rrdtool graph - \
- --start=end-86400 \
- --lower-limit=0 \
- --title=CPULoad mit Trend \
- --imgformat=PNG \
- --width=800 \
- --base=1000 \
- --height=240 \
- --interlaced \
- DEF:a=/daten/bmc/rrd3//svrpfa003/CPU/CPU/CPULoad.rrd:CPULoad:MAX \
- CDEF:C=a,5,LT,a,UNKN,IF \
- CDEF:D=a,86400,TREND \
- AREA:a#FF0000:CPU__Load \
- GPRINT:a:MIN:Min\: %8.2lf%s \
- GPRINT:a:AVERAGE:Avg\: %8.2lf%s \
- GPRINT:a:MAX:Max\: %8.2lf%s \
- GPRINT:a:LAST:Last\: %8.2lf%s\n \
- AREA:C#00FF00: \
- LINE1:D#0000FF:DAYtrend  \
- GPRINT:D:MIN:Min\: %8.2lf%s \
- GPRINT:D:AVERAGE:Avg\: %8.2lf%s \
- GPRINT:D:MAX:Max\: %8.2lf%s \
- GPRINT:D:LAST:Last\: %8.2lf%s\n
