@@ -4,7 +4,7 @@
 
 <H1>RRDtool Gallery</H1>
 
-#incldue "ramUsage.xml"
+#include "ramUsage.xml"
 #include "CPU__Load.xml"
 #include "flux.xml"
 #include "spamd_rrdgraph.xml"
