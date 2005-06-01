@@ -1,0 +1,2 @@
+SUBDIRS=afm
+DIST_SUBDIRS=afm
