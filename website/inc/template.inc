@@ -41,6 +41,10 @@
 <div id="menu">
 <h2 class="legacy">Menu</h2>
 <navbar:render name=main menumode=inner nohints txtonly select=$(PAGE)/>
+<br/>
+<br/>
+<br/>
+<a href="http://conferences.oreillynet.com/cs/os2005/view/e_sess/6520"><img border="0" src="http://conferences.oreillynet.com/images/os2005/banners/speakers/120x60.gif"/></a>
 </div>
 </td>
 <!-- ############################# -->

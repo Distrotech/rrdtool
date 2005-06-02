@@ -22,7 +22,7 @@ You can download RRD tool from several places:
 ##  <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
 ##  <LI>US <A HREF="ftp://ftp.exobit.org/pub/monitoring/rrdtool/">ftp://ftp.exobit.org/pub/monitoring/rrdtool</A> (Jeffrey Meltzer jeffrey@exobit.org)</LI>
 
-  <LI>CA <A HREF="ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool">ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool</A> (William F. Maton wmaton@ryouko.dgim.nrc.ca)</LI>
+  <LI>CA <A HREF="ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool">ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool</A> ( William F. Maton Sotomayor wmaton@ryouko.imsb.nrc.ca)</LI>
 ##  <LI>AU <A HREF="ftp://ftp.mirrors.wiretapped.net/pub/rrdtool/">ftp://ftp.mirrors.wiretapped.net/pub/rrdtool/</A> (Grant Bayley gbayley [at] ausmac.net)</LI>
   <LI>AU <A HREF="http://the.wiretapped.net/security/network-monitoring/rrdtool/">http://www.mirrors.wiretapped.net/security/network-monitoring/rrdtool/</A> (Grant Bayley gbayley [at] ausmac.net)</LI>
   <LI>GR <A HREF="http://ftp.ntua.gr/pub/net/monitoring/rrdtool/">http://ftp.ntua.gr/pub/net/monitoring/rrdtool/</A> (Panagiotis Christias P.Christias@noc.ntua.gr)</LI>
@@ -36,20 +36,21 @@ You can download RRD tool from several places:
   <LI>NL <A HREF="ftp://ftp.bit.nl/mirror/rrdtool/">ftp://ftp.bit.nl/mirror/rrdtool/</A> (BIT, The Netherlands mirror@bit.nl)</LI>
   <LI>US <A HREF="ftp://ftp.subterrain.net/pub/rrdtool/">ftp://ftp.subterrain.net/pub/rrdtool/</a> (Justin Lundy subterrain.net)</LI>
   <LI>US <A HREF="http://www.subterrain.net/tools/visualization/rrdtool/">http://www.subterrain.net/tools/visualization/rrdtool/</a> (Justin Lundy subterrain.net)</LI>
+  <LI>CR <A HREF="http://rrdtool.hostarica.com">http://rrdtool.hostarica.com</a> ( Jorge Guntanis jorge@hostarica.com )</LI>
 ##  <LI>NL <A HREF="ftp://ftp.cbn.net.id/mirror/rrdtool/">ftp://ftp.cbn.net.id/mirror/rrdtool/</A> (Achmad Yahya Sjarifuddin yahya@cbn.net.id)</LI>
 </UL>
 
 <H2>Binary Distributions</H2>
 
 <UL>
-##  <LI>AIX 4.3.2 by <A HREF="mailto:Ciaran.Deignan@bull.net">Ciaran Deignan</A> -- <A HREF="http://www-frec.bull.com/cgi-bin/list_dir.cgi/download/aix432/">http://www-frec.bull.com/download/aix432/</A></LI> -->
-##  <LI>FreeBSD Package by <A HREF="mailto:Jarrod.Sayers@netlead.com.au">Jarrod Sayers</A> -- <A HREF="http://people.netlead.com.au/~jarrod/rrdtool/">http://people.netlead.com.au/~jarrod/rrdtool/</A></LI> -->
-##  <LI>Linux x86 RPM by <A HREF="mailto:hgomez@users.sourceforge.net">Henri Gomez</A> -- <A HREF="http://ftp.falsehope.com/home/gomez/">http://ftp.falsehope.com/home/gomez/</A></LI>
-##  <LI>Linux x86 RPM by <A HREF="mailto:rtfman@eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadLinux.html">http://homepage.eircom.net/~rtfman/download/downloadLinux.html</A></LI>
-##  <LI>Linux RH 7.2 x86 RPM by <A HREF="mailto:austin@digitalroadkill.net">Austin Gonyou</A> -- <A HREF="http://www.digitalroadkill.net/public/rrdtool">http://www.digitalroadkill.net/public/rrdtool</A></LI>
-##  <LI>Mac OS X by <A HREF="mailto:mgalvin001@netscape.net">Matt T. Galvin</A> -- <A HREF="pub/">local</A></LI>
-  <LI>Solaris 8/9 SPARC/X86 <A HREF="mailto:ihsan@blastwave.org">Ihsan Dogan</A> -- <A HREF="http://www.blastwave.org/packages.php/rrdtool">http://www.blastwave.org/packages.php/rrdtool</A></LI>
-##  <LI>Solaris 7 x86 <A HREF="mailto:rtfman@eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadx86.html">http://homepage.eircom.net/~rtfman/download/downloadx86.html</A></LI>
+    <LI>AIX by <A HREF="mailto:zoran.majcenic_inet.hr">Zoran Majcenic</A> -- <A HREF="http://www.inet.hr/zmp/ibm/rrdtool">http://www.inet.hr/zmp/ibm/rrdtool</A></LI>
+##  <LI>FreeBSD Package by <A HREF="mailto:Jarrod.Sayers_netlead.com.au">Jarrod Sayers</A> -- <A HREF="http://people.netlead.com.au/~jarrod/rrdtool/">http://people.netlead.com.au/~jarrod/rrdtool/</A></LI> -->
+##  <LI>Linux x86 RPM by <A HREF="mailto:hgomez_users.sourceforge.net">Henri Gomez</A> -- <A HREF="http://ftp.falsehope.com/home/gomez/">http://ftp.falsehope.com/home/gomez/</A></LI>
+##  <LI>Linux x86 RPM by <A HREF="mailto:rtfman_eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadLinux.html">http://homepage.eircom.net/~rtfman/download/downloadLinux.html</A></LI>
+##  <LI>Linux RH 7.2 x86 RPM by <A HREF="mailto:austin_digitalroadkill.net">Austin Gonyou</A> -- <A HREF="http://www.digitalroadkill.net/public/rrdtool">http://www.digitalroadkill.net/public/rrdtool</A></LI>
+##  <LI>Mac OS X by <A HREF="mailto:mgalvin001_netscape.net">Matt T. Galvin</A> -- <A HREF="pub/">local</A></LI>
+  <LI>Solaris 8/9 SPARC/X86 <A HREF="mailto:ihsan_blastwave.org">Ihsan Dogan</A> -- <A HREF="http://www.blastwave.org/packages.php/rrdtool">http://www.blastwave.org/packages.php/rrdtool</A></LI>
+##  <LI>Solaris 7 x86 <A HREF="mailto:rtfman_eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadx86.html">http://homepage.eircom.net/~rtfman/download/downloadx86.html</A></LI>
   <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
   <LI>Native Windows <A HREF="pub/?M=D">http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/</a></LI>
   <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
@@ -63,12 +64,14 @@ You can download RRD tool from several places:
 svn ls -R svn://svn.ee.ethz.ch/rrdtool/
 </pre>
 
-<p>Tells you what is in the repository. Normally, development will happen in the "trunk" directory.
-Every major release gets an entry in the "branches" tree, and every released version get added to the "tags" tree.</p>
+<p>Tells you what is in the repository. Normally, development will happen in
+the "trunk" directory. Every major release gets an entry in the "branches"
+tree, and every released version get added to the "tags" tree.</p>
 
-<p>If you checkout code from the subversion repository, you will find that the <b>configure</b> script is missing.
-You get this generated by running: <B>./MakeMakefile</B> ... note that you will need automake, autoconf
-and libtool installed for this to work.</p>
+<p>If you checkout code from the subversion repository, you will find that
+the <b>configure</b> script is missing. You get this generated by running:
+<B>./MakeMakefile</B> ... note that you will need automake, autoconf and
+libtool installed for this to work.</p>
 
 <p>If you fix a bug, I would love to see the output of '<b>svn diff</b>'.</p>
 
