@@ -20,9 +20,11 @@ while we wait for new material to arrive.</p>
 <h2>Applications</h2>
 
 #include "cacti.xml"
+#include "mailgraph.xml"
 #include "sicm.xml"
 #include "snmpgraph.xml"
 #include "serverstats.xml"
+#include "torrus.xml"
 
 <h2>Add your own tool to this list</h2>
 
