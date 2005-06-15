@@ -16,7 +16,7 @@
 <html lang="<lang:star: * />" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-15" />
-<link* REL="icon" HREF="$(ROOT)/favicon.png" TYPE="image/png" />
+<link* REL="icon" HREF="$(ROOT)/inc/favicon.ico" TYPE="image/ico" />
 ..Title!>>RRDtool - Page without a Title<<..
 <title*>RRDtool - {#Title#}</title*>
 <!-- Andrew Clover is THE MAN. He made internet explorer more or less
