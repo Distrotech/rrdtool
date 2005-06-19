@@ -1,0 +1,17 @@
+<rrdworld type="frontend">
+       <name> rrd.cgi </name>
+     <author> Haroon Rafique </author>
+    <description> rrd.cgi is an on-demand, highly configurable perl front-end
+    for rrdtool. It supports,
+    unlimited DEFs, CDEFs, hourly/daily/weekly/montly/yearly graphs,
+    auto-archival of graphs, historical graphs, displaying
+    source of RRDs::graph statements and autorefresh. rrd.cgi runs
+    under cgi-bin or mod_perl.</description>
+   <homepage> http://haroon.sis.utoronto.ca/rrd/scripts/ </homepage> 
+       <year> 2005 </year><month> 6 </month>
+    <license> GPL </license>
+
+   <livesite> http://haroon.sis.utoronto.ca/perl/rrd.cgi/ </livesite> 
+      <email> haroon.rafique@utoronto.ca </email>
+
+</rrdworld>

@@ -21,6 +21,8 @@ while we wait for new material to arrive.</p>
 
 #include "cacti.xml"
 #include "mailgraph.xml"
+#include "rrdcgi.xml"
+#include "rrdutil.xml"
 #include "sicm.xml"
 #include "snmpgraph.xml"
 #include "serverstats.xml"
