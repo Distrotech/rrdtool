@@ -4,6 +4,8 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "mailstat-daily.xml"
+#include "panel_user.xml"
 #include "mailgraph_gallery.xml"
 #include "ramUsage.xml"
 #include "CPU__Load.xml"
