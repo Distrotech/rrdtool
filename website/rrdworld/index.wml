@@ -26,6 +26,7 @@ while we wait for new material to arrive.</p>
 #include "sicm.xml"
 #include "snmpgraph.xml"
 #include "serverstats.xml"
+#include "tinygraph.xml"
 #include "torrus.xml"
 
 <h2>Add your own tool to this list</h2>
