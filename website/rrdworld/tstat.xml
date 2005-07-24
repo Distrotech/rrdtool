@@ -24,8 +24,7 @@ or previously recorded packet-level traces in various dump formats.
               
                  <!-- Optional -->   
                  
-                    <livesite> http://tstat.tlc.polito.it/web.shtml
-</livesite> 
+                    <livesite> http://tstat.tlc.polito.it/web.shtml</livesite> 
       <email> mellia@mail.tlc.polito.it </email> <!-- Author contact -->
       
       </rrdworld>

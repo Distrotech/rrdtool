@@ -17,7 +17,7 @@ while we wait for new material to arrive.</p>
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
 
-<h2>Applications</h2>
+<h2>Free Applications</h2>
 
 #include "cacti.xml"
 #include "mailgraph.xml"
@@ -29,6 +29,10 @@ while we wait for new material to arrive.</p>
 #include "tinygraph.xml"
 #include "torrus.xml"
 #include "tstat.xml"
+
+<h2>Commercial Applications</h2>
+
+#include "airwave.xml"
 
 <h2>Add your own tool to this list</h2>
 
