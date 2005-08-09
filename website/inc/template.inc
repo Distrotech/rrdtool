@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="iso-8859-15"?>
+#this seems to confuse just too many things out there ... 
+#guess following the standard is not there yet
+#<?xml version="1.0" encoding="iso-8859-15"?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 # this must be the very first line to make doc-type switching work on IE
 #use wml::std::logo
@@ -44,7 +46,20 @@
 <br/>
 <br/>
 <br/>
-<a href="http://conferences.oreillynet.com/cs/os2005/view/e_sess/6520"><img border="0" src="http://conferences.oreillynet.com/images/os2005/banners/speakers/120x60.gif"/></a>
+<a href="http://conferences.oreillynet.com/cs/os2005/view/e_sess/6520"><img border="0" src="$(ROOT)/oscon-120x60.gif"/></a>
+<br/>
+<br/>
+<br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick"/>
+<input type="hidden" name="business" value="tobias@oetiker.ch"/>
+<input type="hidden" name="item_name" value="Tobi's OpenSource Projects MRTG / RRDtool / SmokePing"/>
+<input type="hidden" name="item_number" value="appreciators"/>
+<input type="hidden" name="no_note" value="1"/>
+<input type="hidden" name="currency_code" value="USD"/>
+<input type="hidden" name="tax" value="0"/>
+<input type="image" src="https://www.paypal.com/images/x-click-but04.gif" name="submit" alt="Sponsor RRDtool with PayPal"/>
+</form>
 </div>
 </td>
 <!-- ############################# -->
