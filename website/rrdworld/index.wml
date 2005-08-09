@@ -16,9 +16,11 @@ while we wait for new material to arrive.</p>
 #include "drraw.xml"
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
+#include "rrdutils.xml"
 
 <h2>Free Applications</h2>
 
+#include "bigsis_rrdworld.xml"
 #include "cacti.xml"
 #include "mailgraph.xml"
 #include "rrdcgi.xml"

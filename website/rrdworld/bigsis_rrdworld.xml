@@ -1,0 +1,21 @@
+<rrdworld type="application"
+          icon="logo_bigsis_rrd_100x66.png" > <!-- Size 100x66 -->
+ 
+       <name> Big Sister system and network monitor</name>
+     <author> Tom Aeby </author>
+<description> 
+Big Sister detects failing services and systems, displays live status
+overviews and sends alerts. For providing diagnostic information to the 
+system administrator Big Sister also collects system performance data 
+and uses RRDTool as a powerful utility for storing and visualizing the 
+collected data.
+</description>
+   <homepage> http://www.bigsister.ch/ </homepage> 
+       <year> 2005 </year><month> 8 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> aeby@graeff.com </email> <!-- Author contact -->
+
+</rrdworld>
