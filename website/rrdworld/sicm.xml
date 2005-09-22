@@ -1,12 +1,15 @@
-<rrdworld type="application" icon="" > <!-- Size 100x66 -->
+<rrdworld type="application"
+          icon="sicm_logo.png" > <!-- Size 100x66 -->
+ 
+       <name> SICM - Simple Infrastructure Capacity Monitor </name>
+     <author> Thomas Price </author>
+<description> SICM is a tool to monitor, graph and alert the capacity of computing devices and applications. SICM runs on a Windows or Linux device on your network, 24 hours every day and constantly records the capacity parameters of any networked device using snmp, ping or custom modules. The recorded data is stored for later reference via a user friendly menu-driven web browser. E-mail alerts are raised if a user determined number of queries fail. </description>
+   <homepage> http://sicm.sourceforge.net </homepage> 
+       <year> 2003 </year><month> 10 </month> <!-- Entry creation date -->
+    <license> GPL </license>
 
- <name> SICM - Simple Infrastructure Capacity Monitor </name>
-    <author> Thomas Price </author>
-<description> Written in Perl for Win32 &amp; Linux (easily ported to other O/S's). SICM provides a template based ping &amp; snmp
-front-end to RRDtool that is simple to implement &amp; support, is flexible and provides www, menu driven presentation of the
-output as well as e-mail alerting. </description>
-<homepage> http://sicm.sourceforge.net </homepage>
-  <year> 2003 </year><month> 10 </month> <!-- Entry creation date -->
-<license> GPL </license>
+   <!-- Optional -->   
+
+   <livesite> http://sicm.sourceforge.net/example.html </livesite> 
 
 </rrdworld>

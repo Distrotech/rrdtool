@@ -1,0 +1,15 @@
+<rrdworld type="application">
+	<name>collectd</name>
+	<author>Florian Forster</author>
+	<description>
+		collectd is a lightweight daemon that periodically collects
+		system information. Since it's kept in memory the intervals can
+		be very short without being hard on the system.
+		Currently Linux 2.4/2.6 and Solaris 5.9 have been tested to
+		work, other UNIXes may work through an external library.
+	</description>
+	<homepage>http://verplant.org/collectd/</homepage>
+	<year>2005</year><month>8</month>
+	<license>GPL</license>
+	<email>octo@verplant.org</email>
+</rrdworld>
