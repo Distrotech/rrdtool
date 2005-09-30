@@ -1,0 +1,11 @@
+<rrdworld type="application">
+ 
+	<name> openSSI webView </name>	
+	<author> Kilian CAVALOTTI </author>
+	<description> openSSI webView is a simple and easy-to-use openSSI cluster monitoring system. Its goal is to provide a quick overview of the cluster state, by graphing vital functions and graphically representing key figures. It allows the cluster administrator to keep an eye on the cluster health and usage rate, to quick view each node state and load, and to watch, and even migrate, users processes all accross the cluster. </description>
+	<homepage> http://openssi-webview.sourceforge.net/ </homepage> 
+       	<year> 2004 </year><month> 11 </month> <!-- Entry creation date -->
+	<license> CeCILL </license>
+
+</rrdworld>
+
