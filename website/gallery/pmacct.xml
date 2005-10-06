@@ -1,0 +1,15 @@
+<gallery image="pmacct-3hour.png" > 
+
+      <title>WAN Link Monitoring</title>
+     <author>Martin Pot</author> 
+<description>These graphs show network traffic inbound and outbound on the WAN link from our office into our corporate network, and allow us to monitor the network usage of each department in the office.
+<a href="http://www.ba.cnr.it/~paolo/pmacct/">pmacct</a> is used to monitor all traffic on a mirrored switch port, with some perl scripts to parse the pmacct data, store it into rrd files and generate the graphs.
+</description>
+       <year> 2004 </year><month> 1 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+<!-- mpot@martybugs.net -->
+
+</gallery>
+

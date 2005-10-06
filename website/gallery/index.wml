@@ -4,6 +4,7 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "pmacct.xml"
 #include "solar.xml"
 #include "mailstat-daily.xml"
 #include "panel_user.xml"
