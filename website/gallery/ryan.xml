@@ -1,0 +1,9 @@
+<gallery image="ryan.png" >
+        <title>Traffic in Kibibytes - cable modem.</title>
+        <author>Ryan Jordan</author>
+        <description>Just an example of different colors and transparency more or less using the rrdtool's site colors. Has a one minute --step.</description>
+        <year>2005</year>
+        <month>11</month>
+        <livesite>http://carmex.ath.cx/graphs/</livesite> 
+        <email>ryanstuartjordan@gmail.com</email>
+</gallery>
