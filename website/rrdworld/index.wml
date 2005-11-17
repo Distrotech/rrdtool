@@ -25,6 +25,7 @@ while we wait for new material to arrive.</p>
 #include "collectd.xml"
 #include "mailgraph.xml"
 #include "monitorix.xml"
+#include "munin.xml"
 #include "ow.xml"
 #include "rrdcgi.xml"
 #include "rrdutil.xml"
