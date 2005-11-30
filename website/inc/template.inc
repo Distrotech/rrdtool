@@ -46,16 +46,17 @@
 <br/>
 <br/>
 <br/>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_xclick"/>
-<input type="hidden" name="business" value="tobias@oetiker.ch"/>
-<input type="hidden" name="item_name" value="Tobi's OpenSource Projects MRTG / RRDtool / SmokePing"/>
-<input type="hidden" name="item_number" value="appreciators"/>
-<input type="hidden" name="no_note" value="1"/>
-<input type="hidden" name="currency_code" value="USD"/>
-<input type="hidden" name="tax" value="0"/>
-<input type="image" src="https://www.paypal.com/images/x-click-but04.gif" name="submit" alt="Sponsor RRDtool with PayPal"/>
-</form>
+<a href="http://people.ee.ethz.ch/oetiker/wish"><img border="0" src="$(ROOT)/inc/button.png"/></a><br/>
+#<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+#<input type="hidden" name="cmd" value="_xclick"/>
+#<input type="hidden" name="business" value="tobias@oetiker.ch"/>
+#<input type="hidden" name="item_name" value="Tobi's OpenSource Projects MRTG / RRDtool / SmokePing"/>
+#<input type="hidden" name="item_number" value="appreciators"/>
+#<input type="hidden" name="no_note" value="1"/>
+#<input type="hidden" name="currency_code" value="USD"/>
+#<input type="hidden" name="tax" value="0"/>
+#<input type="image" src="https://www.paypal.com/images/x-click-but04.gif" name="submit" alt="Sponsor RRDtool with PayPal"/>
+#</form>
 </div>
 </td>
 <!-- ############################# -->

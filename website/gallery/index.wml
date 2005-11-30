@@ -4,6 +4,9 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "rrdstats.xml"
+#include "all_gamers_36h.xml"
+#include "smpp.xml"
 #include "ryan.xml"
 #include "zug.xml"
 #include "pmacct.xml"
