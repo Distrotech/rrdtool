@@ -58,13 +58,17 @@ You can download RRD tool from several places:
 
 <H2>Anonymous SVN for RRDtool</H2>
 
+
 <p>RRDtool source is stored in a subversion repository with anonymous access.</p>
+
+<p>Browse the RRDtool SVN via <a href="http://people.ee.ethz.ch/oetiker/webtools/rrdtool-trac/browser/branches/1.2/program">RRDtrac</a>.
+Or if you want todo more than look ...</p>
 
 <pre>
 svn ls -R svn://svn.ee.ethz.ch/rrdtool/
 </pre>
 
-<p>Tells you what is in the repository. Normally, development will happen in
+<p>tells you what is in the repository. Normally, development will happen in
 the "trunk" directory. Every major release gets an entry in the "branches"
 tree, and every released version get added to the "tags" tree.</p>
 
