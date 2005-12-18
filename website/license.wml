@@ -11,6 +11,12 @@ This means you can do most things you want with this software as long as you
 do not claim you created the software and don't sell it (or modified version
 of it) under a license other than the GNU GPL.</P>
 
+<p>If you want to use RRDtool with an opensouce tool that has a GPL
+incompatible license, you may be able to get around the problem thanks to
+the <a
+href="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool-trac/browser/branches/1.2/program/COPYRIGHT">FLOSS
+License Exception</a> in the RRDtool license.</p>
+
 <H2>Give Credit</H2>
 
 <P>One of the things I get out of RRDtool is 'Being Known in the Industry'.
