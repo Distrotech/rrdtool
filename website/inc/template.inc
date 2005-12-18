@@ -1,6 +1,6 @@
-#this seems to confuse just too many things out there ... 
-#guess following the standard is not there yet
-#<?xml version="1.0" encoding="iso-8859-15"?>
+# this seems to confuse just too many things out there ... 
+# guess following the standard is not there yet
+# <?xml version="1.0" encoding="iso-8859-15"?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 # this must be the very first line to make doc-type switching work on IE
 #use wml::std::logo

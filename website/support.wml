@@ -18,6 +18,10 @@ this List</P>
 <P>Note, that posts to this list will be crossposted to the rrd-users and
 rrd-developers mailinglists.</P>
 
+<h2>RRDtool Trac</h2>
+
+<p>Bug Tracking, user maintained documentation and SVN access live in the <a href="http://people.ee.ethz.ch/oetiker/webtools/rrdtool-trac/">RRDtrac</a> site. Check it out.</p>
+
 <H2>rrd-users mailing list</H2>
 
 <P>If you are using RRDtool in your applications, subscribe to
