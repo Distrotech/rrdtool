@@ -4,6 +4,7 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "576_nodes.xml"
 #include "windvaan.xml"
 #include "rrdstats.xml"
 #include "all_gamers_36h.xml"
