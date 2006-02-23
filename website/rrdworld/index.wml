@@ -29,6 +29,7 @@ while we wait for new material to arrive.</p>
 #include "munin.xml"
 #include "netmrg.xml"
 #include "ow.xml"
+#include "ozmonitor.xml"
 #include "rrdcgi.xml"
 #include "rrdstats.xml"
 #include "rrdutil.xml"
