@@ -4,6 +4,9 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "meteo-igf.xml"
+#include "btdmd8.xml"
+#include "mmsc0.xml"
 #include "576_nodes.xml"
 #include "windvaan.xml"
 #include "rrdstats.xml"
