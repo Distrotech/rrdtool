@@ -28,6 +28,7 @@ while we wait for new material to arrive.</p>
 #include "monitorix.xml"
 #include "munin.xml"
 #include "netmrg.xml"
+#include "ourmon.xml"
 #include "ow.xml"
 #include "ozmonitor.xml"
 #include "rrdcgi.xml"

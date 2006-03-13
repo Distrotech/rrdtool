@@ -1,0 +1,31 @@
+<rrdworld type="application" > 
+ 
+       <name> Ourmon Networm Monitoring and Anomaly Detection System </name>
+     <author> Jim Binkley </author>
+<description> 
+Ourmon is a statistically oriented open-source network monitoring and
+anomaly detection system.  It may be regarded as an open source
+equivalent of SNMP RMON II.  It is based on promiscuous mode packet
+collection on Ethernet (typically) interfaces.  Ourmon does not collect
+all the packets because one principle design goal is to extract signal
+from noise, and not store all the noise in a giant bag under the
+assumption that you can look at it "later" (there is no later).
+Instead it attempts to find important data and summarize it.  Data
+is displayed on the web via pictures or reports.  Features include
+RRDTOOL graphs built from user-defined BPF expressions, topn flow
+lists, topn ports, topn synning IP hosts, top UDP error makers, top
+scanners, and IRC channels and hosts.  Ourmon's anomaly detection
+features include TCP and UDP anomalous hosts, IRC "evil" networks
+(botnets) and a lovely graph that displays the number of remote and
+local scanners. TCP data also includes information about P2P using
+hosts, and soon will allow traffic classification via user-suppled
+PCRE pattern tags.
+</description>
+   <homepage> http://ourmon.sourceforge.net </homepage> 
+       <year> 2006 </year><month> 3 </month> <!-- Entry creation date -->
+    <license> BSD </license>
+
+   <livesite> http://ourmon.cat.pdx.edu/ourmon</livesite> 
+      <email> jrb@cs.pdx.edu </email> <!-- Author contact -->
+
+</rrdworld>
