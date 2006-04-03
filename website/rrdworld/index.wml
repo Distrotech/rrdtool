@@ -20,6 +20,7 @@ while we wait for new material to arrive.</p>
 
 <h2>Free Applications</h2>
 
+#include "aware.xml"
 #include "bbstatus.xml"
 #include "bigsis_rrdworld.xml"
 #include "cacti.xml"
