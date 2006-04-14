@@ -1,2 +1,3 @@
 ErrorDocument 404 http://oss.oetiker.ch/rrdtool/404.var
-RewriteRule /?pub(.*) http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/$1 [R=301,L]
+RewriteRule pub(.*) http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/$1 [R=301,L]
+
