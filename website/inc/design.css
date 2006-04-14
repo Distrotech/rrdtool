@@ -104,6 +104,14 @@ div#body pre a{
   color: white;
 }
 
+div#googlead_right {
+  background-color: #1a1a1a;
+  float: right;
+  padding-top: 31px;
+  padding-left: 15px;
+  padding-right: 0px;
+}
+
 /**************************
  * footer
  **************************/
@@ -113,6 +121,7 @@ table#frame td#footcell {
 div#address  {
   float: right;
   margin: 30px;
+  padding-right: 12px;
 }
 
 div#address small {
@@ -133,7 +142,7 @@ div#logo {
   position: absolute;
   height: 62px;
   width: 187px;
-  right: 80px;
+  right: 69px;
   top: 60px;
   background-image: url("rrdtool-theme.png");
 }

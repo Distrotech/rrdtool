@@ -65,15 +65,15 @@
 <td id="bodycell">
 # all mirrors seem dead currently
 <div id="mirrors">
-<A HREF="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
+<A HREF="http://oss.oetiker.ch/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
 <A HREF="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
 
-#<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
+##<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
 <A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
-#<A HREF="http://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/<where/>">IE</A><!--Colm MacCárthaigh <colm.maccarthaigh@heanet.ie>-->
-#<A HREF="http://rrdtool.cyclone.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
-<A HREF="http://rrdtool.trexle.net/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
-<A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
+##<A HREF="http://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/<where/>">IE</A><!--Colm MacCárthaigh <colm.maccarthaigh@heanet.ie>-->
+##<A HREF="http://rrdtool.cyclone.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
+#<A HREF="http://rrdtool.trexle.net/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
+#<A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
 </div>
 <div id="logo">
 <div class="legacy">
@@ -85,6 +85,24 @@ RRDtool
 <!-- # BODY -->
 <!-- ############################# -->
 <div id="body">
+<div id="googlead_right">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8135238818549668";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text";
+google_ad_channel ="5627785043";
+google_color_border = "616FC5";
+google_color_bg = "202020";     
+google_color_link = "66A5FF";      
+google_color_url = "FFBBE8";      
+google_color_text = "FFFFFF";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 {#Body#}
 </div>
 </td>
@@ -126,7 +144,9 @@ design though relies completely on CSS2 styles. If you see this text, this means
 that your browser does not support CSS2. Consider upgrading to a standard conformant
 browser like Mozilla <a href="http://www.getfirefox.com">Firefox</a> or
 <a href="http://www.opera.com">Opera</a> but also Apple's <a href="http://www.apple.com/safari/">Safari</a>
-or KDE's <a href="http://www.konqueror.org">Konqueror</a> for example.</en>
+or KDE's <a href="http://www.konqueror.org">Konqueror</a> for example.
+It may also be that you are looking at a mirror page which did not copy <a href="$(ROOT)/inc/design.css">the CSS</a> for this page. Or if some pictu
+res are missing, then the mirror may not have picked up the contents of the <a href="$(ROOT)/inc/">inc</a> directory.</en>
 #<de><b>HINWEIS:</b> Diese Website funktioniert mit jedem Browser. Die graphische Präsentation jedoch
 #basiert komplett auf CSS2. Beispiele für CSS2 konforme Browser sind zum Beispiel  <a href="http://www.getfirefox.com">Firefox</a>
 #<a href="http://www.opera.com">Opera</a> oder auch <a href="http://www.apple.com/safari/">Safari</a> von Apple und

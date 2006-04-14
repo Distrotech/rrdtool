@@ -61,7 +61,7 @@ You can download RRD tool from several places:
 
 <p>RRDtool source is stored in a subversion repository with anonymous access.</p>
 
-<p>Browse the RRDtool SVN via <a href="http://people.ee.ethz.ch/oetiker/webtools/rrdtool-trac/browser/branches/1.2/program">RRDtrac</a>.
+<p>Browse the RRDtool SVN via <a href="http://oss.oetiker.ch/rrdtool-trac/browser/branches/1.2/program">RRDtrac</a>.
 Or if you want todo more than look ...</p>
 
 <pre>

@@ -49,6 +49,7 @@ while we wait for new material to arrive.</p>
 <h2>Commercial Applications</h2>
 
 #include "airwave.xml"
+#include "prefixmaster.xml"
 
 <h2>Add your own tool to this list</h2>
 
