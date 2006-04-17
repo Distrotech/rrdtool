@@ -17,6 +17,7 @@ while we wait for new material to arrive.</p>
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
 #include "rrdutils.xml"
+#include "toolsmith.xml"
 
 <h2>Free Applications</h2>
 
