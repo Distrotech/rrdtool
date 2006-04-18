@@ -116,6 +116,7 @@ div#googlead_right {
  * footer
  **************************/
 table#frame td#footcell {
+  padding-left: 40px;
 }
 
 div#address  {
