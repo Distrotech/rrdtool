@@ -47,16 +47,13 @@
 <br/>
 <br/>
 <a href="http://people.ee.ethz.ch/oetiker/wish"><img border="0" src="$(ROOT)/inc/button.png"/></a><br/>
-#<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-#<input type="hidden" name="cmd" value="_xclick"/>
-#<input type="hidden" name="business" value="tobias@oetiker.ch"/>
-#<input type="hidden" name="item_name" value="Tobi's OpenSource Projects MRTG / RRDtool / SmokePing"/>
-#<input type="hidden" name="item_number" value="appreciators"/>
-#<input type="hidden" name="no_note" value="1"/>
-#<input type="hidden" name="currency_code" value="USD"/>
-#<input type="hidden" name="tax" value="0"/>
-#<input type="image" src="https://www.paypal.com/images/x-click-but04.gif" name="submit" alt="Sponsor RRDtool with PayPal"/>
-#</form>
+<br/>
+<br/>
+<div>
+<iframe width="120" height="50" name="bandwidth" frameborder="0" src="$(ROOT)/hoster.html"></iframe>
+</div>
+<br/>
+<br/>
 </div>
 </td>
 <!-- ############################# -->
@@ -93,11 +90,11 @@ google_ad_height = 600;
 google_ad_format = "160x600_as";
 google_ad_type = "text";
 google_ad_channel ="5627785043";
-google_color_border = "616FC5";
-google_color_bg = "202020";     
-google_color_link = "66A5FF";      
-google_color_url = "FFBBE8";      
-google_color_text = "FFFFFF";
+google_color_border = "1A1A1A";
+google_color_bg = "303030";     
+google_color_link = "66A5E0";      
+google_color_url = "E0BBE8";      
+google_color_text = "D0D0D0";
 //--></script>
 <script type="text/javascript"
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">

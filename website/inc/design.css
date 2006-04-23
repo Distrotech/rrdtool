@@ -6,6 +6,7 @@ body {
   font-family: sans-serif;
   line-height: 1.5em;
 }
+
 /* hide old stuff */
 .legacy {
   display: none
@@ -107,9 +108,14 @@ div#body pre a{
 div#googlead_right {
   background-color: #1a1a1a;
   float: right;
-  padding-top: 31px;
-  padding-left: 15px;
+  margin-top: 31px;
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #404040;
   padding-right: 0px;
+  padding-bottom: 10px;
 }
 
 /**************************
