@@ -90,11 +90,11 @@ google_ad_height = 600;
 google_ad_format = "160x600_as";
 google_ad_type = "text";
 google_ad_channel ="5627785043";
-google_color_border = "1A1A1A";
-google_color_bg = "303030";     
-google_color_link = "66A5E0";      
-google_color_url = "E0BBE8";      
-google_color_text = "D0D0D0";
+google_color_border = "ffffff";
+google_color_bg = "f0f8ff";     
+google_color_link = "2c3fbf";      
+google_color_url = "6851b0";      
+google_color_text = "000000";
 //--></script>
 <script type="text/javascript"
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
@@ -133,7 +133,7 @@ LINE
 </small>
 </div>
 <perl>
-if ( -s "$(WML_SRC_FILENAME)" > 4000 ) {
+if ( -s "$(WML_SRC_BASENAME).en/html" > 15000 ) {
 print <<'GOOGLEAD';
 <p>
 <script type="text/javascript"><!--
@@ -143,11 +143,11 @@ google_ad_height = 90;
 google_ad_format = "728x90_as";
 google_ad_type = "text";
 google_ad_channel ="6085696737";
-google_color_border = "616FC5";
-google_color_bg = "202020";     
-google_color_link = "66A5FF";      
-google_color_url = "FFBBE8";      
-google_color_text = "FFFFFF";
+google_color_border = "ffffff";
+google_color_bg = "f0f8ff";     
+google_color_link = "2c3fbf";      
+google_color_url = "6851b0";      
+google_color_text = "000000";
 //--></script>
 <script type="text/javascript"
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">

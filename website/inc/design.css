@@ -1,6 +1,4 @@
 body {
-  background-color: white;
-  color: black;
   margin: 30px;
   padding: 0px;
   font-family: sans-serif;
@@ -18,7 +16,6 @@ body {
 table#frame  {
         width: 100%;
         border-collapse: collapse;
-        background-color: #1a1a1a;
 }
 
 table#frame td {
@@ -32,7 +29,6 @@ table#frame td {
  * body              
  **************************/
 div#body {
-  color: white;
   margin: 40px;
   margin-top: 80px;
 }
@@ -46,11 +42,10 @@ div#body h1 {
   font-size: 220%;
   border-bottom-style: solid;
   border-bottom-width: 4px;
-  border-bottom-color: #404040;
+  border-bottom-color: #808080;
 }
 
 div#body h2 { 
-  color: white;
   margin-top: 0.6em;
   margin-bottom: 0.1em;
 }
@@ -61,7 +56,7 @@ div#body a {
 }
 
 div#body a[name] {
-  color: white;
+  color: black;
 }
 
 div#body a:hover {
@@ -71,8 +66,12 @@ div#body a:hover {
 div#body h2 a,
 div#body h3 a,
 div#body h4 a,
-div#body h5 a {
-  color: white;
+div#body h5 a,
+div#body h2,
+div#body h3,
+div#body h4,
+div#body h5 {
+  color: #606060;
 }
 
 div#body dl dd {
@@ -97,23 +96,23 @@ div#body pre {
   border-style: solid;
   border-color: #bfbfbf;
   border-width: 1px;  
-  background-color: #606060;
+  background-color: #E8E8E8;
   padding: 1em;
 }
 
 div#body pre a{
-  color: white;
+  color: black;
 }
 
 div#googlead_right {
-  background-color: #1a1a1a;
+  background-color: white;
   float: right;
   margin-top: 31px;
   padding-left: 20px;
   margin-left: 20px;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #404040;
+  border-left-color: #808080;
   padding-right: 0px;
   padding-bottom: 10px;
 }
@@ -126,18 +125,15 @@ table#frame td#footcell {
 }
 
 div#address  {
-  float: right;
-  margin: 30px;
-  padding-right: 12px;
 }
 
 div#address small {
-  color: #b0b0b0;
+  color: #202020;
   font-size: 90%;
 }
 
 div#address a {
-  color: #b0b0b0;
+  color: #202020;
   text-decoration: none;
 }
 
@@ -147,11 +143,11 @@ div#address a {
 
 div#logo {
   position: absolute;
-  height: 62px;
-  width: 187px;
+  height: 78px;
+  width: 190px;
   right: 69px;
-  top: 60px;
-  background-image: url("rrdtool-theme.png");
+  top: 40px;
+  background-image: url("rrdtool-3dlogo.png");
 }
 
 /**************************
@@ -159,7 +155,7 @@ div#logo {
  **************************/
 
 div.rrdworld h3 {
-  background: #202050;
+  background: #E0E0F0;
   margin-top: 0.1em;
   margin-bottom: 0.3em;
   padding: 3px;  
@@ -169,7 +165,7 @@ div.rrdworld {
   border-style: solid;
   border-color: #bfbfbf;
   border-width: 1px;  
-  background-color: #404040;
+  background-color: #D0D0D0;
   padding: 1em;
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -198,12 +194,11 @@ div#mirrors a {
 table#frame td#leftcornercell,
 table#frame td#menucell {
   width: 10%;
-  background-color: #606060;
+  background-color: #F0F0F0;
 }
 
 div#menu {
   font-weight: normal;
-  color: white;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -253,15 +248,15 @@ div#menu ul ul ul li {
 }
 
 div#menu a:hover {
-  color: #a6a4f5;
+  color: #5c5b8a;
 }
 
 div#menu a:active {
-  color: #7b7aba;
+  color: #373672;
 }
 
 div#menu li div.selected {
-  color: white;
+  color: 1d255f;
   font-weight: bold;
 }
 
