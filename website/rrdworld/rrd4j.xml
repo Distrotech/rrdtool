@@ -1,12 +1,9 @@
 <rrdworld type="companion">
-
       <name> RRD4J </name>
     <author> Sasa Marcovic, Mathias Bogaert </author>
-<description> Rrd4j is a 100% pure java implementation of RRDTool
-</description>
+<description> Rrd4j is a 100% pure java implementation of RRDTool.</description>
   <homepage> https://rrd4j.dev.java.net/ </homepage>
       <year> 2006 </year><month> 2 </month>
    <license> LGPL </license>
 <email> m.bogaert@memenco.com </email> <!-- Author contact -->
-
 </rrdworld>
