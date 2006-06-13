@@ -48,6 +48,7 @@ while we wait for new material to arrive.</p>
 #include "tinygraph.xml"
 #include "torrus.xml"
 #include "tstat.xml"
+#include "zenoss.xml"
 
 <h2>Commercial Applications</h2>
 
