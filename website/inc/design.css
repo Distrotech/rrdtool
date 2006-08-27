@@ -1,8 +1,9 @@
 body {
-  margin: 30px;
+  margin: 10px;
   padding: 0px;
   font-family: sans-serif;
   line-height: 1.5em;
+  text-align: center;
 }
 
 /* hide old stuff */
@@ -14,8 +15,10 @@ body {
  * layout              
  **************************/
 table#frame  {
-        width: 100%;
+        width: 850px;
+        margin: 10px auto;
         border-collapse: collapse;
+        text-align: left;
 }
 
 table#frame td {
@@ -29,8 +32,10 @@ table#frame td {
  * body              
  **************************/
 div#body {
-  margin: 40px;
-  margin-top: 80px;
+  margin-left: 40px;
+  margin-right: 6px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 div#body h1 { 
@@ -107,12 +112,9 @@ div#body pre a{
 div#googlead_right {
   background-color: white;
   float: right;
-  margin-top: 31px;
+  margin-top: 5px;
   padding-left: 20px;
   margin-left: 20px;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #808080;
   padding-right: 0px;
   padding-bottom: 10px;
 }
@@ -142,11 +144,9 @@ div#address a {
  **************************/
 
 div#logo {
-  position: absolute;
+  float: right;
   height: 78px;
   width: 190px;
-  right: 69px;
-  top: 40px;
   background-image: url("rrdtool-3dlogo.png");
 }
 
@@ -177,6 +177,7 @@ div.rrdworld {
  **************************/
 
 div#mirrors {
+  float: left;
   padding: 3px;
   padding-left: 40px;
   font-size: 10px;

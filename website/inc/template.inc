@@ -21,10 +21,9 @@
 <link* REL="icon" HREF="$(ROOT)/inc/favicon.ico" TYPE="image/ico" />
 ..Title!>>RRDtool - Page without a Title<<..
 <title*>RRDtool - {#Title#}</title*>
-<!-- Andrew Clover is THE MAN. He made internet explorer more or less
-     more css2 compliant!  http://www.doxdesk.com/software/ -->
-<script type="text/javascript" src="$(ROOT)/inc/position.js"></script> <!-- left and right -->
-<script type="text/javascript" src="$(ROOT)/inc/fixed.js"></script>    <!-- fixed positioning -->
+<protect>
+<!--[if lt IE 7]><script src="$(ROOT)/inc/IE7/ie7-standard-p.js" type="text/javascript"></script><![endif]-->
+</protect>
 <style type="text/css">
 <!--/* <![CDATA[ */
 /* ie5 for mac thinks this comment does not end here because of the backslash \*/
@@ -69,8 +68,9 @@
 <A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
 ##<A HREF="http://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/<where/>">IE</A><!--Colm MacCárthaigh <colm.maccarthaigh@heanet.ie>-->
 ##<A HREF="http://rrdtool.cyclone.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
-#<A HREF="http://rrdtool.trexle.net/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
-#<A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
+<A HREF="http://rrdtool.trexle.net/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
+<A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
+<A HREF="http://rrdtool.PlaySystems.ro/<where/>">RO</a><!--dan.draghici@ulbsibiu.ro-->
 </div>
 <div id="logo">
 <div class="legacy">
@@ -82,24 +82,6 @@ RRDtool
 <!-- # BODY -->
 <!-- ############################# -->
 <div id="body">
-<div id="googlead_right">
-<script type="text/javascript"><!--
-google_ad_client = "pub-8135238818549668";
-google_ad_width = 160;
-google_ad_height = 600;
-google_ad_format = "160x600_as";
-google_ad_type = "text";
-google_ad_channel ="5627785043";
-google_color_border = "ffffff";
-google_color_bg = "f0f8ff";     
-google_color_link = "2c3fbf";      
-google_color_url = "6851b0";      
-google_color_text = "000000";
-//--></script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
 {#Body#}
 </div>
 </td>
@@ -133,7 +115,7 @@ LINE
 </small>
 </div>
 <perl>
-if ( -s "$(WML_SRC_BASENAME).en/html" > 15000 ) {
+if ( -s "$(WML_SRC_BASENAME).en.html" > 15000 ) {
 print <<'GOOGLEAD';
 <p>
 <script type="text/javascript"><!--
@@ -141,10 +123,10 @@ google_ad_client = "pub-8135238818549668";
 google_ad_width = 728;
 google_ad_height = 90;
 google_ad_format = "728x90_as";
-google_ad_type = "text";
+google_ad_type = "text_image";
 google_ad_channel ="6085696737";
 google_color_border = "ffffff";
-google_color_bg = "f0f8ff";     
+google_color_bg = "ffffff";     
 google_color_link = "2c3fbf";      
 google_color_url = "6851b0";      
 google_color_text = "000000";
@@ -174,6 +156,12 @@ res are missing, then the mirror may not have picked up the contents of the <a h
 #<a href="http://www.konqueror.org">Konqueror</a> aus dem KDE Projekt.
 #</de>
 </p> 
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-374525-1";
+urchinTracker();
+</script>
 </body>
 </html>
 

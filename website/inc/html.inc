@@ -9,6 +9,29 @@ $x =~ s/\\n/ /g; print $x; :>:#H1_FLAT#}
 <if <get-var title_is_set /> ""
    {#Title#:{#H1_FLAT#}:#Title#}
 />
+<div id="googlead_right">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8135238818549668";
+google_ad_width = 160; 
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "text_image";
+google_ad_channel ="5627785043";
+google_color_border = "ffffff";      
+google_color_bg = "ffffff";
+google_color_link = "0017C1"; 
+google_color_url = "270B83"; 
+google_color_text = "000000";
+#google_color_border = "717fe5";
+#google_color_bg = "F0F0F0";
+#google_color_link = "2c3fbf";
+#google_color_url = "6851b0";
+#google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 <restore subtitle />
 </define-tag>
 

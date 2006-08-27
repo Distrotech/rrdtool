@@ -6,27 +6,23 @@
 
 <H2>Logging &amp; Graphing</H2>
 
-<p>Some call it the industry standard data logging and graphing application.
-Others use it to write their very own full custom monitoring scripts.
-Most people will probably get in touch with RRDtool through some
-<a href="$(ROOT)/rrdworld/">third party</a> monitoring applications. You
-may have seen graphs like this:</p>
+<p>The industry standard data logging and graphing application.
+Use it to write your custom monitoring shell scripts or create whole
+applications using its Perl, Python or PHP bindings. Create graphs like this:</p>
 
 <p><img src="btdmd8.png"/></p>
 
-<P>RRD is the Acronym for Round Robin Database. RRD is a system to store and
+<P>RRD is the acronym for Round Robin Database. It is a system to store and
 display time-series data (i.e. network bandwidth, machine-room temperature,
-server load average). It stores the data in a very compact way that will not
-expand over time, and it can create beautiful graphs. It can be used
-via simple shell scripts or as a perl module.</P>
+server load average).</P>
 
 <H2>Download</H2>
 
-<P>RRDtool is available for <A HREF="download.en.html">download</A> from this site.
-Currently it compiles on a number of different Unix platforms as well as on
-Windows.</P>
+<P>RRDtool is available for <A HREF="download.en.html">download</A> from
+this site. It compiles on a number of different Linux and Unix platforms as
+well as on Microsoft Windows.</P>
 
-<h2>Upgrading from 1.0.x?</h2>
+<h2>Upgrading from 1.0.x ?</h2>
 
 <p>If you are curious about the new features in RRDtool 1.2. Check out the
 <a href="newin12.txt">RRDTOOL 1.2 NEWS</a> page.</p>
