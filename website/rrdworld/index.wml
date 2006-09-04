@@ -31,6 +31,7 @@ while we wait for new material to arrive.</p>
 #include "mailgraph.xml"
 #include "monitorix.xml"
 #include "munin.xml"
+#include "mpltd.xml"
 #include "netmrg.xml"
 #include "nmis-rrdtool.xml"
 #include "oreon.xml"
