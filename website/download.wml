@@ -8,8 +8,8 @@ You can download RRD tool from several places:
 <H2>Primary Distribution Point</H2>
 
 <UL>
- <LI><A HREF="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/?M=D">Stable Release</A></LI>
- <LI><A HREF="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/beta/?M=D">Development SnapShots</A></LI>
+ <LI><A HREF="http://oss.oetiker.ch/rrdtool/pub/?M=D">Stable Release</A></LI>
+ <LI><A HREF="http://oss.oetiker.ch/rrdtool/pub/beta/?M=D">Development SnapShots</A></LI>
 </UL>
 
 <p>You might want to read the <a href="doc/rrdbuild.en.html">build instructions</a> for inspiration on where to go after downloading the source.</p>
@@ -17,49 +17,28 @@ You can download RRD tool from several places:
 <H2>Mirror Sites</H2>
 
 <UL>
-##  <LI>SE <A HREF="http://ftp.sunet.se/pub/network/monitoring/rrdtool/">http://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
-  <LI>SI <A HREF="http://www.fastmirrors.org/rrdtool/">http://www.fastmirrors.org/rrdtool/</A> (Tomy Kurtis webadmin [at] fastmirrors.org)</LI>
-##  <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
-##  <LI>US <A HREF="ftp://ftp.exobit.org/pub/monitoring/rrdtool/">ftp://ftp.exobit.org/pub/monitoring/rrdtool</A> (Jeffrey Meltzer jeffrey@exobit.org)</LI>
-
-  <LI>CA <A HREF="ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool">ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool</A> ( William F. Maton Sotomayor wmaton@ryouko.imsb.nrc.ca)</LI>
-##  <LI>AU <A HREF="ftp://ftp.mirrors.wiretapped.net/pub/rrdtool/">ftp://ftp.mirrors.wiretapped.net/pub/rrdtool/</A> (Grant Bayley gbayley [at] ausmac.net)</LI>
-  <LI>AU <A HREF="http://the.wiretapped.net/security/network-monitoring/rrdtool/">http://www.mirrors.wiretapped.net/security/network-monitoring/rrdtool/</A> (Grant Bayley gbayley [at] ausmac.net)</LI>
-  <LI>GR <A HREF="http://ftp.ntua.gr/pub/net/monitoring/rrdtool/">http://ftp.ntua.gr/pub/net/monitoring/rrdtool/</A> (Panagiotis Christias P.Christias@noc.ntua.gr)</LI>
-  <LI>GR <A HREF="ftp://ftp.ntua.gr/pub/net/monitoring/rrdtool/">ftp://ftp.ntua.gr/pub/net/monitoring/rrdtool/</A> (Panagiotis Christias P.Christias@noc.ntua.gr)</LI>
-##  <LI>BE <A HREF="ftp://ftp.grmbl.com/pub/webtools/rrdtool/">ftp://ftp.grmbl.com/pub/webtools/rrdtool/</A> (Bram Dumolin bram@grmbl.be)</LI>
-  <LI>IE <A HREF="ftp://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/pub/">(http,ftp,rsync)://ftp.heanet.ie/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/pub</A> (Colm MacCárthaigh colm.maccarthaigh@heanet.ie)</LI>
   <LI>BR <A HREF="ftp://ftp.pucpr.br/rrdtool/">ftp://ftp.pucpr.br/rrdtool/</A>. (Rafael Gustavo Gassner rafael.gassner@pucpr.br)</LI>
-  <LI>RO <A HREF="ftp://ftp.iasi.roedu.net/pub/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/pub/">ftp://ftp.iasi.roedu.net/pub/mirrors/people.ee.ethz.ch/%257Eoetiker/webtools/rrdtool/pub/</A>. (RoEduNet Iasi Branch ftpadmin@iasi.roedu.net)</LI>
-  <LI>RO <A HREF="http://ftp.idilis.ro/mirrors/rrdtool/">http://ftp.idilis.ro/mirrors/rrdtool/</A> (Dragos Nitu mirrors@idilis.net)</LI>
-  <LI>TR <A HREF="http://godel.cs.bilgi.edu.tr/mirror/rrdtool/">http://godel.cs.bilgi.edu.tr/mirror/rrdtool/</A> (Can Burak Cilingir canburak@cs.bilgi.edu.tr)</LI>
+  <LI>CA <A HREF="ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool">ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool</A> ( William F. Maton Sotomayor wmaton@ryouko.imsb.nrc.ca)</LI>
+  <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
   <LI>NL <A HREF="ftp://ftp.bit.nl/mirror/rrdtool/">ftp://ftp.bit.nl/mirror/rrdtool/</A> (BIT, The Netherlands mirror@bit.nl)</LI>
-  <LI>US <A HREF="ftp://ftp.subterrain.net/pub/rrdtool/">ftp://ftp.subterrain.net/pub/rrdtool/</a> (Justin Lundy subterrain.net)</LI>
-  <LI>US <A HREF="http://www.subterrain.net/tools/visualization/rrdtool/">http://www.subterrain.net/tools/visualization/rrdtool/</a> (Justin Lundy subterrain.net)</LI>
-  <LI>CR <A HREF="http://rrdtool.hostarica.com">http://rrdtool.hostarica.com</a> ( Jorge Guntanis jorge@hostarica.com )</LI>
-##  <LI>NL <A HREF="ftp://ftp.cbn.net.id/mirror/rrdtool/">ftp://ftp.cbn.net.id/mirror/rrdtool/</A> (Achmad Yahya Sjarifuddin yahya@cbn.net.id)</LI>
+  <LI>RO <A HREF="http://ftp.idilis.ro/mirrors/rrdtool/">http://ftp.idilis.ro/mirrors/rrdtool/</A> (Dragos Nitu mirrors@idilis.net)</LI>
+  <LI>SE <A HREF="ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/">ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
+  <LI>SI <A HREF="http://www.fastmirrors.org/rrdtool/">http://www.fastmirrors.org/rrdtool/</A> (Tomy Kurtis webadmin [at] fastmirrors.org)</LI>
 </UL>
 
 <H2>Binary Distributions</H2>
 
 <UL>
-    <LI>AIX by <A HREF="mailto:zoran.majcenic_inet.hr">Zoran Majcenic</A> -- <A HREF="http://www.inet.hr/zmp/ibm/rrdtool">http://www.inet.hr/zmp/ibm/rrdtool</A></LI>
-##  <LI>FreeBSD Package by <A HREF="mailto:Jarrod.Sayers_netlead.com.au">Jarrod Sayers</A> -- <A HREF="http://people.netlead.com.au/~jarrod/rrdtool/">http://people.netlead.com.au/~jarrod/rrdtool/</A></LI> -->
-##  <LI>Linux x86 RPM by <A HREF="mailto:hgomez_users.sourceforge.net">Henri Gomez</A> -- <A HREF="http://ftp.falsehope.com/home/gomez/">http://ftp.falsehope.com/home/gomez/</A></LI>
-##  <LI>Linux x86 RPM by <A HREF="mailto:rtfman_eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadLinux.html">http://homepage.eircom.net/~rtfman/download/downloadLinux.html</A></LI>
-##  <LI>Linux RH 7.2 x86 RPM by <A HREF="mailto:austin_digitalroadkill.net">Austin Gonyou</A> -- <A HREF="http://www.digitalroadkill.net/public/rrdtool">http://www.digitalroadkill.net/public/rrdtool</A></LI>
-##  <LI>Mac OS X by <A HREF="mailto:mgalvin001_netscape.net">Matt T. Galvin</A> -- <A HREF="pub/">local</A></LI>
-  <LI>Solaris 8/9 SPARC/X86 <A HREF="mailto:ihsan_blastwave.org">Ihsan Dogan</A> -- <A HREF="http://www.blastwave.org/packages.php/rrdtool">http://www.blastwave.org/packages.php/rrdtool</A></LI>
-##  <LI>Solaris 7 x86 <A HREF="mailto:rtfman_eircom.net">John</A> -- <A HREF="http://homepage.eircom.net/~rtfman/download/downloadx86.html">http://homepage.eircom.net/~rtfman/download/downloadx86.html</A></LI>
-  <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
-#  <LI>Native Windows <A HREF="pub/?M=D">http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/</a></LI>
-  <LI>Native Windows <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
-  <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
-  <LI>Fink OSX <A  HREF="http://pdb.finkproject.org/pdb/package.php/rrdtool">http://pdb.finkproject.org/pdb/package.php/rrdtool</a></li>
+ <LI>AIX by <A HREF="mailto:zoran.majcenic_inet.hr">Zoran Majcenic</A> -- <A HREF="http://www.inet.hr/zmp/ibm/rrdtool">http://www.inet.hr/zmp/ibm/rrdtool</A></LI>
+ <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
+ <LI>Redhat/Fedora <A href="http://dag.wieers.com/packages/rrdtool/">http://dag.wieers.com/packages/rrdtool/</a></li>
+ <LI>Native Windows 1 <A HREF="pub/?M=D">http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/</a></LI>
+ <LI>Native Windows 2 <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
+ <LI>NetWare <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
+ <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
 </UL>
 
 <H2>Anonymous SVN for RRDtool</H2>
-
 
 <p>RRDtool source is stored in a subversion repository with anonymous access.</p>
 

@@ -43,7 +43,7 @@ mirror by &lt;a target="_top" href="http://YOUR.SITE"&gt;Company&lt;/a&gt;
 HEAD
 
 for xt in html png gif ico css htaccess js; do
-  gfind . -name "*.$xt" -not -name stat"*" -not -name "hoster*" -exec printf '<a href="{}">.</a>' \; >> mirror.html
+  find . -name "*.$xt" -not -name stat"*" -not -name "hoster*" -exec printf '<a href="{}">.</a>' \; >> mirror.html
 done
 echo "</body></html>"                                     >> mirror.html
 

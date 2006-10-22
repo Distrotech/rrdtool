@@ -14,6 +14,7 @@ while we wait for new material to arrive.</p>
 <h2>RRDtool Companions</h2>
 
 #include "drraw.xml"
+#include "dsreport.xml"
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
 #include "rrdutils.xml"
@@ -28,6 +29,7 @@ while we wait for new material to arrive.</p>
 #include "bigsis_rrdworld.xml"
 #include "cacti.xml"
 #include "collectd.xml"
+#include "eluna_graph_system.xml"
 #include "mailgraph.xml"
 #include "monitorix.xml"
 #include "munin.xml"
