@@ -4,6 +4,7 @@
 
 <H1>RRDtool Gallery</H1>
 
+#include "load.xml"
 #include "mmh11.xml"
 #include "meteo-igf.xml"
 #include "btdmd8.xml"

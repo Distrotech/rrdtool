@@ -70,5 +70,5 @@ google_color_text = "000000";
 GOOGLEAD
 }
 </perl>
-<h2*>%body</h2*>
+<h2* %attributes>%body</h2*>
 </define-tag>

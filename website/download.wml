@@ -46,7 +46,7 @@ You can download RRD tool from several places:
 Or if you want todo more than look ...</p>
 
 <pre>
-svn ls -R svn://svn.ee.ethz.ch/rrdtool/
+svn ls -R svn://svn.oetiker.ch/rrdtool/
 </pre>
 
 <p>tells you what is in the repository. Normally, development will happen in
@@ -62,7 +62,7 @@ libtool installed for this to work.</p>
 
 <p>To get the latest chenges from the current 1.2 branch use this:</p>
 <pre>
-svn checkout svn://svn.ee.ethz.ch/rrdtool/branches/1.2/program
+svn checkout svn://svn.oetiker.ch/rrdtool/branches/1.2/program
 mv program rrdtool-1.2
 cd rrdtool-1.2
 ./MakeMakefile

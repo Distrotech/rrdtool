@@ -45,7 +45,7 @@
 <br/>
 <br/>
 <br/>
-<a href="http://people.ee.ethz.ch/oetiker/wish"><img border="0" src="$(ROOT)/inc/button.png"/></a><br/>
+<a href="http://tobi.oetiker.ch/wish"><img border="0" src="$(ROOT)/inc/button.png"/></a><br/>
 <br/>
 <br/>
 <div>
@@ -133,7 +133,7 @@ foreach my $l (qw($(LANGS))){
 	my $text=$1; my $url=$2; $url =~ s/<(\S+)(?:\@|_at_)(\S+)>/mailto:$1\@removethis.$2/;
 	my $LANG = uc("LANG_$l");
 	print <<LINE
-[$LANG:$date | <A HREF="$url">$text</A>:$LANG]
+[$LANG:$date | <A HREF="$url">$text</A> | <A HREF="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>:$LANG]
 LINE
 }
 </protect>

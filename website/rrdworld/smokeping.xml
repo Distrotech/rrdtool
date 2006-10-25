@@ -7,7 +7,7 @@
 	web interface and powerful plugin system for extensibility with new
 type of latency probes and alerts.
 </description>
-   <homepage> http://people.ee.ethz.ch/oetiker/webtools/smokeping </homepage> 
+   <homepage> http://oss.oetiker.ch/smokeping </homepage> 
        <year> 2005 </year><month> 9 </month> <!-- Entry creation date -->
     <license> GPL </license>
 

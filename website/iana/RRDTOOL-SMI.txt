@@ -21,7 +21,7 @@ rrdtool MODULE-IDENTITY
                 E-mail: tobi@oetiker.ch
 
                 RRD Tool Information:
-                  http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
+                  http://oss.oetiker.ch/rrdtool/
 		"
 	DESCRIPTION
 		"The Structure of RRDTool fellow projects"

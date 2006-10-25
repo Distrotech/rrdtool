@@ -1,8 +1,6 @@
 DirectoryIndex index.en.html index.html
 ErrorDocument 404 http://oss.oetiker.ch/rrdtool/404.var
 RewriteEngine On
-RewriteRule pub/(.*) http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/$1 [R=301,L]
-RewriteRule pub$ http://people.ee.ethz.ch/oetiker/webtools/rrdtool/pub/ [R=301,L]
 RewriteRule index.html http://oss.oetiker.ch/rrdtool/ [R=302,L]
 RewriteRule download.html http://oss.oetiker.ch/rrdtool/download.en.html [R=302,L]
 <FilesMatch ".htaccess">
