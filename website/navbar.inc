@@ -1,6 +1,6 @@
 <nav:bar 0     main "">
  <nav:but welcome        "Welcome"                 index                         />
- <nav:but down           "Download"                download                      />
+ <nav:but down           "Download"                download            pub       />
  <nav:but license        "License"                 license                       />
  <nav:but doc            "Documentation"           doc/index 	       doc       />
  <nav:but tut            "Tutorials"               tut/index           tut       />
@@ -16,6 +16,11 @@
 
 <nav:bar 1 doc           "doc/">
 #include "doc/navbar.inc"
+</nav:bar>
+
+<nav:bar 1 pub           "pub/">
+<nav:but down_pub        "/pub" 		"./" />
+<nav:but down_contrib    "/contrib"       contrib/ />
 </nav:bar>
 
 <nav:bar 1 tut           "tut/">

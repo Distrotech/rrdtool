@@ -34,6 +34,7 @@ while we wait for new material to arrive.</p>
 #include "monitorix.xml"
 #include "munin.xml"
 #include "mpltd.xml"
+#include "n2rrd.xml"
 #include "netmrg.xml"
 #include "nmis-rrdtool.xml"
 #include "oreon.xml"
@@ -54,6 +55,7 @@ while we wait for new material to arrive.</p>
 #include "tinygraph.xml"
 #include "torrus.xml"
 #include "tstat.xml"
+#include "webminstats.xml"
 #include "zenoss.xml"
 
 <h2>Commercial Applications</h2>

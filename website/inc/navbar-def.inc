@@ -61,7 +61,7 @@
 </define-tag>
 
 <define-tag nav:but>
-   <if <match "%2" "http://|html$|\?" />
+   <if <match "%2" "http://|html$|\?|/$|^$" />
    <navbar:button id="%0" 
                     url="%2" 
                     txt="%1"
