@@ -39,7 +39,7 @@ mobilerrd  OBJECT-IDENTITY
 	STATUS	current
 	DESCRIPTION
 		"RRDtool within KPN Mobile. 
-                 Contact w.a.siebring@kpn.com
+                 Contact mobilerrd{at}12move.nl
                 "
 	::= { rrdtool 2 }
 	
