@@ -4,11 +4,13 @@
 
 <H1>RRDtool Gallery</H1>
 
-#include "load.xml"
-#include "andrey.xml"
-#include "termonit.xml"
 #include "mmh11.xml"
+#include "docsis_upstream_utilization.xml"
+#include "andrey.xml"
+#include "rrdtool-xmas.xml"
+#include "termonit.xml"
 #include "meteo-igf.xml"
+#include "load.xml"
 #include "btdmd8.xml"
 #include "576_nodes.xml"
 #include "windvaan.xml"
@@ -27,7 +29,7 @@
 #include "flux.xml"
 #include "spamd_rrdgraph.xml"
 #include "uw-hep-condor.xml"
-#include "rrdtool-xmas.xml"
+
 
 <h2>Add your own graphs to this list</h2>
 
