@@ -45,7 +45,15 @@
 <br/>
 <br/>
 <br/>
-<a href="http://tobi.oetiker.ch/wish"><img border="0" src="$(ROOT)/inc/button.png"/></a><br/>
+<p><b>Gold Sponsors</b></p>
+<p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="RRDtool Gold Sponsor" src="$(ROOT)/inc/rrdtool-gold.png"/></a></p>
+<p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="RRDtool Gold Sponsor" src="$(ROOT)/inc/rrdtool-gold.png"/></a></p>
+<p><a href="$(ROOT)/sponsor.<lang:star: */>.html">Silver Sponsors ...</a></p>
+<br/>
+<br/>
+<div>
+<a href="http://tobi.oetiker.ch/wish/"><img border="0" alt="Make Tobi Happy" src="$(ROOT)/inc/happy-tobi.png"/></a>
+</div>
 <br/>
 <br/>
 <div>

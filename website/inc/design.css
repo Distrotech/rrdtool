@@ -15,7 +15,7 @@ body {
  * layout              
  **************************/
 table#frame  {
-        width: 850px;
+        width: 950px;
         margin: 10px auto;
         border-collapse: collapse;
         text-align: left;
@@ -201,21 +201,25 @@ table#frame td#menucell {
 div#menu {
   font-weight: normal;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 14px;
-  width: 120px;
+  width: 200px;
   line-height: 1em;
 }
 
 div#menu li {
-  margin-top: 0.7em;
-  margin-bottom: 0.7em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  border-top-color: #444;
 }
 
 div#menu li li {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top-color: #ccc;
 }
 
 div#menu a {
@@ -242,6 +246,16 @@ div#menu ul ul {
 div#menu ul a,
 div#menu ul div.selected {
   padding-left: 0px;
+}
+
+div#menu ul ul {
+  margin-top: 3px;
+}
+
+div#menu > ul {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: #888;
 }
 
 div#menu ul ul ul li {

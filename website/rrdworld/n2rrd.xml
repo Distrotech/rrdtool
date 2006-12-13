@@ -11,7 +11,7 @@ RRA (Round Robin Archives). The resulting archives can later be viewed by any RR
 
    <!-- Optional -->
 
-   <livesite> http://mon.diglinks.com/cgi-bin/rrd2graph.cgi?hostname=demo&service=icmp </livesite>
+   <livesite> http://mon.diglinks.com/cgi-bin/rrd2graph.cgi?hostname=demo&amp;service=icmp </livesite>
       <email> badri@diglinks.com </email> <!-- Author contact -->
 
 </rrdworld>
