@@ -1,13 +1,12 @@
 <rrdworld type="application">
- 
-       <name> RRDWeather </name>
-     <author> Sébastien Wains </author>
-<description> RRDWeather is a weather monitoring tool based on RRDtool and weather.com.
-It regularly collects weather information from a XML file and put the data together in nice graphs.</description>
-   <homepage> http://www.wains.be/projects/rrdweather/ </homepage> 
-       <year> 2005 </year><month> 9 </month>
-    <license> GPL </license>
-   <livesite> http://www.wains.be/cgi-bin/weather.cgi </livesite> 
-      <email> sebastien@wains.be </email>
+
+	<name> RRDWeather </name>
+	<author> Sébastien Wains </author>
+	<description> RRDWeather is a set of scripts working with RRDtool and weather.com.
+RRDWeather collects weather info from the web on a regular basis and puts it in RRDtool graphs.</description>
+	<homepage> http://www.wains.be/projects/rrdweather/ </homepage>
+	<year> 2005 </year><month> 9 </month>
+	<license> GPL </license>
+	<livesite> http://www.wains.be/cgi-bin/weather.cgi </livesite>
 
 </rrdworld>
