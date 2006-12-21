@@ -7,7 +7,7 @@
 href="http://it.oetiker.ch/monitoring/support.var">customer specific add-on
 features and support contracts</a>. Since this work is focused towards the
 customers requirments this does not leave much room for general improvment.
-If you profit from MRTG and want to support the project as a whole. You
+If you profit from RRDtool and want to support the project as a whole. You
 could <a href="http://it.oetiker.ch/monitoring/sponsoring.var">become a
 sponsor</a>!</p>
 
@@ -16,7 +16,8 @@ sponsor</a>!</p>
 <p>
 # Johannes Dagemark <jd@op5.se> Wed, 13 Dec 2006 16:20:01 +0100
 <a href="http://www.op5.com"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/op5logoweb101x51.gif"/></a>&nbsp;
-<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>&nbsp;
+# Felix Schueren <felix.schueren@hosteurope.de> Thu, 21 Dec 2006 12:24:51 +0100
+<a href="http://www.hosteurope.de/"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>&nbsp;
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
 </p>
@@ -27,7 +28,7 @@ sponsor</a>!</p>
 
 <h2>Other means for making Tobi happy</h2>
 
-<p>If you like MRTG and want to show me your appreciation personally, have a look
+<p>If you like RRDtool and want to show me your appreciation personally, have a look
 at my <a HREF="http://tobi.oetiker.ch/wish">media wishlist</a>.
 Please put your <b>eMail</b> address into the the message area, so that I
 can thank you for your present. I do keep a list of people who sent me
