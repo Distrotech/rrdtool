@@ -30,6 +30,7 @@ while we wait for new material to arrive.</p>
 #include "cacti.xml"
 #include "collectd.xml"
 #include "eluna_graph_system.xml"
+#include "efw-community.xml"
 #include "mailgraph.xml"
 #include "monitorix.xml"
 #include "munin.xml"
