@@ -19,7 +19,7 @@ while we wait for new material to arrive.</p>
 #include "weathermap4rrd.xml"  
 #include "rrdutils.xml"
 #include "rrd4j.xml"
-#include "toolsmith.xml"
+# #include "toolsmith.xml"
 
 <h2>Free Applications</h2>
 
