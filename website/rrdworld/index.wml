@@ -54,6 +54,7 @@ while we wait for new material to arrive.</p>
 #include "serverstats.xml"
 #include "systemgraph.xml"
 #include "tinygraph.xml"
+#include "toolsmith.xml"
 #include "torrus.xml"
 #include "tstat.xml"
 #include "webminstats.xml"
