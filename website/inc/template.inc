@@ -46,7 +46,7 @@
 <br/>
 <br/>
 <p><b>Gold Sponsors</b></p>
-<p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="RRDtool Gold Sponsor" src="$(ROOT)/inc/rrdtool-gold.png"/></a></p>
+<p><a href="http://www.groundworkopensource.com/"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
 <p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="RRDtool Gold Sponsor" src="$(ROOT)/inc/rrdtool-gold.png"/></a></p>
 <p><a href="$(ROOT)/sponsor.<lang:star: */>.html">Silver Sponsors ...</a></p>
 <br/>
