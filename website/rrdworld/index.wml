@@ -7,10 +7,6 @@
 <p>A whole ecosystem of tools have sprung up around rrdtool. From tiny
 add-ons to big applications or even replacements for rrdtool itself.</p>
 
-<p>You can checkout the <a
-href="http://people.ee.ethz.ch/oetiker/webtools/rrdtool-1.0.x/rrdworld/">old-site</a>
-while we wait for new material to arrive.</p>
-
 <h2>RRDtool Companions</h2>
 
 #include "drraw.xml"
@@ -53,11 +49,13 @@ while we wait for new material to arrive.</p>
 #include "smokeping.xml"
 #include "serverstats.xml"
 #include "systemgraph.xml"
+#include "thermometer.xml"
 #include "tinygraph.xml"
 #include "toolsmith.xml"
 #include "torrus.xml"
 #include "tstat.xml"
 #include "webminstats.xml"
+#include "unnoc.xml"
 #include "zenoss.xml"
 
 <h2>Commercial Applications</h2>

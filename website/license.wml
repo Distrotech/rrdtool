@@ -14,7 +14,7 @@ of it) under a license other than the GNU GPL.</P>
 <p>If you want to use RRDtool with an opensouce tool that has a GPL
 incompatible license, you may be able to get around the problem thanks to
 the <a
-href="http://people.ee.ethz.ch/~oetiker/webtools/rrdtool-trac/browser/branches/1.2/program/COPYRIGHT">FLOSS
+href="http://oss.oetiker.ch/rrdtool-trac/browser/branches/1.2/program/COPYRIGHT">FLOSS
 License Exception</a> in the RRDtool license.</p>
 
 <H2>Give Credit</H2>
