@@ -1,15 +1,16 @@
 <rrdworld type="application"
-          icon="monitorix.png" > <!-- Size 100x66 -->
+          icon="monitorix.png" > <!-- Size 155x40 -->
  
        <name> Monitorix </name>
      <author> Jordi Sanfeliu </author>
-<description> Monitorix is a free, open source system monitoring tool designed to monitorize as many services as it can. At this time it monitors from the CPU load and temperatures to the users using the system. Network devices activity and network services demand are too monitorized. </description>
+<description>Monitorix is a lightweight monitoring tool designed to monitor as many services as it can. At this time, it monitors from the CPU load and temperatures to the users on the system. Network device activity, network service demand, kernel usage and even the devices' interrupt activity are also monitored. It uses RRDtool as its logging and graphing back-end. The current status of any corporate UNIX/Linux server with Monitorix installed can be accessed via a Web browser. </description>
    <homepage> http://www.monitorix.org </homepage> 
        <year> 2005 </year><month> 9 </month> <!-- Entry creation date -->
     <license> GPL </license>
 
    <!-- Optional -->   
 
-      <email> jordi@fibranet.com </email> <!-- Author contact -->
+   <livesite> http://www.fibranet.cat/monitorix/ </livesite> 
+      <email> jordi@fibranet.cat </email> <!-- Author contact -->
 
 </rrdworld>
