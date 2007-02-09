@@ -1,5 +1,5 @@
 <rrdworld type="companion|application"
-          icon="prbLogo.png" > <!-- Size 88x56 -->
+          icon="prb.png" > <!-- Size 88x56 -->
 
        <name> p|r|b php rrd browser </name>
      <author> Guillaume Fontaine ** </author>
