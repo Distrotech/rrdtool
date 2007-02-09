@@ -38,6 +38,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "ourmon.xml"
 #include "ow.xml"
 #include "ozmonitor.xml"
+#include "prb.xml"
 #include "rrdbot.xml"
 #include "rrdcgi.xml"
 #include "rrdstats.xml"
