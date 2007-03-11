@@ -49,6 +49,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "snm_at_rrdworld.xml"
 #include "smokeping.xml"
 #include "serverstats.xml"
+#include "statsdawg.xml"
 #include "systemgraph.xml"
 #include "thermometer.xml"
 #include "tinygraph.xml"
