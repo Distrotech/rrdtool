@@ -1,0 +1,15 @@
+<rrdworld type="companion"
+          icon="observer.png" > <!-- Size 60x59 -->
+ 
+       <name> Project Observer </name>
+     <author> Adam Armstrong </author>
+<description> Project Observer is an autodiscovering network management/monitoring system using rrdtool to draw graphs. Cisco network hardware can be automatically discovered based on CDP data collected via SNMP. It is also capable of automatically generating network infrastructure diagrams using Graphviz. </description>
+   <homepage> http://www.project-observer.org </homepage> 
+       <year> 2007 </year><month> 3 </month> <!-- Entry creation date -->
+    <license> BSD </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://demo.project-observer.org </livesite> 
+      <email> adama@memetic.org </email> <!-- Author contact -->
+</rrdworld>
