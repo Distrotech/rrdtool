@@ -5,6 +5,22 @@ Date:    2007-04-10
 Status Report on RRDtool OSS Project
 ====================================
 
+RRDtool work for 2007 is sponored by these companies:
+
+Gold Sponors: 
+
+* GroundWork Open Source - IT Monitoring & Network Solutions
+  www.groundworkopensource.com
+
+* ZenOSS - Open Source Enterprise Monitoring
+  www.zenoss.com
+
+Silver Sponsors:
+
+* op5 - Systems and Network Monitoring 
+* Host Europe - World Class Internet Hosting & Services
+* Contego Solutions - Managed Firewall, Managed VPN, and Secure Data Hosting
+
 Current Activities
 ------------------
 
@@ -53,5 +69,6 @@ Planned Activities
 
 * Maintenance of series 1.2.x
 
+--
 Tobi Oetiker, Olten, Switzerland
 2007-04-10
