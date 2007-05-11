@@ -36,6 +36,7 @@ You can download RRD tool from several places:
  <LI>Native Windows 2 <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
  <LI>NetWare <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
  <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
+ <LI>Solaris <A HREF="http://www.sunfreeware.com">http://www.sunfreeware.com</a></LI>
 </UL>
 
 <H2>Anonymous SVN for RRDtool</H2>

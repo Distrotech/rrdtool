@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "ups_voltage_month.xml"
 #include "docsis_upstream_utilization.xml"
 #include "andrey.xml"
 #include "rrdtool-xmas.xml"
