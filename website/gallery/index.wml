@@ -5,6 +5,9 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+
+#include "stream-pop.xml"
+#include "n20e-daily.xml"
 #include "ups_voltage_month.xml"
 #include "docsis_upstream_utilization.xml"
 #include "andrey.xml"
