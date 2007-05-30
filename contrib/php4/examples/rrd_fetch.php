@@ -42,7 +42,7 @@
       for($i = 0; $i < count($ret[data]); $i++)
       {
           $tmp = $ret[data][$i];
-          echo "$hi\n";
+          echo "$tmp\n";
       }
   }
   else

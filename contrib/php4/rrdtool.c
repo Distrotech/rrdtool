@@ -34,14 +34,21 @@ function_entry rrdtool_functions[] = {
 };
 
 zend_module_entry rrdtool_module_entry = {
-	"RRDTool",
-	rrdtool_functions,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	PHP_MINFO(rrdtool),
-	STANDARD_MODULE_PROPERTIES,
+#if ZEND_EXTENSION_API_NO >= 220050617
+	STANDARD_MODULE_HEADER_EX, NULL,
+	NULL, /* dependencies */
+#else
+	STANDARD_MODULE_HEADER,
+#endif
+	"RRDTool", /* name */
+	rrdtool_functions, /* functions */
+	NULL, /* module_startup_func */
+	NULL, /* module_shutdown_func */
+	NULL, /* request_startup_func */
+	NULL, /* request_shutdown_func */
+	PHP_MINFO(rrdtool), /* info_func */
+	NO_VERSION_YET,
+	STANDARD_MODULE_PROPERTIES
 };
 
 #ifdef COMPILE_DL_RRDTOOL
@@ -269,6 +276,7 @@ PHP_FUNCTION(rrd_graph)
 	zval *p_calcpr;
 	HashTable *args_arr;
 	int i, xsize, ysize, argc;
+	double ymin, ymax;
 	char **argv, **calcpr;
     
 
@@ -316,11 +324,13 @@ PHP_FUNCTION(rrd_graph)
 		}
    
 		optind = 0; opterr = 0; 
-		if ( rrd_graph(argc-1, &argv[1], &calcpr, &xsize, &ysize) != -1 )
+		if ( rrd_graph(argc-1, &argv[1], &calcpr, &xsize, &ysize, NULL, &ymin, &ymax) != -1 )
 		{
 			array_init(return_value);
 			add_assoc_long(return_value, "xsize", xsize);
 			add_assoc_long(return_value, "ysize", ysize);
+			add_assoc_double(return_value, "ymin", ymin);
+			add_assoc_double(return_value, "ymax", ymax);
 
 			MAKE_STD_ZVAL(p_calcpr);
 			array_init(p_calcpr);

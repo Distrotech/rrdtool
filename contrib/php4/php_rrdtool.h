@@ -12,6 +12,10 @@
 #ifndef _PHP4_RRDTOOL_H
 #define _PHP4_RRDTOOL_H
 
+#ifdef HAVE_CONFIG_H
+#include "php_config.h"
+#endif
+
 #if COMPILE_DL
 #undef HAVE_RRDTOOL
 #define HAVE_RRDTOOL 1
