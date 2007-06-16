@@ -1159,6 +1159,7 @@ if test "$PHP_RRDTOOL" != "no"; then
 
   cat >> confdefs.h <<\EOF
 #define HAVE_RRDTOOL 1
+#define HAVE_RRD_12X 1
 EOF
 
 
