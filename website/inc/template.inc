@@ -105,7 +105,7 @@ RRDtool
 <perl>
 if ( -s "$(WML_SRC_BASENAME).wml" > 4000 ){
 print <<'GOOGLEAD';
-<div align="right" style="clear:right">
+<div style="clear:right">
 <script type="text/javascript"><!--
 google_ad_client = "pub-8135238818549668";
 google_ad_width = 300;
@@ -113,10 +113,10 @@ google_ad_height = 250;
 google_ad_format = "300x250_as";
 google_ad_type = "text_image";
 google_ad_channel ="6085696737";
-google_color_border = "E6E6E6";
-google_color_bg = "f8f8f8";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
 google_color_link = "2c3fbf";
-google_color_url = "6851b0";
+google_color_url = "000000";
 google_color_text = "000000";
 //--></script>
 <script type="text/javascript"

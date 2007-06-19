@@ -9,6 +9,7 @@
 #include "stream-pop.xml"
 #include "n20e-daily.xml"
 #include "ups_voltage_month.xml"
+#include "temp-poprs.xml"
 #include "docsis_upstream_utilization.xml"
 #include "andrey.xml"
 #include "rrdtool-xmas.xml"

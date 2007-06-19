@@ -4,15 +4,18 @@
 
 <H1>About RRDtool</H1>
 
-<div style="float:right"><a style="border-width: 0px" href="http://www.oetiker.ch/press"><img src="award-white.png" border="0"/></a></div>
+#<div style="float:right"><a style="border-width: 0px" href="http://www.oetiker.ch/press"><img src="award-white.png" border="0"/></a></div>
+
+<H2>News</H2>
+
+Read about RRDtool 1.3 development on the 
+<a href="http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13">RRDtool Wiki</a>.
 
 <H2>Logging &amp; Graphing</H2>
 
 <p>The industry standard data logging and graphing application.
 Use it to write your custom monitoring shell scripts or create whole
 applications using its Perl, Python or PHP bindings. Create graphs like this:</p>
-
-<p><img src="btdmd8.png"/></p>
 
 <P>RRD is the acronym for Round Robin Database. It is a system to store and
 display time-series data (i.e. network bandwidth, machine-room temperature,
@@ -24,10 +27,7 @@ server load average).</P>
 this site. It compiles on a number of different Linux and Unix platforms as
 well as on Microsoft Windows.</P>
 
-<h2>Upgrading from 1.0.x ?</h2>
-
-<p>If you are curious about the new features in RRDtool 1.2. Check out the
-<a href="newin12.txt">RRDTOOL 1.2 NEWS</a> page.</p>
+<p><img src="btdmd8.png"/></p>
 
 <H2>Sponsorship and Appreciators</H2>
 

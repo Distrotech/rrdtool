@@ -13,9 +13,11 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "dsreport.xml"
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
+#include "weathermap_rrdworld.xml"
 #include "rrdutils.xml"
 #include "rrd4j.xml"
-# #include "toolsmith.xml"
+#include "toolsmith.xml"
+#include "rrdcreator.xml"
 
 <h2>Free Applications</h2>
 
