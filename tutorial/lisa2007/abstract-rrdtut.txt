@@ -1,0 +1,35 @@
+Linux Forum 2007 Tutorial
+
+RRDtool as a Communication Tool
+===============================
+A tutorial by Tobias Oetiker
+
+Abstract
+--------
+Over the last few years RRDtool has become the standard method for handling
+time-series data in the networking area. It takes care of all the work
+related to data storage and presentation. Many users only access
+RRDtool through some front end Application like Cacti or Cricket. 
+
+In this two hour tutorial you will learn how RRDtool works from a
+programmers point of view, and how you can use it to write your own custom
+Monitoring applications. An emphasis will be put on presentation aspects.
+The best data is worth only as much as you bosses and customers understand
+and appreciate the graphs you create with it.
+
+Attendees are expected to have some scripting experience.
+
+About the Speaker
+-----------------
+
+Tobias Oetiker is an electrical engineer by education and a system
+administrator by vocation. For the last ten years he has been working for
+the ETH Zurich, making sure students and staff get ahead with their
+computers. Last year he started to work for his own company OETIKER+PARTNER,
+spending amongst other things much more payed time on his pet open source
+projects MRTG, RRDtool, and SmokePing.
+
+In November 2006, Tobias received the prestigious SAGE Outstanding
+Achievement Award for his work on MRTG and RRDtool.
+
+Find out more about the Speaker on http://tobi.oetiker.ch
