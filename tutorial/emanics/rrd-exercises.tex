@@ -99,7 +99,11 @@ Round Robin Database. Use the command line tool\\
   The RRD should store the data for 24 hours at 5 minute resolution
   and for a month at one hour resolution. For the one hour resolution
   you want to keep both the average and the 5 minute maximum data.
+
 \end{work}
+
+Use \cmd{rrdtool info database.rrd} to see the structure of the rrd file you
+just created.
 
 \ex{Coupling of Data Values}
 
@@ -126,7 +130,6 @@ add
 
 \cmd{use lib \$ENV\{RH\}.'/lib/perl';}\\
 \cmd{use RRDs;}
-
 
 to the very beginning of your script.
 
@@ -158,6 +161,7 @@ traffic of your workstation. This file will contain new data each time you read 
   update.
 \end{work}
 
+Use \cmd{rrdtool dump file.rrd} what data is stored in the rrd file.
 \section{Creating graphs}
 
 \ex{Line Graphs}
