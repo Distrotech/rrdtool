@@ -13,13 +13,10 @@ Read about RRDtool 1.3 development on the
 
 <H2>Logging &amp; Graphing</H2>
 
-<p>The industry standard data logging and graphing application.
-Use it to write your custom monitoring shell scripts or create whole
-applications using its Perl, Python or PHP bindings. Create graphs like this:</p>
-
-<P>RRD is the acronym for Round Robin Database. It is a system to store and
-display time-series data (i.e. network bandwidth, machine-room temperature,
-server load average).</P>
+<p>RRDtool is the OpenSource industry standard, high performance data
+logging and graphing system for time series data. Use it to write your
+custom monitoring shell scripts or create whole applications using its Perl,
+Python, Ruby, TCL or PHP bindings.</p>
 
 <H2>Download</H2>
 
@@ -33,4 +30,4 @@ well as on Microsoft Windows.</P>
 
 <P>You like RRDtool? You want show your appreciation? You want to sponsor
 future development or a particular new feature? Check out our <A
-HREF="sponsor.en.html">Sponsorship and Appreciation</a> page.</P>
+HREF="sponsor.en.html">Sponsorship and Appreciation</a> page or visit my <a href="http://tobi.oetiker.ch/wish">wish list</a>.</P>

@@ -4,9 +4,7 @@
   <description>
     Perl module to simplify the creation of different kind of common RRD
   </description>
-  <homepage>
-    http://search.cpan.org/search?query=RRDTool::Creator&amp;mode=module
-  </homepage>
+  <homepage>http://search.cpan.org/search?query=RRDTool::Creator&amp;mode=module</homepage>
   <year> 2007 </year>
   <month> 6 </month>
   <license> CeCILL-C </license>
