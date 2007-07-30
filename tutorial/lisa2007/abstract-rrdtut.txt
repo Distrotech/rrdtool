@@ -19,6 +19,35 @@ and appreciate the graphs you create with it.
 
 Attendees are expected to have some scripting experience.
 
+Topics
+-------
+* RRDtool Overview
+
+  * Problems to be solved
+  * Round Robin Database setup
+  * Data acquisition
+  * Graphing
+
+* Programming with RRDtool
+
+  * The command line interface
+  * The pipe interface
+  * The Perl api
+
+* In-Depth Graphing 
+
+  * Concepts
+  * Simple graphs
+  * The joy of RPN
+  * Graph disassembly
+  * How to make graphs talk
+
+* Scaling RRDtool 
+
+  * The RRD file format
+  * Optimizing OS interaction
+  * Tweaking Linux for speed
+
 About the Speaker
 -----------------
 
