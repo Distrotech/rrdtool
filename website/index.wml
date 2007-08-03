@@ -7,9 +7,10 @@
 #<div style="float:right"><a style="border-width: 0px" href="http://www.oetiker.ch/press"><img src="award-white.png" border="0"/></a></div>
 
 <H2>News</H2>
+RRDtool 1.3 Beta is out. Read about the features on
+<a href="/rrdtool-trac/wiki/RRDtool13">the RRDtool Wiki</a>.
+Get your copy from the <a href="pub/beta">beta download area</a>.
 
-Read about RRDtool 1.3 development on the 
-<a href="http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13">RRDtool Wiki</a>.
 
 <H2>Logging &amp; Graphing</H2>
 
