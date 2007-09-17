@@ -46,7 +46,7 @@
 <br/>
 <br/>
 <p><b>Gold Sponsors</b></p>
-<p><a href="http://www.groundworkopensource.com/products/landing_rrdtool"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
+<p><a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
 <p><a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a></p>
 <p><a href="$(ROOT)/sponsor.<lang:star: */>.html">Silver Sponsors ...</a></p>
 <br/>
@@ -73,7 +73,7 @@
 <A HREF="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
 ##<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
 <A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
-<A HREF="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</A><!--Colm MacCárthaigh <brian.mcardle@heanet.ie>-->
+<A HREF="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</A><!-- <mirrors@heanet.ie>-->
 <A HREF="http://rrdtool.codemonkey.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
 <A HREF="http://rrdtool.basemirror.de/<where/>">DE</A><!--Baseportal Mirrors <mirrors@baseportal.de>-->
 <A HREF="http://rrdtool.mirroraty.org/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
