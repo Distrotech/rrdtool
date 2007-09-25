@@ -19,13 +19,14 @@ logging and graphing system for time series data. Use it to write your
 custom monitoring shell scripts or create whole applications using its Perl,
 Python, Ruby, TCL or PHP bindings.</p>
 
+<p><img src="stream-pop.png"/></p>
+
 <H2>Download</H2>
 
 <P>RRDtool is available for <A HREF="download.en.html">download</A> from
 this site. It compiles on a number of different Linux and Unix platforms as
 well as on Microsoft Windows.</P>
 
-<p><img src="btdmd8.png"/></p>
 
 <H2>Sponsorship and Appreciators</H2>
 

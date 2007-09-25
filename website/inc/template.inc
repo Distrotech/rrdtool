@@ -47,7 +47,7 @@
 <br/>
 <p><b>Gold Sponsors</b></p>
 <p><a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
-<p><a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a></p>
+<p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a></p>
 <p><a href="$(ROOT)/sponsor.<lang:star: */>.html">Silver Sponsors ...</a></p>
 <br/>
 <br/>
@@ -114,9 +114,9 @@ google_ad_format = "300x250_as";
 google_ad_type = "text_image";
 google_ad_channel ="6085696737";
 google_color_border = "ffffff";
-google_color_bg = "ffffff";
-google_color_link = "2c3fbf";
-google_color_url = "000000";
+google_color_bg = "f0f8FF";
+google_color_link = "191919";
+google_color_url = "0066CC";
 google_color_text = "000000";
 //--></script>
 <script type="text/javascript"
