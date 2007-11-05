@@ -18,7 +18,6 @@ You can download RRD tool from several places:
 
 <UL>
   <LI>BR <A HREF="ftp://ftp.pucpr.br/rrdtool/">ftp://ftp.pucpr.br/rrdtool/</A>. (Rafael Gustavo Gassner rafael.gassner@pucpr.br)</LI>
-  <LI>CA <A HREF="ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool">ftp://ftp.nrc.ca/pub/packages/snmp/rrdtool</A> ( William F. Maton Sotomayor wmaton@ryouko.imsb.nrc.ca)</LI>
   <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
   <LI>NL <A HREF="ftp://ftp.bit.nl/mirror/rrdtool/">ftp://ftp.bit.nl/mirror/rrdtool/</A> (BIT, The Netherlands mirror@bit.nl)</LI>
   <LI>RO <A HREF="http://ftp.idilis.ro/mirrors/rrdtool/">http://ftp.idilis.ro/mirrors/rrdtool/</A> (Dragos Nitu mirrors@idilis.net)</LI>
