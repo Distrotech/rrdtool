@@ -1,0 +1,106 @@
+Project: RRDtool
+Author:  Tobias Oetiker
+Date:    2007-11-19
+
+Status Report on RRDtool OSS Project
+====================================
+
+RRDtool work for 2007 is sponored by these companies:
+
+Gold Sponors: 
+
+* GroundWork Open Source - IT Monitoring & Network Solutions
+  www.groundworkopensource.com
+
+* ZenOSS - Open Source Enterprise Monitoring
+  www.zenoss.com
+
+Silver Sponsors:
+
+* op5 - Systems and Network Monitoring 
+* Host Europe - World Class Internet Hosting & Services
+* Contego Solutions - Managed Firewall, Managed VPN, and Secure Data Hosting
+* ATC-Onlane - Automotive Remarketing
+* terreActive - IT Security
+* Google Inc., USA
+* Hitflip Media Trading GmbH, Germany   
+Pocket Co., Japan
+
+Current Activities
+------------------
+
+* Code Maintenance. Mails on the mailing-lists and directly to me indicate
+  compatibility issues or suggest little changes. These are often implemented
+  directly.
+
+* Mailing-list, Web-server, Trac Maintenance. The on-line resources for
+  RRDtool are kept up-to-date, in working order and spam free.
+
+* LISA Tutorials on RRDtool
+
+* Beta Testing for 1.3 release
+
+* Planning for 1.4 release
+
+Accomplishments
+---------------
+* RRDtool 1.3
+
+  * At Linux World I have released the first BETA for RRDtool 1.3.
+
+  * Unfortunately there has not been all that much response to the Beta
+    release. Either it works for most who try or they are happy with what
+    they have. In any event I will release 1.3.0 befor the years end,
+    probably followed by a rapid succession of updates as more people will
+    start using the 'real' update.
+
+  * People who have been testing the new release have seen dramatic
+    performance improvements with linux 2.6.  See als next section.
+
+* RRDtool 1.2.25
+
+  * Work presented by Dave Plonka at LISA 2007 suggests that Linux 2.6
+    read-a-head behaviour is badly hurting rrdtool performance . Using
+    fadvise RANDOM it is possible to counteract this and provide a massive
+    performance boost. With this he was able to run an RRD setup with over
+    200k RRDs updated in a 5 minute cycle. Other users have since confirmed
+    this.
+
+    Daves work is included in rrdtool 1.2.25 as well as 1.3beta.
+
+    http://www.usenix.org/event/lisa07/tech/plonka.html
+
+
+* RRDtool 1.4
+
+  * The portable-dataformat-release has been postponed to 2008 to allow 1.3
+    to propperly stabilize. Current work is tracked on 
+
+    http://oss.oetiker.ch/rrdtool-trac/wiki/PortableRrdFormat
+
+
+* RRDtool 1.2.24, 1.2.25 released
+
+     https://lists.oetiker.ch/pipermail/rrd-announce/
+
+Sponsorhip 2008
+---------------
+
+The 2008 Sponsorship program has been setup. If you have not signed up yet.
+I would be thrilled to have you as a sponsor for the next year. Please be in
+touch.
+
+Planned Activities
+------------------
+
+* Release of RRDtool 1.3.0
+
+* Implementation of RRDtool 1.4.
+
+  The main feature of the 1.4 release will the portable data format.
+
+* Maintenance of series 1.2.x, 1.3.x
+
+--
+Tobi Oetiker, Olten, Switzerland
+2007-11-19
