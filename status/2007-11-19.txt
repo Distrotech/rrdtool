@@ -5,9 +5,9 @@ Date:    2007-11-19
 Status Report on RRDtool OSS Project
 ====================================
 
-RRDtool work for 2007 is sponored by these companies:
+RRDtool work for 2007 is sponsored by these companies:
 
-Gold Sponors: 
+Gold Sponsors: 
 
 * GroundWork Open Source - IT Monitoring & Network Solutions
   www.groundworkopensource.com
@@ -24,7 +24,7 @@ Silver Sponsors:
 * terreActive - IT Security
 * Google Inc., USA
 * Hitflip Media Trading GmbH, Germany   
-Pocket Co., Japan
+* Pocket Co., Japan
 
 Current Activities
 ------------------
@@ -50,31 +50,31 @@ Accomplishments
 
   * Unfortunately there has not been all that much response to the Beta
     release. Either it works for most who try or they are happy with what
-    they have. In any event I will release 1.3.0 befor the years end,
+    they have. In any event I will release 1.3.0 before the years end,
     probably followed by a rapid succession of updates as more people will
     start using the 'real' update.
 
   * People who have been testing the new release have seen dramatic
-    performance improvements with linux 2.6.  See als next section.
+    performance improvements with Linux 2.6.  See also next section.
 
 * RRDtool 1.2.25
 
   * Work presented by Dave Plonka at LISA 2007 suggests that Linux 2.6
-    read-a-head behaviour is badly hurting rrdtool performance . Using
+    read-a-head behavior is badly hurting RRDtool performance . Using
     fadvise RANDOM it is possible to counteract this and provide a massive
     performance boost. With this he was able to run an RRD setup with over
     200k RRDs updated in a 5 minute cycle. Other users have since confirmed
     this.
 
-    Daves work is included in rrdtool 1.2.25 as well as 1.3beta.
+    Daves work is included in RRDtool 1.2.25 as well as 1.3beta.
 
     http://www.usenix.org/event/lisa07/tech/plonka.html
 
 
 * RRDtool 1.4
 
-  * The portable-dataformat-release has been postponed to 2008 to allow 1.3
-    to propperly stabilize. Current work is tracked on 
+  * The portable-data-format-release has been postponed to 2008 to allow 1.3
+    to properly stabilize. Current work is tracked on 
 
     http://oss.oetiker.ch/rrdtool-trac/wiki/PortableRrdFormat
 
@@ -83,7 +83,7 @@ Accomplishments
 
      https://lists.oetiker.ch/pipermail/rrd-announce/
 
-Sponsorhip 2008
+Sponsorship 2008
 ---------------
 
 The 2008 Sponsorship program has been setup. If you have not signed up yet.
