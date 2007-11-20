@@ -57,7 +57,7 @@ Accomplishments
   * People who have been testing the new release have seen dramatic
     performance improvements with Linux 2.6.  See also next section.
 
-* RRDtool 1.2.25
+* RRDtool 1.2.x
 
   * Work presented by Dave Plonka at LISA 2007 suggests that Linux 2.6
     read-a-head behavior is badly hurting RRDtool performance . Using
@@ -70,6 +70,9 @@ Accomplishments
 
     http://www.usenix.org/event/lisa07/tech/plonka.html
 
+  * A long standing bug where the handling of min and max values in graphs
+    with min == max and max < 0 was resolved.
+
 
 * RRDtool 1.4
 
@@ -79,7 +82,7 @@ Accomplishments
     http://oss.oetiker.ch/rrdtool-trac/wiki/PortableRrdFormat
 
 
-* RRDtool 1.2.24, 1.2.25 released
+* RRDtool 1.2.24, 1.2.25, 1.2.26 released
 
      https://lists.oetiker.ch/pipermail/rrd-announce/
 
