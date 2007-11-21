@@ -1,0 +1,16 @@
+About the Speaker
+-----------------
+
+Tobias Oetiker is an electrical engineer by education and a system
+administrator by vocation. For ten years he has been working for the
+Swiss Federal Institute of Technology in Zurich, providing students
+and staff with a deluxe Unix workstation environment. Last year he
+started his own company OETIKER+PARTNER AG, running Unix servers for
+industry customers, improving his pet open source projects MRTG,
+RRDtool, and SmokePing, and applying these tools to solve the customers'
+problems.
+
+In November 2006, Tobias received the prestigious SAGE Outstanding
+Achievement Award for his work on MRTG and RRDtool.
+
+Find out more about the Speaker on http://tobi.oetiker.ch
