@@ -1,43 +1,21 @@
-HTW RRDtool Blocktag
---------------------
-Ein Tutorial von Tobias Oetiker
+Über die letzten Jahre hat sich RRDtool zur der Standard-Methode für
+Speicherung und Präsentation von Zeitserie-Daten im Netzwerk-Bereich
+etabliert. Viele Benutzer kennen RRDtool nur auf grund der Graphiken,
+die von Cacti, Nagios oder einem der vielen anderen
+Netzwerküberwachungspakete erzeugt werden.
 
-Abstract
---------
-
-Über die letzten Jahre hat sich RRDtool zur der Standart Methode für
-Speicherung und Präsentation von Zeitserie Daten im Netzwerk Bereich
-etabliert. Viele Benutzer kennen RRDtool nur auf grund der Graphiken die von
-Cacti, Nagios oder einem der vielen anderen Netzwerküberwachungspakete
-erzeugt werden.
-
-An diesem Block Kurs Tag werden Sie nähere Bekanntschaft mit dem RRDtool
-schliessen. Und so in die Lage versetzt es in eigenen Projekte einzusetzen,
-respektive bei der Konfiguration der oben erwänten Systeme genau die
-Resultate zu erzielen die Sie beabsichtigen.
+An diesem Blockkurs-Tag werden Sie nähere Bekanntschaft mit dem
+RRDtool schliessen und so in die Lage versetzt, es in eigenen Projekte
+einzusetzen, respektive bei der Konfiguration der oben erwähnten
+Systeme genau die Resultate zu erzielen, die Sie beabsichtigen.
 
 Der Kurs besteht aus drei Teilen.
 
-* Präsentation: Übersicht Über die Funktionalität und Philosophie von RRDtool.
-  3*45 Minuten
+* Präsentation: Übersicht über die Funktionalität und Philosophie von
+  RRDtool.  3*45 Minuten
 
-* Q&A: Wie Funktioniert ein OpenSource Projekt. In diesem Interaktiven Teil
-  des Kurses lernen Sie OSS funktioniert und wie man sogar Geld verdienen
-  kann damit. 1* 45Min
+* Q&A: Wie funktioniert ein OpenSource Projekt?. In diesem
+  interaktiven Teil des Kurses lernen Sie, wie OSS-Entwicklung
+  funktioniert und wie man sogar Geld verdienen kann damit. 1* 45Min
 
 * Hands-On: Praktische Arbeiten mit RRDtool. 4*45Min
-
-
-About the Speaker
------------------
-
-Tobias Oetiker is an electrical engineer by education and a system
-administrator by vocation. For ten years he has been working for the
-Swiss Federal Institute of Technology in Zurich, providing students
-and staff with a deluxe Unix workstation environment. Last year he
-started his own company OETIKER+PARTNER AG, running Unix servers for
-industry customers, improving his pet open source projects MRTG,
-RRDtool, and SmokePing, and applying these tools to solve the customers'
-problems.
-
-Find out more about the Speaker on http://tobi.oetiker.ch
