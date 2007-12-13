@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "netapp-iops.xml"
 #include "fsu_predict.xml"
 #include "stream-pop.xml"
 #include "n20e-daily.xml"
