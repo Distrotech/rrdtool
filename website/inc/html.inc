@@ -12,29 +12,14 @@ $x =~ s/\\n/ /g; print $x; :>:#H1_FLAT#}
 <div id="googlead_right">
 <script type="text/javascript"><!--
 google_ad_client = "pub-8135238818549668";
-google_ad_width = 300; 
+/* rrdtool top right */
+google_ad_slot = "4985488960";
+google_ad_width = 300;
 google_ad_height = 250;
-google_ad_format = "300x250_as";
-google_ad_type = "text_image";
-google_ad_channel ="5627785043";
-google_color_border = "ffffff";
-google_color_bg = "f0f8FF";      
-google_color_link = "191919";      
-google_color_url = "0066CC";
-google_color_text = "000000";
-#google_color_border = "ffffff";      
-#google_color_bg = "ffffff";
-#google_color_link = "0017C1"; 
-#google_color_url = "000000"; 
-#google_color_text = "000000";
-#google_color_border = "ffffff";
-#google_color_bg = "F0F0F0";
-#google_color_link = "2c3fbf";
-#google_color_url = "6851b0";
-#google_color_text = "000000";
-//--></script>
+//-->
+</script>
 <script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
 <restore subtitle />

@@ -78,7 +78,7 @@
 <A HREF="http://rrdtool.basemirror.de/<where/>">DE</A><!--Baseportal Mirrors <mirrors@baseportal.de>-->
 <A HREF="http://rrdtool.mirroraty.org/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
 <A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
-<A HREF="http://rrdtool.PlaySystems.ro/<where/>">RO</a><!--dan.draghici@ulbsibiu.ro-->
+#<A HREF="http://rrdtool.PlaySystems.ro/<where/>">RO</a><!--dan.draghici@ulbsibiu.ro-->
 </div>
 <div id="logo">
 <div class="legacy">
