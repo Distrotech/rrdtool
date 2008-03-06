@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "sintraf.xml"
 #include "netapp-iops.xml"
 #include "temp6.xml"
 #include "fsu_predict.xml"

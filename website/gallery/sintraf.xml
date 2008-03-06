@@ -1,0 +1,21 @@
+<gallery image="sintraf.png" > <!-- no wider than 600
+pixle -->
+
+      <title> Sinus-Regression of Server-Traffic </title>
+     <author> Holger Kohn </author> 
+<description> This graph shows the traffic of a
+networkinterface(dark-green). In red is displayed the optimal
+sinus-curve thru the points of one week. Light-green is the
+"can-be-range" of the traffic that was not alarmed. Yellow is the
+"warning-range" of the curve and every other points cause an
+CRITICAL-Warning in our minitoring. So we bring the
+statistics-calculations into the monitoring. That will show us abnormaly
+using of different curves and alarm it. </description>
+       <year> 2008 </year><month> 1 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://www.kohn-nf.de </livesite> 
+      <email> holger@kohn-nf.de </email>
+
+</gallery>
