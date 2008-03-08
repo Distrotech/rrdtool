@@ -6,6 +6,7 @@
 
 #include "mmh11.xml"
 #include "sintraf.xml"
+#include "energy_graph.xml"
 #include "netapp-iops.xml"
 #include "temp6.xml"
 #include "fsu_predict.xml"
