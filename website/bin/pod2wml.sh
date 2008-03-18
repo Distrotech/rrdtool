@@ -49,7 +49,7 @@ XXXX
          $j=$i-1;
          s|(</?h)$j>|$1$i>|g
   };
-  s|http://search.cpan.org/perldoc\?([^ #."]+)|$1.html|g;
+  s|http://search.cpan.org/perldoc\?([^ #."]+)|$1.en.html|g;
   s|<h2.*?>.*?NAME.*?</h2>.*?<p.*?>\s*(.+?)\s*- .*?</p>|<h1>$1</h1>|s;
 
   print 
