@@ -18,6 +18,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "rrd4j.xml"
 #include "toolsmith.xml"
 #include "rrdcreator.xml"
+#include "pyrrd.xml"
 
 <h2>Free Applications</h2>
 
