@@ -1,0 +1,32 @@
+Nordic Nagios Meet 2008
+
+RRDtool as a Communication Tool
+===============================
+A 45 minute Talk by Tobias Oetiker
+
+Topics
+-------
+* RRDtool 101
+  * Motivation for digging in
+  * Common RRDtool Pitfalls
+
+* In-Depth Graphing 
+
+  * The joy of RPN
+  * How was it done: Graph disassembly
+  * How to make graphs that talk
+  * Design Considerations
+
+* Scaling RRDtool 
+
+  * Background The RRD file format
+  * Optimizing OS interaction
+  * Tweaking Linux for speed
+
+* RRDtool 1.3 Update
+  * Performance Improvements
+  * Holt Winters Revisited
+  * Cairo based Graphing
+  * AJAX helpers
+
+
