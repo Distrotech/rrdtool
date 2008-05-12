@@ -43,6 +43,39 @@
 <h2 class="legacy">Menu</h2>
 <navbar:render name=main menumode=inner nohints txtonly select=$(PAGE)/>
 <br/>
+<!-- SiteSearch Google -->
+<form method="get" action="http://oss.oetiker.ch/rrdtool/search.en.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<input type="hidden" name="domains" value="oss.oetiker.ch"></input>
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" id="ss0"></input>
+<label for="ss0" title="Search the Web"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="oss.oetiker.ch" checked id="ss1"></input>
+<label for="ss1" title="Search oss.oetiker.ch"><font size="-1" color="#000000">oss.oetiker.ch</font></label></td>
+</tr>
+</table>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Google Search" id="sbb"></input>
+<input type="hidden" name="client" value="pub-8135238818549668"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="6449489261"></input>
+<input type="hidden" name="ie" value="ISO-8859-1"></input>
+<input type="hidden" name="oe" value="ISO-8859-1"></input>
+<input type="hidden" name="safe" value="active"></input>
+<input type="hidden" name="cof" value="GALT:#0066CC;GL:1;DIV:#999999;VLC:336633;AH:center;BGC:FFFFFF;LBGC:FF9900;ALC:0066CC;LC:0066CC;T:000000;GFNT:666666;GIMP:666666;FORID:11"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
 <br/>
 <br/>
 <p><b>Gold Sponsors</b></p>

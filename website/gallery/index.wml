@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "cubemon.xml"
 #include "sintraf.xml"
 #include "energy_graph.xml"
 #include "netapp-iops.xml"
