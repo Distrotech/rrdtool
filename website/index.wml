@@ -8,12 +8,9 @@
 
 <H2>News</H2>
 
-<p>RRDtool 1.3 Beta 4 is out. Read about the features on
+<p>RRDtool 1.3rc9. Read about the features on
 <a href="http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13">the RRDtool Wiki</a>.
 Get your copy from the <a href="http://oss.oetiker.ch/rrdtool/pub/beta">beta download area</a>.</p>
-
-<p>June 3-4 2008: <a href="http://www.nordicnagiosmeet.wmr.se/">Nordic Nagios Meet</a>. Tobi Oetiker will be giving a talk on RRDtool!<br/>
-<a href="http://www.nordicnagiosmeet.wmr.se/"><img border=0 src="newbanner250x60.gif"/></a></p>
 
 <H2>What RRDtool does</H2>
 
@@ -30,6 +27,11 @@ Python, Ruby, TCL or PHP bindings.</p>
 this site. It compiles on a number of different Linux and Unix platforms as
 well as on Microsoft Windows.</P>
 
+<H2>RRDtool Feeds</H2>
+
+<div>RRDtool Bugs feed <a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Wiki Updates <a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Checkins <a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
 
 <H2>Sponsorship and Appreciators</H2>
 

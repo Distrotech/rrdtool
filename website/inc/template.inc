@@ -49,7 +49,7 @@
 <tr><td nowrap="nowrap" valign="top" align="left" height="32">
 <input type="hidden" name="domains" value="oss.oetiker.ch"></input>
 <label for="sbi" style="display: none">Enter your search terms</label>
-<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<input type="text" name="q" style="width: 180px" maxlength="255" value="" id="sbi"></input>
 </td></tr>
 <tr>
 <td nowrap="nowrap">
@@ -199,11 +199,14 @@ res are missing, then the mirror may not have picked up the contents of the <a h
 #<a href="http://www.konqueror.org">Konqueror</a> aus dem KDE Projekt.
 #</de>
 </p> 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">
-_uacct = "UA-374525-1";
-urchinTracker();
+var pageTracker = _gat._getTracker("UA-374525-1");
+pageTracker._initData();
+pageTracker._trackPageview();
 </script>
 </body>
 </html>
