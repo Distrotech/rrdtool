@@ -1,0 +1,29 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "license">
+
+<H1>License</H1>
+
+<H2>GNU General Public License</H2>
+
+<P>RRDtool is available under the terms of the <A
+HREF="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</A>.
+This means you can do most things you want with this software as long as you
+do not claim you created the software and don't sell it (or modified version
+of it) under a license other than the GNU GPL.</P>
+
+<p>If you want to use RRDtool with an open source tool that has a GPL
+incompatible license, you may be able to get around the problem thanks to
+the <a
+href="http://oss.oetiker.ch/rrdtool-trac/browser/branches/1.2/program/COPYRIGHT">FLOSS
+License Exception</a> in the RRDtool license.</p>
+
+<H2>Give Credit</H2>
+
+<P>One of the things I get out of RRDtool is 'Being Known in the Industry'.
+This only works if you give credit. This means that you
+mention RRDtool on webpages and other publications containing graphs
+created with RRDtool. If possible, a link should be included in the
+publication, pointing to the RRDtool homepage. Best is to include one of the  RRD
+TOOL logos on the page.</P>
+
+<p><img src="$(ROOT)/inc/rrdtool-logo-dark.png"/>&nbsp;&nbsp;<img src="$(ROOT)/inc/rrdtool-logo-light.png"/></p>

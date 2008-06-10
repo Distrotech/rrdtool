@@ -1,0 +1,16 @@
+ <rrdworld type="companion"
+            icon="thermometer.png" > <!-- Size 100x66 -->
+ 
+         <name> temperatures </name>
+       <author> Gürkan Sengün </author>
+ <description> CPU and Disk temperature monitoring </description>
+     <homepage> https://inventory.phys.ethz.ch/stats/ </homepage>
+         <year> 2006 </year><month> 12 </month> <!-- Entry creation date -->
+      <license> GNU GPL </license>
+ 
+     <!-- Optional -->
+ 
+     <livesite> https://inventory.phys.ethz.ch/stats/ </livesite>
+        <email> sengun@phys.ethz.ch </email> <!-- Author contact -->
+ 
+</rrdworld>

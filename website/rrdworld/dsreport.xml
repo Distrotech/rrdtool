@@ -1,0 +1,17 @@
+<rrdworld type="companion">
+       <name> DSreport </name>
+     <author> Steve Rader </author>
+
+<description> 
+
+DSreport pretty prints DS values from an RRDtool database in
+tabular format.  It supports flexable reporting time frames,
+autoscaling DS values, and conversion factors. 
+
+</description>
+
+   <homepage> http://noc.hep.wisc.edu/dsreport.txt </homepage> 
+       <year> 2000 </year>
+      <month> 3 </month>
+    <license> GPL </license>
+</rrdworld>

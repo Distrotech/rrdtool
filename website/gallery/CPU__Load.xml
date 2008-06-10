@@ -1,0 +1,10 @@
+<gallery image="CPU__Trend.png" > <!-- no wider than 600 pixle -->
+      <title> CPU Load drawed with drraw.cgi </title>
+     <author> Christoph Baumann </author> 
+<description> 
+Created with drraw from Christophe Kalt (See RRDtool Companions)
+Changing Colors and using the new Trend Funkion.
+</description>
+       <year> 2005 </year><month> 5 </month> <!-- creation date -->
+      <email> christoph.baumann@coop.ch </email>
+</gallery>

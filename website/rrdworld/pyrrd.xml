@@ -1,0 +1,10 @@
+<rrdworld type="library">
+
+       <name>PyRRD</name>
+     <author>Duncan McGreggor</author>
+<description>A Pure Python OO Wrapper for RRDTool</description>
+   <homepage>http://code.google.com/p/pyrrd/</homepage>
+       <year>2004</year><month>8</month>
+    <license>BSD</license>
+
+</rrdworld>

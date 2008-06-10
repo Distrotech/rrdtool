@@ -1,0 +1,18 @@
+<rrdworld type="companion">
+
+       <name> rrdUtils </name>
+            <author> Javier Palacios </author>
+            <description> Is a set of tools intended to help the creation
+and graphing
+of RRD files. The RRD characteristics (data sources, consolidation
+functions, ...) and the graphs are described in a configuration file that we
+can use to create new instances of a RRD, and to generate the graphs for
+them.<br/> It includes an extension which uses the configuration files to
+poll an SNMP agent and stores the results in the related RRD. </description>
+   <homepage> http://rrdutils.sourceforge.net </homepage>
+          <year> 2005 </year><month> 4 </month> <!-- Entry creation date -->
+              <license> GPL </license>
+              
+                    <email>   javierpb@arsystel.com </email> <!-- Author contact -->
+
+</rrdworld>

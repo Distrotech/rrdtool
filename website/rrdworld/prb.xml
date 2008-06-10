@@ -1,0 +1,23 @@
+<rrdworld type="companion|application"
+          icon="prb.png" > <!-- Size 88x56 -->
+
+       <name> p|r|b php rrd browser </name>
+     <author> Guillaume Fontaine ** </author>
+<description> A modular rrdtool utility for polling and graphing data.
+It is written in php and stores configuration information in mysql.
+The aim is to be highly flexible and make it possible to gather most
+any kind of data and and graph it. The creation of RRA's, the polling
+logic and the graph definitions are all defined in dedicated php
+modules which can be added or customized at will. The poller and web
+font-end both
+use these modules.
+ </description>
+   <homepage> http://prb.sourceforge.net/ </homepage>
+       <year> 2007 </year><month> 2 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->
+      <email> prb.dev@gmail.com </email> <!-- Author contact -->
+
+</rrdworld>
+

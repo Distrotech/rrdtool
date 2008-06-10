@@ -1,0 +1,14 @@
+<gallery image="gate.spamd.week.600.png" >
+
+      <title> spamd connections </title>
+     <author> Christopher Kruslicky </author> 
+<description> 
+<a href='http://www.openbsd.org/cgi-bin/man.cgi?query=spamd'>OpenBSD's 
+spam deferral daemon</a> connection graph shows simultaneous connections in green, and connection times in blue.  The dark blue line shows the average connection time, with lighter blue used to show the range from minimum to maximum as a blurring effect.  The data is taken from a spamd logfile every time a line is added, or at 10 second intervals if no new data arrives in which case the most recent values are duplicated.  The RRD is created with a 30 second heartbeat - so some fractional number of connections is possible.  For those unfamiliar with spamd, it is an SMTP tarpit for blacklisted senders.  The logfile includes the number of concurrent connections each time a new host connects, and the time a connection has lasted when a host disconnects.  The number of connections should be fairly accurate in the graphs, while the connection times are not so in the short-term, depending more on the timing of the disconnects.  Connections and times are tracked separately in perl, except that disconnects cause a decrement in the connection count as well.
+</description>
+
+       <year> 2005 </year><month> 4 </month>
+      
+      <email> chris-rrdgallery@kruslicky.net </email>
+
+</gallery>

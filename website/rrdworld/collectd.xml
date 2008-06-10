@@ -1,0 +1,13 @@
+<rrdworld type="application" icon="collectd.png">
+	<name>collectd</name>
+	<author>Florian Forster</author>
+	<description>
+		collectd is a lighweight, modular daemon that collects system performance data.
+		It includes sophisticated networking possibilities, SNMP integration and well over 40 more plugins.
+		Multiple ways of extending it are available, including an embedded Perl interpreter and executing arbitary programs.
+	</description>
+	<homepage>http://collectd.org/</homepage> 
+	<year>2008</year><month>1</month>
+	<license> GPLv2 </license>
+	<email>collectd@verplant.org</email>
+</rrdworld>

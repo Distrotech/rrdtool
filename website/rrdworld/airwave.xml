@@ -1,0 +1,19 @@
+<rrdworld type="application" icon="airwave.png">
+ <name>AirWave Management Platform</name>
+ <author>AirWave Wireless, Inc.</author>
+
+ <description>The AirWave Management Platform&trade; (AMP) wireless network
+management software gives you complete, centralized control over your
+organization's Wi-Fi network infrastructure. AMP's web-based console
+provides you a single point of intelligent control from which to
+automatically monitor, analyze, and configure even complex, multi-vendor
+wireless network infrastructures in real time. Whether you're responsible
+for a small network in a single building or a global wireless network across
+hundreds of locations worldwide, AMP gives you the tools to deliver the
+performance and security your users demand.</description>
+
+ <homepage>http://www.airwave.com/</homepage> 
+ <year>2005</year><month>7</month>
+ <license>Commercial</license>
+ <email>info@airwave.com</email>
+</rrdworld>

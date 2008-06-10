@@ -1,0 +1,17 @@
+<rrdworld type="companion" > <!-- Size 100x66 -->
+
+       <name> N2RRD Nagios Add-On</name>
+     <author> Badri Prasad Pillai </author>
+<description> Nagios to RRD (n2rrd) is a small perl script, which transforms performance data into
+RRA (Round Robin Archives). The resulting archives can later be viewed by any RRD graph display tool.
+ </description>
+   <homepage> http://n2rrd.diglinks.com </homepage>
+       <year> 2006 </year><month> 10 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->
+
+   <livesite> http://mon.diglinks.com/cgi-bin/rrd2graph.cgi?hostname=demo&amp;service=icmp </livesite>
+      <email> badri@diglinks.com </email> <!-- Author contact -->
+
+</rrdworld>

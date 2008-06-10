@@ -1,0 +1,54 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "gallery">
+
+
+<H1>RRDtool Gallery</H1>
+
+#include "mmh11.xml"
+#include "filegroei.xml"
+#include "sip_messages_week.xml"
+#include "cubemon.xml"
+#include "sintraf.xml"
+#include "energy_graph.xml"
+#include "netapp-iops.xml"
+#include "temp6.xml"
+#include "fsu_predict.xml"
+#include "stream-pop.xml"
+#include "n20e-daily.xml"
+#include "ups_voltage_month.xml"
+#include "temp-poprs.xml"
+#include "docsis_upstream_utilization.xml"
+#include "andrey.xml"
+#include "rrdtool-xmas.xml"
+#include "termonit.xml"
+#include "meteo-igf.xml"
+#include "load.xml"
+#include "btdmd8.xml"
+#include "576_nodes.xml"
+#include "windvaan.xml"
+#include "rrdstats.xml"
+#include "all_gamers_36h.xml"
+#include "smpp.xml"
+#include "ryan.xml"
+#include "zug.xml"
+#include "pmacct.xml"
+#include "solar.xml"
+#include "mailstat-daily.xml"
+#include "panel_user.xml"
+#include "mailgraph_gallery.xml"
+#include "ramUsage.xml"
+#include "CPU__Load.xml"
+#include "flux.xml"
+#include "spamd_rrdgraph.xml"
+#include "uw-hep-condor.xml"
+
+
+<h2>Add your own graphs to this list</h2>
+
+<p>If you have created a graph you like, and you think I would like it too,
+please send me the image plus an xml file like the example below to be
+considered for addition to this page. Note that your graph must not be wider
+than 600 pixels.</p>
+
+#use wml::fmt::verbatim
+<verbatim-file src="entry.txt"/>

@@ -1,0 +1,15 @@
+<gallery image="zug.png" > <!-- no wider than 600 pixle -->
+
+     <title> Weather monitoring </title>
+     <author> Kantonsschule Zug </author>
+<description> This graph shows the atmospheric pressure measured at our
+school's weather station. We use this data and graphs to
+demonstrate weather behavior with real life data. </description>
+       <year> 2005 </year><month> 11 </month> <!-- creation date -->
+
+   <!-- Optional -->
+
+   <livesite> http://weather.kanti-zug.ch </livesite>
+      <email> info@kanti-zug.ch </email>
+
+</gallery>

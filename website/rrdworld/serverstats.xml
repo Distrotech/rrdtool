@@ -1,0 +1,10 @@
+<rrdworld type="application" >
+       <name> Serverstats </name>
+     <author> David Danier </author>
+<description> Simple collection of some PHP5 scripts for creating graphs. </description>
+   <homepage> http://www.webmasterpro.de/~ddanier/serverstats/ </homepage>
+       <year> 2005 </year><month> 5 </month>
+    <license> GPL </license>
+   <livesite> https://www.webmasterpro.de/~ddanier/serverstats/demo/</livesite>
+      <email> david.danier@team23.de </email>
+</rrdworld>

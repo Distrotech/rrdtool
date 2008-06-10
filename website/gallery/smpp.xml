@@ -1,0 +1,13 @@
+<gallery image="smpp.png" > <!-- no wider than 600 pixle -->
+
+      <title> SMPP Router Statistics </title>
+     <author> Osinet </author> 
+<description> SMSs per second statistics graph </description>
+       <year> 2005 </year><month> 11 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://www.osinet.com.ar </livesite> 
+      <email> info@osinet.com.ar </email>
+
+</gallery>

@@ -1,0 +1,16 @@
+<rrdworld type="application" icon="ozmonitor.gif" >
+
+      <name> ozMonitor </name>
+    <author> OZOOD Solutions </author>
+<description>
+ozMonitor monitor permanently your Web site.  As soon as this one is
+unvalable or that its performance
+(downloadtime) is degraded, you are automatically alerted.  You can thus
+react as soon as possible.  Thus, you
+control your Web site freely with ozMonitor.
+</description>
+  <homepage> http://www.ozmonitor.net</homepage>
+      <year> 2005 </year><month> 09 </month> <!-- Entry creation date -->
+   <license> Free ASP Mode </license>
+  <livesite> http://www.ozmonitor.net/index.php?option=com_ozdemo</livesite>
+</rrdworld>

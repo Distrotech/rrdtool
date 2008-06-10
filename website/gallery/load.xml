@@ -1,0 +1,9 @@
+<gallery image="load.png" >
+    <title>Load and CPU usage</title>
+    <author>Lars Kotthoff</author> 
+    <description>Graphs the load averages on the system and the fractions of CPU
+    states under the curve.</description>
+    <year>2006</year><month>10</month>
+    <livesite>http://www.metalhead.ws/rrdtool</livesite> 
+    <email>metalhead@metalhead.ws</email>
+</gallery>

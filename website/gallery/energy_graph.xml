@@ -1,0 +1,15 @@
+<gallery image="energy_graph.png" > <!-- no wider than 600 pixle -->
+
+      <title> Energy Mix </title>
+     <author> Lutz Schulze </author> 
+<description> This graph shows indoor and outdoor temperature, heating temperatures,
+brightness, natural gas and electric power consumption. Values come from MessPC 
+system and is created with sensorserver project </description>
+       <year> 2008 </year><month> 3 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://www.messpc.de/sensorserver.php </livesite> 
+      <email> lschulze@messpc.de </email>
+
+</gallery>

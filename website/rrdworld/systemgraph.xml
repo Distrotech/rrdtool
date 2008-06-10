@@ -1,0 +1,11 @@
+<rrdworld type="application|"
+          icon="systemgraph.png" > <!-- Size 100x66 -->
+ 
+       <name> Systemgraph </name>
+     <author> Jochen Schlick </author>
+<description> A nice graphical system statistics RRDtool frontend which produces hourly, daily, weekly, monthly ... graphs of various system data. At the moment it provides graphs for memory usage, cpu info, number of processes, number of open files, number of tcp connections, system load, network traffic, harddisk usage, ntpdrift, fan status and system temperatures. </description>
+   <homepage> http://www.decagon.de/sw/systemgraph </homepage> 
+       <year> 2006 </year><month> 2 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+</rrdworld>

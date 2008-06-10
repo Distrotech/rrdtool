@@ -1,0 +1,22 @@
+<rrdworld type="application"
+          icon="munin.png" > <!-- Size 100x66 -->
+ 
+       <name> Munin </name>
+     <author> Ingvar Hagelund, Kjetil T. Homme, Patrick Domack, Mike
+Discenza, Alexandre Dupouy, Nicolai Langfeldt, Mike Fedyk
+</author>
+<description> Munin is a tool for collecting performance data and
+displaying it in a web interface. It has a master/node architecture. The
+master collects data from the nodes at regular intervals, storing the
+data in RRD, and updates the graphs. One of the main goals has been ease
+of creating plugins. </description>
+   <homepage> http://www.linpro.no/projects/munin/ </homepage> 
+       <year> 2005 </year><month> 11 </month> <!-- Entry creation date -->
+    <license> GPL v2 </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://www.linpro.no/projects/munin/example/ </livesite> 
+      <email> munin-users@lists.sourceforge.net </email> <!-- Author contact -->
+
+</rrdworld>
