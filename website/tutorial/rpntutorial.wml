@@ -1,7 +1,0 @@
-#include "$(ROOT)/.wml/template.inc" section=tutorial subsection=rpntut
-#use wml::fmt::pod
-
-<H1>RPN Tutorial</H1>
-
-<: print &wml_fmt_pod({ FILE => "$(ROOT)/../doc/rpntutorial.pod"}); :>
-
