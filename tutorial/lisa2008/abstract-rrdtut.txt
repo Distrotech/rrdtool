@@ -1,8 +1,8 @@
-LISA 2007 Tutorial
+LISA 2008 Tutorial
 
 RRDtool as a Communication Tool
 ===============================
-A half day tutorial by Tobias Oetiker
+A half-day tutorial by Tobias Oetiker
 
 Abstract
 --------
@@ -11,7 +11,7 @@ time-series data in the networking area. RRDtool takes care of all the work
 related to data storage and presentation. Many users only access RRDtool
 through some front-end application like Cacti or Cricket.
 
-In this half day tutorial you will learn how RRDtool works from a
+In this half-day tutorial you will learn how RRDtool works from a
 programmers point of view, and how you can use it to write your own custom
 monitoring applications. An emphasis will be put on presentation aspects.
 The best data is worth only as much as your bosses and customers understand
@@ -34,13 +34,13 @@ Topics
   * The pipe interface
   * The Perl api
 
-* In-Depth Graphing 
+* In-depth Graphing 
 
   * Concepts
   * Simple graphs
   * The joy of RPN
   * Graph disassembly
-  * How to make graphs talk
+  * How to make graphs convey their/your message
 
 * Scaling RRDtool 
 

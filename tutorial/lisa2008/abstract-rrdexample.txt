@@ -2,7 +2,7 @@ LISA 2008 Workshop
 
 RRDtool by Example
 ==================
-A half day workshop by Tobias Oetiker
+A half-day workshop by Tobias Oetiker
 
 Abstract
 --------
@@ -21,29 +21,29 @@ Topics
 * RRDtool Overview
 
   * Rundown on Components of RRDtool
-  * Update on new Functionality introduced in 1.3
+  * Update on new functionality introduced in version 1.3
 
-* The RRD database format
+* The RRD Database Format
 
-  * How does RRDtool store that data
-  * Interaction with the OS Cache subsystem
-  * Linux Tricks
-  * Fixing 'bad data' after the fact.
+  * How RRDtool stores that data
+  * Interaction with the OS cache sub-system
+  * Linux tricks
+  * Fixing 'bad data' after the fact
 
-* How to setup an RRD performance test.
+* How to setup an RRD performance test
 
 * RRD Graphing
 
-  * Simple Graphs and Autoconfiguration
-  * Alternate Scaling
+  * Simple graphs and autoconfiguration
+  * Alternate scaling
   * Working with transparency
-  * Creating Gradients
-  * RPN Magic
+  * Creating gradients
+  * RPN magic
 
-* Putting it together
+* Putting it Together
 
-  * Scripting Interface
-  * The graphv, updatev, info interfaces
+  * Scripting interface
+  * The graphv, updatev, and info interfaces
 
 About the Speaker
 -----------------
