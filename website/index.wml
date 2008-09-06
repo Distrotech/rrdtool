@@ -15,7 +15,10 @@ Python, Ruby, TCL or PHP bindings.</p>
 
 <H2>Version 1.3.2 Released</H2>
 
-<p>All users of 1.3.x versions should upgrade since it contains a major bugfix for a data <a href="http://oss.oetiker.ch/rrdtool-trac/ticket/178">corruption bug</a> triggerd by running rrdtool update with multiple values.</p>
+<p>All users of 1.3.x versions should <a href="download.var">upgrade</a> since the 1.3.2 release
+contains a fix for a major bugfix for a <a
+href="http://oss.oetiker.ch/rrdtool-trac/ticket/178">data corruption bug</a>
+triggerd by running rrdtool update with multiple values in one go.</p>
 
 <p>Read all about the new features of the 1.3 series in
 <a href="http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13">the RRDtool Wiki</a>.</p>
