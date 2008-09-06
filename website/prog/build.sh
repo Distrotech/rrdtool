@@ -14,7 +14,7 @@ pod2descr() {
 rm -f navbar.inc
 rm -f index.inc
 
-for pod in `cd $src/doc/;ls *.pod|egrep 'RRD|thread|python|ruby'`; do
+for pod in `cd $src/doc/;ls *.pod|egrep '(RRD|thread|python|ruby)'`; do
  base=`echo $pod |sed 's,.pod,,'` 
  echo $base
  cat  $src/doc/$pod > $base.pod

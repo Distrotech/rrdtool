@@ -1,0 +1,15 @@
+<rrdworld type="application"
+          icon="rumble.png" > <!-- Size 100x66 -->
+ 
+       <name> gbRRDGraphix </name>
+     <author> Olivier CRUILLES </author>
+<description> gbRRDGraphix is a graphical interface specialy to learn or use 'rrdtool' utilities easily </description>
+   <homepage> http://gbrrdgraphix.sourceforge.net </homepage> 
+       <year> 2008 </year><month> 9 </month> <!-- Entry creation date -->
+    <license> GPL v2 </license>
+
+   <!-- Optional -->   
+
+      <email> linuxos@club-internet.fr </email> <!-- Author contact -->
+
+</rrdworld>
