@@ -30,12 +30,9 @@ this list by sending a message with the subject 'subscribe' to <A
 HREF="mailto:rrd-developers-request@lists.oetiker.ch?subject=subscribe">rrd-developers-request@lists.oetiker.ch</A>.
 Or on the <a href="http://lists.oetiker.ch">web interface</a>.</p>
 
-<h2>list archive</h2>
+<h2>Forum</h2>
 
-<P>There is an archive of past list traffic on <A
-HREF="http://gmane.org/find.php?list=rrd/">Gmane</A> and the <a
-HREF="http://www.mail-archive.com/index.php?hunt=rrd">"The Mail
-Archive"</A>.</P>
+<P>There is a also a <a href="forum.var">forum interface</a> to the mailinglists, provided by nabble2.</P>
 
 <h2>RRDtool Trac</h2>
 

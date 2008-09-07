@@ -23,6 +23,7 @@ triggerd by running rrdtool update with multiple values in one go.</p>
 <p>Read all about the new features of the 1.3 series in
 <a href="http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13">the RRDtool Wiki</a>.</p>
 
+<p>Changes for the 1.3.2 release are listed in the <a href="http://n2.nabble.com/RRDtool-1.3.2-released-%28MAJOR-BUGFIX%21%29-tp950086p950086.html">announcement</a> post.</p>
 
 <H2>Download</H2>
 
