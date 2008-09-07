@@ -1,0 +1,115 @@
+<!--
+  - Document type definition for RRDTool
+  -
+  - This document type definition describes the current XML style used by
+  - RRDTool when dumping RRD files. It was reverse engineered by reading
+  - rrd_dump.c and should cover all the tags it uses. Use this DTD if you want
+  - the libxml2 based restore utility to catch invalid definitions and
+  - ordering of elements early on, i. e. within the XML library.
+  -
+  - This DTD is in some ways more strict than the actual restore utility: It
+  - enforces the exact ordering of tags even if the restore utility doesn't
+  - mind.
+  -
+  - Author:
+  -   Florian Forster <octo at verplant.org>
+  -->
+
+<!--
+  - The <param> tag
+  -
+  - The <param> tag inside a DS definition depends on the type of DS that is
+  - defined. While this DTD cannot check if the type defined matches with the
+  - tags present here, we can at least check that the tags aren't mixed
+  - wildly.
+  -->
+<!ELEMENT delta_neg (#PCDATA)>
+<!ELEMENT delta_pos (#PCDATA)>
+<!ELEMENT dependent_rra_idx (#PCDATA)>
+<!ELEMENT failure_threshold (#PCDATA)>
+<!ELEMENT hw_alpha (#PCDATA)>
+<!ELEMENT hw_beta (#PCDATA)>
+<!ELEMENT seasonal_gamma (#PCDATA)>
+<!ELEMENT seasonal_smooth_idx (#PCDATA)>
+<!ELEMENT smoothing_window (#PCDATA)>
+<!ELEMENT window_len (#PCDATA)>
+<!ELEMENT xff (#PCDATA)>
+
+<!ENTITY % param.hwpredict "(hw_alpha, hw_beta, dependent_rra_idx)">
+<!ENTITY % param.seasonal "(seasonal_gamma, seasonal_smooth_idx, smoothing_window?, dependent_rra_idx)">
+<!ENTITY % param.failures "(delta_pos, delta_neg, window_len, failure_threshold)">
+<!ENTITY % param.devpredict "(dependent_rra_idx)">
+<!ENTITY % param.avg_min_max "(xff)">
+
+<!ELEMENT params (%param.hwpredict; | %param.seasonal; | %param.failures; | %param.devpredict; | %param.avg_min_max;)>
+
+<!--
+  - The <ds> tag within a <cdp_prep> block.
+  -
+  - There are two <ds> tags: One for defining the data source itself and one
+  - describing it further in a <cdp_prep> area. The tags allowed within the
+  - <ds> tag in the <cdp_prep> area depend on the type of the DS, but we
+  - cannot verify that in the DTD. We check that the combination of tags makes
+  - some sense, though.
+  -->
+<!ELEMENT history (#PCDATA)>
+<!ELEMENT init_flag (#PCDATA)>
+<!ELEMENT intercept (#PCDATA)>
+<!ELEMENT last_intercept (#PCDATA)>
+<!ELEMENT last_nan_count (#PCDATA)>
+<!ELEMENT last_seasonal (#PCDATA)>
+<!ELEMENT last_slope (#PCDATA)>
+<!ELEMENT nan_count (#PCDATA)>
+<!ELEMENT primary_value (#PCDATA)>
+<!ELEMENT seasonal (#PCDATA)>
+<!ELEMENT secondary_value (#PCDATA)>
+<!ELEMENT slope (#PCDATA)>
+<!ELEMENT unknown_datapoints (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+
+<!ENTITY % ds.cdp.hwpredict "(intercept, last_intercept, slope, last_slope, nan_count, last_nan_count)">
+<!ENTITY % ds.cdp.seasonal "(seasonal, last_seasonal, init_flag)">
+<!ENTITY % ds.cdp.failures "(history)">
+<!ENTITY % ds.cdp.avg_min_max "(value, unknown_datapoints)">
+<!ENTITY % ds.cdp "(primary_value, secondary_value, (%ds.cdp.hwpredict; | %ds.cdp.seasonal; | %ds.cdp.failures; | %ds.cdp.avg_min_max;)?)">
+
+<!--
+  - The <ds> tag in the root <rrd> tag.
+  -
+  - This <ds> tag is different than the one above in that is defines a data
+  - source rather than it's parameters within an RRA. Yet, there is an little
+  - exception for CDEF data sources..
+  -->
+<!ELEMENT cdef (#PCDATA)>
+<!ELEMENT last_ds (#PCDATA)>
+<!ELEMENT max (#PCDATA)>
+<!ELEMENT minimal_heartbeat (#PCDATA)>
+<!ELEMENT min (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT unknown_sec (#PCDATA)>
+
+<!ENTITY % ds.decl.normal "(minimal_heartbeat,min,max)">
+<!ENTITY % ds.decl.cdef "(cdef)">
+<!ENTITY % ds.decl "(name, type, (%ds.decl.normal; | %ds.decl.cdef;), last_ds, value, unknown_sec)">
+
+<!ELEMENT ds (%ds.decl; | %ds.cdp;)>
+
+<!-- The <ds> tag in <cdp_prep> differs from the one in <rrd>, but we cannot
+     check this in the DTD :/ -->
+<!ELEMENT cdp_prep (ds+)>
+
+<!-- The actual data.. -->
+<!ELEMENT v (#PCDATA)>
+<!ELEMENT row (v+)>
+<!ELEMENT database (row+)>
+
+<!ELEMENT cf (#PCDATA)>
+<!ELEMENT pdp_per_row (#PCDATA)>
+
+<!ELEMENT rra (cf,pdp_per_row,params,cdp_prep,database)>
+
+<!ELEMENT lastupdate (#PCDATA)>
+<!ELEMENT step (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT rrd (version,step,lastupdate,ds+,rra+)>

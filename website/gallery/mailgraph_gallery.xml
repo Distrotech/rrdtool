@@ -1,0 +1,18 @@
+<gallery image="mailgraph_gallery.png" >
+
+      <title> Mailgraph and Greylisting </title>
+     <author> David Schweikert </author> 
+<description>This graphs show the effect that the <a
+href="http://isg.ee.ethz.ch/tools/postgrey">greylisting</a> technique
+had on our mail traffic. Notice the drop of spam and viruses in the
+middle of the graph (June 2004) and the corresponding increase in the
+rejected mails.
+ </description>
+
+       <year> 2005 </year><month> 6 </month>
+      
+   <!-- Optional -->   
+
+      <email> dws@ee.ethz.ch </email>
+
+</gallery>

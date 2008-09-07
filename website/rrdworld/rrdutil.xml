@@ -1,0 +1,20 @@
+<rrdworld type="application"  >
+         
+               <name> RRDutil </name>
+                   <author> Matt Simerson </author>
+                   <description> Complete host monitoring tool for small
+networks. Polls hosts via SNMP. Includes data collection scripts for
+monitoring Apache, MySQL, and motherboard info. Monitors CPU load, memory,
+disk space and activity, and network interfaces. Email
+stats are provided via maillogs. Web hits via Logmonster.</description>
+  <homepage> http://www.tnpi.biz/internet/manage/rrdutil/ </homepage>
+        <year> 2005 </year><month> 6 </month> <!-- Entry creation date -->
+           <license> BSD </license>
+           
+             <!-- Optional -->
+             
+               <livesite> http://www.tnpi.biz/cgi-bin/rrdutil.cgi </livesite>
+     <email> info@tnpi.biz </email> <!-- Author contact -->
+     
+     </rrdworld>
+     

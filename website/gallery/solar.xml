@@ -1,0 +1,14 @@
+<gallery image="solar.png" > <!-- no wider than 600 pixle -->
+
+      <title> Solar System's Data </title>
+           <author> Christian Kaiser </author>
+           <description> Shows the daily information about our solar system's data and state </description>
+       <year> 2005 </year><month> 8 </month> <!-- creation date -->
+       
+          <!-- Optional -->
+          
+       <livesite> http://www.invest-tools.com/pub/solar/today.png </livesite>
+      <email> chk@online.de </email>
+      
+</gallery>
+      

@@ -1,0 +1,12 @@
+<rrdworld type="companion">
+ 
+       <name>RRDBot</name>
+     <author>Nate Nielsen</author>
+<description>RRDBot is an SNMP polling daemon which writes the polled values to an RRD database. It can poll many different SNMP sources in an efficient manner. RRDBot also contains tools to simplify the creation of RRD files, and the various archives contained in them. </description>
+   <homepage>http://memberwebs.com/nielsen/software/rrdbot/</homepage> 
+       <year>2006</year><month>8</month> <!-- Entry creation date -->
+    <license>BSD</license>
+
+    <email>rrdbot@googlegroups.com</email> <!-- Author contact -->
+
+</rrdworld>

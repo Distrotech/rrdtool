@@ -1,0 +1,23 @@
+<rrdworld type="application"
+          icon="" >
+ 
+       <name> Eye-on Bandwidth </name>
+     <author> Prefixmaster </author>
+<description> 
+Eye-on Bandwidth is a bandwidth monitor designed for scalability, speed
+and security. It can be used by non-technical staff and has different
+user privilege levels. A public system is available for small business
+to simply manage a few devices, and a on-site system is available for
+enterprise/ISP.
+</description>
+   <homepage> http://www.prefixmaster.com/ </homepage> 
+       <year> 2006 </year><month> 4 </month> <!-- Entry creation date
+-->
+    <license> Commercial </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://demo.prefixmaster.com/ </livesite> 
+      <email> info@prefixmaster.com </email> <!-- Author contact -->
+
+</rrdworld>

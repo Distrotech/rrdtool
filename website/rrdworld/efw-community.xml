@@ -1,0 +1,24 @@
+<rrdworld type="application"
+          icon="efwcommunity.png" > <!-- Size 100x66 -->
+
+       <name> Endian Firewall Community </name>
+     <author> Endian srl </author>
+<description> Endian Firewall Community is a "turn-key" linux security
+distribution that turns every system into a full featured security
+appliance. The software has been designed with "usability in mind" and
+is very easy to install, use and manage, without losing its flexibility.
+The features include a stateful packet inspection firewall,
+application-level proxies for various protocols (HTTP, FTP, POP3, SMTP)
+with antivirus support, virus and spamfiltering for email traffic (POP
+and SMTP), content filtering of Web traffic and a "hassle free" VPN
+solution (based on OpenVPN).
+ </description>
+   <homepage> http://www.efw.it </homepage>
+       <year> 2006 </year><month> 12 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->
+
+      <email> info@endian.it </email> <!-- Author contact -->
+
+</rrdworld>

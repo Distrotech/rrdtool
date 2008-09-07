@@ -1,0 +1,10 @@
+<rrdworld type="application"
+          icon="zenoss_logo.png" > <!-- Size 100x66 -->
+    <name>Zenoss Monitoring System</name>
+    <author>Erik A. Dahl</author>
+    <description>Zenoss is an enterprise grade monitoring system that provides Inventory/Configuration, Event, Performance and Availability management in a single integrated package.   It is written in Python using the Zope web application framework and Twisted network programming environment.   All performance information is stored in RRD files.  Zenoss is written to be easy to use for a beginner yet flexible and powerful enough for the advanced user.</description>
+    <homepage> http://www.zenoss.org </homepage> 
+    <year>2006</year><month>6</month> <!-- Entry creation date -->
+    <license> GPL </license>
+    <email>edahl@zenoss.org</email> <!-- Author contact -->
+</rrdworld>

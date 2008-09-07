@@ -1,0 +1,11 @@
+<gallery image="termonit.png" >
+
+      <title> Server room temperature monitoring </title>
+     <author> Evgueni V. Gavrilov </author> 
+<description> There are 8 thermal sensors across my server room. This graph shows thermal condition of various parts of the server room. </description>
+       <year> 2006 </year>
+      <month> 10 </month>
+      <email> aquatique@rusunix.org </email>
+
+</gallery>
+

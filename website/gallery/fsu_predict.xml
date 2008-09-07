@@ -1,0 +1,8 @@
+<gallery image="fsu_predict.png">
+  <title>Filesystem Utilization and Predicted Trends</title>
+  <author>Damien S. Stuart</author>
+  <description>Shows filesystem utilization with projected trend lines based on various starting points in the dataset. Trends are computed using the rrdtool Least Squares Line functions. If a trend is predicted to cross 100% utiliztion within the graph window, the date of the crossing is displayed.</description>
+  <year>2007</year><month>6</month>
+  <email>dstuart@dstuart.org</email>
+</gallery>
+

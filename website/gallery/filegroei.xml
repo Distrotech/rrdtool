@@ -1,0 +1,13 @@
+<gallery image="filegroei.png" > <!-- no wider than 600 pixle -->
+
+      <title> Traffic jam statistics Netherlands </title>
+     <author> Jeroen Wunnink </author> 
+<description>RRD with number of dutch traffic jams, length, weather, prediction and 24h ago</description>
+       <year> 2008 </year><month> 5 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://www.filegroei.nl </livesite> 
+      <email> info@filegroei.nl </email>
+
+</gallery>

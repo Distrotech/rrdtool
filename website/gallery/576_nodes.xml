@@ -1,0 +1,12 @@
+<gallery image="576_nodes.png" >
+
+      <title> The Matrix </title>
+     <author> Fabien Wernli </author> 
+     <description> This is a part of our cluster of about 2000 CPUs.
+	   	   All nodes are being monitored in real-time for major system
+		   information every 15 seconds. Data collection and consolidation
+		   is done on one central server.
+     </description>
+       <year> 2006 </year><month> 1 </month>
+      
+</gallery>

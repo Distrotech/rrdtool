@@ -1,0 +1,13 @@
+<gallery image="netapp-iops.png" > <!-- no wider than 600 pixle -->
+
+      <title> Network Appliance IOPs by protocol </title>
+     <author> Robert McDermott </author> 
+<description> We use a combination of RRDtool, SNMP and Python to gather metrics and generate graphs for several of our critical systems. This graph shows a three hour window of the disk IO activity on one of our NetApp filers broken down by protocol (CIFS, NFS, FCP and iSCSI). </description>
+       <year> 2007 </year><month> 12 </month> <!-- creation date -->
+       
+       <!-- Optional -->   
+       
+#          <livesite> </livesite> 
+      <email> rmcdermo@gmail.com </email>
+      
+</gallery>

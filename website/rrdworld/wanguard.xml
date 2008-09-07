@@ -1,0 +1,11 @@
+<rrdworld type="application"
+          icon="wanguard.png" > <!-- Size 100x68 -->
+ 
+       <name> WANGuard Platform </name>
+     <author> Andrisoft </author>
+<description> WANGuard Platform relies on NetFlow or Port Mirroring / SPAN to provide in-depth network traffic analysis and DDoS detection and mitigation. It can be used to generate traffic graphs and traffic accounting reports per IP, per subnet, per IP Zone or per router interface / switch port.</description>
+   <homepage> http://www.andrisoft.com </homepage> 
+       <year> 2008 </year><month> 2 </month> 
+    <license> Commercial </license>
+    <email> office@andrisoft.com </email>
+</rrdworld>

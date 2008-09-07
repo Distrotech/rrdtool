@@ -1,0 +1,17 @@
+<rrdworld type="application">
+ 
+       <name>webminstats</name>
+     <author>Eric Gerbier</author>
+<description> Webminstats is a Webmin module designed to store system information in an rrdtool database and to display historic (hourly,
+daily, weekly, monthly, and custom) graphs. It is modular in design, so as to be able to log everything from CPU usage to email box
+size.</description>
+   <homepage> http://webminstats.sourceforge.net</homepage> 
+       <year> 2001 </year><month> 8 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> gerbier@users.sourceforge.net </email> <!-- Author contact -->
+
+</rrdworld>
+

@@ -1,0 +1,16 @@
+<gallery image="rrdtool-xmas.png" >
+
+      <title> Merry Christmas</title>
+     <author> Peter J. Linden </author> 
+<description> Over a year ago I discoverd RRDtool. I had lots of fun
+creating all sorts of new graphs since then. So why not use RRDtool for
+my christmas cards too. A formula for the trees was simple. Father Christmas
+was more of a challenge though.</description>
+
+       <year> 2005 </year><month> 12 </month>
+      
+   <!-- Optional -->   
+
+      <email> linden@linden-itc.de </email>
+
+</gallery>

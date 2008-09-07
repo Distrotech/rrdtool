@@ -1,0 +1,10 @@
+<rrdworld type="application">
+<name>Cacti</name>
+<author>Ian Berry</author>
+<description>Cacti is a complete network graphing solution designed to harness the power of RRDTool's data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.</description>
+<homepage>http://www.cacti.net</homepage> 
+<year>2005</year><month>4</month>
+<license>GPL</license>
+<livesite>http://www.bigspring.k12.pa.us/cacti/graph_view.php</livesite> 
+<email>iberry@raxnet.net</email>
+</rrdworld>

@@ -1,0 +1,14 @@
+<rrdworld type="linux daemon"
+          > <!-- Size 100x66 -->
+
+       <name>mpltd : MP Log Traffic Daemon</name>
+     <author>Massimiliano Piccinini</author>
+<description>mplpd is a little sniffing daemon that logs statistics per type of service. The type of service is defined by a rules configuration.</description>
+   <homepage>http://digilander.libero.it/ItaAto/st_welcome.htm</homepage>
+       <year>2006</year><month>9</month> <!-- Entry creation date -->
+    <license>free source</license>
+
+      <email>maxpic(@)libero.it</email> <!-- Author contact -->
+</rrdworld>
+
+

@@ -1,0 +1,277 @@
+body {
+  margin: 10px;
+  padding: 0px;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* hide old stuff */
+.legacy {
+  display: none;
+}
+
+/**************************
+ * layout              
+ **************************/
+table#frame  {
+        width: 950px;
+        margin: 10px auto;
+        border-collapse: collapse;
+        text-align: left;
+}
+
+table#frame td {
+        vertical-align: top;
+        margin: 0px;
+        padding: 0px;
+}
+
+
+/**************************
+ * body              
+ **************************/
+div#body {
+  margin-left: 40px;
+  margin-right: 6px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+div#body h1 { 
+  color: #717fe5;
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.1em;
+  line-height: 1em;
+  font-size: 220%;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: #808080;
+}
+
+div#body h2 { 
+  margin-top: 0.6em;
+  margin-bottom: 0.1em;
+}
+
+
+div#body a {
+  color: #4a71e4;
+}
+
+div#body a[name] {
+  color: black;
+}
+
+div#body a:hover {
+  color: #7b9dff;
+}
+
+div#body h2 a,
+div#body h3 a,
+div#body h4 a,
+div#body h5 a,
+div#body h2,
+div#body h3,
+div#body h4,
+div#body h5 {
+  color: #606060;
+}
+
+div#body dl dd {
+  margin-left: 1.5em;
+}
+
+div#body dl dt {
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+div#body dl dt a {
+  text-decoration: none;
+}
+
+div#body dl p {
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+ 
+div#body pre {
+  border-style: solid;
+  border-color: #bfbfbf;
+  border-width: 1px;  
+  background-color: #E8E8E8;
+  padding: 1em;
+}
+
+div#body pre a{
+  color: black;
+}
+
+div#googlead_right {
+  background-color: white;
+  float: right;
+  margin-top: 5px;
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+
+/**************************
+ * footer
+ **************************/
+table#frame td#footcell {
+  padding-left: 40px;
+}
+
+div#address  {
+}
+
+div#address small {
+  color: #202020;
+  font-size: 90%;
+}
+
+div#address a {
+  color: #202020;
+  text-decoration: none;
+}
+
+/**************************
+ * logo
+ **************************/
+
+div#logo {
+  float: right;
+  height: 78px;
+  width: 190px;
+  background-image: url("rrdtool-3dlogo.png");
+}
+
+/**************************
+ * rrdworld
+ **************************/
+
+div.rrdworld h3 {
+  background: #E0E0F0;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+  padding: 3px;  
+}
+
+div.rrdworld {
+  border-style: solid;
+  border-color: #bfbfbf;
+  border-width: 1px;  
+  background-color: #D0D0D0;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+
+/**************************
+ * mirrors
+ **************************/
+
+div#mirrors {
+  float: left;
+  padding: 3px;
+  padding-left: 40px;
+  font-size: 10px;
+}
+
+div#mirrors,
+div#mirrors a {
+  color: #606060;
+}
+
+
+/**************************
+ * menu              
+ **************************/
+table#frame td#leftcornercell,
+table#frame td#menucell {
+  width: 10%;
+  background-color: #F0F0F0;
+}
+
+div#menu {
+  font-weight: normal;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 200px;
+  line-height: 1em;
+}
+
+div#menu li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  border-top-color: #444;
+}
+
+div#menu li li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top-color: #ccc;
+}
+
+div#menu a {
+  color: black;
+  text-decoration: none;
+}
+
+div#menu ul ul a {
+  color: black;
+  text-decoration: none;
+}
+
+div#menu ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+div#menu ul ul { 
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+div#menu ul a,
+div#menu ul div.selected {
+  padding-left: 0px;
+}
+
+div#menu ul ul {
+  margin-top: 3px;
+}
+
+div#menu > ul {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-bottom-color: #888;
+}
+
+div#menu ul ul ul li {
+  padding-left: 1em;
+}
+
+div#menu a:hover {
+  color: #5c5b8a;
+}
+
+div#menu a:active {
+  color: #373672;
+}
+
+div#menu li div.selected {
+  color: 1d255f;
+  font-weight: bold;
+}
+

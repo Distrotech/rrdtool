@@ -1,0 +1,9 @@
+<gallery image="n20e-daily.png" >
+      <title> Thermostat with Indoor / Outdoor Temperature </title>
+     <author> Anders Brownworth </author>
+<description> A graph of the internal (green) and external (grey) temperature from an IP enabled thermostat. Red areas denote times when the heat
+was on while blue denotes times when the air-conditioning was on. This graph also simulates translucent intersecting areas where the internal and
+external temperatures can swap places without becoming unreadable. </description>
+       <year> 2007 </year><month> 5 </month>
+   <livesite> http://www.anders.com/projects/thermostat-graph/ </livesite>
+</gallery>

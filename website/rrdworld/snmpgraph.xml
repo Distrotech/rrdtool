@@ -1,0 +1,13 @@
+<rrdworld type="application" >
+ 
+        <name> SnmpGraph </name>
+        <author> Antoine Guilmard </author>
+        <description> SnmpGraph permit to monitor the OIDs of SNMP protocol. You can also monitor all probe of
+MotherBoardMonitor 5 (temperature, voltage). It automates the update of a RRD data base like does it the famous MRTG but does
+not use Perl script. The installation can be done as a service in Windows. </description>
+        <homepage> http://guilmard.free.fr/index.php?page=snmpgraph&amp;lg=en </homepage> 
+        <year> 2005 </year><month> 5 </month>
+        <license> GPL </license>
+
+</rrdworld>
+# From: Antoine Guilmard <guilmard@free.fr>

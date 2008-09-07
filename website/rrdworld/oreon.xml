@@ -1,0 +1,13 @@
+<rrdworld type="application" icon="oreon.gif" > <!-- Size 280x115 -->
+       <name> Oreon </name>
+     <author> <a href="mailto:jmathis@oreon-project.org">Julien Mathis</a> And <a href="mailto:rlemerlus@oreon-project.org">Romain Le Merlus</a> </author>
+<description> Oreon is a network supervision software. It is based upon Nagios which is the most effective Open Source supervision and  monitoring engine. The aim of this project is to offer a new frontend to Nagios, providing new functionalities through a modern and customisable interface for most users.</description>
+   <homepage> http://www.oreon-project.org</homepage> 
+       <year> 2003 </year><month> 02 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> info@oreon-project.org </email> <!-- Author contact -->
+
+</rrdworld>

@@ -1,0 +1,21 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "tut">
+
+<H1>RRDtool Tutorial</H1>
+
+<dl>
+#include "index.inc"
+</dl>
+
+<h2> External Tutorials </h2>
+
+<p>Some of these external tutorials may not be in sync with the latest release of rrdtool.</p>
+
+<ul>
+<li><a href="http://www.enderunix.org/docs/freebsd+snmp+rrdtool.pdf">Turkish RRDtool Tutorial for FreeBSD</a></li>
+<li><a href="http://tilde.se/rrdtoolchartsinadobeflex2/">Using RRDtool with Adobe Flex</a></li>
+<li><a href="http://ed.zehome.com/?page=rrdtool">French RRDtutorial</a></li>
+<li><a href="http://silverwraith.com/papers/freebsd-snmp.php">Using SNMP and RRDTool on FreeBSD</a></li>
+<li><a href="http://www.photonway.net/Rrdtool-Tutorial-jp.html">Japanese Version of Alex's RRD-Tutorial</a></li>
+<li><a href="http://www.linux-magazin.de/Artikel/ausgabe/2004/06/perl/perl.html">RRDtool Intro from the German Linux Magazin</a></li>
+</ul>

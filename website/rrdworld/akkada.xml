@@ -1,0 +1,20 @@
+<rrdworld type="application"                          
+          icon="akkada.gi">
+ 
+       <name> akk@da </name>
+     <author> Piotr Kodzis </author>
+<description>System designed for middle size computer networks. Its purpose
+is to quick detect system or network fault and to display information about its
+for administrator. akk@da does not wait for information from any agents,
+systems. Almost all services of the monitored hosts are discovered
+automatically.</description>
+   <homepage> http://akkada.tivi.net.pl </homepage> 
+       <year> 2006 </year><month> 7 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> piotr.kodzis@inteligo.pl </email> <!-- Author contact -->
+
+</rrdworld>
+

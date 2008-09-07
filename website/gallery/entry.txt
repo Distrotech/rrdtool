@@ -1,0 +1,13 @@
+<gallery image="graph.png" > <!-- no wider than 600 pixle -->
+
+      <title> A Title for the Graph </title>
+     <author> Who created it ? </author> 
+<description> max 300 characters of background information. </description>
+       <year> 2005 </year><month> 4 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://somesite.blabla.plac </livesite> 
+      <email> max@example.com </email>
+
+</gallery>

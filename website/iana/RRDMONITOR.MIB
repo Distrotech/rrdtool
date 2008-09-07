@@ -1,0 +1,87 @@
+RRDMONITOR-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	NOTIFICATION-TYPE, OBJECT-TYPE, MODULE-IDENTITY
+		FROM SNMPv2-SMI
+	TEXTUAL-CONVENTION
+		FROM SNMPv2-TC
+	rrdtool
+		FROM RRDTOOL-SMI;
+
+rrdmonitor MODULE-IDENTITY
+	LAST-UPDATED "200505160000Z"
+	ORGANIZATION 
+		"RRDMonitor project"
+	CONTACT-INFO 
+		"contact 	info@rrdmonitor.net
+							http://rrdmonitor.net"
+	DESCRIPTION 
+		"The MIB module for SNMP variables specific to RRDMonitor project"
+::= { rrdtool 3 }
+
+
+EventType ::= TEXTUAL-CONVENTION
+	STATUS     current
+	DESCRIPTION 
+		"Defines the event type:
+		        warning    	-- The monitor condition is first time met
+		        critical   	-- The monitor condition is met again on the consequtive
+		                    		monitorin cycle
+		        clear    		-- The monitor condition is not met the first time after
+		                    		event type set or repeat"
+	SYNTAX  INTEGER {
+		warning (1),
+		critical (2),
+		clear (3)
+	}
+
+
+rrdmonitorAlarmTable  OBJECT-TYPE
+	SYNTAX SEQUENCE OF RrdmonitorAlarmEntry
+	MAX-ACCESS not-accessible
+	STATUS     current
+	DESCRIPTION 
+		""
+	::= { rrdmonitor 1 }
+
+rrdmonitorAlarmEntry  OBJECT-TYPE
+	SYNTAX 	RrdmonitorAlarmEntry
+	MAX-ACCESS not-accessible
+	STATUS     current
+	DESCRIPTION 
+		""
+	INDEX { rrdmonitorEventType, 
+		rrdmonitorMessage }
+	::= { rrdmonitorAlarmTable 1 }
+
+RrdmonitorAlarmEntry ::= SEQUENCE {
+	rrdmonitorEventType
+		EventType,
+	rrdmonitorMessage
+		OCTET STRING
+}
+
+rrdmonitorEventType  OBJECT-TYPE
+	SYNTAX     EventType
+	MAX-ACCESS read-write
+	STATUS     current
+	DESCRIPTION 
+		"The type of the event: warning(1), critical(2), clear(3)"
+	::= { rrdmonitorAlarmEntry 1 }
+
+rrdmonitorMessage  OBJECT-TYPE
+	SYNTAX     OCTET STRING (SIZE(0..128))
+	MAX-ACCESS read-write
+	STATUS     current
+	DESCRIPTION 
+		"The value of this object uniquely identifies this event entry."
+	::= { rrdmonitorAlarmEntry 2 }
+
+generic  NOTIFICATION-TYPE
+	OBJECTS { rrdmonitorEventType, 
+		rrdmonitorMessage }
+	STATUS     current
+	DESCRIPTION 
+		"The SNMP trap that is generated when an rrdmonitor monitor condition is changed for the leaf being monitored"
+	::= { rrdmonitor 2 }
+END

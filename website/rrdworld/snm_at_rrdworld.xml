@@ -1,0 +1,19 @@
+<rrdworld type="application"
+          icon="snm_at_rrdworld.png" > <!-- Size 100x66 -->
+ 
+       <name> SNM - System and Network Monitor </name>
+     <author> Thomas Price </author>
+<description> SNM is a tool to monitor, graph and alert system and network computing devices.
+ SNM runs on a Windows or Linux device on your network, 24 hours a day constantly recording the
+ parameters of the computing device using snmp, ping or custom modules. The recorded data is
+ stored for later reference via a user friendly menu-driven web browser. E-mail alerts are raised
+ if a user determined number of queries or thresholds fail. </description>
+   <homepage> http://snm.sourceforge.net/ </homepage> 
+       <year> 2006 </year><month> 5 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://snm.sourceforge.net/example.html </livesite> 
+
+</rrdworld>

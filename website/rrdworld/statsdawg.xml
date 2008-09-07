@@ -1,0 +1,10 @@
+<rrdworld type="application"> 
+       <name>StatsDawg</name>
+     <author>Tim Soderstrom</author>
+<description>Server status and tracking suite designed to be easy to install yet feature-rich. Based on
+PHP, RRDTool, and the Smarty Template Engine.</description>
+   <homepage>http://www.statsdawg.org</homepage> 
+       <year>2007</year><month>3</month> <!-- Entry creation date -->
+    <license>GPL</license>
+</rrdworld>
+
