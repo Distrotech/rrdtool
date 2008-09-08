@@ -5,7 +5,7 @@
  <nav:but tut            "Tutorials"               tut/index           tut       />
  <nav:but prog           "Programming"             prog/index          prog      />
  <nav:but rrdtrac        "Bugs, Wiki"              http://oss.oetiker.ch/rrdtool-trac/   />
- <nav:but support        "Support"                 support                       />
+ <nav:but support        "Support"                 support             sup_forum />
  <nav:but gallery        "Gallery"                 gallery/index       		 />
  <nav:but rrdworld       "Projects using RRDtool"  rrdworld/index                />
  <nav:but sponsor        "Sponsoring RRDtool"      sponsor                       />
@@ -15,6 +15,10 @@
 
 <nav:bar 1 doc           "doc/">
 #include "doc/navbar.inc"
+</nav:bar>
+
+<nav:bar 1 sup_forum     "./">
+<nav:but forum           "Forum" forum />
 </nav:bar>
 
 <nav:bar 1 pub           "pub/">
