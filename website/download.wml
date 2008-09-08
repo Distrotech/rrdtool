@@ -14,16 +14,16 @@ You can download RRD tool from several places:
 
 <p>You might want to read the <a href="doc/rrdbuild.en.html">build instructions</a> for inspiration on where to go after downloading the source.</p>
 
-<H2>Mirror Sites</H2>
-
-<UL>
-  <LI>BR <A HREF="ftp://ftp.pucpr.br/rrdtool/">ftp://ftp.pucpr.br/rrdtool/</A>. (Rafael Gustavo Gassner rafael.gassner@pucpr.br)</LI>
-  <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
-  <LI>NL <A HREF="ftp://ftp.bit.nl/mirror/rrdtool/">ftp://ftp.bit.nl/mirror/rrdtool/</A> (BIT, The Netherlands mirror@bit.nl)</LI>
-  <LI>RO <A HREF="http://ftp.idilis.ro/mirrors/rrdtool/">http://ftp.idilis.ro/mirrors/rrdtool/</A> (Dragos Nitu mirrors@idilis.net)</LI>
-  <LI>SE <A HREF="ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/">ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
-  <LI>SI <A HREF="http://www.fastmirrors.org/rrdtool/">http://www.fastmirrors.org/rrdtool/</A> (Tomy Kurtis webadmin [at] fastmirrors.org)</LI>
-</UL>
+#<H2>Mirror Sites</H2>
+#
+#<UL>
+#  <LI>BR <A HREF="ftp://ftp.pucpr.br/rrdtool/">ftp://ftp.pucpr.br/rrdtool/</A>. (Rafael Gustavo Gassner rafael.gassner@pucpr.br)</LI>
+#  <LI>FR <A HREF="ftp://ftp.fastorama.com/mirrors/rrdtool/">ftp://ftp.fastorama.com/mirrors/rddtool</A> (MrJacK mrjack@fastorama.com)</LI>
+#  <LI>NL <A HREF="ftp://ftp.bit.nl/mirror/rrdtool/">ftp://ftp.bit.nl/mirror/rrdtool/</A> (BIT, The Netherlands mirror@bit.nl)</LI>
+#  <LI>RO <A HREF="http://ftp.idilis.ro/mirrors/rrdtool/">http://ftp.idilis.ro/mirrors/rrdtool/</A> (Dragos Nitu mirrors@idilis.net)</LI>
+#  <LI>SE <A HREF="ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/">ftp://ftp.sunet.se/pub/network/monitoring/rrdtool/</A> (Johan.Hofvander@sdi.slu.se)</LI>
+#  <LI>SI <A HREF="http://www.fastmirrors.org/rrdtool/">http://www.fastmirrors.org/rrdtool/</A> (Tomy Kurtis webadmin [at] fastmirrors.org)</LI>
+#</UL>
 
 <H2>Binary Distributions</H2>
 
