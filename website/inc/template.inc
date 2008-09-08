@@ -104,7 +104,7 @@
 <div id="mirrors">
 <A HREF="http://oss.oetiker.ch/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
 <A HREF="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
-##<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
+#<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
 <A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
 #<A HREF="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</A><!-- <mirrors@heanet.ie>-->
 <A HREF="http://rrdtool.codemonkey.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
