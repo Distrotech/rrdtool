@@ -13,6 +13,17 @@ logging and graphing system for time series data. Use it to write your
 custom monitoring shell scripts or create whole applications using its Perl,
 Python, Ruby, TCL or PHP bindings.</p>
 
+<div style="float: left; margin-right: 10px;"><a href="http://www.usenix.org/lisa08/going">  <img src="http://www.usenix.org/events/lisa08/art/lisa08_going.jpg" border="0" width="162" height="57" alt="I'm going to LISA '08"/>  </a></div>
+
+<p>In November I am going to be at the LISA conference in San Diego. I will
+be teaching two half day RRDtool classes: <a
+href="http://www.usenix.org/events/lisa08/training/tutonefile.html#m9">RRDtool
+as a Communication Tool</a> and the all new <a
+href="http://www.usenix.org/events/lisa08/training/tutonefile.html#t4">RRDtool
+by Example</a> class where I'll walk you through actual examples of rrdtool
+code, and show you how to make the beast sing and dance.</p>
+
+
 <H2>Version 1.3.2 Released</H2>
 
 <p>All users of 1.3.x versions should <a href="download.var">upgrade</a> since the 1.3.2 release
