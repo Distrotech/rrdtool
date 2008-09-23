@@ -1,0 +1,17 @@
+<gallery image="pings.png" > <!-- no wider than 600 pixle -->
+
+      <title> RTT of MPLS VPN endpoints </title>
+     <author> Bruno Ciscato </author>
+<description>Although MPLS VPN endpoints seem just one hop away from
+the IP point of view, there is always a more complex underlying
+infrastructure.
+Collecting endpoint RTTs (pings) and plotting them reveals the hidden
+infrastructure. This image shows that there are 6 groups of endpoints
+that have consistent
+minimum RTTs. This is most likely due to the number of real hops in
+the underlying infrastructure and can also be influenced by the last
+mile technology. It's also easy to spot temporary re-routing: in this
+example the light green endpoint plots temporarily out of his
+"league".  </description>
+       <year> 2008 </year><month> 9 </month> <!-- creation date -->
+</gallery>

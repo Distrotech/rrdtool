@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "pings.xml"
 #include "systembelastung.xml"
 #include "filegroei.xml"
 #include "sip_messages_week.xml"
