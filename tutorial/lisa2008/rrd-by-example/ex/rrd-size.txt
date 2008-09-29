@@ -1,0 +1,7 @@
+DSs: 1  RRA Row: 1  RRAs: 1 == 552 byte
+DSs: 2  RRA Row: 1  RRAs: 1 == 872 byte
+DSs: 1  RRA Row: 2  RRAs: 1 == 560 byte
+DSs: 1  RRA Row: 1  RRAs: 2 == 752 byte
++1 DS:      320 byte
++1 RRA Row:   8 byte
++1 RRA:     200 byte

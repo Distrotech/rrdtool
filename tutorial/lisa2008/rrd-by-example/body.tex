@@ -1,0 +1,531 @@
+\mode<presentation>
+{
+  \usetheme{default} % no fancy navigation or anything ... 
+  \usecolortheme{tobi}
+  \usefonttheme{serif}   
+  \usepackage{lmodern}
+  \newcommand{\addgraph}[1]{\includegraphics[width=\textwidth]{ex/#1}}
+}
+\mode<article>
+{
+  %\usepackage[colorlinks,hyperindex,plainpages=false]{hyperref}
+  \usepackage{url}
+  \usepackage{graphicx}
+  \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+  \setlength{\parindent}{0pt}  
+  \usepackage{times}
+  \newcommand{\addgraph}[1]{\begin{center}\framebox{\includegraphics[width=0.7\textwidth]{ex/#1}}\end{center}}
+}
+\usepackage{alltt}
+\usepackage{listings}
+\usepackage{svgcolor}
+\usepackage[english]{babel}
+% or whatever
+\mode<article>{
+}
+
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\title
+{RRDtool by Example}
+
+\author
+{Tobias Oetiker}
+
+\institute
+{OETIKER+PARTNER AG}
+
+\date[LISA 2008] % (optional, should be abbreviation of conference name)
+{21. Large Installation System Administration Conference}
+
+\mode<presentation>{\subject{RRDtool tutorial based on example use}}
+
+\mode<presentation>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize\color{black},%
+   keywordstyle=\color{darkgreen},%
+%  identifyerstyle=\color{brown},%
+   commentstyle=\color{mediumpurple},%
+   stringstyle=\color{dimgray},
+   numberstyle=\ttfamily\scriptsize\color{darkgray},
+   showstringspaces=false
+ }
+}
+\mode<article>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize,%
+   keywordstyle=\bfseries,%
+   numberstyle=\ttfamily\scriptsize,
+%  identifyerstyle=\color{brown},%
+   commentstyle=\itshape,%
+   stringstyle=\color{black},
+   showstringspaces=false
+ }
+}
+
+\begin{document}
+
+\mode<article>{\maketitle}
+
+\begin{frame}<presentation>
+  \titlepage
+\end{frame}
+
+\mode<articel>{\tableofcontents}
+
+\section{A different kind of Database}
+
+\begin{frame}{creating a simple rrd}
+\lstinputlisting[language=bash,firstline=0,lastline=11]{ex/create-first.sh}
+One Datasource, 4 Round Robin Archives
+\end{frame}
+
+\begin{frame}{feeding data}
+\lstinputlisting[language=bash,firstline=13,lastline=21]{ex/create-first.sh}
+Feed in some data. One or several updates at once.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{inside the database}
+\lstinputlisting[language=xml,basicstyle=\ttfamily\scriptsize]{ex/create-first.xml}
+\end{frame}
+
+\mode<article>{
+The xml dump of the rrd file shows an approximation of the on-disk
+structure of the database. The rra database sections are re-ordered, so that
+they are in chronological order with the oldest at the top. Also the
+cdp sections are stored right after the header. Idea behind this
+design is, that things that get written on every update are as close
+together as possible.}
+
+\begin{frame}{rrd features}
+\begin{itemize}
+\item optimized for time-series data
+\item fixed size rotating data store
+\item constant on-disk size
+\item no maintenance
+\item on the fly consolidation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{on-disk structure}
+\begin{alltt}
++-------------------------------+
+| Static Header                 | \textrm{RRD Cookie, DB Cfg}
+|-------------------------------| 
+: Data Source (DS) Definitions  : 
+|-------------------------------|
+: RR Archive (RRA) Definitions  : 
+|===============================|
+| Live Head                     | \textrm{Last Update Time}
+|-------------------------------| 
+: PDP Prep per DS               : \textrm{Last Value for Diff}
+|-------------------------------|
+: CDP Prep per RRA and DS       : \textrm{Intermediate Storage}
+|-------------------------------|
+: RRA Pointers                  :
+|===============================|
+: Round Robin Archives (RRA)    :
++-------------------------------+
+\end{alltt}
+\end{frame}
+
+\begin{frame}{irregular data arrival intervals}
+\lstinputlisting[language=bash,lastline=19]{ex/update-real.sh}
+\end{frame}
+
+\mode<article>{To try things out, lets assume that data arrives at
+  irregular intervals. This is counter data, by synchronizing the
+  data values with the arrival time we should get a constant rate
+  stored in the database.}
+
+\begin{frame}{database after the irregular updates}
+\lstinputlisting[language=bash,firstline=20]{ex/update-real.sh}
+\lstinputlisting[language=bash]{ex/update-real.txt}
+
+\begin{itemize}
+\item rrdtool re-binning at work
+\item major difference to a normal db
+\item all bins contain 1.0
+\item the time is the 'end-time' of the bin.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{optimizing your rrds}
+\begin{itemize}
+\item update of multi DS RRD is cheep
+\item single update interval per RRD
+\item RRD modification is expensive
+\item RRD size and update performance are independent
+\item RRA complexity affects update performance
+\end{itemize}
+\end{frame}
+
+\mode<article>{As long as your system is small (a few hundred rrds)
+  you should optimize for convenience. Only keep these DSes together
+  in one RRD that are tightly bound together. For everything else
+  create separate rrds.}
+
+\begin{frame}{fetching data}
+fetch is for reading data from an rrd
+\lstinputlisting[language=bash,firstline=8,lastline=9]{ex/catch-fetch.sh}
+\begin{itemize}
+\item one RRA with two 300s entries
+\item one RRA with three 600s entries
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{playing catch with fetch}
+first pull 300 seconds
+\begin{verbatim}
+> rrdtool fetch x.rrd -r 300 \
+  -s 1200000600 -e 1200000900 AVERAGE
+
+1200000900: 4.0000000000e+01
+1200001200: 5.0000000000e+01
+\end{verbatim}
+
+then pull 900 seconds
+\begin{verbatim}
+> rrdtool fetch x.rrd -r300 \
+  -s 1200000000 -e 1200000900 AVERAGE
+
+1200000600: 2.5000000000e+01
+1200001200: 4.5000000000e+01
+\end{verbatim}
+\end{frame}
+
+\begin{frame}{fetch recap}
+\begin{itemize}
+\item looking for complete coverage
+\item resolution is only a suggestion
+\item time stamp in output marks the END of the period
+\item end-time differences cause problem
+\item since 1.3 only the start-time is relevant for coverage
+\item outside the rra everything is nan
+\end{itemize}
+\end{frame}
+
+\begin{frame}{the size of an rrd - code}
+\lstinputlisting{ex/rrd-size.pl}
+\end{frame}
+
+\begin{frame}{the size of an rrd - result}
+\lstinputlisting{ex/rrd-size.txt}
+\begin{itemize}
+\item overhead is minimal
+\item 8 byte per double 
+\item \ldots per Datasource
+\item \ldots per RRA
+\item \ldots per RRA Row
+\end{itemize}
+\end{frame}
+
+\mode<article>{The rrd format is highly efficient at storing non
+  sparse data. The overhead for an extra RRA or DS is normally a few
+  bytes on top of the 8 Byte per double.}
+
+\section{Graphing}
+\begin{frame}[fragile]{rrdgraph syntax 101}
+for graph command syntax, there are two basic rules:\pause
+\begin{enumerate}
+\item \texttt{-{}-options} start with a double dash\pause
+\item graphing instructions start with a letter
+\end{enumerate}
+
+\pause
+\begin{center}
+\renewcommand{\tabcolsep}{0.4cm}
+\renewcommand{\arraystretch}{2}
+
+\begin{tabular}{|l|}\hline
+\begin{minipage}[t]{0.7\textwidth}
+\begin{alltt}
+rrdtool graph \textit{output}
+   DEF:var=\textit{rrd}:\textit{DS}:\textit{AVARAGE}
+   LINE:var#\textit{hex-rgb-color}:Comment
+
+\end{alltt}
+\end{minipage}\\\hline
+\end{tabular}
+\end{center}
+
+\texttt{DEF} and \texttt{LINE} are \emph{graphing instructions}.
+\end{frame}
+
+\mode<article>{The rrd graph command is the most versatile of all rrdtool
+  commands. It comes with its own little language, optimized for
+  drawing graphs. There are two kinds of arguments. The options,
+  which start with a double-dash and the graphing instruction  that
+  start with an uppercase letter.}
+
+\begin{frame}{normal line}
+\addgraph{LINE}
+\end{frame}
+
+\begin{frame}{lower limit}
+\addgraph{LINE-lower}
+\end{frame}
+
+\mode<article>{Unless you are a baker and are drawing stock diagrams,
+  make sure your graph displays the zero-y-value. Otherwise it is
+  pretty difficult to judge the meaning of the graph since perspective
+  is limited to the numbers on the y-axis.}
+
+\begin{frame}{slope mode}
+\addgraph{LINE-slope}
+\end{frame}
+
+\mode<article>{RRD graphs are pretty blocky. This is on purpose, since
+  the data is blocky too. The slope mode is a little concession by
+  tilting the vertical connections between the 'block' by one pixel.}
+
+\begin{frame}{anti-anti-aliasing: graph}
+\addgraph{LINE-graph-mono}
+\end{frame}
+
+\begin{frame}{anti-anti-aliasing: font}
+\addgraph{LINE-font-mono}
+\end{frame}
+
+\begin{frame}{line width}
+\addgraph{LINE-width}
+\end{frame}
+
+\begin{frame}{dashed line}
+\addgraph{LINE-dash}
+\end{frame}
+
+\mode<article>{The numbers are in ON-OFF-ON-OFF-\ldots pattern. The
+  \texttt{dash-offset} property lets you shift the dashing of the line
+  to the right.}
+
+\begin{frame}{DEF with :step}
+\addgraph{DEF-step}
+\end{frame}
+
+
+\begin{frame}{DEF with :start}
+\addgraph{DEF-start}
+\end{frame}
+
+\begin{frame}{DEF with :reduce}
+\addgraph{DEF-reduce}
+\end{frame}
+
+\begin{frame}{AREA simple}
+\addgraph{AREA-simple}
+\end{frame}
+
+\begin{frame}{two AREAs}
+\addgraph{AREA-two}
+\end{frame}
+
+\begin{frame}{transparent AREA}
+\addgraph{AREA-trans}
+\end{frame}
+
+\mode<article>{RRDtool creates real alpha transparency, you can set
+  the whole graph to be transparent by setting the 
+  graph CANVAS and BACKGROUND colors to transparent.}
+
+\begin{frame}{stacked AREA}
+\addgraph{AREA-stack}
+\end{frame}
+
+\begin{frame}{time shift}
+\addgraph{SHIFT-simple}
+\end{frame}
+
+\begin{frame}{shifting with extra data}
+\addgraph{SHIFT-startdef}
+\end{frame}
+
+\mode<article>{A normal \texttt{DEF} line requests exactly as much data as it
+requires for drawing the graph. When you \texttt{SHIFT} the data, you
+may want to adjust the data fetched accordingly.}
+
+\section{Revers Polish Notation (RPN) Math}
+
+\mode<article>{RRDtool lets you apply math operations to the data
+  prior to showing it to the user. It uses RPN math for this. If you
+  ever owned a classic HP calculator, you may still remember how RPN
+  math works. For all the others, there is a little example below,
+  that shows how todo a little addition in RPN.}
+
+\begin{frame}[fragile]{RPN basics: Step 0}
+$15+23=38$
+\begin{alltt}
+            1: NAN
+            2: NAN
+            3: NAN
+\end{alltt}
+\end{frame}
+\begin{frame}[fragile]{RPN basics: Step 1}
+$\mathbf{15}+23=38$
+\begin{alltt}
+[15]        1: \textbf{15}
+            2: NAN
+            3: NAN
+\end{alltt}
+\end{frame}
+\begin{frame}[fragile]{RPN basics: Step 2}
+$15+\mathbf{23}=38$
+\begin{alltt}
+[23]        1: \textbf{23}
+            2: 15
+            3: NAN
+\end{alltt}
+\end{frame}
+\begin{frame}[fragile]{RPN basics: Step 3}
+$15\mathbf{+}23=38$
+\begin{alltt}
+[+]         1: \textbf{38}
+            2: NAN
+            3: NAN
+\end{alltt}
+\end{frame}
+
+
+\begin{frame}{math in the graph (+)}
+\addgraph{RPN-simple}
+\end{frame}
+
+\mode<article>{A simple addition. We add a fixed value to one a data
+  source. Note that at least one data source must appear inside a CDEF
+  expression. The input to a CDEF expression can come from another
+  CDEF expression.}
+
+\begin{frame}{the MAX function}
+\addgraph{RPN-max}
+\end{frame}
+
+\mode<article>{The MAX function operates on two value. In this example
+  the input comes from two different data sources.}
+
+\begin{frame}{the LIMIT function}
+\addgraph{RPN-limit}
+\end{frame}
+
+\mode<article>{The \texttt{LIMIT} function will return UNKNOWN as soon
+  as the input value is outside the given range. UNKNOWN data does not
+  get drawn.}
+
+\begin{frame}{the TREND function}
+\addgraph{RPN-trend}
+\end{frame}
+
+\mode<article>{If a data source varies massively, the TREND function
+  lets you smooth away by building a moving average. By calculating
+  the average the output gets shifted by the length of the TREND
+  calculation.}
+
+\begin{frame}{the TREND with early start}
+\addgraph{RPN-trend-start}
+\end{frame}
+
+\mode<article>{In the previous graph there was a bit of data missing
+  at the left border of the graph. This was because rrdgraph loads
+  exactly the amount of data that is required in the graph (yes same
+  story as before). By loading more data, we can provide the TREND
+  function with enough input, so that it can calculate the first few
+  pixel as well.}
+
+\begin{frame}{the TREND and SHIFT}
+\addgraph{RPN-trend-shift}
+\end{frame}
+
+\mode<article>{Another interesting option, is to SHIFT the result of
+  the TREND calculation back in time, so that it matches with the
+  source data, since this may allow us to see when there are
+  'outliners'}
+
+\begin{frame}{the IF function}
+\addgraph{RPN-if}
+\end{frame}
+
+\mode<article>{The IF function requires three items on the stack. It
+  turns \texttt{a,b,c,IF} into \texttt{if a then b else c}. There is a
+  bunch  of operators that go along with the \texttt{IF}: \texttt{LT}
+  less, \texttt{LE} - less or equal, \texttt{EQ} - equal, \texttt{NE}
+  not equal, \texttt{GE} - greater or equal, \texttt{GT} - greater.}
+
+\begin{frame}{about invisibility}
+\addgraph{RPN-UNKN}
+\end{frame}
+
+\mode<article>{Unknown values can not be drawn. Here we use this to
+  just show a value if it is the largest one.}
+
+\begin{frame}{positional drawing count}
+\addgraph{RPN-count}
+\end{frame}
+
+\mode<article>{If you were into bar charts, you might fake them with
+  this trick. COUNT, counts the values of the data set. We use this,
+  together with the modulo operator to suppress drawing the every
+  third entry.}
+
+\begin{frame}{access the previous value}
+\addgraph{RPN-prev}
+\end{frame}
+
+\begin{frame}{positional drawing time}
+\addgraph{RPN-time}
+\end{frame}
+
+\begin{frame}{positional drawing time-shifting}
+\addgraph{RPN-time-minus}
+\end{frame}
+
+\mode<article>{There is also a function for accessing the Unix time
+  (seconds since 1970). With it you can make your stripes a fixed
+  number of seconds wide.} 
+
+\section{Consolidation functions}
+
+\begin{frame}{calculating in the graph}
+\addgraph{VDEF-average}
+\end{frame}
+
+\section{Holt-Winters Aberrant Behaviour Detection}
+
+%\includegraphics[width=0.6\textwidth]{js/scoping-correct}
+
+\mode<presentation>{
+\begin{frame}
+\begin{center}
+% Code walk through of the SmokeTrace application.
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\Huge ?
+\end{center}
+\end{frame}
+\begin{frame}
+\begin{center}
+Tobi Oetiker <tobi@oetiker.ch>
+\end{center}
+\end{frame}
+}
+
+\mode<article>{
+\vspace{3cm}
+Tobias Oetiker <tobi@oetiker.ch>
+}
+\end{document}
+%%% Local Variables:
+%%% TeX-master: "presentation.tex"
+%%% mode: flyspell
+%%% TeX-PDF-mode: t
+%%% End:
