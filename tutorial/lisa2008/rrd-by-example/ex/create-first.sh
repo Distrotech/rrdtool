@@ -1,5 +1,5 @@
 #!/bin/sh
-export PATH=/scratch/rrd4/bin:$PATH
+PATH=/scratch/rrd4/bin:$PATH
 R=rrdtool
 $R create first.rrd \
    --step=300 \
