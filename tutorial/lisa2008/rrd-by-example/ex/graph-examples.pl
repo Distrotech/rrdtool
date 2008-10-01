@@ -174,6 +174,7 @@ rg 'RPN-trend-start.pdf',
           'LINE1:r#3a1:a',   
           'LINE1:k#21f:b',                     
           'COMMENT:b=a,3600,TREND\l';
+
 rg 'RPN-trend-shift.pdf',         
           'DEF:rr=x.rrd:r:AVERAGE:start='.($start-3600),
           'CDEF:k=rr,3600,TREND',
@@ -181,6 +182,14 @@ rg 'RPN-trend-shift.pdf',
           'LINE1:r#3a1:a',   
           'COMMENT:CDEF\:b=a,3600,TREND <b>SHIFT</b>\:b\:-1800',
           'LINE1:k#21f:b\l';                    
+
+if ( ! -f '1.rrd'){
+        system $R,'create','1.rrd',
+                  '--step' => 1,
+                  '--start' => ($start-1),
+                  'DS:a:GAUGE:2:U:U',
+                  'RRA:AVERAGE:0.4:1:1' };
+
 
 rg 'RPN-if.pdf',
           'CDEF:c=a,b,LT,a,b,IF,4,-',
@@ -206,6 +215,23 @@ rg 'RPN-time-minus.pdf',
           'CDEF:c=TIME,1,-,1800,%,900,GE,a,UNKN,IF',
           'AREA:c#8a1:c=TIME,<b>1,-</b>,1800,%,900,GE,a,UNKN,IF';
 
+if ( ! -f '1.rrd'){
+        system $R,'create','1.rrd',
+                  '--step' => 1,
+                  '--start' => ($start-1),
+                  'DS:a:GAUGE:2:U:U',
+                  'RRA:AVERAGE:0.4:1:1' };
+
+rg 'RPN-time-odd.pdf',
+          'CDEF:c=TIME,1756,%,180,GE,a,UNKN,IF',
+          'AREA:c#8a1:c=TIME,1756,%,180,GE,a,UNKN,IF';
+
+rg 'RPN-time-odd-hires.pdf',
+          'DEF:s=1.rrd:a:AVERAGE',
+          'CDEF:c=s,POP,TIME,1756,%,180,GE,a,UNKN,IF',
+          'COMMENT:DEF\:one=1.rrd\:one\:AVERAGE',
+          'AREA:c#8a1:c=one,POP,TIME,1756,%,180,GE,a,UNKN,IF';
+
 rg 'RPN-prev.pdf',
           'CDEF:c=COUNT,3,%,0,EQ,a,UNKN,IF',
           'CDEF:d=COUNT,3,%,1,EQ,PREV,c,IF',
@@ -219,4 +245,27 @@ rg 'VDEF-average.pdf',
                'GPRINT:aavg:avg %.1lf',
                'COMMENT:<b>VDEF</b>\:b=a,AVERAGE <b>GPRINT</b>\:b\:avg %.1lf\l';
 
+rg 'VDEF-minmax.pdf', 
+               'LINE2:a#4f4',
+               'VDEF:amax=a,MAXIMUM',
+               'LINE:amax#123',
+               'VRULE:amax#123:max',          
+               'GPRINT:amax:%.1lf',
+               'GPRINT:amax:%H\:%M:strftime',
+               'COMMENT:VDEF\:max=a,MAXIMUM\l',
+               'VDEF:amin=a,MINIMUM',
+               'LINE:amin#48f',
+               'VRULE:amin#48f:min',
+               'GPRINT:amin:%.1lf',
+               'GPRINT:amin:%H\:%M:strftime',
+               'COMMENT:VDEF\:min=a,MINIMUM\l';
+
+rg 'VDEF-lsl.pdf', 
+               'VDEF:slope=a,LSLSLOPE',
+               'VDEF:int=a,LSLINT',                       
+               'CDEF:lsl=a,POP,COUNT,slope,*,int,+',
+               'GPRINT:slope:VDEF\:slope=a,LSLSLOPE (%.3lf)\l',
+               'GPRINT:int:VDEF\:int=a,LSLINT (%.1lf)\l',
+               'LINE2:a#8f1:a',
+               'LINE2:lsl#f71:lsl=a,POP,COUNT,slope,*,int,+\l';
 
