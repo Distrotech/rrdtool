@@ -5,12 +5,13 @@
   \usefonttheme{serif}   
   \usepackage{lmodern}
   \newcommand{\addgraph}[1]{\includegraphics[width=\textwidth]{ex/#1}}
+  \setbeamercovered{transparent=25}
 }
 \mode<article>
 {
-  %\usepackage[colorlinks,hyperindex,plainpages=false]{hyperref}
   \usepackage{url}
   \usepackage{graphicx}
+  \usepackage[colorlinks,hyperindex,plainpages=false]{hyperref}
   \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
   \setlength{\parindent}{0pt}  
   \usepackage{times}
@@ -20,10 +21,6 @@
 \usepackage{listings}
 \usepackage{svgcolor}
 \usepackage[english]{babel}
-% or whatever
-\mode<article>{
-}
-
 \usepackage[latin1]{inputenc}
 % or whatever
 
@@ -120,19 +117,19 @@ together as possible.}
 \begin{alltt}
 +-------------------------------+
 | Static Header                 | \textrm{RRD Cookie, DB Cfg}
-|-------------------------------| 
+|-------------------------------|\pause 
 : Data Source (DS) Definitions  : 
-|-------------------------------|
+|-------------------------------|\pause
 : RR Archive (RRA) Definitions  : 
-|===============================|
+|===============================|\pause
 | Live Head                     | \textrm{Last Update Time}
-|-------------------------------| 
+|-------------------------------|\pause 
 : PDP Prep per DS               : \textrm{Last Value for Diff}
-|-------------------------------|
+|-------------------------------|\pause
 : CDP Prep per RRA and DS       : \textrm{Intermediate Storage}
-|-------------------------------|
+|-------------------------------|\pause
 : RRA Pointers                  :
-|===============================|
+|===============================|\pause
 : Round Robin Archives (RRA)    :
 +-------------------------------+
 \end{alltt}
@@ -159,6 +156,7 @@ together as possible.}
 \end{itemize}
 \end{frame}
 
+\mode<article>{\newpage}
 \begin{frame}{optimizing your rrds}
 \begin{itemize}
 \item update of multi DS RRD is cheep
@@ -173,6 +171,8 @@ together as possible.}
   you should optimize for convenience. Only keep these DSes together
   in one RRD that are tightly bound together. For everything else
   create separate rrds.}
+
+\mode<article>{\newpage}
 
 \begin{frame}{fetching data}
 fetch is for reading data from an rrd
@@ -218,6 +218,8 @@ then pull 900 seconds
 \lstinputlisting{ex/rrd-size.pl}
 \end{frame}
 
+\mode<article>{\newpage}
+
 \begin{frame}{the size of an rrd - result}
 \lstinputlisting{ex/rrd-size.txt}
 \begin{itemize}
@@ -232,6 +234,8 @@ then pull 900 seconds
 \mode<article>{The rrd format is highly efficient at storing non
   sparse data. The overhead for an extra RRA or DS is normally a few
   bytes on top of the 8 Byte per double.}
+
+\mode<article>{\newpage}
 
 \section{Graphing}
 \begin{frame}[fragile]{rrdgraph syntax 101}
@@ -296,6 +300,7 @@ rrdtool graph \textit{output}
 \addgraph{LINE-font-mono}
 \end{frame}
 
+\mode<article>{\newpage}
 \begin{frame}{line width}
 \addgraph{LINE-width}
 \end{frame}
@@ -316,6 +321,7 @@ rrdtool graph \textit{output}
 \begin{frame}{DEF with :start}
 \addgraph{DEF-start}
 \end{frame}
+\mode<article>{\newpage}
 
 \begin{frame}{DEF with :reduce}
 \addgraph{DEF-reduce}
@@ -325,6 +331,7 @@ rrdtool graph \textit{output}
 \addgraph{AREA-simple}
 \end{frame}
 
+\mode<article>{\newpage}
 \begin{frame}{two AREAs}
 \addgraph{AREA-two}
 \end{frame}
@@ -337,9 +344,12 @@ rrdtool graph \textit{output}
   the whole graph to be transparent by setting the 
   graph CANVAS and BACKGROUND colors to transparent.}
 
+\mode<article>{\newpage}
 \begin{frame}{stacked AREA}
 \addgraph{AREA-stack}
 \end{frame}
+
+\mode<article>{\newpage}
 
 \begin{frame}{time shift}
 \addgraph{SHIFT-simple}
@@ -353,6 +363,7 @@ rrdtool graph \textit{output}
 requires for drawing the graph. When you \texttt{SHIFT} the data, you
 may want to adjust the data fetched accordingly.}
 
+\mode<article>{\newpage}
 \section{Revers Polish Notation (RPN) Math}
 
 \mode<article>{RRDtool lets you apply math operations to the data
@@ -439,6 +450,8 @@ $15\mathbf{+}23=38$
   function with enough input, so that it can calculate the first few
   pixel as well.}
 
+\mode<article>{\newpage}
+
 \begin{frame}{the TREND and SHIFT}
 \addgraph{RPN-trend-shift}
 \end{frame}
@@ -447,6 +460,9 @@ $15\mathbf{+}23=38$
   the TREND calculation back in time, so that it matches with the
   source data, since this may allow us to see when there are
   'outliners'}
+
+\mode<article>{\newpage}
+
 
 \begin{frame}{the IF function}
 \addgraph{RPN-if}
@@ -490,23 +506,283 @@ $15\mathbf{+}23=38$
   (seconds since 1970). With it you can make your stripes a fixed
   number of seconds wide.} 
 
+\begin{frame}{time and resolution issues}
+\addgraph{RPN-time-odd}
+\end{frame}
+
+\mode<article>{\newpage}
+
+\mode<article>{Whenever RRDtool has to do math with
+data sets that come in different step sizes, it first has to
+to adjust the resolutions to match. To do this, it finds the greatest
+common divisor and uses it as the new step size.}
+
+\begin{frame}[fragile]{CDEF internals}
+\begin{itemize}
+\item data may come in different resolution
+\item all items in a CDEF must have the same resolution
+\item resolution is expanded to greatest common devisor (gcd)
+\item example: lcd(6,9) = 3, lcd(1,6) = 1
+\end{itemize}
+
+trick: an rrd with one a second step.
+\begin{alltt}
+rrdtool create one.rrd --step=1
+   DS:one:GAUGE:2:U:U
+   RRA:AVERAGE:0.5:1:1
+\end{alltt}
+\end{frame}
+
+\begin{frame}{step=1 trick: high resolution cdef}
+\addgraph{RPN-time-odd-hires}
+\end{frame}
+
+\mode<article>{By introducing this special rrd with a one second step
+the greatest common divisor (gcd) becomes one.}
+
 \section{Consolidation functions}
 
-\begin{frame}{calculating in the graph}
+\begin{frame}{finding the average}
 \addgraph{VDEF-average}
 \end{frame}
 
-\section{Holt-Winters Aberrant Behaviour Detection}
-
-%\includegraphics[width=0.6\textwidth]{js/scoping-correct}
-
-\mode<presentation>{
-\begin{frame}
-\begin{center}
-% Code walk through of the SmokeTrace application.
-\end{center}
+\begin{frame}{calculating min and max}
+\addgraph{VDEF-minmax}
 \end{frame}
 
+
+\mode<article>{\newpage}
+
+\begin{frame}[fragile]{min max code example}
+\begin{alltt}
+LINE:a#456:a
+VDEF:max=a,MAXIMUM
+LINE:max#123
+VRULE:max#123:maximum
+GPRINT:max:%.1lf
+GPRINT:max:%H\(\backslash\):%M\textbf{:strftime}
+\end{alltt}
+A VDEF result has a value and a time assigned.
+\end{frame}
+
+\begin{frame}{Least Squares Line (y=x*m+b)}
+\addgraph{VDEF-lsl}
+\end{frame}
+
+
+\mode<article>{\newpage}
+\section{Holt-Winters Aberrant Behaviour Detection}
+
+\begin{frame}{about alert generation}
+\begin{itemize}
+\item when something unexpected happens send an alert\pause
+\item fixed thresholds are too wide a net\pause
+\item moving averages weighs all data equal\pause
+\item holt winters can predict the future\pause
+\item and no one thinks they are clever enough to use it
+\end{itemize}
+\end{frame}
+
+\begin{frame}{rrd - holt winters assumptions}
+\begin{itemize}
+\item data is periodic in nature
+\item data has continuity 
+\item data continuity is periodic
+\item recent data is more important
+\end{itemize}
+\end{frame}
+
+\begin{frame}{holt winters aberrant behavior}
+\begin{itemize}
+\item prediction of future value and confidence band
+\item confidence band is like a standard deviation
+\item real value compared to predicted value +/- confidence band
+\end{itemize}
+\end{frame}
+
+\mode<article>{With holt winters, RRDtool will calculate a prediction
+  and a confidence band (think of it as a standard deviation) for the
+  current value. It will then compare the prediction with the
+  actual value. If the actual value falls outside the confidence band
+  of the predicted value (or some multiple of it), then a confidence
+  band violation is registered. If multiple violations are registered
+  within a configurable interval, RRDtool logs a failure.}
+
+\begin{frame}<presentation>{holt winters configuration}
+\begin{itemize}
+\item HWPREDICT for starters
+\item tweaking required
+\item know the knobs to turn
+\item use real data to test
+\item FAILURES very short
+\item \texttt{rrdtool tune} and \texttt{resize}
+\end{itemize}
+\end{frame}
+
+\mode<article>{
+\begin{itemize}
+\item Keep it simple, go for HWPREDICT only when you start using
+  Holt-Winters in RRDtool.
+\item Every data set is different, tweaking is required. 
+\item Know which knobs to turn.
+\item Use real data when experimenting.
+\item Use \texttt{rrdtool tune} to tweak settings.
+\item The FAILURES RRA is short!
+\end{itemize}
+}
+
+\begin{frame}{holt winters parameters}
+\texttt{RRA:HWPREDICT:}\emph{rows}\texttt{:}\emph{alpha}\texttt{:}\emph{beta}\texttt{:}\emph{period}
+
+\begin{description}
+\item[\emph{alpha}:] adaption rate of the baseline (1 fast, 0 slow)
+\item[\emph{beta}:] adaption rate of the slope (1 fast, 0 slow)
+\item[\emph{period}:] how many steps in a period (use 1 to  disable)
+\item[\emph{gamma}:] seasonal adaption rate of the baseline\\(alpha by
+  default)
+\item[\emph{dev\_gamma}:] seasonal adaption rate of the confidence
+  band\\
+ (gamma by default)
+\end{description}
+
+the gamma and confidence band are tunable with \texttt{rrdtool tune}
+\end{frame}
+
+\mode<article>{
+Reading \href{http://cricket.sourceforge.net/aberrant/lisa2000_paper.pdf}{Brutlag's original paper}
+I wrote down the formulas he uses for calculating holt winters. This
+helped me quite a lot in understanding the relationships between
+alpha, beta, gamma and delta.}
+
+\begin{frame}[fragile]{the rrdtool holt winters formula}
+\begin{small}
+\begin{alltt}
+a - baseline (RRA CDP Parameter)
+b - slope (RRA CDP Parameter)
+c - seasonal (SEASONAL RRA)
+d - deviation (DEVSEASONAL RRA)
+pred - predicted value
+real - real value\pause
+
+pred\{next\} = a\{now\} + b\{now\} + c\{next_prev_period\}\pause
+
+a\{now\} = alpha * (real\{now\} - c\{now_prev_period\}) 
+         + (1-alpha) * ( a\{prev\} + b\{prev\})\pause
+b\{now\} = beta  * (a\{now\} - a\{prev\}) 
+         + (1-beta) * b_prev\pause
+c\{now\} = gamma * (real\{now\} - a\{now\}) 
+         + (1-gamma) * c\{now_prev_period\}\pause
+d\{now\} = dev_gamma * abs(real\{now\} - pred\{now\}) 
+         + (1-dev_gamma) * d\{now_prev_period\}\pause
+
+\end{alltt}
+\end{small}
+\end{frame}
+
+% must be formatted like that
+% to break gobbling mode!
+%\mode
+%<all>
+
+\begin{frame}{hw demo: the test data}
+\addgraph{HW-input}
+
+traffic at a peering point
+\end{frame}
+
+\begin{frame}[fragile]{drawing a hw graph}
+\begin{lstlisting}[language=xml]
+DEF:in=hw.rrd:in:AVERAGE
+DEF:pred=hw.rrd:in:HWPREDICT
+DEF:conf=hw.rrd:in:DEVPREDICT
+DEF:fail=hw.rrd:in:FAILURES
+TICK:fail#ff8:1:Failures
+CDEF:lowconf=pred,conf,2,*,-
+LINE1:lowconf
+CDEF:confwidth=conf,4,*
+AREA:confwidth#cfc:Band:STACK
+LINE0.1:0#3a1::STACK
+LINE0.1:lowconf#3a1
+LINE1:in#c00:InOctets
+LINE1:pred#0a0:Prediction
+\end{lstlisting}
+\end{frame}  
+
+\mode<article>{For starters we set the period to 1. This
+  disables HW's ability to adjust to periodic behavior in the data but
+  it lets us better observer the effect of the different graph
+  parameters since the adjustment period is much shorter.}
+
+\begin{frame}{hw demo: alpha}
+\addgraph{HW-p1-a0_5-b0_001}\\
+\addgraph{HW-p1-a0_1-b0_001}
+\end{frame}
+
+\mode<article>{The smaller the alpha the slower the adaption. As the
+  prediction is now generally off by quite a bit, this causes the
+  confidence band to grow as well.}
+
+\begin{frame}{hw demo: beta}
+\addgraph{HW-p1-a0_1-b0_001}\\
+\addgraph{HW-p1-a0_1-b0_1}
+\end{frame}
+
+\mode<article>{The larger the beta, the 'heavier' the prediction
+  becomes.}
+
+\begin{frame}{hw demo: period}
+\addgraph{HW-p1-a0_5-b0_001}\\
+\addgraph{HW-p48-a0_5-b0_001}
+\end{frame}
+
+\begin{frame}{hw demo: tuning}
+\addgraph{HW-p48-a0_5-b0_001}\\
+\addgraph{HW-p48-a0_2-b0_001}
+\end{frame}
+
+\begin{frame}{hw demo: tuning II}
+\addgraph{HW-p48-a0_2-b0_001}\\
+\addgraph{HW-p48-a0_03-b0_001}
+\end{frame}
+
+\begin{frame}{hw demo: tuning II}
+\addgraph{HW-p48-a0_03-b0_001}\\
+\addgraph{HW-p48-a0_03-b0_1}
+\end{frame}
+
+\section{Real Live Example}
+
+\mode<article>{The following example shows how to create a simple
+  traffic grapher with a shell script for data acquisition, and an
+  rrdcgi script to draw the graphs.}
+
+\begin{frame}
+\includegraphics[width=\textwidth]{traffic/codewalk}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{data acquisition}
+\lstinputlisting[language=bash]{traffic/ifbyteget.sh}
+\end{frame}
+
+\mode<article>{This little bash script polls the network traffic
+  counter from the linux proc tree and reformats it so that it can be
+  fed to rrdtool.}
+
+\begin{frame}[allowframebreaks]{rrdcgi: scripting for the poor}
+\lstinputlisting[language=xml]{traffic/index.cgi}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{rrdcgi: include file function}
+\lstinputlisting[language=xml]{traffic/graph.inc}
+\end{frame}
+
+\mode<article>{RRDtool's rrdcgi is a very simple scripting engine, that can pick
+  up pseudo xml elements from an html file and execute the
+  coresponding rrdtool commands. In this example we use environment
+  variables and an include file to save us from typing in the same
+  graph definition over and over again.}
+
+\mode<presentation>{
 \begin{frame}
 \begin{center}
 \Huge ?
