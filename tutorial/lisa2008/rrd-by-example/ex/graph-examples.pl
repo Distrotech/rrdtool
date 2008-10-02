@@ -90,7 +90,7 @@ rg "LINE-width.pdf",
 
 rg "LINE-dash.pdf",
            'LINE1:a#ff00ff:LINE1\:a#ff00ff\:\:<b>dashes=10,10,80,10</b>\n:dashes=10,20,80,20',
-           'LINE2:b#ffaa00:LINE2\:b#ffaa00\:\:<b>dashes=1,3</b>\:<b>dash-offset=10</b>:dashes=1,3:dash-offset=3';
+           'LINE2:b#11aa00:LINE2\:b#11aa00\:\:<b>dashes=1,3</b>\:<b>dash-offset=10</b>:dashes=1,3:dash-offset=3';
 
 
 rg "DEF-step.pdf",
@@ -116,16 +116,16 @@ rg 'AREA-simple.pdf',
           'LINE2:b#1180fb:LINE\:b#11a03b\l';
 
 rg 'AREA-two.pdf',
-          'AREA:a#f1805b:<b>AREA</b>\:a#a1003b',
-          'AREA:b#1180fb:<b>AREA</b>\:b#11a03b\l';
+          'AREA:a#f1805b:<b>AREA</b>\:a#f1805b',
+          'AREA:b#21f08b:<b>AREA</b>\:b#21f08b\l';
 
 rg 'AREA-trans.pdf',
-          'AREA:a#f1805bff:AREA\:a#a1003b<b>ff</b>',
-          'AREA:b#1180fb60:AREA\:b#11a03b<b>60</b>\l';
+          'AREA:a#f1805bff:AREA\:a#f1805b<b>ff</b>',
+          'AREA:b#21808b60:AREA\:b#21808b60<b>60</b>\l';
 
 rg 'AREA-stack.pdf',
-          'AREA:a#f1805b:AREA\:a#a1003b',
-          'AREA:b#1180fb:AREA\:b#11a03b\:...\:<b>STACK</b>\l:STACK';
+          'AREA:a#f1805b:AREA\:a#f1805b',
+          'AREA:b#21808b:AREA\:b#21808b\:...\:<b>STACK</b>\l:STACK';
 
 rg 'SHIFT-simple.pdf',
           'DEF:c=x.rrd:a:AVERAGE',

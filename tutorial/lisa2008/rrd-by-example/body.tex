@@ -15,7 +15,9 @@
   \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
   \setlength{\parindent}{0pt}  
   \usepackage{times}
-  \newcommand{\addgraph}[1]{\begin{center}\framebox{\includegraphics[width=0.7\textwidth]{ex/#1}}\end{center}}
+  \newcommand{\addgraph}[1]{\begin{center}\framebox{\includegraphics[width=0.9\textwidth]{ex/#1}}\end{center}}
+  \addtolength{\voffset}{-2.5cm}
+  \addtolength{\textheight}{4cm}
 }
 \usepackage{alltt}
 \usepackage{listings}
@@ -722,6 +724,8 @@ LINE1:pred#0a0:Prediction
   prediction is now generally off by quite a bit, this causes the
   confidence band to grow as well.}
 
+\mode<article>{\newpage}
+
 \begin{frame}{hw demo: beta}
 \addgraph{HW-p1-a0_1-b0_001}\\
 \addgraph{HW-p1-a0_1-b0_1}
@@ -796,7 +800,7 @@ Tobi Oetiker <tobi@oetiker.ch>
 }
 
 \mode<article>{
-\vspace{3cm}
+\vspace{\stretch{1}}
 Tobias Oetiker <tobi@oetiker.ch>
 }
 \end{document}

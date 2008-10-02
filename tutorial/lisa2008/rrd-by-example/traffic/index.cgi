@@ -8,7 +8,10 @@
 
 <h2>The Bytes</h2>
 <table border="1" cellspacing="0" cellpadding="2">
-<tr><td>Period</td><td>Incoming</td><td>Outgoing</td><td>Total</td></tr>
+<tr><td>Period</td>
+    <td>Incoming</td>
+    <td>Outgoing</td>
+    <td>Total</td></tr>
 
 <!--
 <RRD::GRAPH -
