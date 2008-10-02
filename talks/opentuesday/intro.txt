@@ -1,0 +1,21 @@
+Referent
+--------
+
+Tobias Oetiker hat während zehn Jahren als Unix System Manager bei der ETH
+gearbeitet und in dieser Zeit fuer Studierende und Mitarbeiter eine
+luxuriöse Solaris/Linux Umgebung aufgebaut und betrieben. Seit 2006 arbeitet
+er zusammen mit mehreren Kollegen bei seiner eigenen Firma OETIKER+PARTNER
+AG. Heute spielt neben dem Design und Betrieb von benutzerfreundlichen Unix
+Umgebungen auch die Entwicklung von Kundenspezifischen Applikationen im
+Bereich Monitoring und Datenbanken eine immer wichtigere Rolle. Tobias
+Oetiker ist auch bekannt als Initiant und Leiter mehrere OpenSource
+Projekte.
+
+Thema
+-----
+Die meisten Software und Hardware Komponenten lassen sich heute
+softwaremässig überwachen. Wohin jedoch mit all den Daten ? Mit RRDtool
+steht eine open source Lösung zur Speicherung und graphischen Auswertung von
+solchen Daten zur verfügung mit der es möglich ist innerhalb von wenigen
+Minuten eigene Monitoring Systeme aufzubauen. Im Referat werden die
+Möglichkeiten von RRDtool vorgestellt und erklärt.
