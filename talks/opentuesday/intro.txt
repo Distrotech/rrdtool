@@ -1,21 +1,38 @@
 Referent
 --------
 
-Tobias Oetiker hat während zehn Jahren als Unix System Manager bei der ETH
-gearbeitet und in dieser Zeit fuer Studierende und Mitarbeiter eine
-luxuriöse Solaris/Linux Umgebung aufgebaut und betrieben. Seit 2006 arbeitet
-er zusammen mit mehreren Kollegen bei seiner eigenen Firma OETIKER+PARTNER
-AG. Heute spielt neben dem Design und Betrieb von benutzerfreundlichen Unix
-Umgebungen auch die Entwicklung von Kundenspezifischen Applikationen im
-Bereich Monitoring und Datenbanken eine immer wichtigere Rolle. Tobias
-Oetiker ist auch bekannt als Initiant und Leiter mehrere OpenSource
-Projekte.
+Tobias Oetiker hat während zehn Jahren als Senior Systemmanager bei
+der ETH Zürich gearbeitet und in dieser Zeit für Studierende und
+Mitarbeiter eine luxuriöse Solaris/Linux-Umgebung aufgebaut und
+betrieben. Daneben war er verantwortlich für die Entwicklung und
+Umsetzung einer flexiblen, nachvollziehbaren und in weiten Teilen
+automatisierten Windows-Infrastruktur. Seit 2006 arbeitet er zusammen
+mit mehreren Kollegen bei seiner eigenen Firma OETIKER+PARTNER
+AG. Neben dem Design und Betrieb von benutzerfreundlichen Unix- und
+Windows-Umgebungen spielt heute auch die Entwicklung von
+kundenspezifischen Applikationen im Bereich Monitoring und Datenbanken
+eine immer wichtigere Rolle. Tobias Oetiker erhielt 2006 den
+prestigeträchtigen SAGE Outstanding Achievement Award für die
+Initierung und Leitung mehrere Open Source Projekte.
 
 Thema
 -----
-Die meisten Software und Hardware Komponenten lassen sich heute
-softwaremässig überwachen. Wohin jedoch mit all den Daten ? Mit RRDtool
-steht eine open source Lösung zur Speicherung und graphischen Auswertung von
-solchen Daten zur verfügung mit der es möglich ist innerhalb von wenigen
-Minuten eigene Monitoring Systeme aufzubauen. Im Referat werden die
-Möglichkeiten von RRDtool vorgestellt und erklärt.
+
+Die meisten Software- und Hardware-Komponenten lassen sich heute
+softwaremässig überwachen. Wohin jedoch mit all den Daten? Mit RRDtool
+steht eine Open Source Lösung zur Speicherung und graphischen
+Auswertung von solchen Daten zur Verfügung, mit der es möglich ist,
+innerhalb von wenigen Minuten eigene Monitoring-Systeme
+aufzubauen. Einfach zu erzeugende und aussagekräftige graphische
+Darstellungen ermöglichen, jederzeit einen schnellen Überblick über
+den aktuellen Systemzustand und über die zeitliche Entwicklung der
+gemessenen Parameter zu gewinnen. Im Referat werden die Möglichkeiten
+von RRDtool erklärt und demonstriert.
+
+RRDtool und die beiden weiteren Open Source Produkte MRTG und
+SmokePing, die von Tobias Oetiker geleitet werden, sind weltweit
+sowohl in kleinen als auch in sehr grossen IT-Organisationen im Einsatz.
+
+Beim Apero steht Tobias Oetiker auch für Fragen und Diskussionen zu
+den Themen Open Source Projektmanagement und Open Source basierten
+Geschäftsmodellen zur Verfügung.
