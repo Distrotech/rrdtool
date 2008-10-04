@@ -27,13 +27,10 @@ sub create {
           'DS:out:GAUGE:'.($p{step}*1.5).':U:U',
           'RRA:AVERAGE:0.5:1:'.$p{rows},
           'RRA:HWPREDICT:'.$p{rows}.':'.$p{alpha}.':'.$p{beta}.':'.$p{period};            
-    # it seems that resize is a bit broken ... will have to look into this
     system $R,'resize','hw-demo.rrd',5,'GROW',$p{rows};
-    system $R,'dump','hw-demo.rrd','x';
-    system $R,'restore','x','x.rrd';
-    rename 'x.rrd','hw-demo.rrd';
-    unlink 'x';
+    rename 'resize.rrd','hw-demo.rrd';
     system $R,'update','hw-demo.rrd',@updates;
+exit 1;
     return ($start,$end);
 }
 
