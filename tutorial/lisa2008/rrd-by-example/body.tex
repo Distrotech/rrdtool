@@ -759,11 +759,37 @@ LINE1:pred#0a0:Prediction
 \addgraph{HW-p48-a0_03-b0_001}
 \end{frame}
 
-\begin{frame}{hw demo: tuning II}
+\begin{frame}{hw demo: tuning III}
 \addgraph{HW-p48-a0_03-b0_001}\\
 \addgraph{HW-p48-a0_03-b0_1}
 \end{frame}
 
+\newpage
+
+\section{The *v Interfaces}
+
+\begin{frame}{graphv script}
+\lstinputlisting{ex/v-interfaces.pl}
+\end{frame}
+
+\begin{frame}{graphv output}
+\lstinputlisting{ex/v-interfaces.txt}
+\end{frame}
+
+\mode<article>{The image key only shows up when the graph file name is '-'.}
+
+\begin{frame}{v-interfaces}
+\begin{itemize}
+\item rrdtool info
+\item rrdtool update\textbf{v}
+\item rrdtool graph\textbf{v}
+\end{itemize}
+\end{frame}
+
+\mode<article>{Using the output of updatev is much more efficient than
+re-reading the rrd file after running normal update against them.}
+
+\newpage  
 \section{Real Live Example}
 
 \mode<article>{The following example shows how to create a simple
