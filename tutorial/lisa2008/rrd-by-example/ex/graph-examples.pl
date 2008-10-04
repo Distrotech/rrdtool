@@ -5,8 +5,8 @@ my $R=rrdtool;
 my $w=320 ;
 my $h=200 ;
 my $start = 1199999700;
-if (not -f 'x.rrd'){
-    system $R,'create','x.rrd',
+if (not -f 'graph-examples.rrd'){
+    system $R,'create','graph-examples.rrd',
           '--step' => 300,
           '--start' => ($start-1),
           'DS:a:GAUGE:600:-40:2100',
@@ -21,7 +21,7 @@ if (not -f 'x.rrd'){
     for (my $i = 1; $i < 100;$i++){
         push @updates, ($i*300+$start).':'.(sin($i/10)*40+sin($i/19)*10+50).':'.(cos($i/10)*40+cos($i/33)*15+70).':'.(cos($i/10)*10+sin($i/3)*35+70+rand(40));
     }
-    system $R,'update','x.rrd',@updates;
+    system $R,'update','graph-examples.rrd',@updates;
 }
 
 sub rg {
@@ -42,16 +42,16 @@ sub rg {
               '--pango-markup',
               '--height' => $h, '--width' => $w,
               '--imgformat' => 'PDF',
-              'DEF:a=x.rrd:a:AVERAGE',
-              'DEF:r=x.rrd:r:AVERAGE',
-              'DEF:b=x.rrd:b:AVERAGE');
+              'DEF:a=graph-examples.rrd:a:AVERAGE',
+              'DEF:r=graph-examples.rrd:r:AVERAGE',
+              'DEF:b=graph-examples.rrd:b:AVERAGE');
    system $R, 'graph', $file, @G, @_;
 }
 
 rg 'LINE.pdf', 
                '--lower-limit' => 1000,
-               'LINE:a#11a03b:DEF\:a=x.rrd\:a\:AVERAGE',
-               'LINE:b#a1003b:DEF\:b=x.rrd\:b\:AVERAGE\l';
+               'LINE:a#11a03b:DEF\:a=graph-examples.rrd\:a\:AVERAGE',
+               'LINE:b#a1003b:DEF\:b=graph-examples.rrd\:b\:AVERAGE\l';
 
 rg 'LINE-lower.pdf', 
            'LINE:a#11a03b',
@@ -94,22 +94,22 @@ rg "LINE-dash.pdf",
 
 
 rg "DEF-step.pdf",
-           'DEF:c=x.rrd:a:AVERAGE:step=1800',
-           'LINE3:a#ccc:DEF\:a=x.rrd\:a\:AVERAGE\n',
-           'LINE1:c#f00:DEF\:b=x.rrd\:a\:AVERAGE\:<b>step=1800</b>';
+           'DEF:c=graph-examples.rrd:a:AVERAGE:step=1800',
+           'LINE3:a#ccc:DEF\:a=graph-examples.rrd\:a\:AVERAGE\n',
+           'LINE1:c#f00:DEF\:b=graph-examples.rrd\:a\:AVERAGE\:<b>step=1800</b>';
 
 rg "DEF-reduce.pdf",
-           'DEF:c=x.rrd:a:AVERAGE:step=1800:reduce=MIN',
-           "DEF:d=x.rrd:a:AVERAGE:step=1800:reduce=MAX",
-           'LINE1:c#f00:DEF\:b=x.rrd\:a\:AVERAGE\:step=1800\:<b>reduce=MIN</b>\n',
-           'LINE1:d#0a0:DEF\:c=x.rrd\:a\:AVERAGE\:step=1800\:<b>reduce=MAX</b>\n',
-           'LINE1:a#888:DEF\:a=x.rrd\:a\:AVERAGE';
+           'DEF:c=graph-examples.rrd:a:AVERAGE:step=1800:reduce=MIN',
+           "DEF:d=graph-examples.rrd:a:AVERAGE:step=1800:reduce=MAX",
+           'LINE1:c#f00:DEF\:b=graph-examples.rrd\:a\:AVERAGE\:step=1800\:<b>reduce=MIN</b>\n',
+           'LINE1:d#0a0:DEF\:c=graph-examples.rrd\:a\:AVERAGE\:step=1800\:<b>reduce=MAX</b>\n',
+           'LINE1:a#888:DEF\:a=graph-examples.rrd\:a\:AVERAGE';
 
 my $newstart = $start + 40*300;
 rg "DEF-start.pdf",
-           'DEF:c=x.rrd:a:AVERAGE:start='.$newstart,
-           'LINE5:a#ccc:DEF\:a=x.rrd\:a\:AVERAGE\n',
-           'LINE1:c#f00:DEF\:b=x.rrd\:a\:AVERAGE\:<b>start='.$newstart.'</b>';
+           'DEF:c=graph-examples.rrd:a:AVERAGE:start='.$newstart,
+           'LINE5:a#ccc:DEF\:a=graph-examples.rrd\:a\:AVERAGE\n',
+           'LINE1:c#f00:DEF\:b=graph-examples.rrd\:a\:AVERAGE\:<b>start='.$newstart.'</b>';
 
 rg 'AREA-simple.pdf',
           'AREA:a#f1805b:<b>AREA</b>\:a#a1003b',
@@ -128,7 +128,7 @@ rg 'AREA-stack.pdf',
           'AREA:b#21808b:AREA\:b#21808b\:...\:<b>STACK</b>\l:STACK';
 
 rg 'SHIFT-simple.pdf',
-          'DEF:c=x.rrd:a:AVERAGE',
+          'DEF:c=graph-examples.rrd:a:AVERAGE',
           'CDEF:d=c',
           'SHIFT:d:3600',
           'LINE:c#1f9',
@@ -136,12 +136,12 @@ rg 'SHIFT-simple.pdf',
 
 
 rg 'SHIFT-startdef.pdf',
-          'DEF:c=x.rrd:a:AVERAGE:start='.($start-3600),
+          'DEF:c=graph-examples.rrd:a:AVERAGE:start='.($start-3600),
           'CDEF:d=c',
           'SHIFT:d:3600',
           'LINE:c#1f9',
           'LINE:d#417:CDEF\:b=a <b>SHIFT</b>\:b\:3600\l',
-          'COMMENT:DEF\:a=x.rrd\:a\:AVERAGE\:<b>start='.($start-3600).'</b>\l';
+          'COMMENT:DEF\:a=graph-examples.rrd\:a\:AVERAGE\:<b>start='.($start-3600).'</b>\l';
 
 rg 'RPN-simple.pdf',
           'CDEF:c=a,20,+',
@@ -168,15 +168,15 @@ rg 'RPN-trend.pdf',
           'COMMENT:b=a,3600,<b>TREND</b>\l';
 
 rg 'RPN-trend-start.pdf',         
-          'DEF:rr=x.rrd:r:AVERAGE:start='.($start-3600),
+          'DEF:rr=graph-examples.rrd:r:AVERAGE:start='.($start-3600),
           'CDEF:k=rr,3600,TREND',
-          'COMMENT:DEF\:a=x.rrd\:a\:AVERAGE\:<b>start='.($start-3600).'</b>\l',
+          'COMMENT:DEF\:a=graph-examples.rrd\:a\:AVERAGE\:<b>start='.($start-3600).'</b>\l',
           'LINE1:r#3a1:a',   
           'LINE1:k#21f:b',                     
           'COMMENT:b=a,3600,TREND\l';
 
 rg 'RPN-trend-shift.pdf',         
-          'DEF:rr=x.rrd:r:AVERAGE:start='.($start-3600),
+          'DEF:rr=graph-examples.rrd:r:AVERAGE:start='.($start-3600),
           'CDEF:k=rr,3600,TREND',
           'SHIFT:k:-1800',
           'LINE1:r#3a1:a',   
@@ -237,6 +237,26 @@ rg 'RPN-prev.pdf',
           'CDEF:d=COUNT,3,%,1,EQ,PREV,c,IF',
           'COMMENT:CDEF\:c=COUNT,3,%,0,EQ,a,UNKN,IF',
           'AREA:d#8a1:d=COUNT,3,%,1,EQ,<b>PREV</b>,c,IF';
+
+rg 'RPN-grad-a.pdf',
+          'CDEF:c=a,4,/',
+          'COMMENT:CDEF\:c=a,4,/\l',
+          'AREA:c#77b7ff:AREA\:c#77b7ff\l',
+          'AREA:c#5aa8ff:AREA\:c#5aa8ff\:\:STACK\l:STACK',
+          'AREA:c#2b8fff:AREA\:c#2b8fff\:\:STACK\l:STACK',
+          'AREA:c#0078ff:AREA\:c#0078ff\:\:STACK\l:STACK';
+
+rg 'RPN-grad-b.pdf',
+          'AREA:a#0078ff:a\l',
+          'CDEF:e=a,75,LE,a,75,IF',
+          'AREA:e#2b8fff:b=a,75,LE,a,75,IF\l',
+          'CDEF:d=a,50,LE,a,50,IF',
+          'AREA:d#5aa8ff:c=a,50,LE,a,50,IF\l',
+          'CDEF:c=a,25,LE,a,25,IF',
+          'AREA:c#77b7ff:b=a,25,LE,a,25,IF\l';
+
+
+
         
 rg 'VDEF-average.pdf', 
                'VDEF:aavg=a,AVERAGE',

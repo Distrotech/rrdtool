@@ -407,6 +407,7 @@ $15\mathbf{+}23=38$
 \end{alltt}
 \end{frame}
 
+\newpage 
 
 \begin{frame}{math in the graph (+)}
 \addgraph{RPN-simple}
@@ -416,6 +417,10 @@ $15\mathbf{+}23=38$
   source. Note that at least one data source must appear inside a CDEF
   expression. The input to a CDEF expression can come from another
   CDEF expression.}
+
+\begin{frame}{simple gradient}
+\addgraph{RPN-grad-a}
+\end{frame}
 
 \begin{frame}{the MAX function}
 \addgraph{RPN-max}
@@ -452,8 +457,6 @@ $15\mathbf{+}23=38$
   function with enough input, so that it can calculate the first few
   pixels as well.}
 
-\mode<article>{\newpage}
-
 \begin{frame}{the TREND and SHIFT}
 \addgraph{RPN-trend-shift}
 \end{frame}
@@ -476,12 +479,18 @@ $15\mathbf{+}23=38$
   less, \texttt{LE} - less or equal, \texttt{EQ} - equal, \texttt{NE}
   not equal, \texttt{GE} - greater or equal, \texttt{GT} - greater.}
 
+\begin{frame}{horizontal gradient}
+\addgraph{RPN-grad-b}
+\end{frame}
+
+
 \begin{frame}{about invisibility}
 \addgraph{RPN-UNKN}
 \end{frame}
 
 \mode<article>{Unknown values are not drawn on the graph. Here we
   use trick to only show the largest values.}
+
 
 \begin{frame}{positional drawing count}
 \addgraph{RPN-count}
@@ -500,6 +509,7 @@ $15\mathbf{+}23=38$
 \addgraph{RPN-time}
 \end{frame}
 
+\newpage
 \begin{frame}{positional drawing time-shifting}
 \addgraph{RPN-time-minus}
 \end{frame}
@@ -628,7 +638,7 @@ A VDEF result has a value and a time assigned.
 \item Every data set is different, tweaking is required. 
 \item Know which knobs to turn.
 \item Use real data when experimenting.
-\item Use \texttt{rrdtool tune} to tweak settings.
+\item Use \texttt{rrdtool tune} and \texttt{rrdtool resize} to tweak settings.
 \item The FAILURES RRA is short!
 \end{itemize}
 }
