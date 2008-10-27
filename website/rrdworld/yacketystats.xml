@@ -1,0 +1,18 @@
+<rrdworld type="application"
+	  icon="http://yaketystats.org/yak10066.png" > <!-- Size 100x66 -->
+  
+  <name> YaketyStats </name>
+  <author> teamdowntime@yaketystats.org </author>
+  
+  <description> YaketyStats gathers statistics about your *nix systems. It
+  is easy to install, maintain and extend and has has an intuitive,
+  AJAX-powered web interface for graphing data. Graphs are built on the
+  fly, can contain stats from multiple systems and include "Google
+  Maps"-like dragging.
+  </description>
+
+  <homepage> http://yaketystats.org/</homepage> 
+  <year> 2008 </year><month> 10 </month> <!-- Entry creation date -->
+  <license> GPL V2 </license>
+  
+</rrdworld>

@@ -1,0 +1,9 @@
+<gallery image="charles.png" > <!-- no wider than 600 pixle -->
+
+      <title> HTTP Cache Traffic </title>
+     <author> Charles Glass </author> 
+<description> HTTP cache traffic from servers and to clients </description>
+       <year> 2008 </year><month> 10 </month> <!-- creation date -->
+      <email> charlesequal@gmail.com </email>
+
+</gallery>
