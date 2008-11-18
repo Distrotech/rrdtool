@@ -299,7 +299,7 @@ PHP_FUNCTION(rrd_fetch)
 			{
 				datap = data;
  
-				for (i = start; i <= end; i += step)
+				for (i = start + step; i <= end; i += step)
 					for (j = 0; j < ds_cnt; j++)
 						add_next_index_double(p_data, *(datap++));
  
