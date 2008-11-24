@@ -1,0 +1,101 @@
+Project: RRDtool
+Author:  Tobias Oetiker
+Date:    2008-11-24
+
+Status Report on RRDtool OSS Project
+====================================
+
+RRDtool work for 2008 has been sponsored by these companies:
+
+Gold Sponsors: 
+
+* GroundWork Open Source - IT Monitoring & Network Solutions
+  www.groundworkopensource.com
+
+* ZenOSS - Open Source Enterprise Monitoring
+  www.zenoss.com
+
+Silver Sponsors:
+
+* Host Europe - World Class Internet Hosting & Services
+* ATC-Onlane - Automotive Remarketing
+* terreActive - IT Security
+* Google Inc., USA
+* Hitflip Media Trading GmbH, Germany   
+* op5 - Systems and Network Monitoring 
+* Lancope, USA
+* Sidarion, Switzerland
+
+Current Activities
+------------------
+
+* Code Maintenance. Mails on the mailing-lists and directly to me indicate
+  compatibility issues or suggest little changes. These are often
+  implemented directly.
+
+* Mailing-list, Web-server, Trac Maintenance. The on-line resources for
+  RRDtool are kept up-to-date, in working order and spam free.
+
+* LISA Tutorials and Bofs on RRDtool
+
+* Run-Up for RRDtool 1.4 release in 2009
+
+* Fully automated and minimally tested nightly releases of the 1.2, 1.3 and
+  trunk code.
+
+Accomplishments
+---------------
+* RRDtool 1.3
+
+  * The new major version has been released in early summer, containing
+    major updates to both the database and the graphing layer.
+
+  * Subsequent releases of the 1.3.x series focused on stability, backward
+    compatibility and performance improvements.
+
+* RRDtool 1.2.x
+
+  * Several minor stability and portability have been addressed with new
+    minor releases. The 1.2 series remains the most widely used version of
+    RRDtool since it is present in a wide variety of Linux distributions.
+
+* Development of RRDtool 1.4
+
+  With the release of RRDtool 1.3 trunk was opened for work on RRDtool 1.4. 
+  New features include:
+
+  - RRDcached for massive performance enhancements for large installations
+    with hundreds of thousands of rrd files.
+
+  - SQL Database access for RRDtool graph. This allows to use RRDtools
+    excellent graphing capabilities to be used on time series data acquired
+    directly from a SQL database (thought libdbi).
+
+  RRDtool 1.4 is in a stabilization phase now, prior to release of the first
+  release candidates.
+
+Sponsorship 2008
+---------------
+
+The 2009 Sponsorship program has been setup. If you have not signed up yet.
+I would be thrilled to have you as a sponsor for the next year. Please be in
+touch.
+
+Planned Activities
+------------------
+
+* Release of RRDtool 1.4.0
+
+* Continued support for 1.2.x, 1.3.x 
+
+* Development of RRDtool 1.5
+
+  The major feature of 1.5 will be the portable data format that allows to
+  read and write rrd files across all platforms where rrdtool is supported.
+  Preliminary information about this feature can be found in.
+
+  http://oss.oetiker.ch/rrdtool-trac/wiki/PortableRrdFormat
+
+--
+Tobi Oetiker, Olten, Switzerland
+2008-11-24
