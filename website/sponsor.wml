@@ -50,7 +50,9 @@ sponsor</a>!</p>
 
 <p>
 #Mark Hinkle <mrhinkle@zenoss.com>
-<a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>
+<a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>&nbsp;
+#Mahesh Iyer <miyer@groundworkopensource.com>
+<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
 </p>
 
 <h2>2009 Silver Sponsors</h2>
@@ -64,6 +66,8 @@ sponsor</a>!</p>
 <a href="http://www.terreactive.ch"><img border="0" title="terreActive AG" src="$(ROOT)/logos/terreactive.png"/></a>&nbsp;
 # Felix Schueren <felix.schueren@hosteurope.de> Thu, 21 Dec 2006 12:24:51 +0100
 <a href="http://www.hosteurope.de/"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
+#From: Roger Grandjean <rgrandjean@sidarion.ch> Mon, 14 Apr 2008 11:49:56 +0200
+<a href="http://www.sidarion.ch"><img border="0" alt="Sidarion" src="$(ROOT)/logos/sidarion.png"/></a>&nbsp;
 
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
 </p>
