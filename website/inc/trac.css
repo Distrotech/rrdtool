@@ -1,0 +1,40 @@
+@import url(/rrdtool/inc/design.css);
+
+div#header {
+    display:none;
+}
+
+div#logo {
+  float: left;
+  margin-left: 36px;
+}
+table#frame  {
+        width: auto;
+}
+
+div#menu a {
+  border-style: none;
+}
+
+div#menu a:hover {
+  background: inherit;
+}
+
+div#tracbody {
+  color: black;
+  margin: 40px;
+  margin-top: 40px;
+}
+
+div#tracbody h1 { 
+  color: #717fe5;
+  margin-top: 10px;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.1em;
+  line-height: 1em;
+  font-size: 220%;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: #606060;
+}
+
