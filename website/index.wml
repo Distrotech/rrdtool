@@ -13,12 +13,18 @@ logging and graphing system for time series data. Use it to write your
 custom monitoring shell scripts or create whole applications using its Perl,
 Python, Ruby, TCL or PHP bindings.</p>
 
-<H2>Version 1.3.4 Released</H2>
+<H2>Do you think RRDtool is cool?</H2>
 
-<p>Read all about <a href="forum.en.html#nabble-tt1299523|a1299523">the new release</a>.</p>
+<p>Is RRDtool adding good value to your operations? Please consider <a
+href="http://n2.nabble.com/Supporting-Tobi%27s-OSS-work-in-2009-tp1660428p1660428.html">supporting
+my OSS work</a> in 2009.</p>
 
-<p>All users of versions &lt; 1.3.2 versions should <a href="download.var">upgrade</a> since the 1.3.2 release
-contains a fix for a major bugfix for a <a
+<H2>Version 1.3.5 (and 1.2.29) Released</H2>
+
+<p>Read all about bugfixes and features in <a href="http://n2.nabble.com/rrdtool-1.3.5-released-tp1660284p1660284.html">1.3.5</a></p>
+
+<p>Users of versions 1.3.0 and 1.3.1 should <a href="download.var">upgrade</a> since these releases
+contain a serious <a
 href="http://oss.oetiker.ch/rrdtool-trac/ticket/178">data corruption bug</a>
 triggerd by running rrdtool update with multiple values in one go.</p>
 
