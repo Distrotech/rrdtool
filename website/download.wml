@@ -32,6 +32,7 @@ You can download RRD tool from several places:
  <LI>HP-UX by <A HREF="mailto:sangelov@globul.bg">Stoyan Angelov</A> -- <A HREF="http://www.filibeto.org/~aduritz/truetrue/rrdtool/1.3.4">http://www.filibeto.org/~aduritz/truetrue/rrdtool/1.3.4</A></LI>
  <LI>Solaris OpenCSW <A HREF="http://www.opencsw.org/packages/rrdtool"> http://www.opencsw.org/packages/rrdtool</a></LI>
  <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
+ <LI>RHEL, CentOS, Fedora  <A HREF="mailto:wrl@express.org">William R. Lorenz</a> -- <A href="http://www.express.org/~wrl/rrdtool/">http://www.express.org/~wrl/rrdtool/</a></li>
  <LI>Redhat/Fedora <A href="http://dag.wieers.com/packages/rrdtool/">http://dag.wieers.com/packages/rrdtool/</a></li>
  <LI>Native Windows 1 <A HREF="http://oss.oetiker.ch/rrdtool/pub/?M=D">local</a></LI>
  <LI>Native Windows 2 <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
