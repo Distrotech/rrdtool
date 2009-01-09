@@ -1,0 +1,74 @@
+Project: RRDtool
+Author:  Tobias Oetiker
+Date:    2007-04-10
+
+Status Report on RRDtool OSS Project
+====================================
+
+RRDtool work for 2007 is sponored by these companies:
+
+Gold Sponors: 
+
+* GroundWork Open Source - IT Monitoring & Network Solutions
+  www.groundworkopensource.com
+
+* ZenOSS - Open Source Enterprise Monitoring
+  www.zenoss.com
+
+Silver Sponsors:
+
+* op5 - Systems and Network Monitoring 
+* Host Europe - World Class Internet Hosting & Services
+* Contego Solutions - Managed Firewall, Managed VPN, and Secure Data Hosting
+
+Current Activities
+------------------
+
+* Code Maintenance. Mails on the mailing-lists and directly to me indicate
+  compatibility issues or suggest little changes. These are often implemented
+  directly.
+
+* Mailing-list, Web-server, Trac Maintenance. The on-line resources for
+  RRDtool are kept up-to-date, in working order and spam free.
+
+* Bug Fixing. Bugs reported through the Trac bug report form are
+  dealt with within a few days.
+
+* Planning for first RRDtool 1.3 implementation work.
+
+Accomplishments
+---------------
+* All on-line Resources migrated away from the University Resources
+  to http://oss.oetiker.ch and https://lists.oetiker.ch
+
+* RRD tutorial written and held at the LinuxForum.DK
+  http://www.linuxforum.dk/2007/program/saturday/Tobi_Oetiker.shtml
+
+* RRDtool 1.2.16, 1.2.17, 1.2.18, 1.2.19 released
+  https://lists.oetiker.ch/pipermail/rrd-announce/
+
+* Many small fixed in both the documentation and the graph code. The
+  stricter parsing introduced in 1.2.16 borough a number of odd coding
+  practices of RRDtool users to light.
+
+* Rewrote and stabilized the build process for the RRDtool python bindings
+  based on contributions form Zenoss.
+
+* Integrated patches for improved stability in multi-threaded environments.
+
+* Improved rrd_fetch behavior in situations where RRA coverage was not
+  complete.
+
+Planned Activities
+------------------
+
+* From April to June: Start on the implementation of the 1.3 features listed
+  in http://oss.oetiker.ch/rrdtool-trac/wiki/RRDtool13
+
+  The first order of work will be the switch from libart to cairo.
+
+* Maintenance of series 1.2.x
+
+--
+Tobi Oetiker, Olten, Switzerland
+2007-04-10
