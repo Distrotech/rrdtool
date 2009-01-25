@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "miszek.xml"
 #include "charles.xml"
 #include "pings.xml"
 #include "systembelastung.xml"

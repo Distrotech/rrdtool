@@ -32,6 +32,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "efw-community.xml"
 #include "eluna_graph_system.xml"
 #include "gbrrdgraphix.xml"
+#include "lpar2rrd.xml"
 #include "mailgraph.xml"
 #include "monitorix.xml"
 #include "mpltd.xml"
