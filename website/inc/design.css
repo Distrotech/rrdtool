@@ -21,7 +21,7 @@ table#frame  {
         text-align: left;
 }
 
-table#frame td {
+table#frame > tr > td {
         vertical-align: top;
         margin: 0px;
         padding: 0px;
