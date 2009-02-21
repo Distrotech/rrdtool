@@ -41,7 +41,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "n2rrd.xml"
 #include "netmrg.xml"
 #include "nmis-rrdtool.xml"
-#include "observer.xml"
+#include "observernms.xml"
 #include "oreon.xml"
 #include "ourmon.xml"
 #include "ow.xml"
