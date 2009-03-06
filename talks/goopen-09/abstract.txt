@@ -1,0 +1,14 @@
+GoOpen 2009
+
+RRDtool - how to make it sit up and beg
+=======================================
+A 40 minute Talk by Tobias Oetiker
+
+There are many tools that let you monitor systems and networks these days.
+Most of the time, when you look under their hood, you find RRDtool at work
+in storing data and drawing pretty graphs.
+
+In this talk I will give some insight into how RRDtool works. This will
+enable you to optimize the way your monitoring software utilizes RRDtool. I
+will also talk about the latest features in RRDtool and how they will help you
+to scale RRDtool performance way up without breaking the bank.
