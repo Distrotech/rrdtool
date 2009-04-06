@@ -1,0 +1,230 @@
+\mode<presentation>
+{
+  \usetheme{default} % no fancy navigation or anything ... 
+  \usecolortheme{tobi}
+  \usefonttheme{serif}   
+  \usepackage{lmodern}
+  \newcommand{\addgraph}[1]{\includegraphics[width=\textwidth]{#1}}
+  \setbeamercovered{transparent=25}
+}
+\mode<article>
+{
+  \usepackage{url}
+  \usepackage{graphicx}
+  \usepackage[colorlinks,hyperindex,plainpages=false]{hyperref}
+  \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+  \setlength{\parindent}{0pt}  
+  \usepackage{times}
+  \newcommand{\addgraph}[1]{\begin{center}\framebox{\includegraphics[width=0.9\textwidth]{#1}}\end{center}}
+  \addtolength{\voffset}{-2.5cm}
+  \addtolength{\textheight}{4cm}
+}
+\usepackage{alltt}
+\usepackage{listings}
+\usepackage{svgcolor}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\title
+{RRDtool - how to make it sit up and beg?}
+
+\author
+{Tobias Oetiker}
+
+\institute
+{OETIKER+PARTNER AG}
+
+\date[GoOpen 09] % (optional, should be abbreviation of conference name)
+{GoOpen 09}
+
+\mode<presentation>{\subject{RRDtool - how to make it sit up and beg}}
+
+\mode<presentation>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize\color{black},%
+   keywordstyle=\color{darkgreen},%
+%  identifyerstyle=\color{brown},%
+   commentstyle=\color{mediumpurple},%
+   stringstyle=\color{dimgray},
+   numberstyle=\ttfamily\scriptsize\color{darkgray},
+   showstringspaces=false
+ }
+}
+\mode<article>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize,%
+   keywordstyle=\bfseries,%
+   numberstyle=\ttfamily\scriptsize,
+%  identifyerstyle=\color{brown},%
+   commentstyle=\itshape,%
+   stringstyle=\color{black},
+   showstringspaces=false
+ }
+}
+
+\begin{document}
+
+\mode<article>{\maketitle}
+
+\begin{frame}<presentation>
+  \titlepage
+\end{frame}
+
+\mode<articel>{\tableofcontents}
+
+\begin{frame}{about rrdtool}
+\begin{itemize}
+\item a database with controlled memory loss
+\item data is only an approximation of reality
+\item quick setup and use
+\item graphics included
+\end{itemize}
+\end{frame}
+
+\begin{frame}{designed for speed}
+\addgraph{update-schematics}
+\end{frame}
+
+\begin{frame}{diy performance improvements}
+\begin{itemize}
+\item rrd is disk bound
+\item striping
+\item nvram
+\item tmpfs and copy
+\end{itemize}
+\end{frame}
+
+\begin{frame}{scientific approach}
+\begin{itemize}
+\item Dave Plonka, LISA'07
+\item vm optimization kills rrd
+\item fix read-ahead with fadvise random
+\item batch updates of a single rrd
+\item running 320k RRD updates every 5 Minutes
+\end{itemize}
+\addgraph{readahead-fix}
+\end{frame}
+
+\begin{frame}{buffer cache is king}
+\begin{itemize}
+\item empirical evidence shows cache helps
+\item no-cache: double the work
+\item worse: writes gets blocked by read
+\end{itemize}
+\addgraph{cache-importance}
+\end{frame}
+
+\begin{frame}{active buffer cache management with fadvise}
+\begin{itemize}
+\item fadvise and madvise
+\item RANDOM - no read ahead
+\item DONTNEED - drop synced data from cache
+\item highly implementation dependent
+\item linux $>=$ 2.6.18 gets it right
+\item keep only the hot blocks
+\end{itemize}
+\addgraph{active-acache-management}
+\end{frame}
+
+\begin{frame}{features of RRDtool 1.3}
+\begin{itemize}
+\item active buffer cache management with fadvise and madvise
+\item memory mapped io (bernhard fischer)
+\item holt winters with moving baseline (evan miller)
+\item cairo and pango for graphics
+\item pdf, svg, eps output
+\item inline text formatting
+\item anti-aliasing controllable
+\end{itemize}
+\end{frame}
+
+\newpage
+
+\begin{frame}{rrd cache daemon}
+\begin{itemize}
+\item multiple updates to the same rrd are the fastest
+\item cache daemon batches updates
+\item journal replay for crash case
+\item remote updates (no auth)
+\end{itemize}
+\addgraph{cache-flow}
+\end{frame}
+
+\begin{frame}{features of RRDtool 1.4}
+\begin{itemize}
+\item beta out now
+\item rrd cache daemon (florian forster and kevin brintnall)
+\item libdbi integration for instant db access (martin sperl)
+\item graph prediction functions (martin sperl)
+\item graph legend placement (melchior rabe)
+\item inline text formatting
+\end{itemize}
+\end{frame}
+
+\begin{frame}{features of RRDtool 1.5}
+\begin{itemize}
+\item portable data format
+\item remote graphing through rrd cache daemon
+\item authentication for rrdcached
+\item ...
+\end{itemize}
+\end{frame}
+
+\mode<presentation>{
+\begin{frame}
+\begin{center}
+\Huge ?
+\end{center}
+\end{frame}
+\begin{frame}
+\begin{center}
+Tobi Oetiker <tobi@oetiker.ch>
+\end{center}
+\end{frame}
+}
+
+\begin{frame}{Graph Critic - HTTP Cache Traffic}
+\addgraph{charles}\\
+graph by Charles Glass
+\end{frame}
+
+\begin{frame}{Graph Critic - RTT of MPLS VPN endpoints}
+\addgraph{pings}\\
+graph by Bruno Ciscato
+\end{frame}
+
+\begin{frame}{Graph Critic - System Information}
+\addgraph{systembelastung}\\
+graph by kmindi
+\end{frame}
+
+\begin{frame}{Graph Critic - Energy Mix}
+\addgraph{energy_graph}\\
+graph by Lutz Schulze
+\end{frame}
+
+\begin{frame}{Graph Critic - Thermostat Indoor / Outdoor}
+\addgraph{n20e-daily}\\
+graph by Andres Brownworth
+\end{frame}
+
+\mode<article>{
+\vspace{\stretch{1}}
+Tobias Oetiker <tobi@oetiker.ch>
+}
+\end{document}
+
+%%% Local Variables:
+%%% TeX-master: "presentation.tex"
+%%% mode: flyspell
+%%% TeX-PDF-mode: t
+%%% End:
