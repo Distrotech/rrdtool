@@ -19,9 +19,9 @@ Python, Ruby, TCL or PHP bindings.</p>
 href="http://n2.nabble.com/Supporting-Tobi%27s-OSS-work-in-2009-tp1660428p1660428.html">supporting
 my OSS work</a> in 2009.</p>
 
-<H2>Version 1.3.6 (and 1.2.30) Released</H2>
+<H2>Version 1.3.7 Released, April 7th, 2009</H2>
 
-<p>Read all about bugfixes and features in <a href="http://n2.nabble.com/rrdtool-1.3.6-released-tp2181570p2181570.html">1.3.6</a></p>
+<p>Read all about bugfixes and features in <a href="http://oss.oetiker.ch/rrdtool/forum.en.html#nabble-td2181570">1.3.7 Announcement</a></p>
 
 <p>Users of versions 1.3.0 and 1.3.1 should <a href="download.var">upgrade</a> since these releases
 contain a serious <a
@@ -39,9 +39,10 @@ well as on Microsoft Windows.</P>
 
 <H2>RRDtool News Feeds</H2>
 
-<div>RRDtool Bugs feed <a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
-<div>RRDtool Wiki Updates <a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
-<div>RRDtool Checkins <a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Announcements feed <a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Bugs feed <a href="http://feeds2.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Wiki Updates <a href="http://feeds2.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Checkins <a href="http://feeds2.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
 
 <H2>Sponsorship and Appreciators</H2>
 
