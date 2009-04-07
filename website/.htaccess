@@ -7,3 +7,6 @@ RewriteRule download.html http://oss.oetiker.ch/rrdtool/download.en.html [R=302,
   Order Allow,Deny
   Allow From All
 </FilesMatch>
+<FilesMatch "mirror.html">
+  SetHandler cgi-script
+</FilesMatch>
