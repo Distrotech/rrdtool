@@ -68,6 +68,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "webminstats.xml"
 #include "yacketystats.xml"
 #include "zenoss.xml"
+#include "zerod.xml"
 
 <h2>Commercial Applications</h2>
 

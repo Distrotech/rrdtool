@@ -1,0 +1,19 @@
+<rrdworld type="Framework"> <!-- Size 100x66 -->
+ 
+       <name>  Zero RRD Framework </name>
+     <author> Boris Bukowski </author>
+<description>Zero is a light Framework around RRDTool, primary focused
+on server monitoring. The agent collects system statistics and sends
+them via HTTP to the central Server. There are plugins for logfile
+processing, mysql,  diskusage, java JMX, squid logs and apache status.
+Zero is written in Perl.</description>
+   <homepage> http://zerod.sourceforge.net/ </homepage> 
+       <year> 2009 </year><month> 4 </month> <!-- Entry creation date
+       -->
+    <license> GPL v3 </license>
+
+   <!-- Optional -->   
+
+      <email>b.bukowski@gmx.de</email> <!-- Author contact -->
+
+</rrdworld>
