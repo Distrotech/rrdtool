@@ -1,7 +1,7 @@
 # this seems to confuse just too many things out there ... 
 # guess following the standard is not there yet
-# <?xml version="1.0" encoding="iso-8859-15"?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 # this must be the very first line to make doc-type switching work on IE
 #use wml::std::logo
 #use wml::std::tags
@@ -18,7 +18,7 @@
 <html lang="<lang:star: * />" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-15" />
-<link* REL="icon" HREF="$(ROOT)/inc/favicon.ico" TYPE="image/ico" />
+<link* rel="icon" href="$(ROOT)/inc/favicon.ico" type="image/ico" />
 ..Title!>>RRDtool - Page without a Title<<..
 <title*>RRDtool - {#Title#}</title*>
 <protect>
@@ -52,14 +52,14 @@
 <input type="text" name="q" style="width: 180px" maxlength="255" value="" id="sbi"></input>
 </td></tr>
 <tr>
-<td nowrap="nowrap">
+<td nowrap="nowrap" valign="top">
 <table>
 <tr>
 <td>
 <input type="radio" name="sitesearch" value="" id="ss0"></input>
 <label for="ss0" title="Search the Web"><font size="-1" color="#000000">Web</font></label></td>
 <td>
-<input type="radio" name="sitesearch" value="oss.oetiker.ch" checked id="ss1"></input>
+<input type="radio" name="sitesearch" value="oss.oetiker.ch" checked="checked" id="ss1"></input>
 <label for="ss1" title="Search oss.oetiker.ch"><font size="-1" color="#000000">oss.oetiker.ch</font></label></td>
 </tr>
 </table>
@@ -79,7 +79,7 @@
 <br/>
 <br/>
 <p><b>Gold Sponsors</b></p>
-<p><a href="http://www.loopfuse.net/webrecorder/kredirect?kid=3&cid=LF_00c56f70"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
+<p><a href="http://www.loopfuse.net/webrecorder/kredirect?kid=3&amp;cid=LF_00c56f70"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
 <p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a></p>
 <p><a href="$(ROOT)/sponsor.<lang:star: */>.html">Silver Sponsors ...</a></p>
 <br/>
@@ -99,19 +99,19 @@
 <!-- ############################# -->
 <!-- # Logo and Body -->
 <!-- ############################# -->
-<td id="bodycell">
+<td id="bodycell" valign="top">
 # all mirrors seem dead currently
 <div id="mirrors">
-<A HREF="http://oss.oetiker.ch/rrdtool/<where/>">Swiss Original</A>.&nbsp;Mirrors: 
-<A HREF="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
-#<A HREF="http://rrdtool.planetmirror.com/<where/>">AU</A><!--jason andrade <jason@dstc.edu.au>-->
-<A HREF="http://rrdtool.cs.pu.edu.tw/<where/>">TW</A><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
-#<A HREF="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</A><!-- <mirrors@heanet.ie>-->
-<A HREF="http://rrdtool.codemonkey.se/<where/>">SE</A><!--Hans Engren <hans@cyclone.se>-->
-<A HREF="http://rrdtool.basemirror.de/<where/>">DE</A><!--Baseportal Mirrors <mirrors@baseportal.de>-->
-<A HREF="http://rrdtool.mirroraty.org/<where/>">US</A><!--Hossam Hossny <hossam@trexle.com>-->
-#<A HREF="http://rrdtool.paracoda.com/<where/>">CA</A><!--Hossam Hossny <admin@paracoda.com>-->
-#<A HREF="http://rrdtool.PlaySystems.ro/<where/>">RO</a><!--dan.draghici@ulbsibiu.ro-->
+<a href="http://oss.oetiker.ch/rrdtool/<where/>">Swiss Original</a>.&nbsp;Mirrors: 
+<a href="http://rrdtool.mirror.graemef.net/<where/>">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
+#<a href="http://rrdtool.planetmirror.com/<where/>">AU</a><!--jason andrade <jason@dstc.edu.au>-->
+<a href="http://rrdtool.cs.pu.edu.tw/<where/>">TW</a><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
+#<a href="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</a><!-- <mirrors@heanet.ie>-->
+<a href="http://rrdtool.codemonkey.se/<where/>">SE</a><!--Hans Engren <hans@cyclone.se>-->
+<a href="http://rrdtool.basemirror.de/<where/>">DE</a><!--Baseportal Mirrors <mirrors@baseportal.de>-->
+<a href="http://rrdtool.mirroraty.org/<where/>">US</a><!--Hossam Hossny <hossam@trexle.com>-->
+#<a href="http://rrdtool.paracoda.com/<where/>">CA</a><!--Hossam Hossny <admin@paracoda.com>-->
+#<a href="http://rrdtool.PlaySystems.ro/<where/>">RO</a><!--dan.draghici@ulbsibiu.ro-->
 </div>
 <div id="logo">
 <div class="legacy">
@@ -174,7 +174,7 @@ foreach my $l (qw($(LANGS))){
 	my $text=$1; my $url=$2; $url =~ s/<(\S+)(?:\@|_at_)(\S+)>/mailto:$1\@removethis.$2/;
 	my $LANG = uc("LANG_$l");
 	print <<LINE
-[$LANG:$date | <A HREF="$url">$text</A> | <A HREF="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>:$LANG]
+[$LANG:$date | <a href="$url">$text</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>:$LANG]
 LINE
 }
 </protect>

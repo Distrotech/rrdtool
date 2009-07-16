@@ -3,18 +3,21 @@
 	
 <H1>Support</H1>
 
-<p>Free support for RRDtool is handled via three special mailinglists:</p>
+<H2>RRD Wizard</H2>
+
+<p>If you just can't seem to cram all the RRDtool options into your head, you may find Ivan Zahariev's
+<a href="http://www.famzah.net/rrdwizard">RRDtool Wizard</a> most helpful. It will help you build these command lines in a snap.</p>
 
 <H2>rrd-announce mailing list</H2>
 
-<P>If you want to keep uptodate with the progress of RRDtool, subscribe to
+<P>If you want to keep up-to-date with the progress of RRDtool, subscribe to
 this LOW VOLUME list by sending a message with the subject 'subscribe' to <A
 HREF="mailto:rrd-announce-request@lists.oetiker.ch?subject=subscribe">rrd-announce-request@lists.oetiker.ch</A>.
 Or on the <a href="http://lists.oetiker.ch">web interface</a>.</p>
 
 
 <P>Note, that posts to this list will be crossposted to the rrd-users and
-rrd-developers mailinglists.</P>
+rrd-developers mailing lists.</P>
 
 <H2>rrd-users mailing list</H2>
 
