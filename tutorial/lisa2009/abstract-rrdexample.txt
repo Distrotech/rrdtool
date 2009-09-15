@@ -1,0 +1,63 @@
+LISA 2008 Workshop
+
+RRDtool by Example
+==================
+A half-day workshop by Tobias Oetiker
+
+Abstract
+--------
+Over the last few years RRDtool has become the standard method for handling
+time-series data in the networking area. RRDtool takes care of all the work
+related to data storage and presentation. Many users only access
+RRDtool through some front-end application like Cacti or Cricket. 
+
+In this half day workshop you will get eye to eye through many example
+usages as they are demonstrated and explained live.
+
+Attendees are expected to have some scripting experience.
+
+Topics
+-------
+* RRDtool Overview
+
+  * Rundown on Components of RRDtool
+  * Update on new functionality introduced in version 1.3
+
+* The RRD Database Format
+
+  * How RRDtool stores that data
+  * Interaction with the OS cache sub-system
+  * Linux tricks
+  * Fixing 'bad data' after the fact
+
+* How to setup an RRD performance test
+
+* RRD Graphing
+
+  * Simple graphs and autoconfiguration
+  * Alternate scaling
+  * Working with transparency
+  * Creating gradients
+  * RPN magic
+
+* Putting it Together
+
+  * Scripting interface
+  * The graphv, updatev, and info interfaces
+
+About the Speaker
+-----------------
+
+Tobias Oetiker is an electrical engineer by education and a system
+administrator by vocation. For ten years he has been working for the
+Swiss Federal Institute of Technology in Zurich, providing students
+and staff with a deluxe Unix workstation environment. In 2006 he
+started his own company OETIKER+PARTNER AG, running Unix servers for
+industry customers, improving his pet open source projects MRTG,
+RRDtool, and SmokePing, and applying these tools to solve the customers'
+problems.
+
+In November 2006, Tobias received the prestigious SAGE Outstanding
+Achievement Award for his work on MRTG and RRDtool.
+
+Find out more about the Speaker on http://tobi.oetiker.ch

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rrd SYSTEM 
+                 "http://oss.oetiker.ch/rrdtool/rrdtool.dtd">
+<rrd> <version> 0003 </version>
+    <step> 300 </step> <!-- Seconds -->
+    <lastupdate> 1200000900 </lastupdate>
+    <!-- 2008-01-10 22:35:00 CET -->
+
+    <ds>
+        <name> temperature </name>
+        <type> GAUGE </type>
+        <minimal_heartbeat> 600 </minimal_heartbeat>
+        <min> -4.0000000000e+01 </min>
+        <max> 1.0000000000e+02 </max>
+
+        <!-- PDP Status -->
+        <last_ds> 40 </last_ds>
+        <value> 0.0000000000e+00 </value>
+        <unknown_sec> 0 </unknown_sec>
+    </ds>
+
+  
+
+    <!-- RRA:AVERAGE:0.4:1:5 -->
+    <rra>
+        <cf> AVERAGE </cf>
+        <pdp_per_row> 1 </pdp_per_row> <!-- 300 seconds -->
+
+        <params>
+        <xff> 4.0000000000e-01 </xff>
+        </params>
+        <cdp_prep>
+            <ds>
+            <primary_value> 4.0000000000e+01 </primary_value>
+            <secondary_value> 0.0000000000e+00 </secondary_value>
+            <value> NaN </value>
+            <unknown_datapoints> 0 </unknown_datapoints>
+            </ds>
+        </cdp_prep>
+        <database>
+            <row><v> NaN </v></row>
+            <row><v> 1.0000000000e+01 </v></row>
+            <row><v> 2.0000000000e+01 </v></row>
+            <row><v> 3.0000000000e+01 </v></row>
+            <row><v> 4.0000000000e+01 </v></row>
+        </database>
+    </rra>
+
+    <!-- RRA:AVERAGE:0.4:3:2  -->  
+    <rra>
+        <cf> AVERAGE </cf>
+        <pdp_per_row> 3 </pdp_per_row> <!-- 900 seconds -->
+
+        <params>
+        <xff> 4.0000000000e-01 </xff>
+        </params>
+        <cdp_prep>
+            <ds>
+            <primary_value> 2.0000000000e+01 </primary_value>
+            <secondary_value> 3.0000000000e+01 </secondary_value>
+            <value> 4.0000000000e+01 </value>
+            <unknown_datapoints> 0 </unknown_datapoints>
+            </ds>
+        </cdp_prep>
+        <database>
+            <row><v> NaN </v></row>
+            <row><v> 2.0000000000e+01 </v></row>
+        </database>
+    </rra>
+
+
+
+    <!--  RRA:MIN:0.4:3:2 -->
+    <rra>
+        <cf> MIN </cf>
+        <pdp_per_row> 3 </pdp_per_row> <!-- 900 seconds -->
+
+        <params>
+        <xff> 4.0000000000e-01 </xff>
+        </params>
+        <cdp_prep>
+            <ds>
+            <primary_value> 1.0000000000e+01 </primary_value>
+            <secondary_value> 3.0000000000e+01 </secondary_value>
+            <value> 3.0000000000e+01 </value>
+            <unknown_datapoints> 0 </unknown_datapoints>
+            </ds>
+        </cdp_prep>
+        <database>
+            <row><v> NaN </v></row>
+            <row><v> 1.0000000000e+01 </v></row>
+        </database>
+    </rra>
+
+
+    <!--  RRA:MAX:0.4:3:2 -->
+    <rra>
+        <cf> MAX </cf>
+        <pdp_per_row> 3 </pdp_per_row> <!-- 900 seconds -->
+
+        <params>
+        <xff> 4.0000000000e-01 </xff>
+        </params>
+        <cdp_prep>
+            <ds>
+            <primary_value> 3.0000000000e+01 </primary_value>
+            <secondary_value> 3.0000000000e+01 </secondary_value>
+            <value> 4.0000000000e+01 </value>
+            <unknown_datapoints> 0 </unknown_datapoints>
+            </ds>
+        </cdp_prep>
+        <database>
+            <row><v> NaN </v></row>
+            <row><v> 3.0000000000e+01 </v></row>
+        </database>
+    </rra>
+
+</rrd>
