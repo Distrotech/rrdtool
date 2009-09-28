@@ -17,5 +17,6 @@
 <li><a href="http://ed.zehome.com/?page=rrdtool">French RRDtutorial</a></li>
 <li><a href="http://silverwraith.com/papers/freebsd-snmp.php">Using SNMP and RRDtool on FreeBSD</a></li>
 <li><a href="http://www.photonway.net/Rrdtool-Tutorial-jp.html">Japanese Version of Alex's RRDtool Tutorial</a></li>
-<li><a href="http://www.linux-magazin.de/Artikel/ausgabe/2004/06/perl/perl.html">RRDtool Intro from the German Linux Magazin</a></li>
+<li><a href="http://www.linux-magazin.de/Heft-Abo/Ausgaben/2004/06/Daten-ausgesiebt">RRDtool Intro from the German Linux Magazin</a></li>
+<li><a href="http://aplawrence.com/Girish/gv-rrdtool.html">Creating pretty graphs with RRDTOOL</a></li>
 </ul>
