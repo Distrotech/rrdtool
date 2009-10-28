@@ -13,6 +13,17 @@ logging and graphing system for time series data. Use it to write your
 custom monitoring shell scripts or create whole applications using its Perl,
 Python, Ruby, TCL or PHP bindings.</p>
 
+<h2>RRDtool Training at LISA'09</h2>
+
+<p>On Monday, November 2, 2009, Tobi Oetiker is teaching two half day
+RRDtool tutorials at the Large Installation System Administration Conference
+(LISA'09): <a
+href="http://www.usenix.org/events/lisa09/training/tutonefile.html#m6">RRDtool
+First Steps</a> and <a
+href="http://www.usenix.org/events/lisa09/training/tutonefile.html#m9">RRDtool
+Advanced Topics</a>. <a
+href="http://www.usenix.org/events/lisa09/">Registration is now open</a>.</p>
+
 <h2>Do you think RRDtool is cool?</h2>
 
 <p>Is RRDtool adding good value to your operations? Please consider <a
@@ -21,7 +32,7 @@ my OSS work</a> in 2009.</p>
 
 <h2>Version 1.4rc2 released, June 8th, 2009</h2>
 
-<p>RRDtool 1.4rc1 opens the last phase of the road to the 1.4 release. Get a
+<p>RRDtool 1.4rc2 opens the last phase of the road to the 1.4 release. Get a
 <a
 href="http://oss.oetiker.ch/rrdtool/pub/beta/rrdtool-1.4rc2.tar.gz">copy</a>,
 test it and report any problems you find.</p>

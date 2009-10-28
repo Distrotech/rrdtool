@@ -7,6 +7,7 @@
 #include "mmh11.xml"
 #include "miszek.xml"
 #include "charles.xml"
+#include "upstream-traffic-day.xml"
 #include "pings.xml"
 #include "systembelastung.xml"
 #include "filegroei.xml"
