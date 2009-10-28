@@ -1,0 +1,60 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "welcome">
+
+
+<h1>About RRDtool</h1>
+
+#<div style="float:right"><a style="border-width: 0px" href="http://www.oetiker.ch/press"><img src="award-white.png" border="0"/></a></div>
+
+<h2>What RRDtool does</h2>
+
+<p>RRDtool is the OpenSource industry standard, high performance data
+logging and graphing system for time series data. Use it to write your
+custom monitoring shell scripts or create whole applications using its Perl,
+Python, Ruby, TCL or PHP bindings.</p>
+
+<h2>Version 1.4 released, October 28th, 2009</h2>
+
+<p>RRDtool 1.4 comes with a much anticipated RRDcache Daemon, elevating the
+system to new performance levels it also contains a host of new and
+improved features. Read the <a href="http://n2.nabble.com/RRDtool-1-4-higher-Performance-and-cool-Features-tp3907839p3907839.html">announcement</a>.</p>
+
+<p><img src="stream-pop.png"/></p>
+
+<h2>RRDtool Training at LISA'09</h2>
+
+<p>On Monday, November 2, 2009, Tobi Oetiker is teaching two half day
+RRDtool tutorials at the Large Installation System Administration Conference
+(LISA'09): <a
+href="http://www.usenix.org/events/lisa09/training/tutonefile.html#m6">RRDtool
+First Steps</a> and <a
+href="http://www.usenix.org/events/lisa09/training/tutonefile.html#m9">RRDtool
+Advanced Topics</a>. <a
+href="http://www.usenix.org/events/lisa09/">Registration is now open</a>.</p>
+
+# <h2>Do you think RRDtool is cool?</h2>
+#
+# <p>Is RRDtool adding good value to your operations? Please consider <a
+# href="http://n2.nabble.com/Supporting-Tobi%27s-OSS-work-in-2009-tp1660428p1660428.html">supporting
+# my OSS work</a> in 2009.</p>
+
+
+<h2>Download</h2>
+
+<p>RRDtool is available for <a href="download.en.html">download</a> from
+this site. It compiles on a number of different Linux and Unix platforms as
+well as on Microsoft Windows.</p>
+
+<h2>RRDtool News Feeds</h2>
+
+<div>RRDtool Announcements feed <a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Bugs feed <a href="http://feeds2.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Wiki Updates <a href="http://feeds2.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+<div>RRDtool Checkins <a href="http://feeds2.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
+
+<h2>Sponsorship and Appreciators</h2>
+
+<p>You like RRDtool? You want show your appreciation? You want to sponsor
+future development or a particular new feature? Check out our <a
+href="sponsor.en.html">Sponsorship and Appreciation</a> page or visit my <a href="http://tobi.oetiker.ch/wish">wish list</a>.</p>
+

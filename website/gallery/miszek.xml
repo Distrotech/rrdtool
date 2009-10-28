@@ -1,0 +1,10 @@
+<gallery image="miszek.png" > <!-- no wider than 600 pixle -->
+ <title> Transaction monitoring on property market </title>
+ <author> M.Cegielski </author>
+ <description> Graph presents number of transactions on Real Estate market in Wroclaw. Chart is made based on week updates. Similar
+graphs present average property prices. Image is not unique but object of monitoring is quite original :) </description>
+ <year> 2008 </year><month> 11 </month> <!-- creation date -->
+ <!-- Optional -->
+ <livesite> http://wycena.net.pl/ceny-mieszkania-wroclaw.htm </livesite>
+ <email> info@wycena.net.pl </email>
+</gallery>

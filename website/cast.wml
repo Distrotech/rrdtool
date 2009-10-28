@@ -1,0 +1,14 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "cast">
+
+<H1>Cast</H1>
+
+<p><b><a href="http://tobi.oetiker.ch">Tobias Oetiker</a></b> -- Initial design, Main Developer.</p>
+<p><b>Jake Brutlag</b> -- Aberrant Behavior Detection, Computed datasources.</p>
+<p><b>Alex van den Bogaerdt</b> -- VDEF and other features, lots of documentation.</p>
+
+<p>Over the Years many people have coded for RRDtool. Their contributions
+have helped greatly to make RRDtool as useful as it is today.</p>
+
+#use wml::fmt::verbatim
+<verbatim-file src="$(ROOT)/../program/CONTRIBUTORS"/>

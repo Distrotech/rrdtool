@@ -1,0 +1,18 @@
+<rrdworld type="application"
+          icon="smokeping.png" > <!-- Size 100x66 -->
+ 
+       <name> SmokePing </name>
+     <author> Tobias Oetiker and Niko Tyni</author>
+<description> Latency monitor with built-in alerting system,
+	web interface and powerful plugin system for extensibility with new
+type of latency probes and alerts.
+</description>
+   <homepage> http://oss.oetiker.ch/smokeping </homepage> 
+       <year> 2005 </year><month> 9 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> tobi@oetiker.ch </email> <!-- Author contact -->
+
+</rrdworld>

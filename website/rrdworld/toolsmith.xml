@@ -1,0 +1,21 @@
+<rrdworld type="companion"
+          icon="toolsmith_logo.png" > <!-- Size 100x43 -->
+ 
+       <name> RRD Editor </name>
+     <author> Paul Smith </author>
+<description> The visual editing features of the RRD Editor allow you to
+easily modify the contents of an RRD.  Once
+an RRD is loaded into the Editor you can quickly locate a specific data
+point to modify or an entire Round Robin
+Archive can be removed.  The tool also allows new data sources and RRAs to
+be added. </description>
+   <homepage> http://thetoolsmith.com </homepage>
+       <year> 2006 </year><month> 4 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->  
+
+   <livesite> http://thetoolsmith.com </livesite>
+      <email> admin@thetoolsmith.com </email> <!-- Author contact -->
+
+</rrdworld>

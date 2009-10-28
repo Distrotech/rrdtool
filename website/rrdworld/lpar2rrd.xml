@@ -1,0 +1,21 @@
+<rrdworld type="application"
+          icon="lpar2rrd.png" > <!-- Size 100x66 -->
+        <name> LPAR2RRD </name>
+     <author> Pavel Hampl </author>
+<description>LPAR CPU statistics and documentation tool for IBM Power
+systems servers (pSeries &amp; iSeries)
+The tool is capable to produce historical CPU utilization graphs of LPARs
+and shared CPU usage.
+It also collects complete physical (HW) and logical configuration of all
+managed systems and their lpars and all changes in their state and
+configuration
+</description>
+   <homepage>http://www.ibm.com/developerworks/wikis/display/virtualization/lpar2rrd+tool </homepage>
+       <year> 2009 </year><month> 1 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->
+
+   <livesite> http://lpar2rrd.sourceforge.net/demo/ </livesite>
+      <email> pavel.hampl@cz.ibm.com </email> <!-- Author contact -->
+</rrdworld>

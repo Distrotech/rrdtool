@@ -1,0 +1,16 @@
+<rrdworld type="companion"
+          icon="nhawk_icon.png" > <!-- Size 100x66 -->
+ 
+       <name> NHAWK (C# RRDTool Library for .Net and Mono) </name>
+     <author> Michael Corley </author>
+<description> NHawk is an initiative to provide a thin, complete RRDtool provider for the .Net and Mono framework. The project goal is targeted at providing a C# interface to native RRDtool facilities through appropriate .Net / Mono object model semantics.   </description>
+   <homepage> http://www.codeproject.com/KB/cs/NHawk.aspx </homepage> 
+       <year> 2008 </year><month> 8 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://www.codeproject.com/KB/cs/NHawk.aspx </livesite> 
+      <email> mwcorley79@gmail.com </email> <!-- Author contact -->
+
+</rrdworld>

@@ -1,0 +1,11 @@
+<rrdworld type="application" icon="drraw.png" > <!-- Size 100x66 -->
+       <name> drraw </name>
+     <author> Christophe Kalt </author>
+<description> drraw is a simple web based presentation front-end for RRDtool that allows you to interactively build graphs of your own design. A
+graph definition can be turned into a template which may be applied to many Round Robin Database files. drraw specializes in providing an easy mean
+of displaying data stored with RRDtool and does not care about how the data is collected, making it a great complement to other RRDtool front-ends.
+</description>
+   <homepage> http://web.taranis.org/drraw/ </homepage> 
+       <year> 2002 </year><month> 11 </month>
+    <license> BSD </license>
+</rrdworld>

@@ -1,0 +1,18 @@
+<gallery image="btdmd8.png" > <!-- no wider than 600 pixle -->
+
+      <title>Interconnect Utilization in Erlangs (Minutes per Minute)</title>
+     <author>Ben Golden</author> 
+<description>Graph shows inbound and outbound call traffic going in and out
+of the switch via the 6 trunks connected to the Diamond exchange. Inbound
+traffic shown as positive and uses a lowest-free fill method. Outbound
+traffic shown as negative uses a distributed fill method. <a
+href="/rrdtool-trac/wiki/OutlinedAreaGraph">Tech
+details on RRDtrac</a>.</description>
+
+       <year>2006</year><month>3</month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+      <email>bengolden@.removethis.blueyonder.co.uk</email>
+
+</gallery>

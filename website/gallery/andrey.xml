@@ -1,0 +1,16 @@
+<gallery image="andrey.png" > <!-- no wider than 600 pixle -->
+
+	<title> Statistic for network interfaces </title>
+	<author> Andrey Afanasiev </author> 
+	<description>
+		This a real (not artificial) data from a production machine.
+		Isn't it amazing? Probably not the ideal sampling interval.
+	</description>
+	<year> 2006 </year> <month> 11 </month> <!-- creation date -->
+      
+	<!-- Optional -->   
+
+	<livesite> none </livesite> 
+	<email> afanasiev-av@mcc.elektra.ru </email>
+
+</gallery>

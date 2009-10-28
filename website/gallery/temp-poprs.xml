@@ -1,0 +1,16 @@
+<gallery image="temp-poprs..png" > <!-- no wider than 600 pixle -->
+
+      <title> Temperature </title>
+     <author> João Marcelo Ceron </author> 
+<description> This graph shows the temperature of a computer room (indoor) and make a parallel with external 
+temperature (in Porto Alegre city).</description>
+       <year> 2007 </year><month> 6 </month> <!-- creation date -->
+   <!-- Optional -->   
+
+   <livesite> http://www.pop-rs.rnp.br/temperatura </livesite> 
+      <email></email>
+
+</gallery>
+
+
+

@@ -1,0 +1,3 @@
+rsync --copy-unsafe-links --verbose --times --delete --exclude pub --exclude='*~' --exclude=".svn" --exclude=".condor" -r . oposs@oss.oetiker.ch:public_html/rrdtool/
+#rsync --copy-unsafe-links --verbose --times --delete --exclude pub --exclude='*~' --exclude=".svn" --exclude=".condor" -r . /home/oetiker/public_html/webtools/rrdtool
+#rsync --links --verbose --times --delete --exclude pub --exclude='*~' --rsh=ssh -r . tobi@ipn.caida.org:/ipn/web/Tools/RRDtool

@@ -1,0 +1,10 @@
+<gallery image="upstream-traffic-day.png" > <!-- no wider than 600 pixle 
+-->
+      <title> Peering/Upstream Ratio </title>
+     <author> Alex Detzen </author> 
+<description> This graph shows Peering- and Upstream-Traffic and 
+summarizes total amount of traffic from our Autonoumous System to the 
+World Wide Web. Several RRD-DBs are used to create the graph. MRTG is used 
+for collecting values from Cisco and Juniper routers. </description>
+       <year> 2009 </year><month> 9 </month> <!-- creation date -->
+</gallery>

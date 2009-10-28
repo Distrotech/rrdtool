@@ -1,0 +1,16 @@
+<rrdworld type="application"
+          icon="taclog_RRD.png" > <!-- Size 100x66 -->
+ 
+       <name>tacLOG / tacMON</name>
+     <author>terreActive AG</author>
+<description>tacLOG is a tool for centralized log management (passive monitoring). It can be used for compliance, event generation, analysis and reporting. tacMON is the active counter part used for system and security monitoring. RRD-graphs are used to display the (active and passive) monitoring results.</description>
+   <homepage> http://www.terreactive.ch </homepage> 
+       <year> 2009 </year><month> 2 </month> <!-- Entry creation date -->
+    <license>proprietary</license>
+
+   <!-- Optional -->   
+
+   <livesite> http://www.terreactive.ch </livesite> 
+      <email> sales@terreactive.ch </email> <!-- Author contact -->
+
+</rrdworld>

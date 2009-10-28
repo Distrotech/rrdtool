@@ -1,0 +1,16 @@
+<gallery image="meteo-igf.png" >
+  <title>Temperature, humidity and pressure plots</title>
+  <author>Sylwester Arabas</author> 
+  <description>
+    We use rrdtool to plot some basic meteorological
+    parameters. Data is coming from our institute's 
+    (http://www.igf.fuw.edu.pl/zfa/en/) meteo-station
+    which was build from scratch by students. Rrdtool 
+    fetch command is also used for creation of datafiles 
+    available on the website.
+  </description>
+  <year>2005</year>
+  <month>12</month> 
+  <livesite>http://skng.igf.fuw.edu.pl/pl/stacja/</livesite> 
+  <email>slayoo@igf.fuw.edu.pl</email>
+</gallery>

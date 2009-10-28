@@ -1,0 +1,31 @@
+<rrdworld type="application"
+          icon="tstat_logo.png" > <!-- Size 100x66 -->
+           
+                  <name> Tstat </name>
+                       <author> Marco Mellia </author>
+                       <description> 
+                       Tstat provides information about classic
+                       and novel performance indexes and statistical data
+                       about Internet traffic.
+                       It collects measurement indexes at both the
+                       network (IP) layer and transport (TCP/UDP) layer.
+                       Real time protocols (RTP/RTCP) are also analyzed,
+                       allowing you to get statistical measurements on
+                       VOIP traffic, for example.
+                       Tstat analyzes either real-time captured packet
+traces,
+or previously recorded packet-level traces in various dump formats.
+
+</description>
+   <homepage> http://tstat.tlc.polito.it </homepage> 
+          <year> 2005 </year><month> 6 </month> <!-- Entry creation date
+          -->
+              <license> GPL </license>
+              
+                 <!-- Optional -->   
+                 
+                    <livesite> http://tstat.tlc.polito.it/web.shtml</livesite> 
+      <email> mellia@mail.tlc.polito.it </email> <!-- Author contact -->
+      
+      </rrdworld>
+      

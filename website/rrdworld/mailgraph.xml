@@ -1,0 +1,19 @@
+<rrdworld type="application">
+ 
+        <name> Mailgraph </name>
+             <author> David Schweikert </author>
+             <description> Mailgraph is a very simple mail statistics RRDtool
+              frontend for Postfix and Sendmail that produces daily,
+                            weekly, monthly and yearly graphs of received/sent and
+              bounced/rejected mail. </description>
+                 <homepage> http://mailgraph.schweikert.ch/ </homepage> 
+       <year> 2005 </year><month> 6 </month> <!-- Entry creation date -->
+           <license> GPL </license>
+           
+              <!-- Optional -->   
+              
+                 <livesite> http://www.stat.ee.ethz.ch/mailgraph.cgi </livesite> 
+      <email> david@schweikert.ch </email> <!-- Author contact -->
+      
+      </rrdworld>
+      

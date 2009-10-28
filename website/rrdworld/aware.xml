@@ -1,0 +1,21 @@
+<rrdworld type="application"
+         icon="awicon64.png" > <!-- Size 100x66 -->
+
+      <name> Aware </name>
+    <author> Russell Leighton </author>
+<description>
+
+The *Aware* project is an effort to create a software framework
+to measure, monitor, and control computer system resources. Aware is
+intended to enable system administrators tune system variables, set
+monitoring/security alarms and build adaptive distributed systems.
+Aware modules may be linked into applications making them 'aware' and
+able to participate in the larger managed system.
+
+</description>
+  <homepage> http://www.elegant-software.com/software/aware/ </homepage> 
+      <year> 2006 </year><month> 4 </month> <!-- Entry creation date -->
+   <license> LGPL </license>
+
+
+</rrdworld>

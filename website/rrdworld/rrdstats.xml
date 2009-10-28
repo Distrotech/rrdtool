@@ -1,0 +1,14 @@
+<rrdworld type="application" icon="rrdstats.png" > <!-- Size 100x66
+-->
+        <name>RRDstats</name>
+     <author>Dolly</author>
+<description>Coyote Linux &amp; BrazilFW floppy router monitoring package. This
+package monitors and graphically presents router bandwidth usage and
+internet link quality statistics. It's also used for visualizing statistics
+of defined QOS classes.</description>
+   <homepage>http://dolly.czi.cz/coyote/packages/rrd.asp</homepage> 
+       <year>2005</year><month>11</month> <!-- Entry creation date -->
+    <license>GPL</license>
+   <livesite>http://dolly.czi.cz/coyote/statssample/</livesite> 
+      <email>dolly@czi.cz</email> <!-- Author contact -->
+</rrdworld>

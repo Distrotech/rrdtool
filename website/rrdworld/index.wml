@@ -1,0 +1,86 @@
+<PAGE AUTHOR = "Tobias Oetiker <tobi@oetiker.ch>"
+        PAGE = "rrdworld">
+
+
+<H1>RRD World</H1>
+
+<p>A whole ecosystem of tools have sprung up around rrdtool. From tiny
+add-ons to big applications or even replacements for rrdtool itself.</p>
+
+<h2>RRDtool Companions</h2>
+
+#include "drraw.xml"
+#include "dsreport.xml"
+#include "nhawk_description.xml"
+#include "rrd_merger.xml"
+#include "weathermap4rrd.xml"  
+#include "weathermap_rrdworld.xml"
+#include "rrdutils.xml"
+#include "rrd4j.xml"
+#include "toolsmith.xml"
+#include "rrdcreator.xml"
+#include "pyrrd.xml"
+
+<h2>Free Applications</h2>
+
+#include "akkada.xml"
+#include "aware.xml"
+#include "bbstatus.xml"
+#include "bigsis_rrdworld.xml"
+#include "cacti.xml"
+#include "collectd.xml"
+#include "efw-community.xml"
+#include "eluna_graph_system.xml"
+#include "gbrrdgraphix.xml"
+#include "lpar2rrd.xml"
+#include "mailgraph.xml"
+#include "monitorix.xml"
+#include "mpltd.xml"
+#include "munin.xml"
+#include "mysqlBind2.xml"
+#include "n2rrd.xml"
+#include "netmrg.xml"
+#include "nmis-rrdtool.xml"
+#include "observernms.xml"
+#include "oreon.xml"
+#include "ourmon.xml"
+#include "ow.xml"
+#include "ozmonitor.xml"
+#include "prb.xml"
+#include "rrdbot.xml"
+#include "rrdcgi.xml"
+#include "rrdstats.xml"
+#include "rrdutil.xml"
+#include "rrdweather.xml"
+#include "serverstats.xml"
+#include "sicm.xml"
+#include "smokeping.xml"
+#include "snm_at_rrdworld.xml"
+#include "snmpgraph.xml"
+#include "statsdawg.xml"
+#include "systemgraph.xml"
+#include "thermometer.xml"
+#include "tinygraph.xml"
+#include "toolsmith.xml"
+#include "torrus.xml"
+#include "tstat.xml"
+#include "unnoc.xml"
+#include "webminstats.xml"
+#include "yacketystats.xml"
+#include "zenoss.xml"
+#include "zerod.xml"
+
+<h2>Commercial Applications</h2>
+
+#include "airwave.xml"
+#include "prefixmaster.xml"
+#include "wanguard.xml"
+#include "tacLOG_RRD.xml"
+
+<h2>Add your own tool to this list</h2>
+
+<p>If you have written a tool that you would like to see listed in this index,
+please send me a little xml file describing your tool. Below you find an example:</p>
+
+#use wml::fmt::verbatim
+<verbatim-file src="entry.txt"/>

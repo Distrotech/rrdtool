@@ -1,0 +1,20 @@
+<rrdworld type="application"
+          icon="bbstatus100x66.png" > <!-- Size 100x66 -->
+ 
+       <name> BBStatus </name>
+     <author> Victor Tarhon-Onu </author>
+<description> 
+BBStatus is an IP accounting and a SNMP and IP monitoring tool for Linux
+(for now). It uses RRDTool (RRDs PERL module) to display traffic statistics
+and data gathered by SNMP. It also provides user based access, so each user
+can log in and visualize various data (depending on access rights).
+</description>
+   <homepage> http://freshmeat.net/projects/bbstatus/ </homepage> 
+       <year> 2003 </year><month> 2 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+      <email> mituc@ac.tuiasi.ro </email> <!-- Author contact -->
+
+</rrdworld>

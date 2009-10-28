@@ -1,0 +1,17 @@
+<gallery image="mailstat-daily.png" > <!-- no wider than 600 pixle -->
+
+    <title> Statistic for antispam server </title>
+    <author> Bambang Budiharto </author>     
+
+    <description> Unlike most other report, data in this report are
+collected every hour (3600 sec). This graph shows how the effectiveness of
+using <a href="http://www.postfix.org/uce.html">postfix UCE control</a>, 
+      <a href="http://sqlgrey.sourceforge.net">greylisting</a> and
+      <a href="http://spamassassin.apache.org">spamassassin</a> to reduce spam.
+    </description>
+    <year> 2005 </year><month> 6 </month> <!-- creation date -->
+       <!-- Optional -->  
+    <email> budhi@i6x.org </email>
+
+</gallery>
+

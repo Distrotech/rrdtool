@@ -1,0 +1,10 @@
+<gallery image="rrdstats.png" > <!-- no wider than 600 pixle -->
+      <title>RRDstats QOS classes usage</title>
+     <author>Dolly</author> 
+<description>RRDStats is Coyote Linux &amp; BrazilFW floppy router package.
+Graphical statistics for bandwidth usage, link quality and defined QOS
+classes.</description>
+       <year>2005</year><month>11</month> <!-- creation date -->
+   <livesite>http://dolly.czi.cz/coyote/statssample/</livesite> 
+      <email>dolly@czi.cz</email>
+</gallery>

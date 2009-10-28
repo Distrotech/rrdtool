@@ -1,0 +1,17 @@
+<rrdworld type="application" > <!-- Size 100x66 -->
+  <name>NMIS</name>
+  <author>Keith Sinclair, Eric Greenwood, Ivan Brunello, Jan van Keulen and the NMIS Development Team.</author>
+  <description>
+NMIS stands for Network Management Information System.  It provides a platform
+for fault and performance management of your network.
+It supports many network products including Cisco, Microsoft, Sun , NET-SNMP
+(Linux).
+It provides thresholding, notification engine, summary network metrics, as
+well reporting of MANY things.
+There is an active NMIS community @ http://groups.yahoo.com/group/nmis_users/
+  </description>
+  <homepage>http://www.sins.com.au/nmis/</homepage>
+  <year>2006</year>
+  <month>3</month> <!-- Entry creation date -->
+  <license>GPL</license>
+</rrdworld>
