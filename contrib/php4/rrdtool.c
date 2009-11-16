@@ -46,6 +46,7 @@ function_entry rrdtool_functions[] = {
 	PHP_FE(rrd_clear_error, NULL)
 	PHP_FE(rrd_update, NULL)
 	PHP_FE(rrd_last, NULL)
+        PHP_FE(rrd_lastupdate,                          NULL)
 	PHP_FE(rrd_create, NULL)
 	PHP_FE(rrdtool_info, NULL)
 	PHP_FE(rrdtool_logo_guid, NULL)
@@ -433,6 +434,79 @@ PHP_FUNCTION(rrd_last)
 	}
 	return;
 }
+/* }}} */
+
+/* {{{ proto int rrd_lastupdate(string file)
+        Gets last update time and data of an RRD file */
+PHP_FUNCTION(rrd_lastupdate)
+{
+        pval *file;
+	zval *p_ds_namv,*p_last_ds;
+        time_t    last_update;
+        char    **ds_namv;
+        char    **last_ds;
+	int argc;
+	unsigned long ds_cnt, i;
+	char **argv = (char **) emalloc(3 * sizeof(char *));
+
+        //char **argv = (char **) emalloc(3 * sizeof(char *));
+
+        if ( rrd_test_error() )
+                rrd_clear_error();
+
+	if (zend_get_parameters(ht, 1, &file) == SUCCESS)
+        {
+		convert_to_string(file);
+
+                argv[0] = "dummy";
+                argv[1] = estrdup("last");
+                argv[2] = estrdup(file->value.str.val);
+
+		
+                if ( rrd_lastupdate(2, &argv[1],&last_update,&ds_cnt, &ds_namv, &last_ds) !=-1 ) {
+			array_init(return_value);
+                        add_assoc_long(return_value, "time", last_update);
+			
+			MAKE_STD_ZVAL(p_ds_namv);
+			MAKE_STD_ZVAL(p_last_ds);
+			array_init(p_ds_namv);
+			array_init(p_last_ds);
+
+			if (ds_namv) {
+				for (i = 0; i < ds_cnt; i++)
+				{
+					add_next_index_string(p_ds_namv, ds_namv[i], 1);
+					free(ds_namv[i]);
+				}
+				free(ds_namv);
+			}
+
+			if (last_ds) {
+                                for (i = 0; i < ds_cnt; i++)
+                                {
+                                        add_next_index_string(p_last_ds, last_ds[i], 1);
+                                        free(last_ds[i]);
+                                }
+                                free(last_ds);
+
+			}
+			zend_hash_update(return_value->value.ht, "ds_name", sizeof("ds_namv"),
+                                                        (void *)&p_ds_namv, sizeof(zval *), NULL);
+			zend_hash_update(return_value->value.ht, "last_ds", sizeof("last_ds"),
+                                                        (void *)&p_last_ds, sizeof(zval *), NULL);
+
+		}
+		efree(argv);
+
+               // RETVAL_LONG(retval);
+        }
+        else
+        {
+                WRONG_PARAM_COUNT;
+        }
+        return;
+}
+
 /* }}} */
 
 /* {{{ proto int rrd_create(string file, array args_arr, int argc)
