@@ -6,6 +6,8 @@
 
 #include "mmh11.xml"
 #include "miszek.xml"
+#include "wap.xml"
+#include "client_tracking.xml"
 #include "charles.xml"
 #include "upstream-traffic-day.xml"
 #include "pings.xml"

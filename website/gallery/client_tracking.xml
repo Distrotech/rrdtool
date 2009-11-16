@@ -1,0 +1,12 @@
+<gallery image="client_tracking.png" > <!-- no wider than 600 pixle -->
+
+      <title> Wireless Client Tracking </title>
+     <author> Taylor Made Networks </author> 
+<description> RRDTool graph that gives a visual representation of wireless client movement from Access Point to Access Point </description>
+       <year> 2008 </year><month> 4 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://gojooz.blogspot.com/2009/08/rrdtool-wireless-client-tracking.html </livesite> 
+
+</gallery>

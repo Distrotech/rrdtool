@@ -1,0 +1,12 @@
+<gallery image="wap.png" > <!-- no wider than 600 pixels -->
+      <title> WAP Events </title>
+     <author> Enrique Gómez </author> 
+<description> This graphs shows the WAP traffic events for 24 hours. </description>
+       <year> 2009 </year><month> 9 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> </livesite> 
+      <email> egomezm@gmail.com </email>
+
+</gallery>
