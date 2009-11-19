@@ -1,0 +1,105 @@
+Status Report on the RRDtool OSS Project
+========================================
+Author:  Tobias Oetiker
+Date:    2008-11-19
+$Id$
+
+
+Accomplishments
+---------------
+
+* RRDtool 1.4
+
+  * After a long rc periode. The new major version of RRDtool has been
+    released in October.  It featueres RRDcached.
+
+  * RRDcached is a corner stone in the quest for even better performance. It
+    works by caching updates and then applying them in bulk to the
+    individual rrd files. This cuts away a lot of the overhead associated
+    with accessing RRD files for individual updates.
+
+    RRDcached was the first standalone component of RRDtool, developed
+    without code contributions from me. It is based on a concept paper that
+    has been sitting in the rrdtool wiki for quite some time and lots of
+    ideas from the two main developers Florian Forster and Kevin Brintnall.
+
+    For me this caused a shift towards more work on the developers
+    mailinglist and in integrating patches.
+
+  * A host of other smaller features was also added in the 1.4 release, like
+    massively improved memory efficiency for restore operations, additional
+    graphing functions and the ability to directly pull data into graphs
+    from a classical database via libdbi.
+
+* RRDtool 1.3.x was until October the current release. It saw several
+  revisions, mostly for bugfixes and performance improvements.
+
+Other Ongoing Activities
+------------------------
+
+* Code Maintenance: mails on the mailing-lists and directly to me
+  indicate compatibility issues or suggest little changes. These are
+  often implemented immediately.
+
+* Thanks to a developer account on the opencsw.org infrastructure I am now
+  in a position to debug solaris issues directly and have done so for the
+  1.4 release.
+
+* Mailing-list, Web-server, Trac maintenance. The on-line resources
+  for RRDtool are kept up-to-date, in working order and spam free.
+
+* Two tutorials on RRDtool at LISA 2009 (conference on
+  Large Installation System Administration, Nov 2009, Baltimore, U.S.)
+
+Planned Activities
+------------------
+
+* Continued support for 1.2.x, 1.3.x 
+
+* Development of RRDtool 1.5
+
+  The major feature of 1.5 will be the portable data format that allows to
+  read and write rrd files across all platforms where RRDtool is supported.
+  Preliminary information about this feature can be found in
+
+    http://oss.oetiker.ch/rrdtool-trac/wiki/PortableRrdFormat
+
+  For rrdcached an authentication, authorization and encryption facility is
+  envisioned. Allowing to use rrdcacheds abilities for remote logging in a
+  wider network context.
+
+  Eventually RRDcached should provide full RRDtool functionality for remote
+  access, including graph and updatev functions.
+
+Sponsorship 2010
+----------------
+
+The 2010 sponsorship program has been setup. If you have not signed up
+yet, I would be thrilled to have you back as sponsor for the next year.
+Please get in touch.
+
+In 2009, RRDtool has been sponsored by these companies:
+
+Gold Sponsors: 
+
+* GroundWork Open Source - IT Monitoring & Network Solutions
+  www.groundworkopensource.com
+
+* ZenOSS - Open Source Enterprise Monitoring
+  www.zenoss.com
+
+Silver Sponsors:
+
+* Digicomp Academy AG         http://www.digicomp.ch
+* Openlane Inc.               http://www.openlane.com
+* terreActive AG              http://www.terreactive.ch
+* Host Europe                 http://www.hosteurope.de
+* Sidarion                    http://www.sidarion.ch
+* Contego Solutions LLC       http://www.contego.net 
+* Hitflip Media Trading GmbH  http://www.hitflip.de
+* Reflected Networks, Inc     http://www.reflected.net
+* Chinavasion Wholesale Ltd   http://www.chinavasion.com
+
+--
+Tobi Oetiker, Olten, Switzerland
+2008-11-24
