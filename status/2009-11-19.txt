@@ -90,16 +90,16 @@ Gold Sponsors:
 
 Silver Sponsors:
 
-* Digicomp Academy AG         http://www.digicomp.ch
-* Openlane Inc.               http://www.openlane.com
-* terreActive AG              http://www.terreactive.ch
-* Host Europe                 http://www.hosteurope.de
-* Sidarion                    http://www.sidarion.ch
-* Contego Solutions LLC       http://www.contego.net 
-* Hitflip Media Trading GmbH  http://www.hitflip.de
-* Reflected Networks, Inc     http://www.reflected.net
-* Chinavasion Wholesale Ltd   http://www.chinavasion.com
+* Digicomp Academy AG         www.digicomp.ch
+* Openlane Inc.               www.openlane.com
+* terreActive AG              www.terreactive.ch
+* Host Europe                 www.hosteurope.de
+* Sidarion                    www.sidarion.ch
+* Contego Solutions LLC       www.contego.net 
+* Hitflip Media Trading GmbH  www.hitflip.de
+* Reflected Networks, Inc     www.reflected.net
+* Chinavasion Wholesale Ltd   www.chinavasion.com
 
 --
 Tobi Oetiker, Olten, Switzerland
-2008-11-24
+2009-11-19
