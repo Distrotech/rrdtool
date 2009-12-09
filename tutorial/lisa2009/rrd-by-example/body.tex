@@ -6,6 +6,16 @@
   \usepackage{lmodern}
   \newcommand{\addgraph}[1]{\includegraphics[width=\textwidth]{ex/#1}}
   \setbeamercovered{transparent=25}
+\AtBeginSection[]
+{
+   \begin{frame}
+     \begin{center}
+     \Large\textbf{\insertsection}
+   \end{center}
+   % \frametitle{Outline}
+%      \tableofcontents[currentsection]
+   \end{frame}
+}
 }
 \mode<article>
 {
@@ -106,7 +116,7 @@ design is that data that get written on every update is as close
 together as possible.}
 
 \begin{frame}{rrd features}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item optimized for time-series data
 \item fixed size rotating data store
 \item constant on-disk size
@@ -150,7 +160,7 @@ together as possible.}
 \lstinputlisting[language=bash,firstline=20]{ex/update-real.sh}
 \lstinputlisting[language=bash]{ex/update-real.txt}
 
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item rrdtool re-binning at work
 \item major difference to a normal db
 \item all bins contain 1.0
@@ -160,7 +170,7 @@ together as possible.}
 
 \mode<article>{\newpage}
 \begin{frame}{optimizing your rrds}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item update of multi DS RRD is cheep
 \item single update interval per RRD
 \item RRD modification is expensive
@@ -179,7 +189,7 @@ together as possible.}
 \begin{frame}{fetching data}
 fetch is for reading data from an rrd
 \lstinputlisting[language=bash,firstline=8,lastline=9]{ex/catch-fetch.sh}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item one RRA with two 300s entries
 \item one RRA with three 600s entries
 \end{itemize}
@@ -206,7 +216,7 @@ then pull 900 seconds
 \end{frame}
 
 \begin{frame}{fetch recap}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item looking for complete coverage
 \item resolution is only a suggestion
 \item time stamp in output marks the END of the period
@@ -224,7 +234,7 @@ then pull 900 seconds
 
 \begin{frame}{the size of an rrd - result}
 \lstinputlisting{ex/rrd-size.txt}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item overhead is minimal
 \item 8 byte per double 
 \item \ldots per datasource
@@ -530,7 +540,7 @@ $15\mathbf{+}23=38$
   and uses it as the new step size.}
 
 \begin{frame}[fragile]{CDEF internals}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item data may come in different resolutions
 \item all items in a CDEF must have the same resolution
 \item resolution is expanded to greatest common devisor (gcd)
@@ -586,17 +596,17 @@ A VDEF result has a value and a time assigned.
 \section{Holt Winters Aberrant Behaviour Detection}
 
 \begin{frame}{about alert generation}
-\begin{itemize}
-\item when something unexpected happens send an alert\pause
-\item fixed thresholds are too wide a net\pause
-\item moving averages weigh all data equal\pause
-\item holt winters can predict the future\pause
+\begin{itemize}[<+-| alert@+>]
+\item when something unexpected happens send an alert
+\item fixed thresholds are too wide a net
+\item moving averages weigh all data equal
+\item holt winters can predict the future
 \item and no one considers himself clever enough to use it
 \end{itemize}
 \end{frame}
 
 \begin{frame}{rrd - holt winters assumptions}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item data is periodic in nature
 \item data has continuity 
 \item data continuity is periodic
@@ -605,7 +615,7 @@ A VDEF result has a value and a time assigned.
 \end{frame}
 
 \begin{frame}{holt winters aberrant behavior}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item prediction of future value and confidence band
 \item confidence band is like a standard deviation
 \item real value compared to predicted value +/- confidence band
@@ -621,7 +631,7 @@ A VDEF result has a value and a time assigned.
   within a configurable interval, RRDtool logs a failure.}
 
 \begin{frame}<presentation>{holt winters configuration}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item HWPREDICT for starters
 \item tweaking required
 \item know the knobs to turn
@@ -632,7 +642,7 @@ A VDEF result has a value and a time assigned.
 \end{frame}
 
 \mode<article>{
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item Keep it simple, go for HWPREDICT only when you start using
   holt winters in RRDtool.
 \item Every data set is different, tweaking is required. 
@@ -779,7 +789,7 @@ LINE1:pred#0a0:Prediction
 \mode<article>{The image key only shows up when the graph file name is '-'.}
 
 \begin{frame}{v-interfaces}
-\begin{itemize}
+\begin{itemize}[<+-| alert@+>]
 \item rrdtool info
 \item rrdtool update\textbf{v}
 \item rrdtool graph\textbf{v}
