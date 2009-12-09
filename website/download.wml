@@ -29,7 +29,7 @@ You can download RRD tool from several places:
 
 <UL>
  <LI>AIX by <A HREF="mailto:zoran.majcenic_inet.hr">Zoran Majcenic</A> -- <A HREF="http://www.inet.hr/zmp/ibm/rrdtool">http://www.inet.hr/zmp/ibm/rrdtool</A></LI>
- <LI>HP-UX by <A HREF="mailto:sangelov@globul.bg">Stoyan Angelov</A> -- <A HREF="http://www.filibeto.org/~aduritz/truetrue/rrdtool/">http://www.filibeto.org/~aduritz/truetrue/rrdtool/1.3.4</A></LI>
+ <LI>HP-UX by <A HREF="mailto:sangelov@globul.bg">Stoyan Angelov</A> -- <A HREF="http://www.filibeto.org/~aduritz/truetrue/rrdtool/">http://www.filibeto.org/~aduritz/truetrue/rrdtool/</A></LI>
  <LI>Solaris OpenCSW <A HREF="http://www.opencsw.org/packages/rrdtool"> http://www.opencsw.org/packages/rrdtool</a></LI>
  <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
  <LI>T2 SDE Linux <A HREF="http://www.t2-project.org/packages/rrdtool.html">http://www.t2-project.org/packages/rrdtool.html</a></li>
