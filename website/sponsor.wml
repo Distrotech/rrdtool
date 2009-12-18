@@ -16,9 +16,10 @@ sponsor</a>!</p>
 <p>
 #Mark Hinkle <mrhinkle@zenoss.com>
 <a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>&nbsp;
-#Mahesh Iyer <miyer@groundworkopensource.com>
-<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
+##Mahesh Iyer <miyer@groundworkopensource.com>
+#<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
 </p>
+
 
 <h2>2010 Silver Sponsors</h2>
 
@@ -33,8 +34,19 @@ sponsor</a>!</p>
 <a href="http://www.hosteurope.de/"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
 # From: Mark Burazin via RT <mark@chinavasion.com>
 <a href="http://www.chinavasion.com"><img border="0" title="Chinavasion Wholesale Ltd, China" src="$(ROOT)/logos/chinavasion.png"/></a>&nbsp;
+# From Matthew Sacks cronos_4d@hotmail.com
+<a href="http://www.thebitsource.com"><img border="0" title="thebitsource.com" src="$(ROOT)/logos/thebitsource.png"/></a>&nbsp;
 
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
+</p>
+
+<h2>2009 Gold Sponsors</h2>
+
+<p>
+#Mark Hinkle <mrhinkle@zenoss.com>
+<a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>&nbsp;
+#Mahesh Iyer <miyer@groundworkopensource.com>
+<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
 </p>
 
 <h2>2009 Silver Sponsors</h2>

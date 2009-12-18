@@ -76,6 +76,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "prefixmaster.xml"
 #include "wanguard.xml"
 #include "tacLOG_RRD.xml"
+#include "loriotpro.xml"
 
 <h2>Add your own tool to this list</h2>
 
