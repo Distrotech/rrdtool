@@ -39,37 +39,27 @@ sponsor</a>!</p>
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
 </p>
 
-<h2>2009 Gold Sponsors</h2>
+#<h2>2009 Silver Sponsors</h2>
 
-<p>
-#Mark Hinkle <mrhinkle@zenoss.com>
-<a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>&nbsp;
-#Mahesh Iyer <miyer@groundworkopensource.com>
-<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
-</p>
-
-<h2>2009 Silver Sponsors</h2>
-
-<p>
+#<p>
 # oliver.mueller@digicomp.ch 27 Oct 2008 14:16:42 +0100
-<a href="http://www.digicomp.ch/linux"><img border="0" alt="Digicomp Academy AG" src="$(ROOT)/logos/digicomp.gif"/></a>&nbsp;
+#<a href="http://www.digicomp.ch/linux"><img border="0" alt="Digicomp Academy AG" src="$(ROOT)/logos/digicomp.gif"/></a>&nbsp;
 # Ulf Zimmermann <ulf@openlane.com> Thu, 10 May 2007 14:08:10 -0700
-<a href="http://www.openlane.com"><img border="0" title="Openlane, Inc." src="$(ROOT)/logos/openlane_101x51.jpg"/></a>&nbsp;
+#<a href="http://www.openlane.com"><img border="0" title="Openlane, Inc." src="$(ROOT)/logos/openlane_101x51.jpg"/></a>&nbsp;
 # Rolf Hefti <rolf.hefti@terreactive.ch> Mon, 9 Jul 2007 10:58:10 +0200
-<a href="http://www.terreactive.ch"><img border="0" title="terreActive AG" src="$(ROOT)/logos/terreactive.png"/></a>&nbsp;
+#<a href="http://www.terreactive.ch"><img border="0" title="terreActive AG" src="$(ROOT)/logos/terreactive.png"/></a>&nbsp;
 # Felix Schueren <felix.schueren@hosteurope.de> Thu, 21 Dec 2006 12:24:51 +0100
-<a href="http://www.hosteurope.de/"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
+#<a href="http://www.hosteurope.de/"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
 #From: Roger Grandjean <rgrandjean@sidarion.ch> Mon, 14 Apr 2008 11:49:56 +0200
-<a href="http://www.sidarion.ch"><img border="0" alt="Sidarion" src="$(ROOT)/logos/sidarion.png"/></a>&nbsp;
+#<a href="http://www.sidarion.ch"><img border="0" alt="Sidarion" src="$(ROOT)/logos/sidarion.png"/></a>&nbsp;
 # Joel R. Mills <jmills@contego.net>, Chris Widhelm <cwidhelm@contego.net>
-<a href="http://www.contego.net"><img border="0" title="CONTEGO Solutions, LLC" src="$(ROOT)/logos/Contego_Logo_101x51.gif"/></a>&nbsp;
+#<a href="http://www.contego.net"><img border="0" title="CONTEGO Solutions, LLC" src="$(ROOT)/logos/Contego_Logo_101x51.gif"/></a>&nbsp;
 # From: Maik Metzen <maik.metzen@hitflip.de> Mon, 17 Sep 2007 09:27:40 +0200
-<a href="http://www.hitmeister.de"><img border="0" title="Hitflip Media Trading GmbH" src="$(ROOT)/logos/hitmeister.gif"/></a>&nbsp;
+#<a href="http://www.hitmeister.de"><img border="0" title="Hitflip Media Trading GmbH" src="$(ROOT)/logos/hitmeister.gif"/></a>&nbsp;
 # From: Mark Burazin via RT <mark@chinavasion.com>
-<a href="http://www.chinavasion.com"><img border="0" title="Chinavasion Wholesale Ltd, China" src="$(ROOT)/logos/chinavasion.png"/></a>&nbsp;
-
-<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
-</p>
+#<a href="http://www.chinavasion.com"><img border="0" title="Chinavasion Wholesale Ltd, China" src="$(ROOT)/logos/chinavasion.png"/></a>&nbsp;
+#<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
+#</p>
 
 <h2>Other means for making Tobi happy</h2>
 
