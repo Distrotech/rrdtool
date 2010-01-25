@@ -16,8 +16,8 @@ sponsor</a>!</p>
 <p>
 #Mark Hinkle <mrhinkle@zenoss.com>
 <a href="http://www.zenoss.com/?rrdtool"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a>&nbsp;
-##Mahesh Iyer <miyer@groundworkopensource.com>
-#<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
+#Mahesh Iyer <miyer@groundworkopensource.com>
+<a href="http://www.groundworkopensource.com/products/components/rrdtool.html"><img title="GroundWork Open Source" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif" border="0"/></a>
 </p>
 
 
