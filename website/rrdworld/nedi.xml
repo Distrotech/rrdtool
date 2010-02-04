@@ -1,0 +1,11 @@
+<rrdworld type="application" icon="nedi-s.png" >
+<name> NeDi </name>
+<author> Remo Rickli </author>
+<description>
+A pleasingly simple management application for common tasks in the day to day running of a computer network. 
+PHP based web GUI with Perl based collector and monitors. MySQL and RRD are used for data storage.
+</description>
+<homepage> http://nedi.ch </homepage> 
+<year> 2010 </year><month> 2 </month>
+<license> GPL </license>
+</rrdworld>

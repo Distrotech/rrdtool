@@ -12,6 +12,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "drraw.xml"
 #include "dsreport.xml"
 #include "nhawk_description.xml"
+#include "nedi.xml"
 #include "rrd_merger.xml"
 #include "weathermap4rrd.xml"  
 #include "weathermap_rrdworld.xml"
