@@ -1,0 +1,22 @@
+<rrdworld type="application"
+          icon="sdr.png"> <!-- Size 100x66 -->
+
+       <name> System Data Recorder </name>
+     <author> Stefan Parvu </author>
+<description>
+System Data Recorder is organized as two things: the
+collection part which handles recording the data from each
+system and a reporting side where we permanently store and generate
+reports and perform the analysis. SDR is simple to use for
+performance analysis, system sizing, and capacity planning.
+</description>
+   <homepage> http://www.systemdatarecorder.org </homepage>
+       <year> 2005 </year><month>10</month> <!-- Entry creation date -->
+    <license> GPL,CDDL,Apache </license>
+
+   <!-- Optional -->
+
+   <livesite> http://www.systemdatarecorder.org:9001/ </livesite>
+      <email> support@systemdatarecorder.org </email> <!-- Author contact -->
+
+</rrdworld>

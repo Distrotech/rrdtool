@@ -54,6 +54,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "rrdutil.xml"
 #include "rrdweather.xml"
 #include "serverstats.xml"
+#include "sdr.xml"
 #include "sicm.xml"
 #include "smokeping.xml"
 #include "snm_at_rrdworld.xml"
