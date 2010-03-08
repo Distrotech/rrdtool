@@ -382,6 +382,8 @@ Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 S<Tobi Oetiker E<lt>tobi@oetiker.chE<gt>>
 
+The development of  this tool has been sponsored by L<www.init7.net|http://www.init7.net>.
+ 
 =head1 HISTORY
 
  2010-02-25 to Initial Version
