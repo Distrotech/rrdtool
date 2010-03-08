@@ -320,10 +320,10 @@ restructure data at a later stage. In the rrdtool core there are no
 functions to modify the base step size nor the number and types of RRAs in a
 graceful manner.
 
-The rrdjig tool tries to rebild the original data as closely as possible
+The rrdjig tool tries to rebuild the original data as closely as possible
 based on the data found in the rrd file. It takes AVERAGE, MIN and MAX RRAs
-into account and rebilds the original data stream such that it can be
-re-enterd into a fresh rrd file. Depending on the configuration of the new
+into account and rebuilds the original data stream such that it can be
+re-entered into a fresh rrd file. Depending on the configuration of the new
 rrd file the resulting data closely matches the data in the original rrd
 file.
 
@@ -352,7 +352,7 @@ quantization issues especially when switching from one consolidation level to th
 
 F<legacy.rrd> has data for the last two years and F<new.rrd> is still empty
 but created with a start data two years in the past. F<legacy.rrd> contains
-4 Date Sources (in,out,error,drop) and F<new.rrd> contains 3 datasources
+4 Date Sources (in,out,error,drop) and F<new.rrd> contains 3 data-sources
 (myout,myin,overrun). We want to transfer the old 'in' to 'myin' and 'out'
 to 'myout' while dropping 'error' and 'drop'.
 
