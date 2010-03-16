@@ -122,6 +122,8 @@ sub fetch_data($$$){
         @tmpl = split /:/, $opt{'src-tmpl'};
     }
     my %map;
+    my @min;
+    my @max;
     for my $cf (keys %$tasks){
         print STDERR "FETCH #### CF $cf #####################################\n" 
             if $opt{verbose};
@@ -142,6 +144,12 @@ sub fetch_data($$$){
             print STDERR "FETCH: want setp $t->{step} -> got step $step  / want start $t->{start} -> got start $start\n" if $opt{verbose};
             my $now = $start;                        
             while (my $row = shift @$array){
+                for (my $i = 0;$i < scalar @$array;$i++){
+                    if (defined $row->[$i]){
+                        $min[$i] = $row->[$i] if not defined $min[$i] or $row->[$i] < $min[$i];
+                        $max[$i] = $row->[$i] if not defined $max[$i] or $row->[$i] > $max[$i];
+                    }
+                }
                 if (@tmpl){
                     push @{$data{$cf}} , [ $now, $step, [ @$row[@map{@tmpl}] ] ];
                 }
@@ -160,15 +168,22 @@ sub fetch_data($$$){
         my $step = $start - $first;
         unshift @{$data{AVERAGE}}, [ $start, $step, [ map {undef} @{$data{AVERAGE}[0][2]} ] ];
     }
-    return \%data;
+    if (@tmpl){
+        return (\%data,[@min[@map{@tmpl}]],[@max[@map{@tmpl}]]);
+    }
+    else {
+        return (\%data,\@min,\@max);
+    }        
 }
 
-sub reupdate($$$){
+sub reupdate($$$$$){
     my $step = shift;
     my $dst = shift;
     my $data = shift;
-    my @hidden_rows;
-    my @fake_rows;
+    my $min = shift;
+    my $max = shift;
+    my @pending = map { 0 } @{$data->{AVERAGE}[0][2]};
+    my $hide_cnt = 0;
     my @up;
     while (my $av = shift @{$data->{AVERAGE}}){
         my $end = $av->[0];
@@ -183,7 +198,7 @@ sub reupdate($$$){
         for (my $t = $start+$step;$t<=$end;$t+=$step){
             my @out = @{$av->[2]};
             # lets see if we a usable a MIN or MAX entry pending
-            if (@hidden_rows < 2 and $av->[1] > $step) {
+            if ($hide_cnt <= 2 and $av->[1] > $step) {
                 for my $cf (qw(MIN MAX)){
                     my $m = $data->{$cf}[0];
                     # drop any MIN/MAX entries which we could not use
@@ -195,37 +210,54 @@ sub reupdate($$$){
                     my $cend = $m->[0];
                     my $cstep = $m->[1];
                     my $crow = $m->[2];
-                    if ($cend >= $t and $cend- $cstep <= $t - $step){
+                    if ($cend >= $t and $cend - $cstep <= $t - $step){
                         my $row = "$t:".join(':',map {defined $_ ? $_ : 'U'} @{$crow});
                         print STDERR ($cf eq 'MIN' ? 'm' : 'M' ) ,$row,"\n" if $opt{verbose};
                         push @up, $row;
-                        push @hidden_rows, $av->[2];
-                        push @fake_rows, $crow;
+                        $hide_cnt++;
+                        for (my $i = 0; $i <@$crow; $i++){
+                            if (defined $pending[$i]){
+                                if (defined $crow->[$i] and defined $out[$i]){
+                                    my $keep = ($out[$i] - $crow->[$i]);
+#                                   print STDERR " - keep $keep\n" if $opt{verbose};
+                                    $pending[$i] += $keep;
+                                }
+                                else {
+                                    $pending[$i] = undef;
+                                }                                
+                            }
+                        }
                         shift @{$data->{$cf}};
                         next STEP;
                     }
                 }
             }
-            # compensate for the AVERAGE data NOT shown
-            while (my $row = shift @hidden_rows){
-                for (my $i = 0; $i <@$row; $i++){
-                    if (not defined  $row->[$i] or not defined $out[$i]){
-                       $out[$i] = undef;
-                    } else {
-                       $out[$i] += $row->[$i];
+
+            # compensate for data not shown while insering fake MIN/MAX entries
+            for (my $i = 0; $i < @out; $i++){
+                if (defined $out[$i] and defined $pending[$i] and $pending[$i] != 0){
+                    my $new = $out[$i] + $pending[$i];
+                    if (defined $max->[$i] and $new > $max->[$i]) {
+                        $pending[$i] = $new - $max->[$i];
+                        $out[$i] = $max->[$i];
+#                       print STDERR " - maxout $i $out[$i]\n" if $opt{verbose};
+                    }
+                    elsif (defined $min->[$i] and $new < $min->[$i]){
+                        $pending[$i] = $new - $min->[$i];
+                        $out[$i] = $min->[$i];
+#                       print STDERR " - minout $i $out[$i]\n" if $opt{verbose};
+                    }
+                    else {
+                        $pending[$i] = 0;
+                        $out[$i] = $new;
+#                       print STDERR " - combined $i $out[$i]\n" if $opt{verbose};
                     }
                 }
-            }
-            # compensate for the MIN/MAX data shown INSTEAD
-            while (my $row = shift @fake_rows){
-                for (my $i = 0; $i <@$row; $i++){
-                    if (not defined  $row->[$i] or not defined $out[$i]){
-                       $out[$i] = undef;
-                    } else {
-                       $out[$i] -= $row->[$i];
-                    }
+                else {
+                    $pending[$i] = 0;
                 }
             }
+            $hide_cnt = 0;
             # show the result;            
             my $row = "$t:".join(':',map {defined $_ ? $_ : 'U'} @out);
             print STDERR " ",$row,"\n" if $opt{verbose};
@@ -287,9 +319,9 @@ sub rrdjig($$$$){
     my $src_info = RRDs::info($src);
     rrd_err_check();
     my ($first,$fetch_tasks) = prep_fetch_tasks($src_info,$dst_info);
-    my $updates = fetch_data($src,$first,$fetch_tasks);
+    my ($updates,$min,$max) = fetch_data($src,$first,$fetch_tasks);
     set_gauge($dst,$dst_info);
-    reupdate($src_info->{step},$dst,$updates);
+    reupdate($src_info->{step},$dst,$updates,$min,$max);
     unset_gauge($dst,$dst_info);
 }
 
