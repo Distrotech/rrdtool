@@ -122,8 +122,6 @@ sub fetch_data($$$){
         @tmpl = split /:/, $opt{'src-tmpl'};
     }
     my %map;
-    my @min;
-    my @max;
     for my $cf (keys %$tasks){
         print STDERR "FETCH #### CF $cf #####################################\n" 
             if $opt{verbose};
@@ -144,12 +142,6 @@ sub fetch_data($$$){
             print STDERR "FETCH: want setp $t->{step} -> got step $step  / want start $t->{start} -> got start $start\n" if $opt{verbose};
             my $now = $start;                        
             while (my $row = shift @$array){
-                for (my $i = 0;$i < scalar @$array;$i++){
-                    if (defined $row->[$i]){
-                        $min[$i] = $row->[$i] if not defined $min[$i] or $row->[$i] < $min[$i];
-                        $max[$i] = $row->[$i] if not defined $max[$i] or $row->[$i] > $max[$i];
-                    }
-                }
                 if (@tmpl){
                     push @{$data{$cf}} , [ $now, $step, [ @$row[@map{@tmpl}] ] ];
                 }
@@ -168,20 +160,15 @@ sub fetch_data($$$){
         my $step = $start - $first;
         unshift @{$data{AVERAGE}}, [ $start, $step, [ map {undef} @{$data{AVERAGE}[0][2]} ] ];
     }
-    if (@tmpl){
-        return (\%data,[@min[@map{@tmpl}]],[@max[@map{@tmpl}]]);
-    }
-    else {
-        return (\%data,\@min,\@max);
-    }        
+    return (\%data);
 }
 
-sub reupdate($$$$$){
+sub reupdate($$$){
     my $step = shift;
     my $dst = shift;
     my $data = shift;
-    my $min = shift;
-    my $max = shift;
+    my @min;
+    my @max;
     my @pending = map { 0 } @{$data->{AVERAGE}[0][2]};
     my $hide_cnt = 0;
     my @up;
@@ -212,6 +199,11 @@ sub reupdate($$$$$){
                     my $crow = $m->[2];
                     if ($cend >= $t and $cend - $cstep <= $t - $step){
                         my $row = "$t:".join(':',map {defined $_ ? $_ : 'U'} @{$crow});
+                        if ($cf eq 'MIN'){
+                            @min = @{$crow};
+                        } else {
+                            @max = @{$crow};
+                        }
                         print STDERR ($cf eq 'MIN' ? 'm' : 'M' ) ,$row,"\n" if $opt{verbose};
                         push @up, $row;
                         $hide_cnt++;
@@ -237,14 +229,14 @@ sub reupdate($$$$$){
             for (my $i = 0; $i < @out; $i++){
                 if (defined $out[$i] and defined $pending[$i] and $pending[$i] != 0){
                     my $new = $out[$i] + $pending[$i];
-                    if (defined $max->[$i] and $new > $max->[$i]) {
-                        $pending[$i] = $new - $max->[$i];
-                        $out[$i] = $max->[$i];
+                    if (defined $max[$i] and $new > $max[$i]) {
+                        $pending[$i] = $new - $max[$i];
+                        $out[$i] = $max[$i];
 #                       print STDERR " - maxout $i $out[$i]\n" if $opt{verbose};
                     }
-                    elsif (defined $min->[$i] and $new < $min->[$i]){
-                        $pending[$i] = $new - $min->[$i];
-                        $out[$i] = $min->[$i];
+                    elsif (defined $min[$i] and $new < $min[$i]){
+                        $pending[$i] = $new - $min[$i];
+                        $out[$i] = $min[$i];
 #                       print STDERR " - minout $i $out[$i]\n" if $opt{verbose};
                     }
                     else {
@@ -319,9 +311,9 @@ sub rrdjig($$$$){
     my $src_info = RRDs::info($src);
     rrd_err_check();
     my ($first,$fetch_tasks) = prep_fetch_tasks($src_info,$dst_info);
-    my ($updates,$min,$max) = fetch_data($src,$first,$fetch_tasks);
+    my $updates = fetch_data($src,$first,$fetch_tasks);
     set_gauge($dst,$dst_info);
-    reupdate($src_info->{step},$dst,$updates,$min,$max);
+    reupdate($src_info->{step},$dst,$updates);
     unset_gauge($dst,$dst_info);
 }
 
