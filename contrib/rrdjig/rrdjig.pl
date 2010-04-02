@@ -36,6 +36,12 @@ sub rrd_err_check(){
         die "RRD Error: $err\n";
     }
 }
+sub rrd_warn_check(){
+    my $err = RRDs::error();
+    if ($err){
+        warn "RRD Warning: $err\n";
+    }
+}
 
 # how should the data be fetched from the source
 # to provide the best approximation of the original data
@@ -163,8 +169,9 @@ sub fetch_data($$$){
     return (\%data);
 }
 
-sub reupdate($$$){
+sub reupdate($$$$){
     my $step = shift;
+    my $min_time = shift;
     my $dst = shift;
     my $data = shift;
     my @min;
@@ -252,18 +259,19 @@ sub reupdate($$$){
             $hide_cnt = 0;
             # show the result;            
             my $row = "$t:".join(':',map {defined $_ ? $_ : 'U'} @out);
-            print STDERR " ",$row,"\n" if $opt{verbose};
-            push @up, $row;
+            print STDERR " ",$row,"\n" if $opt{verbose};            
+            push @up, $row if $t > $min_time;
         }
     }
     pop @up; # the last update is most likely one too many ...
     if (@up == 0) {
         warn "WARNING: src has no entries new enough to fill dst\n";
     } else {
+        print STDERR ".";
         RRDs::update($dst,
                      $opt{'dst-tmpl'} ? '--template='.$opt{'dst-tmpl'} : (),
                      @up);
-        rrd_err_check();
+        rrd_warn_check();
     }
 }
 
@@ -313,7 +321,7 @@ sub rrdjig($$$$){
     my ($first,$fetch_tasks) = prep_fetch_tasks($src_info,$dst_info);
     my $updates = fetch_data($src,$first,$fetch_tasks);
     set_gauge($dst,$dst_info);
-    reupdate($src_info->{step},$dst,$updates);
+    reupdate($src_info->{step},$dst_info->{last_update},$dst,$updates);
     unset_gauge($dst,$dst_info);
 }
 
