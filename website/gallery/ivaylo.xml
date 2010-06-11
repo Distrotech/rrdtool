@@ -1,0 +1,13 @@
+<gallery image="ivailo.png" > <!-- no wider than 600 pixle -->
+
+      <title> PPPOE Comunication Statistics </title>
+     <author> Ivaylo Terziyski </author> 
+<description> Statistic about every packet in pppoe handshake. Used for monitoring ADSL service. </description>
+       <year> 2010 </year><month> 4 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite>  </livesite> 
+      <email>  </email>
+
+</gallery>
