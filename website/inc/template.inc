@@ -108,7 +108,7 @@
 #<a href="http://rrdtool.planetmirror.com/<where/>">AU</a><!--jason andrade <jason@dstc.edu.au>-->
 <a href="http://rrdtool.cs.pu.edu.tw/<where/>">TW</a><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
 #<a href="http://ftp.heanet.ie/mirrors/oss.oetiker.ch/rrdtool/<where/>">IE</a><!-- <mirrors@heanet.ie>-->
-<a href="http://rrdtool.codemonkey.se/<where/>">SE</a><!--Hans Engren <hans@cyclone.se>-->
+#<a href="http://rrdtool.codemonkey.se/<where/>">SE</a><!--Hans Engren <hans@cyclone.se>-->
 <a href="http://rrdtool.basemirror.de/<where/>">DE</a><!--Baseportal Mirrors <mirrors@baseportal.de>-->
 <a href="http://rrdtool.mirroraty.org/<where/>">US</a><!--Hossam Hossny <hossam@trexle.com>-->
 #<a href="http://rrdtool.paracoda.com/<where/>">CA</a><!--Hossam Hossny <admin@paracoda.com>-->

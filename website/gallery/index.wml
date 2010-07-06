@@ -5,7 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
-#include "ivailo.xml"
+#include "ivaylo.xml"
 #include "miszek.xml"
 #include "wap.xml"
 #include "client_tracking.xml"
