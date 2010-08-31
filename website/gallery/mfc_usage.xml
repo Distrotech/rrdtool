@@ -1,0 +1,13 @@
+<gallery image="mfc_lic_cnt24h.png" > <!-- no wider than 600 pixle -->
+
+      <title> MFC License usage </title>
+     <author>Stephan Huber</author> 
+<description> Manitoba Bluecross has bought 200 licenses for using Cobol, this graph shows how many licenses are currently used </description>
+       <year> 2010 </year><month> 7 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> </livesite> 
+      <email> stephan.huber.ca@gmail.com </email>
+
+</gallery>

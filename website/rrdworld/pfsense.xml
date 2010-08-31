@@ -1,0 +1,9 @@
+<rrdworld type="Appliance">
+        <name>pfSense</name>
+        <author>BSD Perimeter, LLC</author>
+        <description></description>
+        <homepage>http://www.pfsense.org</homepage>
+        <year>2005</year><month>6</month>
+        <license>BSD</license>
+        <email>coreteam@pfsense.org</email>
+</rrdworld>

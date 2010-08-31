@@ -1,0 +1,30 @@
+<rrdworld type="application"
+          icon="loriotpro.png" > <!-- Size 100x66 -->
+
+<name> LoriotPro Extended Edition </name>
+<author> LUTEUS </author>
+
+<description> The LoriotPro software extended edition is an extensible
+solution for administrators and managers that are involved in network
+monitoring and system management tasks linked to the exploitation of
+networks, systems or smart infrastructures. This free Windows based software
+helps you to access snmp devices, to create IP network maps and directory
+maps, manage IP routers,to analyze snmp requests,to perform snmp get and set
+requests, to compile mib files, to browse mib tree, to receive events and
+snmp trap, to discover networks and hosts. Included in LoriotPro , the RRD
+Collector is a LoriotPro directory plugin used for data collection, RRD
+databases feeding and RRD graph generation. RRD Collector can be seen as a
+Windows Front End of RRD tool. RRD manager is a full Windows dialog box
+based application and allows you to create and manage the RRD databases, the
+RRD graphs and the reports. RRD Manager is not able to collect the data to
+store in RRD database.</description>
+
+<homepage> http://www.loriotpro.com </homepage> 
+
+<year> 2002 </year><month> 12 </month> <!-- Entry creation date -->
+
+<license> Commercial </license>
+<livesite>http://www.loriotpro.com/Products/On-line_Documentation_V5/LoriotProDoc_EN/V22-RRD_Collector_RRD_Manager_EN.htm </livesite> 
+<email> sales@loriotpro.com </email> <!-- Author contact -->
+
+</rrdworld>

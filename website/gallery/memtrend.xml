@@ -1,0 +1,7 @@
+<gallery image="memtrend.png" >
+      <title>Memory Trend / Prediction</title>
+     <author>Jean-Edouard Babin</author> 
+<description>Usage of LSLSLOPE and LSLINT to show trend and prediction of memory usage with time prediction for 90% and 100% of usge. Source code can be found <a href="http://hints.jeb.be/2009/12/04/trend-prediction-with-rrdtool/">here</a></description>
+       <year> 2009 </year><month> 11</month>   
+      <email>rrdtool@jeb.be</email>
+</gallery>

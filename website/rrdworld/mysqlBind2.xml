@@ -1,0 +1,25 @@
+<rrdworld type="Free Applications" icon="mysqlBind2.gif" >
+
+<name> mysqlBind2/iDNS </name>
+
+<author> Gary Wallis for Unixservice </author>
+
+<description> mysqlBind2 is a set of back-end, admin and end-user web
+interfaces for managing critical telco quality internet DNS services.
+Runs a simple single NS to very complex (views, hidden master, secondary
+only, ASP features) multiple NS set server clusters. Current svn version
+has optional dashboard and per zone rrdtool graphs and the needed rrd
+named.stats data collection interface.
+</description>
+
+<homepage> http://venus.openisp.net/openisp/mysqlBind </homepage>
+
+<year> 2008 </year><month> 11 </month>
+
+<license> GPL </license>
+
+<livesite> http://venus.openisp.net/openisp/mysqlBind </livesite>
+
+<email> supportDELME@unixserviceDELME.com </email>
+
+</rrdworld>

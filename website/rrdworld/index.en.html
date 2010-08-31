@@ -1,0 +1,1124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-15" />
+<link rel="icon" href="../inc/favicon.ico" type="image/ico" />
+<title>RRDtool - RRD World
+</title>
+
+<!--[if lt IE 7]><script src="../inc/IE7/ie7-standard-p.js" type="text/javascript"></script><![endif]-->
+
+<style type="text/css">
+<!--/* <![CDATA[ */
+/* ie5 for mac thinks this comment does not end here because of the backslash \*/
+@import url('../inc/design.css');
+/* ]]> */-->
+</style>
+</head>
+<body>
+<table id="frame" summary="">
+<tr>
+<td valign="top" id="menucell">
+<!-- ############################# -->
+<!-- # MENU -->
+<!-- ############################# -->
+<div id="menu">
+<h2 class="legacy">Menu</h2>
+<ul>
+<li><div><a href="../index.en.html">Welcome </a></div></li>
+<li><div><a href="../download.en.html">Download </a></div></li>
+<li><div><a href="../doc/index.en.html">Documentation </a></div></li>
+<li><div><a href="../tut/index.en.html">Tutorials </a></div></li>
+<li><div><a href="../prog/index.en.html">Programming </a></div></li>
+<li><div><a href="http://oss.oetiker.ch/rrdtool-trac/">Bugs, Wiki</a></div></li>
+<li><div><a href="../support.en.html">Support </a></div></li>
+<li><div><a href="../gallery/index.en.html">Gallery </a></div></li>
+<li><div class="selected">Projects using RRDtool </div></li>
+<li><div><a href="../sponsor.en.html">Sponsoring RRDtool </a></div></li>
+<li><div><a href="../license.en.html">License </a></div></li>
+<li><div><a href="../cast.en.html">Cast </a></div></li>
+</ul>
+<br />
+<!-- SiteSearch Google -->
+<form method="get" action="http://oss.oetiker.ch/rrdtool/search.en.html" target="_top">
+<table border="0" summary="">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<input type="hidden" name="domains" value="oss.oetiker.ch"></input>
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" style="width: 180px" maxlength="255" value="" id="sbi"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap" valign="top">
+<table summary="">
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" id="ss0"></input>
+<label for="ss0" title="Search the Web"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="oss.oetiker.ch" checked="checked" id="ss1"></input>
+<label for="ss1" title="Search oss.oetiker.ch"><font size="-1" color="#000000">oss.oetiker.ch</font></label></td>
+</tr>
+</table>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Google Search" id="sbb"></input>
+<input type="hidden" name="client" value="pub-8135238818549668"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="6449489261"></input>
+<input type="hidden" name="ie" value="ISO-8859-1"></input>
+<input type="hidden" name="oe" value="ISO-8859-1"></input>
+<input type="hidden" name="safe" value="active"></input>
+<input type="hidden" name="cof" value="GALT:#0066CC;GL:1;DIV:#999999;VLC:336633;AH:center;BGC:FFFFFF;LBGC:FF9900;ALC:0066CC;LC:0066CC;T:000000;GFNT:666666;GIMP:666666;FORID:11"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+<br />
+<br />
+<p><b>Gold Sponsors</b></p>
+<p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="../logos/zenoss.png" width="200" height="100" /></a></p>
+<p><a href="http://www.groundworkopensource.com/products/components/rrdtool.html?ldsrc=AD-RRDtool"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="../logos/gw200x100.gif" width="200" height="100" /></a></p>
+<p><a href="../sponsor.en.html">Silver Sponsors ...</a></p>
+<br />
+<br />
+<div>
+<a href="http://tobi.oetiker.ch/wish/"><img border="0" alt="Make Tobi Happy" src="../inc/happy-tobi.png" width="119" height="72" /></a>
+</div>
+<br />
+<br />
+<div>
+<iframe width="120" height="50" name="bandwidth" frameborder="0" src="../hoster.html"></iframe>
+</div>
+<br />
+<br />
+</div>
+</td>
+<!-- ############################# -->
+<!-- # Logo and Body -->
+<!-- ############################# -->
+<td id="bodycell" valign="top">
+<div id="mirrors">
+<a href="http://oss.oetiker.ch/rrdtool/rrdworld/index.en.html">Swiss Original</a>.&nbsp;Mirrors:
+<a href="http://rrdtool.mirror.graemef.net/rrdworld/index.en.html">UK</a><!--Graeme Fowler <graeme@graemef.net>-->
+<a href="http://rrdtool.cs.pu.edu.tw/rrdworld/index.en.html">TW</a><!--Hsun-Chang Chang <hsunchang@gmail.com>-->
+<a href="http://rrdtool.basemirror.de/rrdworld/index.en.html">DE</a><!--Baseportal Mirrors <mirrors@baseportal.de>-->
+<a href="http://rrdtool.mirroraty.org/rrdworld/index.en.html">US</a><!--Hossam Hossny <hossam@trexle.com>-->
+</div>
+<div id="logo">
+<div class="legacy">
+RRDtool
+<hr />
+</div>
+</div>
+<!-- ############################# -->
+<!-- # BODY -->
+<!-- ############################# -->
+<div id="body">
+<!-- google_ad_section_start -->
+<h1>RRD World</h1>
+<div id="googlead_right">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8135238818549668";
+/* rrdtool top right */
+google_ad_slot = "4985488960";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<p>A whole ecosystem of tools have sprung up around rrdtool. From tiny
+add-ons to big applications or even replacements for rrdtool itself.</p>
+<h2>RRDtool Companions</h2>
+ <!-- Size 100x66 -->
+<div class="rrdworld">
+<img align="right" src="drraw.png" alt="" width="100" height="66" />
+<h3> drraw </h3>
+<div class="who"> Christophe Kalt | Date: 2002/11 | License: BSD </div>
+<div class="desc">
+ drraw is a simple web based presentation front-end for RRDtool that allows you to interactively build graphs of your own design. A
+graph definition can be turned into a template which may be applied to many Round Robin Database files. drraw specializes in providing an easy mean
+of displaying data stored with RRDtool and does not care about how the data is collected, making it a great complement to other RRDtool front-ends.
+ ... <a href="http://web.taranis.org/drraw/">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> DSreport </h3>
+<div class="who"> Steve Rader | Date: 2000/3 | License: GPL </div>
+<div class="desc">
+DSreport pretty prints DS values from an RRDtool database in
+tabular format. It supports flexable reporting time frames,
+autoscaling DS values, and conversion factors.
+ ... <a href="http://noc.hep.wisc.edu/dsreport.txt">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="nhawk_icon.png" alt="" width="81" height="78" />
+<h3> NHAWK (C# RRDTool Library for .Net and Mono) </h3>
+<div class="who"> Michael Corley &lt;mwcorley79@<span class="legacy">XYZ-</span>gmail.com&gt; | Date: 2008/8 | License: GPL </div>
+<div class="desc">
+ NHawk is an initiative to provide a thin, complete RRDtool provider for the .Net and Mono framework. The project goal is targeted at providing a C# interface to native RRDtool facilities through appropriate .Net / Mono object model semantics.
+ ... <a href="http://www.codeproject.com/KB/cs/NHawk.aspx">[home]</a> <a href="http://www.codeproject.com/KB/cs/NHawk.aspx">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+   <!-- Optional -->
+<div class="rrdworld">
+<h3> RRD Merger </h3>
+<div class="who"> Ivan Pintori &lt;ivan@<span class="legacy">XYZ-</span>pintori.it&gt; | Date: 2005/5 | License: GPL </div>
+<div class="desc">
+ RRD Merger is a perl script that merges 2 RRDs into a new one.
+ ... <a href="http://www.pintori.it/rrd-merger">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+   <!-- Optional -->
+<div class="rrdworld">
+<img align="right" src="weathermap4rrd.png" alt="" width="100" height="66" />
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8135238818549668";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel ="9159032853";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "2c3fbf";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+<h3> WeatherMap4RRD </h3>
+<div class="who"> Alexandre Fontelle &lt;afontelle@<span class="legacy">XYZ-</span>free.fr&gt; | Date: 2005/1 | License: GPL </div>
+<div class="desc">
+ Network Weathermap based on data from RRD files
+ ... <a href="http://weathermap4rrd.tropicalex.net/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="weathermap_rrdworld.png" alt="" />
+<h3>PHP Network Weathermap</h3>
+<div class="who">Howard Jones &lt;howie@<span class="legacy">XYZ-</span>thingy.com&gt; | Date: 2007/6 | License: GPL </div>
+<div class="desc">
+Weathermap is a network visualisation tool, to take data you already have and show you an overview of your network in map form. Support is built in for RRD, and tab-delimited text files. Other sources are via plugins or external scripts. Includes nice Cacti integration with user authentication.
+ ... <a href="http://www.network-weathermap.com/">[home]</a> <a href="http://www.network-weathermap.com/manual/0.92/example/example.html">[demo]</a>
+</div>
+</div>
+           <!-- Entry creation date -->
+                     <!-- Author contact -->
+<div class="rrdworld">
+<h3> rrdUtils </h3>
+<div class="who"> Javier Palacios &lt;javierpb@<span class="legacy">XYZ-</span>arsystel.com&gt; | Date: 2005/4 | License: GPL </div>
+<div class="desc">
+ Is a set of tools intended to help the creation
+and graphing
+of RRD files. The RRD characteristics (data sources, consolidation
+functions, ...) and the graphs are described in a configuration file that we
+can use to create new instances of a RRD, and to generate the graphs for
+them.<br /> It includes an extension which uses the configuration files to
+poll an SNMP agent and stores the results in the related RRD.
+ ... <a href="http://rrdutils.sourceforge.net">[home]</a>
+</div>
+</div>
+ <!-- Author contact -->
+<div class="rrdworld">
+<h3> RRD4J </h3>
+<div class="who"> Sasa Marcovic, Mathias Bogaert &lt;m.bogaert@<span class="legacy">XYZ-</span>memenco.com&gt; | Date: 2006/2 | License: LGPL </div>
+<div class="desc">
+ Rrd4j is a 100% pure java implementation of RRDTool.
+ ... <a href="https://rrd4j.dev.java.net/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x43 -->
+ 
+      
+    
+  
+       <!-- Entry creation date -->
+   
+   <!-- Optional -->  
+  
+      <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="toolsmith_logo.png" alt="" width="100" height="46" />
+<h3> RRD Editor </h3>
+<div class="who"> Paul Smith &lt;admin@<span class="legacy">XYZ-</span>thetoolsmith.com&gt; | Date: 2006/4 | License: GPL </div>
+<div class="desc">
+ The visual editing features of the RRD Editor allow you to
+easily modify the contents of an RRD.  Once
+an RRD is loaded into the Editor you can quickly locate a specific data
+point to modify or an entire Round Robin
+Archive can be removed.  The tool also allows new data sources and RRAs to
+be added.
+ ... <a href="http://thetoolsmith.com">[home]</a> <a href="http://thetoolsmith.com">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> RRDTool::Creator</h3>
+<div class="who">Jacquelin Charbonnel | Date: 2007/6 | License: CeCILL-C </div>
+<div class="desc">
+    Perl module to simplify the creation of different kind of common RRD
+ ... <a href="http://search.cpan.org/search?query=RRDTool::Creator&amp;mode=module">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3>PyRRD</h3>
+<div class="who">Duncan McGreggor | Date: 2004/8 | License: BSD</div>
+<div class="desc">
+A Pure Python OO Wrapper for RRDTool
+ ... <a href="http://code.google.com/p/pyrrd/">[home]</a>
+</div>
+</div>
+<h2>Free Applications</h2>
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="akkada.gi" alt="" />
+<h3> akk@da </h3>
+<div class="who"> Piotr Kodzis &lt;piotr.kodzis@<span class="legacy">XYZ-</span>inteligo.pl&gt; | Date: 2006/7 | License: GPL </div>
+<div class="desc">
+System designed for middle size computer networks. Its purpose
+is to quick detect system or network fault and to display information about its
+for administrator. akk@da does not wait for information from any agents,
+systems. Almost all services of the monitored hosts are discovered
+automatically.
+ ... <a href="http://akkada.tivi.net.pl">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+       <!-- Entry creation date -->
+<div class="rrdworld">
+<img align="right" src="awicon64.png" alt="" width="74" height="64" />
+<h3> Aware </h3>
+<div class="who"> Russell Leighton | Date: 2006/4 | License: LGPL </div>
+<div class="desc">
+The *Aware* project is an effort to create a software framework
+to measure, monitor, and control computer system resources. Aware is
+intended to enable system administrators tune system variables, set
+monitoring/security alarms and build adaptive distributed systems.
+Aware modules may be linked into applications making them 'aware' and
+able to participate in the larger managed system.
+ ... <a href="http://www.elegant-software.com/software/aware/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="bbstatus100x66.png" alt="" width="100" height="66" />
+<h3> BBStatus </h3>
+<div class="who"> Victor Tarhon-Onu &lt;mituc@<span class="legacy">XYZ-</span>ac.tuiasi.ro&gt; | Date: 2003/2 | License: GPL </div>
+<div class="desc">
+BBStatus is an IP accounting and a SNMP and IP monitoring tool for Linux
+(for now). It uses RRDTool (RRDs PERL module) to display traffic statistics
+and data gathered by SNMP. It also provides user based access, so each user
+can log in and visualize various data (depending on access rights).
+ ... <a href="http://freshmeat.net/projects/bbstatus/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="logo_bigsis_rrd_100x66.png" alt="" width="100" height="66" />
+<h3> Big Sister system and network monitor</h3>
+<div class="who"> Tom Aeby &lt;aeby@<span class="legacy">XYZ-</span>graeff.com&gt; | Date: 2005/8 | License: GPL </div>
+<div class="desc">
+Big Sister detects failing services and systems, displays live status
+overviews and sends alerts. For providing diagnostic information to the
+system administrator Big Sister also collects system performance data
+and uses RRDTool as a powerful utility for storing and visualizing the
+collected data.
+ ... <a href="http://www.bigsister.ch/">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3>Cacti</h3>
+<div class="who">Ian Berry &lt;iberry@<span class="legacy">XYZ-</span>raxnet.net&gt; | Date: 2005/4 | License: GPL</div>
+<div class="desc">
+Cacti is a complete network graphing solution designed to harness the power of RRDTool's data storage and graphing functionality. Cacti provides a fast poller, advanced graph templating, multiple data acquisition methods, and user management features out of the box. All of this is wrapped in an intuitive, easy to use interface that makes sense for LAN-sized installations up to complex networks with hundreds of devices.
+ ... <a href="http://www.cacti.net">[home]</a> <a href="http://www.bigspring.k12.pa.us/cacti/graph_view.php">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<img align="right" src="collectd.png" alt="" width="120" height="35" />
+<h3>collectd</h3>
+<div class="who">Florian Forster &lt;collectd@<span class="legacy">XYZ-</span>verplant.org&gt; | Date: 2008/1 | License: GPLv2 </div>
+<div class="desc">
+		collectd is a lighweight, modular daemon that collects system performance data.
+		It includes sophisticated networking possibilities, SNMP integration and well over 40 more plugins.
+		Multiple ways of extending it are available, including an embedded Perl interpreter and executing arbitary programs.
+ ... <a href="http://collectd.org/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="efwcommunity.png" alt="" />
+<h3> Endian Firewall Community </h3>
+<div class="who"> Endian srl &lt;info@<span class="legacy">XYZ-</span>endian.it&gt; | Date: 2006/12 | License: GPL </div>
+<div class="desc">
+ Endian Firewall Community is a "turn-key" linux security
+distribution that turns every system into a full featured security
+appliance. The software has been designed with "usability in mind" and
+is very easy to install, use and manage, without losing its flexibility.
+The features include a stateful packet inspection firewall,
+application-level proxies for various protocols (HTTP, FTP, POP3, SMTP)
+with antivirus support, virus and spamfiltering for email traffic (POP
+and SMTP), content filtering of Web traffic and a "hassle free" VPN
+solution (based on OpenVPN).
+ ... <a href="http://www.efw.it">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<img align="right" src="eluna_graph_system.png" alt="" width="140" height="98" />
+<h3> eLuna Graph System </h3>
+<div class="who"> Stephane Dupont &lt;steph@<span class="legacy">XYZ-</span>eluna.org&gt; | Date: 2006/4 | License: GPL </div>
+<div class="desc">
+ eLuna Graph System is an application written in Perl based on RRDTool and distributed under GNU General Public License. Its aim is collection, and then presentation in graphic form, of data, to aid in monitoring of a Linux machine.
+ ... <a href="http://steph.eluna.org/eluna_graph_system.html">[home]</a> <a href="http://graphs.eluna.org">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="rumble.png" alt="" />
+<h3> gbRRDGraphix </h3>
+<div class="who"> Olivier CRUILLES &lt;linuxos@<span class="legacy">XYZ-</span>club-internet.fr&gt; | Date: 2008/9 | License: GPL v2 </div>
+<div class="desc">
+ gbRRDGraphix is a graphical interface specialy to learn or use 'rrdtool' utilities easily
+ ... <a href="http://gbrrdgraphix.sourceforge.net">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="lpar2rrd.png" alt="" width="100" height="66" />
+<h3> LPAR2RRD </h3>
+<div class="who"> Pavel Hampl &lt;pavel.hampl@<span class="legacy">XYZ-</span>cz.ibm.com&gt; | Date: 2009/1 | License: GPL </div>
+<div class="desc">
+LPAR CPU statistics and documentation tool for IBM Power
+systems servers (pSeries &amp; iSeries)
+The tool is capable to produce historical CPU utilization graphs of LPARs
+and shared CPU usage.
+It also collects complete physical (HW) and logical configuration of all
+managed systems and their lpars and all changes in their state and
+configuration
+ ... <a href="http://www.ibm.com/developerworks/wikis/display/virtualization/lpar2rrd+tool">[home]</a> <a href="http://lpar2rrd.sourceforge.net/demo/">[demo]</a>
+</div>
+</div>
+        <!-- Entry creation date -->
+              <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3> Mailgraph </h3>
+<div class="who"> David Schweikert &lt;david@<span class="legacy">XYZ-</span>schweikert.ch&gt; | Date: 2005/6 | License: GPL </div>
+<div class="desc">
+ Mailgraph is a very simple mail statistics RRDtool
+              frontend for Postfix and Sendmail that produces daily,
+                            weekly, monthly and yearly graphs of received/sent and
+              bounced/rejected mail.
+ ... <a href="http://mailgraph.schweikert.ch/">[home]</a> <a href="http://www.stat.ee.ethz.ch/mailgraph.cgi">[demo]</a>
+</div>
+</div>
+ <!-- Size 155x40 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="monitorix.png" alt="" width="155" height="40" />
+<h3> Monitorix </h3>
+<div class="who"> Jordi Sanfeliu &lt;jordi@<span class="legacy">XYZ-</span>fibranet.cat&gt; | Date: 2005/9 | License: GPL </div>
+<div class="desc">
+Monitorix is a lightweight monitoring tool designed to monitor as many services as it can. At this time, it monitors from the CPU load and temperatures to the users on the system. Network device activity, network service demand, kernel usage and even the devices' interrupt activity are also monitored. It uses RRDtool as its logging and graphing back-end. The current status of any corporate UNIX/Linux server with Monitorix installed can be accessed via a Web browser.
+ ... <a href="http://www.monitorix.org">[home]</a> <a href="http://www.fibranet.cat/monitorix/">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3>mpltd : MP Log Traffic Daemon</h3>
+<div class="who">Massimiliano Piccinini &lt;maxpic(@<span class="legacy">XYZ-</span>)libero.it&gt; | Date: 2006/9 | License: free source</div>
+<div class="desc">
+mplpd is a little sniffing daemon that logs statistics per type of service. The type of service is defined by a rules configuration.
+ ... <a href="http://digilander.libero.it/ItaAto/st_welcome.htm">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="munin.png" alt="" width="66" height="97" />
+<h3> Munin </h3>
+<div class="who"> Ingvar Hagelund, Kjetil T. Homme, Patrick Domack, Mike
+Discenza, Alexandre Dupouy, Nicolai Langfeldt, Mike Fedyk
+ &lt;munin-users@<span class="legacy">XYZ-</span>lists.sourceforge.net&gt; | Date: 2005/11 | License: GPL v2 </div>
+<div class="desc">
+ Munin is a tool for collecting performance data and
+displaying it in a web interface. It has a master/node architecture. The
+master collects data from the nodes at regular intervals, storing the
+data in RRD, and updates the graphs. One of the main goals has been ease
+of creating plugins.
+ ... <a href="http://www.linpro.no/projects/munin/">[home]</a> <a href="http://www.linpro.no/projects/munin/example/">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<img align="right" src="mysqlBind2.gif" alt="" width="100" height="66" />
+<h3> mysqlBind2/iDNS </h3>
+<div class="who"> Gary Wallis for Unixservice &lt;supportDELME@<span class="legacy">XYZ-</span>unixserviceDELME.com&gt; | Date: 2008/11 | License: GPL </div>
+<div class="desc">
+ mysqlBind2 is a set of back-end, admin and end-user web
+interfaces for managing critical telco quality internet DNS services.
+Runs a simple single NS to very complex (views, hidden master, secondary
+only, ASP features) multiple NS set server clusters. Current svn version
+has optional dashboard and per zone rrdtool graphs and the needed rrd
+named.stats data collection interface.
+ ... <a href="http://venus.openisp.net/openisp/mysqlBind">[home]</a> <a href="http://venus.openisp.net/openisp/mysqlBind">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3> N2RRD Nagios Add-On</h3>
+<div class="who"> Badri Prasad Pillai &lt;badri@<span class="legacy">XYZ-</span>diglinks.com&gt; | Date: 2006/10 | License: GPL </div>
+<div class="desc">
+ Nagios to RRD (n2rrd) is a small perl script, which transforms performance data into
+RRA (Round Robin Archives). The resulting archives can later be viewed by any RRD graph display tool.
+ ... <a href="http://n2rrd.diglinks.com">[home]</a> <a href="http://mon.diglinks.com/cgi-bin/rrd2graph.cgi?hostname=demo&amp;service=icmp">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<img align="right" src="nedi-s.png" alt="" width="100" height="66" />
+<h3> NeDi </h3>
+<div class="who"> Remo Rickli | Date: 2010/2 | License: GPL </div>
+<div class="desc">
+A pleasingly simple management application for common tasks in the day to day running of a computer network.
+PHP based web GUI with Perl based collector and monitors. MySQL and RRD are used for data storage.
+ ... <a href="http://nedi.ch">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="netmrg.png" alt="" width="35" height="35" />
+<h3> NetMRG </h3>
+<div class="who"> Brady Alleman, Douglas E. Warner, Kevin Bonner &lt;dev@<span class="legacy">XYZ-</span>netmrg.net&gt; | Date: 2006/1 | License: GPL </div>
+<div class="desc">
+A network monitoring, reporting, and graphing system.
+Using MySQL, PHP, C++, pthreads, and RRDTOOL, it is capable of monitoring
+thousands of arbitrary values at user-configured intervals (typically 5 minutes).
+ ... <a href="http://www.netmrg.net">[home]</a> <a href="http://demo.netmrg.net">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+   <!-- Entry creation date -->
+<div class="rrdworld">
+<h3>NMIS</h3>
+<div class="who">Keith Sinclair, Eric Greenwood, Ivan Brunello, Jan van Keulen and the NMIS Development Team. | Date: 2006/3 | License: GPL</div>
+<div class="desc">
+NMIS stands for Network Management Information System. It provides a platform
+for fault and performance management of your network.
+It supports many network products including Cisco, Microsoft, Sun , NET-SNMP
+(Linux).
+It provides thresholding, notification engine, summary network metrics, as
+well reporting of MANY things.
+There is an active NMIS community @ http://groups.yahoo.com/group/nmis_users/
+ ... <a href="http://www.sins.com.au/nmis/">[home]</a>
+</div>
+</div>
+ <!-- Size 60x59 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="observer.png" alt="" />
+<h3> Observer NMS </h3>
+<div class="who"> Adam Armstrong &lt;adama@<span class="legacy">XYZ-</span>memetic.org&gt; | Date: 2007/3 | License: BSD </div>
+<div class="desc">
+ Observer is an autodiscovering network management/monitoring system using rrdtool to draw graphs. Cisco network hardware can be automatically discovered based on CDP data collected via SNMP. It is also capable of automatically generating network infrastructure diagrams using Graphviz.
+ ... <a href="http://www.observernms.org">[home]</a> <a href="http://demo.observernms.org">[demo]</a>
+</div>
+</div>
+ <!-- Size 150x89 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="observium-rrdworld.png" alt="" width="150" height="89" />
+<h3> Observium </h3>
+<div class="who"> Adam Armstrong &lt;adama@<span class="legacy">XYZ-</span>observium.org&gt; | Date: 2010/7 | License: GPLv3 </div>
+<div class="desc">
+ Observium has grown out of a lack of easy to use NMSes. It is intended to provide a more navigable interface to the health and performance of your network. Its design goals include collecting as much historical data about devices as possible, being completely autodiscovered with little or no manual intervention, and having a very intuitive interface.
+ ... <a href="http://www.observium.org">[home]</a> <a href="http://demo.observium.org">[demo]</a>
+</div>
+</div>
+ <!-- Size 280x115 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="oreon.gif" alt="" width="280" height="115" />
+<h3> Oreon </h3>
+<div class="who"> <a href="mailto:jmathis@..delete..this..oreon-project.org">Julien Mathis</a> And <a href="mailto:rlemerlus@..delete..this..oreon-project.org">Romain Le Merlus</a>  &lt;info@<span class="legacy">XYZ-</span>oreon-project.org&gt; | Date: 2003/02 | License: GPL </div>
+<div class="desc">
+ Oreon is a network supervision software. It is based upon Nagios which is the most effective Open Source supervision and monitoring engine. The aim of this project is to offer a new frontend to Nagios, providing new functionalities through a modern and customisable interface for most users.
+ ... <a href="http://www.oreon-project.org">[home]</a>
+</div>
+</div>
+        <!-- Entry creation date -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3> Ourmon Networm Monitoring and Anomaly Detection System </h3>
+<div class="who"> Jim Binkley &lt;jrb@<span class="legacy">XYZ-</span>cs.pdx.edu&gt; | Date: 2006/3 | License: BSD </div>
+<div class="desc">
+Ourmon is a statistically oriented open-source network monitoring and
+anomaly detection system. It may be regarded as an open source
+equivalent of SNMP RMON II. It is based on promiscuous mode packet
+collection on Ethernet (typically) interfaces. Ourmon does not collect
+all the packets because one principle design goal is to extract signal
+from noise, and not store all the noise in a giant bag under the
+assumption that you can look at it "later" (there is no later).
+Instead it attempts to find important data and summarize it. Data
+is displayed on the web via pictures or reports. Features include
+RRDTOOL graphs built from user-defined BPF expressions, topn flow
+lists, topn ports, topn synning IP hosts, top UDP error makers, top
+scanners, and IRC channels and hosts. Ourmon's anomaly detection
+features include TCP and UDP anomalous hosts, IRC "evil" networks
+(botnets) and a lovely graph that displays the number of remote and
+local scanners. TCP data also includes information about P2P using
+hosts, and soon will allow traffic classification via user-suppled
+PCRE pattern tags.
+ ... <a href="http://ourmon.sourceforge.net">[home]</a> <a href="http://ourmon.cat.pdx.edu/ourmon">[demo]</a>
+</div>
+</div>
+       	 <!-- Entry creation date -->
+<div class="rrdworld">
+<h3> openSSI webView </h3>
+<div class="who"> Kilian CAVALOTTI | Date: 2004/11 | License: CeCILL </div>
+<div class="desc">
+ openSSI webView is a simple and easy-to-use openSSI cluster monitoring system. Its goal is to provide a quick overview of the cluster state, by graphing vital functions and graphically representing key figures. It allows the cluster administrator to keep an eye on the cluster health and usage rate, to quick view each node state and load, and to watch, and even migrate, users processes all accross the cluster.
+ ... <a href="http://openssi-webview.sourceforge.net/">[home]</a>
+</div>
+</div>
+       <!-- Entry creation date -->
+<div class="rrdworld">
+<img align="right" src="ozmonitor.gif" alt="" width="96" height="95" />
+<h3> ozMonitor </h3>
+<div class="who"> OZOOD Solutions | Date: 2005/09 | License: Free ASP Mode </div>
+<div class="desc">
+ozMonitor monitor permanently your Web site. As soon as this one is
+unvalable or that its performance
+(downloadtime) is degraded, you are automatically alerted. You can thus
+react as soon as possible. Thus, you
+control your Web site freely with ozMonitor.
+ ... <a href="http://www.ozmonitor.org">[home]</a> <a href="http://www.ozmonitor.org/index.php?option=com_ozdemo">[demo]</a>
+</div>
+</div>
+ <!-- Size 88x56 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="prb.png" alt="" width="88" height="56" />
+<h3> p|r|b php rrd browser </h3>
+<div class="who"> Guillaume Fontaine ** &lt;prb.dev@<span class="legacy">XYZ-</span>gmail.com&gt; | Date: 2007/2 | License: GPL </div>
+<div class="desc">
+ A modular rrdtool utility for polling and graphing data.
+It is written in php and stores configuration information in mysql.
+The aim is to be highly flexible and make it possible to gather most
+any kind of data and and graph it. The creation of RRA's, the polling
+logic and the graph definitions are all defined in dedicated php
+modules which can be added or customized at will. The poller and web
+font-end both
+use these modules.
+ ... <a href="http://prb.sourceforge.net/">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3>pfSense</h3>
+<div class="who">BSD Perimeter, LLC &lt;coreteam@<span class="legacy">XYZ-</span>pfsense.org&gt; | Date: 2005/6 | License: BSD</div>
+<div class="desc">
+ ... <a href="http://www.pfsense.org">[home]</a>
+</div>
+</div>
+        <!-- Entry creation date -->
+     <!-- Author contact -->
+<div class="rrdworld">
+<h3>RRDBot</h3>
+<div class="who">Nate Nielsen &lt;rrdbot@<span class="legacy">XYZ-</span>googlegroups.com&gt; | Date: 2006/8 | License: BSD</div>
+<div class="desc">
+RRDBot is an SNMP polling daemon which writes the polled values to an RRD database. It can poll many different SNMP sources in an efficient manner. RRDBot also contains tools to simplify the creation of RRD files, and the various archives contained in them.
+ ... <a href="http://memberwebs.com/nielsen/software/rrdbot/">[home]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> rrd.cgi </h3>
+<div class="who"> Haroon Rafique &lt;haroon.rafique@<span class="legacy">XYZ-</span>utoronto.ca&gt; | Date: 2005/6 | License: GPL </div>
+<div class="desc">
+ rrd.cgi is an on-demand, highly configurable perl front-end
+    for rrdtool. It supports,
+    unlimited DEFs, CDEFs, hourly/daily/weekly/montly/yearly graphs,
+    auto-archival of graphs, historical graphs, displaying
+    source of RRDs::graph statements and autorefresh. rrd.cgi runs
+    under cgi-bin or mod_perl.
+ ... <a href="http://haroon.sis.utoronto.ca/rrd/scripts/">[home]</a> <a href="http://haroon.sis.utoronto.ca/perl/rrd.cgi/">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66
+-->
+        <!-- Entry creation date -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="rrdstats.png" alt="" width="100" height="66" />
+<h3>RRDstats</h3>
+<div class="who">Dolly &lt;dolly@<span class="legacy">XYZ-</span>czi.cz&gt; | Date: 2005/11 | License: GPL</div>
+<div class="desc">
+Coyote Linux &amp; BrazilFW floppy router monitoring package. This
+package monitors and graphically presents router bandwidth usage and
+internet link quality statistics. It's also used for visualizing statistics
+of defined QOS classes.
+ ... <a href="http://dolly.czi.cz/coyote/packages/rrd.asp">[home]</a> <a href="http://dolly.czi.cz/coyote/statssample/">[demo]</a>
+</div>
+</div>
+         <!-- Entry creation date -->
+             <!-- Optional -->
+      <!-- Author contact -->
+<div class="rrdworld">
+<h3> RRDutil </h3>
+<div class="who"> Matt Simerson &lt;info@<span class="legacy">XYZ-</span>tnpi.biz&gt; | Date: 2005/6 | License: BSD </div>
+<div class="desc">
+ Complete host monitoring tool for small
+networks. Polls hosts via SNMP. Includes data collection scripts for
+monitoring Apache, MySQL, and motherboard info. Monitors CPU load, memory,
+disk space and activity, and network interfaces. Email
+stats are provided via maillogs. Web hits via Logmonster.
+ ... <a href="http://www.tnpi.biz/internet/manage/rrdutil/">[home]</a> <a href="http://www.tnpi.biz/cgi-bin/rrdutil.cgi">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> RRDWeather </h3>
+<div class="who"> Sébastien Wains | Date: 2005/9 | License: GPL </div>
+<div class="desc">
+ RRDWeather is a set of scripts working with RRDtool and weather.com.
+RRDWeather collects weather info from the web on a regular basis and puts it in RRDtool graphs.
+ ... <a href="http://www.wains.be/projects/rrdweather/">[home]</a> <a href="http://www.wains.be/cgi-bin/weather.cgi">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> Serverstats </h3>
+<div class="who"> David Danier &lt;david.danier@<span class="legacy">XYZ-</span>team23.de&gt; | Date: 2005/5 | License: GPL </div>
+<div class="desc">
+ Simple collection of some PHP5 scripts for creating graphs.
+ ... <a href="http://www.webmasterpro.de/~ddanier/serverstats/">[home]</a> <a href="https://www.webmasterpro.de/~ddanier/serverstats/demo/">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="sdr.png" alt="" width="40" height="42" />
+<h3> System Data Recorder </h3>
+<div class="who"> Stefan Parvu &lt;support@<span class="legacy">XYZ-</span>systemdatarecorder.org&gt; | Date: 2005/10 | License: GPL,CDDL,Apache </div>
+<div class="desc">
+System Data Recorder is organized as two things: the
+collection part which handles recording the data from each
+system and a reporting side where we permanently store and generate
+reports and perform the analysis. SDR is simple to use for
+performance analysis, system sizing, and capacity planning.
+ ... <a href="http://www.systemdatarecorder.org">[home]</a> <a href="http://www.systemdatarecorder.org:9001/">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+<div class="rrdworld">
+<img align="right" src="sicm_logo.png" alt="" width="88" height="40" />
+<h3> SICM - Simple Infrastructure Capacity Monitor </h3>
+<div class="who"> Thomas Price | Date: 2003/10 | License: GPL </div>
+<div class="desc">
+ SICM is a tool to monitor, graph and alert the capacity of computing devices and applications. SICM runs on a Windows or Linux device on your network, 24 hours every day and constantly records the capacity parameters of any networked device using snmp, ping or custom modules. The recorded data is stored for later reference via a user friendly menu-driven web browser. E-mail alerts are raised if a user determined number of queries fail.
+ ... <a href="http://sicm.sourceforge.net">[home]</a> <a href="http://sicm.sourceforge.net/example.html">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="smokeping.png" alt="" width="120" height="34" />
+<h3> SmokePing </h3>
+<div class="who"> Tobias Oetiker and Niko Tyni &lt;tobi@<span class="legacy">XYZ-</span>oetiker.ch&gt; | Date: 2005/9 | License: GPL </div>
+<div class="desc">
+ Latency monitor with built-in alerting system,
+	web interface and powerful plugin system for extensibility with new
+type of latency probes and alerts.
+ ... <a href="http://oss.oetiker.ch/smokeping">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+<div class="rrdworld">
+<img align="right" src="snm_at_rrdworld.png" alt="" width="119" height="43" />
+<h3> SNM - System and Network Monitor </h3>
+<div class="who"> Thomas Price | Date: 2006/5 | License: GPL </div>
+<div class="desc">
+ SNM is a tool to monitor, graph and alert system and network computing devices.
+ SNM runs on a Windows or Linux device on your network, 24 hours a day constantly recording the
+ parameters of the computing device using snmp, ping or custom modules. The recorded data is
+ stored for later reference via a user friendly menu-driven web browser. E-mail alerts are raised
+ if a user determined number of queries or thresholds fail.
+ ... <a href="http://snm.sourceforge.net/">[home]</a> <a href="http://snm.sourceforge.net/example.html">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3> SnmpGraph </h3>
+<div class="who"> Antoine Guilmard | Date: 2005/5 | License: GPL </div>
+<div class="desc">
+ SnmpGraph permit to monitor the OIDs of SNMP protocol. You can also monitor all probe of
+MotherBoardMonitor 5 (temperature, voltage). It automates the update of a RRD data base like does it the famous MRTG but does
+not use Perl script. The installation can be done as a service in Windows.
+ ... <a href="http://guilmard.free.fr/index.php?page=snmpgraph&amp;lg=en">[home]</a>
+</div>
+</div>
+        <!-- Entry creation date -->
+<div class="rrdworld">
+<h3>StatsDawg</h3>
+<div class="who">Tim Soderstrom | Date: 2007/3 | License: GPL</div>
+<div class="desc">
+Server status and tracking suite designed to be easy to install yet feature-rich. Based on
+PHP, RRDTool, and the Smarty Template Engine.
+ ... <a href="http://www.statsdawg.org">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+<div class="rrdworld">
+<img align="right" src="systemgraph.png" alt="" width="100" height="66" />
+<h3> Systemgraph </h3>
+<div class="who"> Jochen Schlick | Date: 2006/2 | License: GPL </div>
+<div class="desc">
+ A nice graphical system statistics RRDtool frontend which produces hourly, daily, weekly, monthly ... graphs of various system data. At the moment it provides graphs for memory usage, cpu info, number of processes, number of open files, number of tcp connections, system load, network traffic, harddisk usage, ntpdrift, fan status and system temperatures.
+ ... <a href="http://www.decagon.de/sw/systemgraph">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+          <!-- Entry creation date -->
+     <!-- Optional -->
+         <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="thermometer.png" alt="" width="62" height="126" />
+<h3> temperatures </h3>
+<div class="who"> Gürkan Sengün &lt;sengun@<span class="legacy">XYZ-</span>phys.ethz.ch&gt; | Date: 2006/12 | License: GNU GPL </div>
+<div class="desc">
+ CPU and Disk temperature monitoring
+ ... <a href="https://inventory.phys.ethz.ch/stats/">[home]</a> <a href="https://inventory.phys.ethz.ch/stats/">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3>tinygraph</h3>
+<div class="who">Ulrich Zehl | Date: 2005/7 | License: GPL</div>
+<div class="desc">
+tinygraph is a simple RRDtool frontend that parses tinydns' logfiles and produces daily, weekly, monthly and yearly graphs of answered queries, grouping them together by their various types.
+ ... <a href="http://www.topfen.net/software/tinygraph/">[home]</a> <a href="http://www.topfen.net/software/tinygraph/tinygraph.cgi">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x43 -->
+ 
+      
+    
+  
+       <!-- Entry creation date -->
+   
+   <!-- Optional -->  
+  
+      <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="toolsmith_logo.png" alt="" width="100" height="46" />
+<h3> RRD Editor </h3>
+<div class="who"> Paul Smith &lt;admin@<span class="legacy">XYZ-</span>thetoolsmith.com&gt; | Date: 2006/4 | License: GPL </div>
+<div class="desc">
+ The visual editing features of the RRD Editor allow you to
+easily modify the contents of an RRD.  Once
+an RRD is loaded into the Editor you can quickly locate a specific data
+point to modify or an entire Round Robin
+Archive can be removed.  The tool also allows new data sources and RRAs to
+be added.
+ ... <a href="http://thetoolsmith.com">[home]</a> <a href="http://thetoolsmith.com">[demo]</a>
+</div>
+</div>
+<div class="rrdworld">
+<h3>Torrus</h3>
+<div class="who">Stanislav Sinyagin &lt;ssinyagin@<span class="legacy">XYZ-</span>yahoo.com&gt; | Date: 2005/6 | License: GPL</div>
+<div class="desc">
+A robust and flexible framework for data collection and processing.
+Includes a modular SNMP discovery engine, SNMP collector, threshold monitor,
+hierarchical web interface.
+ ... <a href="http://torrus.org/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+           <!-- Entry creation date
+          -->
+                 <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="tstat_logo.png" alt="" width="100" height="66" />
+<h3> Tstat </h3>
+<div class="who"> Marco Mellia &lt;mellia@<span class="legacy">XYZ-</span>mail.tlc.polito.it&gt; | Date: 2005/6 | License: GPL </div>
+<div class="desc">
+                       Tstat provides information about classic
+                       and novel performance indexes and statistical data
+                       about Internet traffic.
+                       It collects measurement indexes at both the
+                       network (IP) layer and transport (TCP/UDP) layer.
+                       Real time protocols (RTP/RTCP) are also analyzed,
+                       allowing you to get statistical measurements on
+                       VOIP traffic, for example.
+                       Tstat analyzes either real-time captured packet
+traces,
+or previously recorded packet-level traces in various dump formats.
+ ... <a href="http://tstat.tlc.polito.it">[home]</a> <a href="http://tstat.tlc.polito.it/web.shtml">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+	 <!-- Entry creation date -->
+	<!-- Optional -->
+	 <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="unnoc-100x66.png" alt="" width="100" height="66" />
+<h3> Unnoc </h3>
+<div class="who"> Jason Schoonover &lt;jason_jks@<span class="legacy">XYZ-</span>yahoo.com&gt; | Date: 2007/1 | License: GPL </div>
+<div class="desc">
+Unnoc is an application that integrates RRDTool graphs with device monitoring. It will monitor and graph: CPU use, Memory, Load Average, Processes, Disk Usage, Network traffic and other misc items. Email alerts. Many supported devices (anything SNMP), including Cisco Aironets, APC and VMWare VI3.
+ ... <a href="http://unnoc.org">[home]</a> <a href="http://unnoc.org/demo">[demo]</a>
+</div>
+</div>
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3>webminstats</h3>
+<div class="who">Eric Gerbier &lt;gerbier@<span class="legacy">XYZ-</span>users.sourceforge.net&gt; | Date: 2001/8 | License: GPL </div>
+<div class="desc">
+ Webminstats is a Webmin module designed to store system information in an rrdtool database and to display historic (hourly,
+daily, weekly, monthly, and custom) graphs. It is modular in design, so as to be able to log everything from CPU usage to email box
+size.
+ ... <a href="http://webminstats.sourceforge.net">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+   <!-- Entry creation date -->
+<div class="rrdworld">
+<img align="right" src="http://yaketystats.org/yak10066.png" alt="" />
+<h3> YaketyStats </h3>
+<div class="who"> teamdowntime@yaketystats.org | Date: 2008/10 | License: GPL V2 </div>
+<div class="desc">
+ YaketyStats gathers statistics about your *nix systems. It
+  is easy to install, maintain and extend and has has an intuitive,
+  AJAX-powered web interface for graphing data. Graphs are built on the
+  fly, can contain stats from multiple systems and include "Google
+  Maps"-like dragging.
+ ... <a href="http://yaketystats.org/">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+     <!-- Entry creation date -->
+     <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="zenoss_logo.png" alt="" width="120" height="24" />
+<h3>Zenoss Monitoring System</h3>
+<div class="who">Erik A. Dahl &lt;edahl@<span class="legacy">XYZ-</span>zenoss.org&gt; | Date: 2006/6 | License: GPL </div>
+<div class="desc">
+Zenoss is an enterprise grade monitoring system that provides Inventory/Configuration, Event, Performance and Availability management in a single integrated package. It is written in Python using the Zope web application framework and Twisted network programming environment. All performance information is stored in RRD files. Zenoss is written to be easy to use for a beginner yet flexible and powerful enough for the advanced user.
+ ... <a href="http://www.zenoss.org">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date
+       -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3>  Zero RRD Framework </h3>
+<div class="who"> Boris Bukowski &lt;b.bukowski@<span class="legacy">XYZ-</span>gmx.de&gt; | Date: 2009/4 | License: GPL v3 </div>
+<div class="desc">
+Zero is a light Framework around RRDTool, primary focused
+on server monitoring. The agent collects system statistics and sends
+them via HTTP to the central Server. There are plugins for logfile
+processing, mysql, diskusage, java JMX, squid logs and apache status.
+Zero is written in Perl.
+ ... <a href="http://zerod.sourceforge.net/">[home]</a>
+</div>
+</div>
+<h2>Commercial Applications</h2>
+<div class="rrdworld">
+<img align="right" src="airwave.png" alt="" width="100" height="66" />
+<h3>AirWave Management Platform</h3>
+<div class="who">AirWave Wireless, Inc. &lt;info@<span class="legacy">XYZ-</span>airwave.com&gt; | Date: 2005/7 | License: Commercial</div>
+<div class="desc">
+The AirWave Management Platform&trade; (AMP) wireless network
+management software gives you complete, centralized control over your
+organization's Wi-Fi network infrastructure. AMP's web-based console
+provides you a single point of intelligent control from which to
+automatically monitor, analyze, and configure even complex, multi-vendor
+wireless network infrastructures in real time. Whether you're responsible
+for a small network in a single building or a global wireless network across
+hundreds of locations worldwide, AMP gives you the tools to deliver the
+performance and security your users demand.
+ ... <a href="http://www.airwave.com/">[home]</a>
+</div>
+</div>
+        <!-- Entry creation date
+-->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<h3> Eye-on Bandwidth </h3>
+<div class="who"> Prefixmaster &lt;info@<span class="legacy">XYZ-</span>prefixmaster.com&gt; | Date: 2006/4 | License: Commercial </div>
+<div class="desc">
+Eye-on Bandwidth is a bandwidth monitor designed for scalability, speed
+and security. It can be used by non-technical staff and has different
+user privilege levels. A public system is available for small business
+to simply manage a few devices, and a on-site system is available for
+enterprise/ISP.
+ ... <a href="http://www.prefixmaster.com/">[home]</a> <a href="http://demo.prefixmaster.com/">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x68 -->
+<div class="rrdworld">
+<img align="right" src="wanguard.png" alt="" width="100" height="68" />
+<h3> WANGuard Platform </h3>
+<div class="who"> Andrisoft &lt;office@<span class="legacy">XYZ-</span>andrisoft.com&gt; | Date: 2008/2 | License: Commercial </div>
+<div class="desc">
+ WANGuard Platform relies on NetFlow or Port Mirroring / SPAN to provide in-depth network traffic analysis and DDoS detection and mitigation. It can be used to generate traffic graphs and traffic accounting reports per IP, per subnet, per IP Zone or per router interface / switch port.
+ ... <a href="http://www.andrisoft.com">[home]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+        <!-- Entry creation date -->
+   <!-- Optional -->
+       <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="taclog_RRD.png" alt="" />
+<h3>tacLOG / tacMON</h3>
+<div class="who">terreActive AG &lt;sales@<span class="legacy">XYZ-</span>terreactive.ch&gt; | Date: 2009/2 | License: proprietary</div>
+<div class="desc">
+tacLOG is a tool for centralized log management (passive monitoring). It can be used for compliance, event generation, analysis and reporting. tacMON is the active counter part used for system and security monitoring. RRD-graphs are used to display the (active and passive) monitoring results.
+ ... <a href="http://www.terreactive.ch">[home]</a> <a href="http://www.terreactive.ch">[demo]</a>
+</div>
+</div>
+ <!-- Size 100x66 -->
+ <!-- Entry creation date -->
+ <!-- Author contact -->
+<div class="rrdworld">
+<img align="right" src="loriotpro.png" alt="" width="100" height="66" />
+<h3> LoriotPro Extended Edition </h3>
+<div class="who"> LUTEUS &lt;sales@<span class="legacy">XYZ-</span>loriotpro.com&gt; | Date: 2002/12 | License: Commercial </div>
+<div class="desc">
+ The LoriotPro software extended edition is an extensible
+solution for administrators and managers that are involved in network
+monitoring and system management tasks linked to the exploitation of
+networks, systems or smart infrastructures. This free Windows based software
+helps you to access snmp devices, to create IP network maps and directory
+maps, manage IP routers,to analyze snmp requests,to perform snmp get and set
+requests, to compile mib files, to browse mib tree, to receive events and
+snmp trap, to discover networks and hosts. Included in LoriotPro , the RRD
+Collector is a LoriotPro directory plugin used for data collection, RRD
+databases feeding and RRD graph generation. RRD Collector can be seen as a
+Windows Front End of RRD tool. RRD manager is a full Windows dialog box
+based application and allows you to create and manage the RRD databases, the
+RRD graphs and the reports. RRD Manager is not able to collect the data to
+store in RRD database.
+ ... <a href="http://www.loriotpro.com">[home]</a> <a href="http://www.loriotpro.com/Products/On-line_Documentation_V5/LoriotProDoc_EN/V22-RRD_Collector_RRD_Manager_EN.htm">[demo]</a>
+</div>
+</div>
+<h2>Add your own tool to this list</h2>
+<p>If you have written a tool that you would like to see listed in this index,
+please send me a little xml file describing your tool. Below you find an example:</p>
+<pre>
+&lt;rrdworld type="companion|application|?????"
+          icon="rumble.png" &gt; &lt;!-- Size 100x66 --&gt;
+ 
+       &lt;name&gt; Name of the Product &lt;/name&gt;
+     &lt;author&gt; Who Created it &lt;/author&gt;
+&lt;description&gt; A short description of the tool. 300 char max. &lt;/description&gt;
+   &lt;homepage&gt; http://somesite.blabla.plac &lt;/homepage&gt; 
+       &lt;year&gt; 2005 &lt;/year&gt;&lt;month&gt; 4 &lt;/month&gt; &lt;!-- Entry creation date --&gt;
+    &lt;license&gt; GPL &lt;/license&gt;
+
+   &lt;!-- Optional --&gt;   
+
+   &lt;livesite&gt; http://somesite.blabla.plac &lt;/livesite&gt; 
+      &lt;email&gt; max@example.com &lt;/email&gt; &lt;!-- Author contact --&gt;
+
+&lt;/rrdworld&gt;</pre>
+<!-- google_ad_section_end -->
+</div>
+</td>
+</tr>
+<tr>
+<td id="leftcornercell"></td>
+<td id="footcell">
+<!-- ############################# -->
+<!-- # FOOTER -->
+<!-- ############################# -->
+<div id="address">
+<small>
+08/31/10 | <a href="mailto:tobi@..delete..this..removethis.oetiker.ch">Tobias Oetiker</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>
+</small>
+</div>
+</td></tr>
+</table>
+<hr class="legacy" />
+<p class="legacy" style="border-width: 1px; border-color: red; padding: 5px;">
+<b>NOTE:</b> The content of this website is accessible with any browser. The graphical
+design though relies completely on CSS2 styles. If you see this text, this means
+that your browser does not support CSS2. Consider upgrading to a standard conformant
+browser like Mozilla <a href="http://www.getfirefox.com">Firefox</a> or
+<a href="http://www.opera.com">Opera</a> but also Apple's <a href="http://www.apple.com/safari/">Safari</a>
+or KDE's <a href="http://www.konqueror.org">Konqueror</a> for example.
+It may also be that you are looking at a mirror page which did not copy <a href="../inc/design.css">the CSS</a> for this page. Or if some pictu
+res are missing, then the mirror may not have picked up the contents of the <a href="../inc/">inc</a> directory.
+</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-374525-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<gallery image="newbwgraph.png" > <!-- no wider than 600 pixle -->
+
+      <title> Bandwidth Actual and Utilization </title>
+     <author> Ken Eshelby </author>
+<description> The graph represents bandwidth as both a hard value and
+as % utilization.  I have had customers ask for one or the other and
+decided to combine them into an effective and informative visual
+smorgasbord. Code is for OpenNMS and looks a little different (see
+link).    </description>
+       <year> 2010 </year><month> 7 </month> <!-- creation date -->
+
+   <!-- Optional -->
+
+   <livesite> http://opennms.org/wiki/Graph_Gallery </livesite>
+      <email> eshelbyk@gmail.com </email>
+
+</gallery>

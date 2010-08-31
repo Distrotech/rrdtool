@@ -1,0 +1,16 @@
+<rrdworld type="companion"
+          icon="observium-rrdworld.png" > <!-- Size 150x89 -->
+ 
+       <name> Observium </name>
+     <author> Adam Armstrong </author>
+<description> Observium has grown out of a lack of easy to use NMSes. It is intended to provide a more navigable interface to the health and performance of your network. Its design goals include collecting as much historical data about devices as possible, being completely autodiscovered with little or no manual intervention, and having a very intuitive interface.
+ </description>
+   <homepage> http://www.observium.org </homepage> 
+       <year> 2010 </year><month> 7 </month> <!-- Entry creation date -->
+    <license> GPLv3 </license>
+
+   <!-- Optional -->   
+
+   <livesite> http://demo.observium.org </livesite> 
+      <email> adama@observium.org </email> <!-- Author contact -->
+</rrdworld>
