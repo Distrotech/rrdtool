@@ -42,7 +42,6 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "nedi.xml"
 #include "netmrg.xml"
 #include "nmis-rrdtool.xml"
-#include "observernms.xml"
 #include "observium.xml"
 #include "oreon.xml"
 #include "ourmon.xml"
