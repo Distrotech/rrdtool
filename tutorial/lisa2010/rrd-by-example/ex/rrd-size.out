@@ -1,0 +1,19 @@
+[?1049h[H[2J[0m[1;61r[H[2J[?1002h[?2007h[7m    I      [rrd-size.pl] (perl)                                          Row 11   Col 1   Ctrl-X H for help[12;3H[0m}
+[32m#                       DSs RRAs RRA Rows  
+[0m[1mmy[0m $base[4C= rrd_sizer  [36m1[0m,  [36m1[0m,  [36m1[0m;
+[1mmy[0m $ds[6C= rrd_sizer  [36m2[0m,  [36m1[0m,  [36m1[0m;
+[1mmy[0m $rra_sz  = rrd_sizer  [36m1[0m,  [36m2[0m,  [36m1[0m;
+[1mmy[0m $rra_cnt = rrd_sizer  [36m1[0m,  [36m1[0m,  [36m2[0m;
+[1mprint[0m [36m"Space for 1 DS:      "[0m, $ds - $base,[36m" Byte[1m\n[0m[36m"[0m;
+[1mprint[0m [36m"Space for 1 RRA Row: "[0m, $rra_sz - $base,[36m" Byte[1m\n[0m[36m"[0m;
+[1mprint[0m [36m"Space for 1 RRA:     "[0m, $rra_cnt - $base,[36m" Byte[1m\n[0m[36m"[0m;[H
+[32m#!/usr/bin/perl
+[0m[1msub[0m rrd_sizer {
+[2C[1mmy[0m ($ds_cnt,$rra_sz,$rra_cnt) = @_;
+[2Csystem [36m'rrdtool'[0m, [36m'create'[0m, [36m'sizer.rrd'[0m,
+	map({ [36m"DS:d[1m$[0m[36m{_}:GAUGE:600:U:U"[0m } [36m1.[0m.$ds_cnt),
+	map({ [36m"RRA:AVERAGE:0.5:1:[1m$rra_sz[0m[36m"[0m } [36m1.[0m.$rra_cnt);
+[2C[1mmy[0m $size = -s [36m'sizer.rrd'[0m;
+[2C[1mprintf[0m [36m"DSs: %1d  RRA Row: %1d  RRAs: %1d == %3d Byte[1m\n[0m[36m"[0m,
+	$ds_cnt,$rra_sz,$rra_cnt,$size;
+[2C[1mreturn[0m $size;[50B[7m** Joe's Own Editor v3.5 ** (iso-8859-1) ** Copyright (C) 2006 **[49A[H	[C*[12;3H[0m }[49B[K[49A    }[4C }[49BQuote[49A[4mQ[1;87H[0m[7m2[12;6H[0m }[49B[K[49A[C[49BFile rrd-size.pl has been modified.  Save it (y,n,^C)? [K[49A	 }[C[1;78H[7m20[7C1[21;2H[H^X[20B[40B[0mFile rrd-size.pl has been modified.  Save it (y,n,^C)?[H[7m  [61;56H[0m[K[40A[1;79H[7m1[21B[1;79H2[22B[1;79H3[23B[37B[0mQuote[37A[4mQ[1;87H[0m[7m2[60B[0m[K[37A[C

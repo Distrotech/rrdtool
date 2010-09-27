@@ -1,0 +1,9 @@
+graph_height = 100
+graph_left = 51
+graph_top = 22
+graph_width = 400
+image = %PDF-1.4
+image_height = 163
+image_width = 481
+value_max = 60000000
+value_min = 0
