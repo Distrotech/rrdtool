@@ -43,7 +43,6 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "netmrg.xml"
 #include "nmis-rrdtool.xml"
 #include "observium.xml"
-#include "oreon.xml"
 #include "ourmon.xml"
 #include "ow.xml"
 #include "ozmonitor.xml"
