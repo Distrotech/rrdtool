@@ -36,12 +36,6 @@ sub rrd_err_check(){
         die "RRD Error: $err\n";
     }
 }
-sub rrd_warn_check(){
-    my $err = RRDs::error();
-    if ($err){
-        warn "RRD Warning: $err\n";
-    }
-}
 
 # how should the data be fetched from the source
 # to provide the best approximation of the original data
@@ -211,8 +205,10 @@ sub reupdate($$$$){
                         } else {
                             @max = @{$crow};
                         }
-                        print STDERR ($cf eq 'MIN' ? 'm' : 'M' ) ,$row,"\n" if $opt{verbose};
-                        push @up, $row;
+                        if ($t > $min_time){
+                            print STDERR ($cf eq 'MIN' ? 'm' : 'M' ) ,$row,"\n" if $opt{verbose};
+                            push @up, $row;
+                        }
                         $hide_cnt++;
                         for (my $i = 0; $i <@$crow; $i++){
                             if (defined $pending[$i]){
@@ -259,19 +255,21 @@ sub reupdate($$$$){
             $hide_cnt = 0;
             # show the result;            
             my $row = "$t:".join(':',map {defined $_ ? $_ : 'U'} @out);
-            print STDERR " ",$row,"\n" if $opt{verbose};            
-            push @up, $row if $t > $min_time;
+            if ($t > $min_time){
+                print STDERR " ",$row,"\n" if $opt{verbose};            
+                push @up, $row;
+            }
         }
     }
     pop @up; # the last update is most likely one too many ...
     if (@up == 0) {
         warn "WARNING: src has no entries new enough to fill dst\n";
     } else {
-        print STDERR ".";
+        print "$min_time $up[0]\n";       
         RRDs::update($dst,
                      $opt{'dst-tmpl'} ? '--template='.$opt{'dst-tmpl'} : (),
                      @up);
-        rrd_warn_check();
+        rrd_err_check();
     }
 }
 
