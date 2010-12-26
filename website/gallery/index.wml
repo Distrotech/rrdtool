@@ -5,6 +5,7 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "airpres.xml"
 #include "newbwgraph.xml"
 #include "mfc_usage.xml"
 #include "ivaylo.xml"
