@@ -23,6 +23,7 @@ No Gold Sponsors for 2011 yet ...
 
 <h2>2011 Silver Sponsors</h2>
 
+<p>
 # Ethan Galstad <egalstad@nagios.com> Tue, 28 Sep 2010 23:18:27 +0200
 <a href="http://www.nagios.com"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/nagios.png"/></a>&nbsp;
 # oliver.mueller@digicomp.ch
@@ -33,7 +34,10 @@ No Gold Sponsors for 2011 yet ...
 <a href="http://www.hosteurope.de/"><img border="0" alt="HostEurope" src="$(ROOT)/logos/HE_Logo_101x51.gif"/></a>&nbsp;
 # Erik Freiholtz <info@temperatur.nu>
 <a href="http://www.temperatur.nu"><img border="0" alt="www.temperatur.nu" src="$(ROOT)/logos/temperatur.nu_101x51.png"/></a>&nbsp;
+#From: Karsten Tralst <karsten.tralst@hitmeister.de>
+<a href="http://www.hitmeister.de"><img border="0" title="Hitmeister GmbH" src="$(ROOT)/logos/hitmeister.gif"/></a>&nbsp;
 <a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
+</p>
 
 #<h2>2010 Silver Sponsors</h2>
 #
