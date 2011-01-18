@@ -31,6 +31,7 @@
 ## @import url('$(ROOT)/inc/design_$(TYPE).css');
 /* ]]> */-->
 </style>
+{#ExtraHead#}
 </head>
 <body>
 <table id="frame">
