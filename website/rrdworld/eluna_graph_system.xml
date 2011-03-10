@@ -1,14 +1,13 @@
 <rrdworld type="application"
           icon="eluna_graph_system.png" >
- 
+
        <name> eLuna Graph System </name>
      <author> Stephane Dupont </author>
 <description> eLuna Graph System is an application written in Perl based on RRDTool and distributed under GNU General Public License. Its aim is collection, and then presentation in graphic form, of data, to aid in monitoring of a Linux machine. </description>
-   <homepage> http://steph.eluna.org/eluna_graph_system.html </homepage> 
+   <homepage> http://www.eluna.org/eluna_graph_system.html </homepage>
        <year> 2006 </year><month> 4 </month>
     <license> GPL </license>
-   <livesite> http://graphs.eluna.org </livesite> 
+   <livesite> http://graphs.eluna.org </livesite>
       <email> steph@eluna.org </email>
 
 </rrdworld>
-

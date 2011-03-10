@@ -5,6 +5,10 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "nbar_optical_com_pe.xml"
+#include "amz2.xml"
+#include "comp.xml"
+#include "mikrotik_wireless.xml"
 #include "airpres.xml"
 #include "newbwgraph.xml"
 #include "mfc_usage.xml"
@@ -52,6 +56,7 @@
 #include "flux.xml"
 #include "spamd_rrdgraph.xml"
 #include "uw-hep-condor.xml"
+#include "mmh11b.xml"
 
 
 <h2>Add your own graphs to this list</h2>

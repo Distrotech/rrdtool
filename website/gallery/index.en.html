@@ -76,7 +76,7 @@
 <br />
 <br />
 <p><b>Gold Sponsors</b></p>
-<p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Open Gold Sponsorship Slot" src="../inc/rrdtool-gold.png" width="200" height="100" /></a></p>
+<p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="../logos/zenoss.png" width="200" height="100" /></a></p>
 <p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Open Gold Sponsorship Slot" src="../inc/rrdtool-gold.png" width="200" height="100" /></a></p>
 <p><a href="../sponsor.en.html">Silver Sponsors ...</a></p>
 <br />
@@ -140,26 +140,56 @@ such
 as, Phone, VAS and MM4 (others operator). -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
 </div>
  <!-- no wider than 600 pixle -->
- <!-- creation date -->
+        <!-- creation date -->
+   <!-- Optional -->
 <div class="gallery">
-<h2> MMS Retrieve</h2>
-<div class="image"><img src="mmh11_po.png" alt="" width="267" height="321" /></div>
-<div class="caption"> Simply parse of SNMPget from Vendor OID. The graph display the
-actual volume of transactions for MMS retrieve for mobile phone and sent to
-other Operators (OLO). -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
+<h2> Network Based Application Recognition </h2>
+<div class="image"><img src="nbar_optical_com_pe.png" alt="" width="600" height="518" /></div>
+<div class="caption"> This graph shows a Internet connection and the classification of up to eight classes of protocols using Cisco Network Based Application Recognition (NBAR), also includes the total bandwidth and transfer volume for each protocol class. -- Erick Del Castillo &lt;edelcastillo@<span class="legacy">XYZ-</span>optical.com.pe&gt;, 2011/3 <a href="http://monitor.optical.com.pe">[demo]</a></div>
 </div>
  <!-- no wider than 600 pixle -->
- <!-- creation date -->
+        <!-- creation date -->
+   <!-- Optional -->
 <div class="gallery">
-<h2> MMS Errors</h2>
-<div class="image"><img src="mmh11_er.png" alt="" width="267" height="321" /></div>
-<div class="caption"> Simply parse of SNMPget from Vendor OID. The graph display the
-actual send a PAP push to the mobile, possibile errors due to get to HLR and
-retrieve for mobile. -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
+<h2> CPU Statistics</h2>
+<div class="image"><img src="amz2.png" alt="" width="600" height="363" /></div>
+<div class="caption"> To view the trend history for CPU user, system, nice and idle statistics for last 24 hours. Y-Axis max values are dynamic, based on the number fo CPUs the server has. This is collected in runtime using shell script and rrdcgi, by parsing /proc/cpuinfo to know the number of processor the server, for setting the max Y-Axis value correspondingly. So, the whole graph area can be visualized as the capacity of the server in terms of CPU. More blanks space in the graph, more free the CPU is. -- Amzath Ali Rahumathullah &lt;amzatha@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/10 </div>
+</div>
+ <!-- no wider than 600 pixle -->
+        <!-- creation date -->
+   <!-- Optional -->
+<div class="gallery">
+<h2> Compare data with last week</h2>
+<div class="image"><img src="comp.png" alt="" width="600" height="327" /></div>
+<div class="caption"> To view the comparision of data collected today with last week sameday statistics, for last 24 hours. This is acheived by the SHIFT parameter in RRD, by shifting the time to the required number of days backwards, in my case 7 days back. Also, i have used cgi to pass parameters in runtime to calculate this shift difference. For example, if i would like to compare today's data with yesterday, then i would pass 1 as the daydelta to the cgi, whcih would calculate the SHIFT values. Then, i have used rrdcgi to render the grpahs in runtime. -- Amzath Ali Rahumathullah &lt;amzatha@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/10 </div>
+</div>
+   <!-- Optional -->
+<div class="gallery">
+<h2> Mikrotik Wireless Registration Graph </h2>
+<div class="image"><img src="mikrotik_wireless.png" alt="" width="597" height="357" /></div>
+<div class="caption"> This graph shows some important values of wireless connection. -- Tornike Zedginidze &lt;tz@<span class="legacy">XYZ-</span>orient-logic.com&gt;, 2010/4 </div>
 </div>
  <!-- no wider than 600 pixle -->
 	 <!-- creation date -->
 <div class="gallery">
+<p>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8135238818549668";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel ="9159032853";
+google_color_border = "ffffff";
+google_color_bg = "f0f8FF";
+google_color_link = "191919";
+google_color_url = "0066CC";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
 <h2>Air Pressure in Almaty</h2>
 <div class="image"><img src="airpres.png" alt="" width="601" height="293" /></div>
 <div class="caption">This site collects live data from air pressure sensor. -- Boris Popov &lt;none&gt;, 2010/11 <a href="http://airpres.kz">[demo]</a></div>
@@ -180,24 +210,6 @@ link). -- Ken Eshelby &lt;eshelbyk@<span class="legacy">XYZ-</span>gmail.com&gt;
         <!-- creation date -->
    <!-- Optional -->
 <div class="gallery">
-<p>
-<script type="text/javascript"><!--
-google_ad_client = "pub-8135238818549668";
-google_ad_width = 300;
-google_ad_height = 250;
-google_ad_format = "300x250_as";
-google_ad_type = "text_image";
-google_ad_channel ="9159032853";
-google_color_border = "ffffff";
-google_color_bg = "f0f8FF";
-google_color_link = "191919";
-google_color_url = "0066CC";
-google_color_text = "000000";
-//--></script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</p>
 <h2> MFC License usage </h2>
 <div class="image"><img src="mfc_lic_cnt24h.png" alt="" width="481" height="324" /></div>
 <div class="caption"> Manitoba Bluecross has bought 200 licenses for using Cobol, this graph shows how many licenses are currently used -- Stephan Huber &lt;stephan.huber.ca@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/7 <a href="">[demo]</a></div>
@@ -604,6 +616,24 @@ physics researchers and other members of the Grid Laboratory of
 Wisconsin.
  -- Steve Rader &lt;rader@<span class="legacy">XYZ-</span>hep.wisc.edu&gt;, 2005/5 <a href="http://nrg.hep.wisc.edu">[demo]</a></div>
 </div>
+ <!-- no wider than 600 pixle -->
+ <!-- creation date -->
+<div class="gallery">
+<h2> MMS Retrieve</h2>
+<div class="image"><img src="mmh11_po.png" alt="" width="267" height="321" /></div>
+<div class="caption"> Simply parse of SNMPget from Vendor OID. The graph display the
+actual volume of transactions for MMS retrieve for mobile phone and sent to
+other Operators (OLO). -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
+</div>
+ <!-- no wider than 600 pixle -->
+ <!-- creation date -->
+<div class="gallery">
+<h2> MMS Errors</h2>
+<div class="image"><img src="mmh11_er.png" alt="" width="267" height="321" /></div>
+<div class="caption"> Simply parse of SNMPget from Vendor OID. The graph display the
+actual send a PAP push to the mobile, possibile errors due to get to HLR and
+retrieve for mobile. -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
+</div>
 <h2>Add your own graphs to this list</h2>
 <p>If you have created a graph you like, and you think I would like it too,
 please send me the image plus an xml file like the example below to be
@@ -635,7 +665,7 @@ than 600 pixels.</p>
 <!-- ############################# -->
 <div id="address">
 <small>
-12/14/10 | <a href="mailto:tobi@..delete..this..removethis.oetiker.ch">Tobias Oetiker</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>
+03/10/11 | <a href="mailto:tobi@..delete..this..removethis.oetiker.ch">Tobias Oetiker</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>
 </small>
 </div>
 </td></tr>

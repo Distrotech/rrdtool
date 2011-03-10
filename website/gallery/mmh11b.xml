@@ -1,0 +1,24 @@
+
+<gallery image="mmh11_po.png" > <!-- no wider than 600 pixle -->
+
+<title> MMS Retrieve</title>
+<author> Alex Rivoltella </author>
+<description> Simply parse of SNMPget from Vendor OID. The graph display the
+actual volume of transactions for MMS retrieve for mobile phone and sent to
+other Operators (OLO). </description>
+<year> 2006 </year><month> 3 </month> <!-- creation date -->
+<email> alessio.r-delme-@tiscalinet.it </email>
+
+</gallery>
+
+<gallery image="mmh11_er.png" > <!-- no wider than 600 pixle -->
+
+<title> MMS Errors</title>
+<author> Alex Rivoltella </author>
+<description> Simply parse of SNMPget from Vendor OID. The graph display the
+actual send a PAP push to the mobile, possibile errors due to get to HLR and
+retrieve for mobile.</description>
+<year> 2006 </year><month> 3 </month> <!-- creation date -->
+<email> alessio.r-delme-@tiscalinet.it </email>
+
+</gallery>

@@ -1,0 +1,11 @@
+<gallery image="comp.png" > <!-- no wider than 600 pixle -->
+
+      <title> Compare data with last week</title>
+     <author> Amzath Ali Rahumathullah</author> 
+<description> To view the comparision of data collected today with last week sameday statistics, for last 24 hours. This is acheived by the SHIFT parameter in RRD, by shifting the time to the required number of days backwards, in my case 7 days back. Also, i have used cgi to pass parameters in runtime to calculate this shift difference. For example, if i would like to compare today's data with yesterday, then i would pass 1 as the daydelta to the cgi, whcih would calculate the SHIFT values. Then, i have used rrdcgi to render the grpahs in runtime.</description>
+       <year> 2010 </year><month> 10 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+      <email> amzatha@gmail.com</email>
+
+</gallery>

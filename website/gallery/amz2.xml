@@ -1,0 +1,13 @@
+<gallery image="amz2.png" > <!-- no wider than 600 pixle -->
+
+      <title> CPU Statistics</title>
+     <author> Amzath Ali Rahumathullah</author> 
+<description> To view the trend history for CPU user, system, nice and idle statistics for last 24 hours. Y-Axis max values are dynamic, based on the number fo CPUs the server has. This is collected in runtime using shell script and rrdcgi, by parsing /proc/cpuinfo to know the number of processor the server, for setting the max Y-Axis value correspondingly. So, the whole graph area can be visualized as the capacity of the server in terms of CPU. More blanks space in the graph, more free the CPU is.  </description>
+
+       <year> 2010 </year><month> 10 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+      <email> amzatha@gmail.com</email>
+
+</gallery>

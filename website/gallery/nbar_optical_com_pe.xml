@@ -1,0 +1,13 @@
+<gallery image="nbar_optical_com_pe.png" > <!-- no wider than 600 pixle -->
+
+      <title> Network Based Application Recognition </title>
+     <author> Erick Del Castillo </author> 
+<description> This graph shows a Internet connection and the classification of up to eight classes of protocols using Cisco Network Based Application Recognition (NBAR), also includes the total bandwidth and transfer volume for each protocol class. </description>
+       <year> 2011 </year><month> 3 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://monitor.optical.com.pe </livesite> 
+      <email> edelcastillo@optical.com.pe </email>
+
+</gallery>

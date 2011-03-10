@@ -1,0 +1,10 @@
+<gallery image="airpres.png" > <!-- no wider than 600 pixle -->
+	<title>Air Pressure in Almaty</title>
+	<author>Boris Popov</author> 
+	<description>This site collects live data from air pressure sensor.</description>
+	<year>2010</year><month>11</month> <!-- creation date -->
+
+	<livesite>http://airpres.kz</livesite> 
+	<email>none</email>
+</gallery>
+
