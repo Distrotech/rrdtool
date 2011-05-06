@@ -42,6 +42,13 @@ You can download RRD tool from several places:
  <LI>Cygwin Windows <A HREF="http://www.cacti.net/downloads/rrdtool/win32">http://www.cacti.net/downloads/rrdtool/win32/</a></LI>
 </UL>
 
+<H2>Language Bindings</H2>
+
+<p>The bindings for perl, tcl, ruby and python are part of the rrdtool distribution. Here is a list of others:</p>
+<ul>
+<li><a href="http://pecl.php.net/package/rrd">PHP bindings to the rrd tool system</a> by Miroslav Kubelík</li>
+</ul>
+
 <H2>Anonymous SVN for RRDtool</H2>
 
 <p>RRDtool source is stored in a subversion repository with anonymous access.</p>
