@@ -1,0 +1,174 @@
+\mode<presentation>
+{
+  \usetheme{default} % no fancy navigation or anything ... 
+  \usecolortheme{tobi}
+  \usefonttheme{serif}   
+  \usepackage{lmodern}
+  \newcommand{\addgraph}[1]{\includegraphics[width=\textwidth]{#1}}
+  \setbeamercovered{transparent=25}
+}
+\mode<article>
+{
+  \usepackage{url}
+  \usepackage{graphicx}
+  \usepackage[colorlinks,hyperindex,plainpages=false]{hyperref}
+  \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+  \setlength{\parindent}{0pt}  
+  \usepackage{times}
+  \newcommand{\addgraph}[1]{\begin{center}\framebox{\includegraphics[width=0.9\textwidth]{#1}}\end{center}}
+  \addtolength{\voffset}{-2.5cm}
+  \addtolength{\textheight}{4cm}
+}
+\usepackage{alltt}
+\usepackage{listings}
+\usepackage{svgcolor}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\title
+{RRDtool - how to make it sit up and beg?}
+
+\author
+{Tobias Oetiker}
+
+\date[FISL12] % (optional, should be abbreviation of conference name)
+{FISL12}
+
+\mode<presentation>{\subject{RRDtool - how to make it sit up and beg}}
+
+\mode<presentation>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize\color{black},%
+   keywordstyle=\color{darkgreen},%
+%  identifyerstyle=\color{brown},%
+   commentstyle=\color{mediumpurple},%
+   stringstyle=\color{dimgray},
+   numberstyle=\ttfamily\scriptsize\color{darkgray},
+   showstringspaces=false
+ }
+}
+\mode<article>{
+ \lstset{%
+   language=Perl,%
+   numbers=left,%
+   basicstyle=\ttfamily\footnotesize,%
+   keywordstyle=\bfseries,%
+   numberstyle=\ttfamily\scriptsize,
+%  identifyerstyle=\color{brown},%
+   commentstyle=\itshape,%
+   stringstyle=\color{black},
+   showstringspaces=false
+ }
+}
+
+\begin{document}
+
+\mode<article>{
+\maketitle 
+\addgraph{sample-graph}
+}
+
+\begin{frame}<presentation>
+\begin{center}
+\textbf{\Large RRDtool - How to make it sit up and beg?}\\[2ex]
+\includegraphics[width=1\textwidth]{sample-graph}\\[3ex]
+{\large Tobias Oetiker, OETIKER+PARTNER AG, Switzerland}
+\end{center}
+\end{frame}
+
+\mode<articel>{\tableofcontents}
+
+\begin{frame}{a database \ldots}
+\begin{itemize}[<+-| alert@+>]
+\item for time series data
+\item with graphics included
+\item with fixed disk space requirements
+\item with controlled memory loss
+\item open source GNU GPL
+\end{itemize}
+\end{frame}
+
+\begin{frame}{designed for speed}
+\addgraph{update-schematics}
+\end{frame}
+
+\begin{frame}{rrdtool command line usage}
+\begin{description}[<+-| alert@+>]
+\item[rrdtool create] setup a database file
+\item[rrdtool update] add data
+\item[rrdtool graph] create a chart
+\end{description}
+\end{frame}
+
+\begin{frame}{creating a simple rrd}
+\lstinputlisting[language=bash,firstline=0]{ex/create.sh}
+One Datasource, 4 Round Robin Archives.
+\end{frame}
+
+\begin{frame}{adding data}
+\lstinputlisting[language=bash,firstline=0]{ex/update.sh}
+\mode<handout>{The timestamps are not exactly aligned. RRDtool fixes
+this on the fly be resampling the data.}
+\end{frame}
+
+\begin{frame}{creating a graph}
+\lstinputlisting[language=bash,firstline=0]{ex/graph.sh}
+\end{frame}
+
+\begin{frame}{the result}
+\addgraph{ex/first.pdf}
+\end{frame}
+
+\mode<presentation>{
+\begin{frame}
+\begin{description}
+\item[I am:] Tobi Oetiker $<$tobi@oetiker.ch$>$
+\item[Handouts for this talk:] \url{http://tobi.oetiker.ch/fisl12/}
+\item[My Homepage:] \url{http://tobi.oetiker.ch}
+\end{description}
+\end{frame}
+}
+
+\begin{frame}{Graph Critic - HTTP Cache Traffic}
+\addgraph{charles}\\
+graph by Charles Glass
+\end{frame}
+
+\begin{frame}{Graph Critic - RTT of MPLS VPN endpoints}
+\addgraph{pings}\\
+graph by Bruno Ciscato
+\end{frame}
+
+\begin{frame}{Graph Critic - System Information}
+\addgraph{systembelastung}\\
+graph by kmindi
+\end{frame}
+
+\begin{frame}{Graph Critic - Energy Mix}
+\addgraph{energy_graph}\\
+graph by Lutz Schulze
+\end{frame}
+
+\begin{frame}{Graph Critic - Thermostat Indoor / Outdoor}
+\addgraph{n20e-daily}\\
+graph by Andres Brownworth
+\end{frame}
+
+\mode<article>{
+\vspace{\stretch{1}}
+Tobias Oetiker <tobi@oetiker.ch>
+}
+\end{document}
+
+%%% Local Variables:
+%%% TeX-master: "presentation.tex"
+%%% mode: flyspell
+%%% TeX-PDF-mode: t
+%%% End:
