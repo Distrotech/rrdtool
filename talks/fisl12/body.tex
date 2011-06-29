@@ -45,12 +45,12 @@
  \lstset{%
    language=Perl,%
    numbers=left,%
-   basicstyle=\ttfamily\footnotesize\color{black},%
-   keywordstyle=\color{darkgreen},%
+   basicstyle=\ttfamily\footnotesize\color{white},%
+   keywordstyle=\color{lightgreen},%
 %  identifyerstyle=\color{brown},%
-   commentstyle=\color{mediumpurple},%
-   stringstyle=\color{dimgray},
-   numberstyle=\ttfamily\scriptsize\color{darkgray},
+   commentstyle=\color{moccasin},%
+   stringstyle=\color{lightskyblue},
+   numberstyle=\ttfamily\scriptsize\color{gray},
    showstringspaces=false
  }
 }
@@ -63,7 +63,7 @@
    numberstyle=\ttfamily\scriptsize,
 %  identifyerstyle=\color{brown},%
    commentstyle=\itshape,%
-   stringstyle=\color{black},
+   stringstyle=\color{white},
    showstringspaces=false
  }
 }
@@ -85,7 +85,7 @@
 
 \mode<articel>{\tableofcontents}
 
-\begin{frame}{a database \ldots}
+\begin{frame}{RRDtool is a database \ldots}
 \begin{itemize}[<+-| alert@+>]
 \item for time series data
 \item with graphics included
@@ -95,17 +95,20 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{designed for speed}
+\begin{frame}{RRDtool is designed for speed}
 \addgraph{update-schematics}
 \end{frame}
 
-\begin{frame}{rrdtool command line usage}
+\begin{frame}{RRDtool command line usage}
 \begin{description}[<+-| alert@+>]
-\item[rrdtool create] setup a database file
-\item[rrdtool update] add data
-\item[rrdtool graph] create a chart
+\item[\texttt{rrdtool create}] to setup a database file
+\item[\texttt{rrdtool update}] to add data
+\item[\texttt{rrdtool graph}] to create a chart
 \end{description}
 \end{frame}
+
+\mode<handout>{There are also native interfaces for perl, python, php, ruby,
+tcl.}
 
 \begin{frame}{creating a simple rrd}
 \lstinputlisting[language=bash,firstline=0]{ex/create.sh}
@@ -129,9 +132,9 @@ this on the fly be resampling the data.}
 \mode<presentation>{
 \begin{frame}
 \begin{description}
-\item[I am:] Tobi Oetiker $<$tobi@oetiker.ch$>$
-\item[Handouts for this talk:] \url{http://tobi.oetiker.ch/fisl12/}
-\item[My Homepage:] \url{http://tobi.oetiker.ch}
+\item[I am] Tobi Oetiker $<$tobi@oetiker.ch$>$
+\item[Handouts for this talk] \url{http://tobi.oetiker.ch/fisl12/}
+\item[My Homepage] \url{http://tobi.oetiker.ch}
 \end{description}
 \end{frame}
 }

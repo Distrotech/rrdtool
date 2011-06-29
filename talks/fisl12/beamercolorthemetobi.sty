@@ -12,39 +12,40 @@
 
 \mode<presentation>
 
-\definecolor{craneorange}{RGB}{255,252,248}
-\definecolor{craneblue}{RGB}{62,28,0}
+\definecolor{backgroundcolor}{RGB}{0,0,0}
+\definecolor{foregroundcolor}{RGB}{255,255,255}
 
-\setbeamercolor{structure}{fg=craneblue}
+\setbeamercolor{structure}{fg=foregroundcolor}
 
-\setbeamercolor{palette primary}{fg=craneblue,bg=craneorange!70}
-\setbeamercolor{palette secondary}{fg=craneblue,bg=craneorange!80}
-\setbeamercolor{palette tertiary}{fg=craneblue,bg=craneorange!90}
-\setbeamercolor{palette quaternary}{fg=craneblue,bg=craneorange}
+\setbeamercolor{palette primary}{fg=foregroundcolor,bg=backgroundcolor!70}
+\setbeamercolor{palette secondary}{fg=foregroundcolor,bg=backgroundcolor!80}
+\setbeamercolor{palette tertiary}{fg=foregroundcolor,bg=backgroundcolor!90}
+\setbeamercolor{palette quaternary}{fg=foregroundcolor,bg=backgroundcolor}
+\setbeamercolor{alerted text}{fg=pink}
 
-\setbeamercolor{titlelike}{fg=craneblue}
+\setbeamercolor{titlelike}{fg=foregroundcolor}
 
-\setbeamercolor{block title}{fg=craneblue,bg=craneorange}
-\setbeamercolor{block title alerted}{use=alerted text,fg=craneblue,bg=alerted text.fg!75!bg}
-\setbeamercolor{block title example}{use=example text,fg=craneblue,bg=example text.fg!75!bg}
+\setbeamercolor{block title}{fg=foregroundcolor,bg=backgroundcolor}
+\setbeamercolor{block title alerted}{use=alerted text,fg=foregroundcolor,bg=alerted text.fg!75!bg}
+\setbeamercolor{block title example}{use=example text,fg=foregroundcolor,bg=example text.fg!75!bg}
 
 \setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!25!bg}
 \setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!25!bg}
 \setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!25!bg}
 
-\setbeamercolor{sidebar}{bg=craneorange!70}
+\setbeamercolor{sidebar}{bg=backgroundcolor!70}
   
-\setbeamercolor{palette sidebar primary}{fg=craneblue}
-\setbeamercolor{palette sidebar secondary}{fg=craneblue!75}
-\setbeamercolor{palette sidebar tertiary}{fg=craneblue!75}
-\setbeamercolor{palette sidebar quaternary}{fg=craneblue}
+\setbeamercolor{palette sidebar primary}{fg=foregroundcolor}
+\setbeamercolor{palette sidebar secondary}{fg=foregroundcolor!75}
+\setbeamercolor{palette sidebar tertiary}{fg=foregroundcolor!75}
+\setbeamercolor{palette sidebar quaternary}{fg=foregroundcolor}
 
 \setbeamercolor*{separation line}{}
 \setbeamercolor*{fine separation line}{}
 
-\setbeamercolor{normal text}{bg=craneblue!1,fg=craneblue}
-\setbeamercolor{example text}{bg=craneblue!10}
-\setbeamercolor{frametitle}{fg=craneblue!50}
+\setbeamercolor{normal text}{bg=backgroundcolor,fg=foregroundcolor!50}
+\setbeamercolor{example text}{bg=backgroundcolor}
+\setbeamercolor{frametitle}{fg=foregroundcolor!70}
 
 \mode
 <all>
