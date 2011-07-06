@@ -6,3 +6,5 @@
 <dl>
 #include "index.inc"
 </dl>
+
+<p>For a java rrd interface, check out peter stamfests <a href="http://oss.stamfest.net/java-rrd-hg/">Java-RRD</a></p>
