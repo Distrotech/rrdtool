@@ -1,0 +1,11 @@
+<gallery image="powerusage-2wk.png">
+
+	<title>2wk Power Usage graph</title>
+	<author>Mark Janssen -- sig-io.nl</author>
+	<description>kWh usage from my house, measured with an attiny85 and an LDR connected to the kWh meter. Background color signifies high/low tariff. Graph uses various colors for usage level.</description>
+	<year>2011</year>
+	<month>09</month>
+
+	<livesite>http://stats.revspace.nl/power/</livesite>
+	<email>mark@sig-io.nl</email>
+</gallery>

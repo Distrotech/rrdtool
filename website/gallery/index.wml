@@ -5,6 +5,8 @@
 <H1>RRDtool Gallery</H1>
 
 #include "mmh11.xml"
+#include "powerusage-2wk.xml"
+#include "PS_Network_traffic.xml"
 #include "nbar_optical_com_pe.xml"
 #include "amz2.xml"
 #include "comp.xml"
