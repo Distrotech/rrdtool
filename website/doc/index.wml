@@ -6,3 +6,7 @@
 <dl>
 #include "index.inc"
 </dl>
+
+<h2>Translations</h2>
+
+<p>Amanda Lynn has provided a <a href="http://www.fatcow.com/edu/rrdcreate-oss-be">Belorussian translation</a> of the RRDcreate manual page.</p>

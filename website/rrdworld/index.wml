@@ -9,6 +9,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 
 <h2>RRDtool Companions</h2>
 
+#include "rrd-editor.xml"
 #include "drraw.xml"
 #include "dsreport.xml"
 #include "nhawk_description.xml"
