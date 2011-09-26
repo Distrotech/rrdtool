@@ -1,5 +1,5 @@
 <rrdworld type="application"
-          icon="taclog_RRD.png" > <!-- Size 100x66 -->
+          icon="tacLOG_RRD.png" > <!-- Size 100x66 -->
  
        <name>tacLOG / tacMON</name>
      <author>terreActive AG</author>

@@ -1,5 +1,5 @@
 <rrdworld type="application"
-          icon="efwcommunity.png" > <!-- Size 100x66 -->
+          icon="efw-community.png" > <!-- Size 100x66 -->
 
        <name> Endian Firewall Community </name>
      <author> Endian srl </author>

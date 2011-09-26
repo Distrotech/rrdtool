@@ -1,5 +1,5 @@
 <rrdworld type="companion"
-          icon="weathermap_rrdworld.png" > <!-- Size 100x66 --> 
+          icon="" > <!-- Size 100x66 --> 
        <name>PHP Network Weathermap</name>
      <author>Howard Jones</author>
 <description>Weathermap is a network visualisation tool, to take data you already have and show you an overview of your network in map form. Support is built in for RRD, and tab-delimited text files. Other sources are via plugins or external scripts. Includes nice Cacti integration with user authentication.</description>

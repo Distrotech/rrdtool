@@ -1,5 +1,5 @@
 <rrdworld type="application"
-          icon="rumble.png" > <!-- Size 100x66 -->
+          icon="" > <!-- Size 100x66 -->
  
        <name> gbRRDGraphix </name>
      <author> Olivier CRUILLES </author>

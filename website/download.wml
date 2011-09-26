@@ -34,7 +34,7 @@ You can download RRD tool from several places:
  <LI>Debian Linux <A HREF="http://packages.debian.org/rrdtool">http://packages.debian.org/rrdtool</A></LI>
  <LI>T2 SDE Linux <A HREF="http://www.t2-project.org/packages/rrdtool.html">http://www.t2-project.org/packages/rrdtool.html</a></li>
 
- <LI>RHEL, CentOS, Fedora  <A HREF="mailto:wrl@express.org">William R. Lorenz</a> -- <A href="http://www.express.org/~wrl/rrdtool/">http://www.express.org/~wrl/rrdtool/</a></li>
+ <LI>RHEL, CentOS, Fedora, Scientific Linux  <A HREF="mailto:wrl@express.org">William R. Lorenz</a> -- <A href="http://packages.express.org/rrdtool/">http://packages.express.org/rrdtool/</a></li>
  <LI>Redhat/Fedora <A href="http://dag.wieers.com/packages/rrdtool/">http://dag.wieers.com/packages/rrdtool/</a></li>
  <LI>Native Windows 1 <A HREF="http://oss.oetiker.ch/rrdtool/pub/?M=D">local</a></LI>
  <LI>Native Windows 2 <A HREF="http://www.gknw.net/mirror/rrdtool/">http://www.gknw.net/mirror/rrdtool/</a></LI>
