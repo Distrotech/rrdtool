@@ -1,0 +1,13 @@
+<rrdworld type="application" icon="stormons_logo.png" > 
+<name>Stormons Storage Monitoring</name>
+<author>Stormons</author>
+<description>Stormons is an Easy, Automated and Web-Based product 
+dedicated to storage arrays monitoring. With powerful features, this 
+software allows you to analyse carefully EMC? and NetApp storage 
+configurations.</description>
+<homepage>http://www.stormons.com</homepage> 
+<year>2010</year><month>9</month> <!-- Entry creation date -->
+<license>GPL V3</license>
+<livesite>http://demo.stormons.com</livesite> 
+<email>support@stormons.com</email> <!-- Author contact -->
+</rrdworld>

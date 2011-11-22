@@ -75,6 +75,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 
 <h2>Commercial Applications</h2>
 
+#include "stormons.xml"
 #include "airwave.xml"
 #include "prefixmaster.xml"
 #include "wanguard.xml"
