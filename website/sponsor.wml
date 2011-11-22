@@ -11,6 +11,15 @@ If you profit from RRDtool and want to support the project as a whole, you
 could <a href="http://it.oetiker.ch/monitoring/sponsoring.var">become a
 sponsor</a>!</p>
 
+<h2>2012 Gold Sponsors</h2>
+
+<h2>2012 Silver Sponsors</h2>
+<p>
+# Tarus Balog <tarus@opennms.org> rt#14393
+<a href="http://www.opennms.org"><img border="0" title="openNMS" alt="openNMS" src="$(ROOT)/logos/opennmscolorgroup.png"/></a>
+#<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
+</p>
+
 <h2>2011 Gold Sponsors</h2>
 
 <p>
@@ -38,7 +47,6 @@ sponsor</a>!</p>
 <a href="http://www.hitmeister.de"><img border="0" title="Hitmeister GmbH" src="$(ROOT)/logos/hitmeister.gif"/></a>&nbsp;
 #From: David Schweikert <dws@open.ch>
 <a href="http://www.open.ch"><img border="0" title="open systems ag" alt="open systems ag" src="$(ROOT)/logos/opensystems-51x51.png"/></a>&nbsp;
-<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
 </p>
 
 #<h2>2010 Silver Sponsors</h2>

@@ -24,8 +24,6 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 
 <h2>Free Applications</h2>
 
-#include "akkada.xml"
-#include "aware.xml"
 #include "bbstatus.xml"
 #include "bigsis_rrdworld.xml"
 #include "cacti.xml"
@@ -61,6 +59,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "snm_at_rrdworld.xml"
 #include "snmpgraph.xml"
 #include "statsdawg.xml"
+#include "stormons.xml"
 #include "systemgraph.xml"
 #include "thermometer.xml"
 #include "tinygraph.xml"
@@ -75,7 +74,6 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 
 <h2>Commercial Applications</h2>
 
-#include "stormons.xml"
 #include "airwave.xml"
 #include "prefixmaster.xml"
 #include "wanguard.xml"

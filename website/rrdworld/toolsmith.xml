@@ -9,7 +9,7 @@ an RRD is loaded into the Editor you can quickly locate a specific data
 point to modify or an entire Round Robin
 Archive can be removed.  The tool also allows new data sources and RRAs to
 be added. </description>
-   <homepage> http://thetoolsmith.com </homepage>
+   <homepage> http://sourceforge.net/projects/rrdeditor </homepage>
        <year> 2006 </year><month> 4 </month> <!-- Entry creation date -->
     <license> GPL </license>
 
