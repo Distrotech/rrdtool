@@ -13,10 +13,22 @@ sponsor</a>!</p>
 
 <h2>2012 Gold Sponsors</h2>
 
+<p>
+#maarten.vanlaere@serverscheck.com
+<a href="http://www.serverscheck.com/sensors/sensorgateway_availability.asp"><img border="0" title="ServersCheck" alt="ServersCheck" src="$(ROOT)/logos/mrtg_sensorgateway.png"/></a>
+</p>
+
 <h2>2012 Silver Sponsors</h2>
 <p>
 # Tarus Balog <tarus@opennms.org> rt#14393
-<a href="http://www.opennms.org"><img border="0" title="openNMS" alt="openNMS" src="$(ROOT)/logos/opennmscolorgroup.png"/></a>
+<a href="http://www.opennms.org"><img border="0" title="openNMS" alt="openNMS" src="$(ROOT)/logos/opennmscolorgroup.png"/></a>&nbsp;
+# Klas Bernehjält <klas.bernehjalt@op5.com>
+<a href="http://www.op5.com"><img border="0" title="op5" alt="op5" src="$(ROOT)/logos/op5logoweb101x51.gif"/></a>&nbsp;
+# Ethan Galstad <egalstad@nagios.com> Tue, 28 Sep 2010 23:18:27 +0200
+<a href="http://www.nagios.com"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/nagios.png"/></a>&nbsp;
+# christian@heutger.net
+<a href="http://www.psw.net"><img border="0" alt="Silver Sponsor" src="$(ROOT)/logos/psw.jpg"/></a>&nbsp;
+
 #<a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Silver Sponsor" src="$(ROOT)/inc/silver-logo.png"/></a>      
 </p>
 
