@@ -76,7 +76,7 @@
 <br />
 <br />
 <p><b>Gold Sponsors</b></p>
-<p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="../logos/zenoss.png" width="200" height="100" /></a></p>
+<p><a href="http://www.serverscheck.com/sensors?utm_source=mrtg&utm_medium=banner&utm_term=rrdtool&utm_campaign=mrtg"><img border="0" title="Serverscheck" alt="Serverscheck" src="../logos/mrtg_sensorgateway.png" width="200" height="100" /></a></p>
 <p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Open Gold Sponsorship Slot" src="../inc/rrdtool-gold.png" width="200" height="100" /></a></p>
 <p><a href="../sponsor.en.html">Silver Sponsors ...</a></p>
 <br />
@@ -140,6 +140,11 @@ such
 as, Phone, VAS and MM4 (others operator). -- Alex Rivoltella &lt;alessio.r-delme-@<span class="legacy">XYZ-</span>tiscalinet.it&gt;, 2006/3 </div>
 </div>
 <div class="gallery">
+<h2>Outside temperature in Södermalm, Sundsvall, Sweden</h2>
+<div class="image"><img src="mgroth.png" alt="" width="537" height="468" /></div>
+<div class="caption">This graph is created to be able to see the temperature with the average for the year has been. Data for temperature is taken from a MCP9803 sensor that sits outdoors in an IP65 enclosure. -- Magnus Groth &lt;mgroth@<span class="legacy">XYZ-</span>gmail.com&gt;, 2011/7 </div>
+</div>
+<div class="gallery">
 <h2>2wk Power Usage graph</h2>
 <div class="image"><img src="powerusage-2wk.png" alt="" width="600" height="300" /></div>
 <div class="caption">kWh usage from my house, measured with an attiny85 and an LDR connected to the kWh meter. Background color signifies high/low tariff. Graph uses various colors for usage level. -- Mark Janssen -- sig-io.nl &lt;mark@<span class="legacy">XYZ-</span>sig-io.nl&gt;, 2011/09 <a href="http://stats.revspace.nl/power/">[demo]</a></div>
@@ -164,14 +169,6 @@ as, Phone, VAS and MM4 (others operator). -- Alex Rivoltella &lt;alessio.r-delme
         <!-- creation date -->
    <!-- Optional -->
 <div class="gallery">
-<h2> CPU Statistics</h2>
-<div class="image"><img src="amz2.png" alt="" width="600" height="363" /></div>
-<div class="caption"> To view the trend history for CPU user, system, nice and idle statistics for last 24 hours. Y-Axis max values are dynamic, based on the number fo CPUs the server has. This is collected in runtime using shell script and rrdcgi, by parsing /proc/cpuinfo to know the number of processor the server, for setting the max Y-Axis value correspondingly. So, the whole graph area can be visualized as the capacity of the server in terms of CPU. More blanks space in the graph, more free the CPU is. -- Amzath Ali Rahumathullah &lt;amzatha@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/10 </div>
-</div>
- <!-- no wider than 600 pixle -->
-        <!-- creation date -->
-   <!-- Optional -->
-<div class="gallery">
 <p>
 <script type="text/javascript"><!--
 google_ad_client = "pub-8135238818549668";
@@ -190,6 +187,14 @@ google_color_text = "000000";
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </p>
+<h2> CPU Statistics</h2>
+<div class="image"><img src="amz2.png" alt="" width="600" height="363" /></div>
+<div class="caption"> To view the trend history for CPU user, system, nice and idle statistics for last 24 hours. Y-Axis max values are dynamic, based on the number fo CPUs the server has. This is collected in runtime using shell script and rrdcgi, by parsing /proc/cpuinfo to know the number of processor the server, for setting the max Y-Axis value correspondingly. So, the whole graph area can be visualized as the capacity of the server in terms of CPU. More blanks space in the graph, more free the CPU is. -- Amzath Ali Rahumathullah &lt;amzatha@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/10 </div>
+</div>
+ <!-- no wider than 600 pixle -->
+        <!-- creation date -->
+   <!-- Optional -->
+<div class="gallery">
 <h2> Compare data with last week</h2>
 <div class="image"><img src="comp.png" alt="" width="600" height="327" /></div>
 <div class="caption"> To view the comparision of data collected today with last week sameday statistics, for last 24 hours. This is acheived by the SHIFT parameter in RRD, by shifting the time to the required number of days backwards, in my case 7 days back. Also, i have used cgi to pass parameters in runtime to calculate this shift difference. For example, if i would like to compare today's data with yesterday, then i would pass 1 as the daydelta to the cgi, whcih would calculate the SHIFT values. Then, i have used rrdcgi to render the grpahs in runtime. -- Amzath Ali Rahumathullah &lt;amzatha@<span class="legacy">XYZ-</span>gmail.com&gt;, 2010/10 </div>
@@ -678,7 +683,7 @@ than 600 pixels.</p>
 <!-- ############################# -->
 <div id="address">
 <small>
-09/14/11 | <a href="mailto:tobi@..delete..this..removethis.oetiker.ch">Tobias Oetiker</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>
+01/04/12 | <a href="mailto:tobi@..delete..this..removethis.oetiker.ch">Tobias Oetiker</a> | <a href="http://it.oetiker.ch/monitoring/">OETIKER+PARTNER AG</a>
 </small>
 </div>
 </td></tr>
