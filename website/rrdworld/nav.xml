@@ -1,0 +1,15 @@
+<rrdworld type="application"
+          icon="navlogo-rrd.png" > <!-- Size 100x66 -->
+ 
+       <name> NAV - Network Administration Visualized </name>
+     <author> UNINETT </author>
+<description>NAV has been developed since 1999 to monitor large campus networks. It automatically discovers network topology, monitors network load and outages, and can send alerts on network events by e-mail, SMS and Jabber, allowing for flexible configuration of alert profiles.</description>
+   <homepage> http://metanav.uninett.no/ </homepage> 
+       <year> 2012 </year><month> 2 </month> <!-- Entry creation date -->
+    <license> GPLv2 </license>
+
+   <!-- Optional -->   
+
+      <email> postmottak@uninett.no </email> <!-- Author contact -->
+
+</rrdworld>

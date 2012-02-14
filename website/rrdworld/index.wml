@@ -37,6 +37,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "mpltd.xml"
 #include "munin.xml"
 #include "mysqlBind2.xml"
+#include "nav.xml"
 #include "n2rrd.xml"
 #include "nedi.xml"
 #include "netmrg.xml"
@@ -74,6 +75,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 
 <h2>Commercial Applications</h2>
 
+#include "op5.xml"
 #include "airwave.xml"
 #include "prefixmaster.xml"
 #include "wanguard.xml"

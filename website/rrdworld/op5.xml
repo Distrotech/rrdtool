@@ -1,0 +1,10 @@
+<rrdworld type="op5 Monitor"  icon="op5_logo_100x66.png" > <!-- Size 100x66 -->
+  <name> op5 Monitor </name>
+  <author> op5 AB </author>
+  <description> op5 Monitor is an easy to use IT monitoring solution that grows with the needs. Scalable, distributed monitoring that is easy to use and provide powerful reports that gives a unified view of the entire network, applications and services.  </description>
+  <homepage> http://www.op5.com </homepage> 
+  <year> 2003 </year><month> 11 </month> <!-- Entry creation date -->
+  <license> GPL+Commercial </license>
+  <livesite> https://demo.op5.com </livesite> 
+  <email> info@op5.com </email> <!-- Author contact -->
+</rrdworld>
