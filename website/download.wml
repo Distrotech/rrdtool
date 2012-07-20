@@ -47,6 +47,7 @@ You can download RRD tool from several places:
 <p>The bindings for perl, tcl, ruby and python are part of the rrdtool distribution. Here is a list of others:</p>
 <ul>
 <li><a href="http://pecl.php.net/package/rrd">PHP bindings to the rrd tool system</a> by Miroslav Kubelík</li>
+<li><a href="https://github.com/Orion98MC/node_rrd">Node.js native module</a> by Thierry Passeron</li>
 </ul>
 
 <H2>Anonymous SVN for RRDtool</H2>
