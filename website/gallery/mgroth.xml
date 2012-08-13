@@ -1,0 +1,8 @@
+<gallery image="mgroth.png" >
+	<title>Outside temperature in Södermalm, Sundsvall, Sweden</title>
+	<author>Magnus Groth</author> 
+	<description>This graph is created to be able to see the temperature with the average for the year has been. Data for temperature is taken from a MCP9803 sensor that sits outdoors in an IP65 enclosure.</description>
+	<year>2011</year>
+	<month>7</month>
+	<email>mgroth@gmail.com</email>
+</gallery>

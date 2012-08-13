@@ -1,0 +1,21 @@
+
+<gallery image="600px-ga-usa-rrd-half-gradient-attic-temps-Zone-X.png" > <!-- no wider than 600 pixle -->
+
+      <title> Sensor Network Temperature Gradients </title>
+     <author> Dale Reagan </author> 
+<description>
+
+Created as part of a 1-Wire temperature network project with related
+implementation/technical posts at <a href="http://web-tech.ga-usa.com/?s=sensor+network">ga-usa</a>.
+Background: <a href="http://web-tech.ga-usa.com/2012/05/creating-a-custom-hot-to-cold-temperature-color-gradient-for-use-with-rrdtool/">here</a>
+and <a href="http://web-tech.ga-usa.com/2012/05/creating-color-gradients-with-rrdtool-bash-using-temperatures/">here</a>.
+
+ </description>
+       <year> 2012 </year><month> 5 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://web-tech.ga-usa.com/weather/gradients/ </livesite> 
+      <email> rrd_gradients@ga-usa.net </email>
+
+</gallery>

@@ -6,6 +6,7 @@
 
 #include "mmh11.xml"
 #include "mgroth.xml"
+#include "ga-usa.xml"
 #include "powerusage-2wk.xml"
 #include "PS_Network_traffic.xml"
 #include "nbar_optical_com_pe.xml"
