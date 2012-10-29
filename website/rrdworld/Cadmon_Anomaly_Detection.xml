@@ -1,0 +1,16 @@
+<rrdworld type="application"
+          icon="" > <!-- Size 100x66 -->
+ 
+       <name> Cadmon - Data Channel Throughput Anomaly Detection Tool </name>
+     <author> Zaven Navoyan </author>
+<description> Cadmon analyses data channels' throughput information (e.g. current downlink, uplink rates) based on its history and detects anomaly values. Anomaly refers to every unusual change in traffic pattern such as fall of traffic activity due to problems with uplink channels, sudden decrease of concurrent users due to problems in network, DDOS attacks, changes in routing paths, etc. Cadmon uses statistical methods to learn channel behavior history for several days and makes decision for current throughput values. It can be integrated with monitoring systems such as Nagios, Bigbrother, etc. </description>
+   <homepage> http://code.google.com/p/cadmon/ </homepage> 
+       <year> 2012 </year><month> 10 </month> <!-- Entry creation date -->
+    <license> GPL </license>
+
+   <!-- Optional -->   
+
+   <livesite> </livesite> 
+      <email> </email> <!-- Author contact -->
+
+</rrdworld>

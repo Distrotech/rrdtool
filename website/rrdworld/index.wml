@@ -27,6 +27,7 @@ add-ons to big applications or even replacements for rrdtool itself.</p>
 #include "bbstatus.xml"
 #include "bigsis_rrdworld.xml"
 #include "cacti.xml"
+#include "Cadmon_Anomaly_Detection.xml"
 #include "collectd.xml"
 #include "efw-community.xml"
 #include "eluna_graph_system.xml"
