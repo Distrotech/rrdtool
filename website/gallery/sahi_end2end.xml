@@ -1,0 +1,14 @@
+<gallery image="sahi_end2end.png" > <!-- no wider than 600 pixle -->
+
+      <title> Sahi end2end web test runtimes </title>
+     <author> Simon Meggle </author> 
+<description> This graph shows the results of a sahi end2end web test, which was executed by Nagios. The three AREAs from the bottom upwards describe the runtimes of each logical step within this test, the blue AREA on top is the test's overhead runtime. The orange TICKs on top are printed whenever one ore more steps exceeded the allowed runtime. The pnp4nagios/PHP config file for this graph is available on git. </description>
+       <year> 2012 </year><month> 12 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> https://github.com/simonmeggle/sahi2omd-db </livesite> 
+      <email> simon.meggle@consol.de </email>
+
+</gallery>
+
