@@ -1,0 +1,13 @@
+<gallery image="ospf.png" > <!-- no wider than 600 pixle -->
+
+      <title> Trafico OSPF </title>
+     <author> Alessandro Palermo </author> 
+<description> This simple graph show the OSPF traffic that pass through in two central routers. </description>
+       <year> 2012 </year><month> 9 </month> <!-- creation date -->
+      
+   <!-- Optional -->   
+
+   <livesite> http://xmon.dyndns.org </livesite> 
+      <email> info.xmon@gmail.com </email>
+
+</gallery>
