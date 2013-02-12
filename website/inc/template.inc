@@ -80,7 +80,7 @@
 <br/>
 <br/>
 <p><b>Gold Sponsors</b></p>
-#<p><a href="http://www.serverscheck.com/sensors?utm_source=mrtg&utm_medium=banner&utm_term=rrdtool&utm_campaign=mrtg"><img border="0" title="Serverscheck" alt="Serverscheck" src="$(ROOT)/logos/mrtg_sensorgateway.png"/></a></p>
+<p><a href="http://www.serverscheck.com/sensors?utm_source=mrtg&utm_medium=banner&utm_term=rrdtool&utm_campaign=mrtg"><img border="0" title="Serverscheck" alt="Serverscheck" src="$(ROOT)/logos/serverscheck-2.jpg"/></a></p>
 #<p><a href="http://www.zenoss.com/rrdtool?utm_source=rrdtool&amp;utm_medium=logolink&amp;utm_campaign=inbound"><img border="0" title="Zenoss Open Source IT Monitoring" alt="Zenoss Open Source IT Monitoring" src="$(ROOT)/logos/zenoss.png"/></a></p>
 #<p><a href="http://www.groundworkopensource.com/products/components/rrdtool.html?ldsrc=AD-RRDtool"><img title="GroundWork Open Source" border="0" alt="GroundWork Open Source Logo" src="$(ROOT)/logos/gw200x100.gif"/></a></p>
 <p><a href="http://it.oetiker.ch/monitoring/sponsoring.var"><img border="0" alt="Open Gold Sponsorship Slot" src="$(ROOT)/inc/rrdtool-gold.png"/></a></p>
