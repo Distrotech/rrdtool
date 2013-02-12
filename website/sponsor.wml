@@ -11,12 +11,12 @@ If you profit from RRDtool and want to support the project as a whole, you
 could <a href="http://it.oetiker.ch/monitoring/sponsoring.var">become a
 sponsor</a>!</p>
 
-#<h2>2013 Gold Sponsors</h2>
+<h2>2013 Gold Sponsors</h2>
 
-#<p>
-##maarten.vanlaere@serverscheck.com
-#<a href="http://www.serverscheck.com/sensors/sensorgateway_availability.asp"><img border="0" title="ServersCheck" alt="ServersCheck" src="$(ROOT)/logos/mrtg_sensorgateway.png"/></a>
-#</p>
+<p>
+#maarten.vanlaere@serverscheck.com
+<a href="http://www.serverscheck.com/sensors/sensorgateway_availability.asp"><img border="0" title="ServersCheck" alt="ServersCheck" src="$(ROOT)/logos/serverscheck-3.gif"/></a>
+</p>
 
 <h2>2013 Silver Sponsors</h2>
 <p>
