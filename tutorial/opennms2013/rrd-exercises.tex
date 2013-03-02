@@ -1,0 +1,288 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{lmodern}
+\usepackage[colorlinks]{hyperref}
+\newenvironment{work}{\textsf{\tiny EXERCISE}\nopagebreak\\[0.3ex]\begin{tabular}{|c|}
+ \hline
+ \begin{minipage}{0.965\linewidth}%
+ \setlength{\parskip}{1.6ex plus 0.6ex minus 0.4ex}%
+ \rule{0pt}{2.8ex}\ignorespaces}
+{\rule[-1.8ex]{0pt}{0pt}\end{minipage}\\
+ \hline
+ \end{tabular}}
+\newcommand{\ex}[1]{\subsection{#1}}
+\newcommand{\cmd}[1]{\texttt{\mbox{#1}}}
+\setlength{\parskip}{1.6ex plus 0.8ex minus 0.4ex}
+\setlength{\parindent}{0pt}
+\addtolength{\textheight}{5ex}
+\title{RRDtool Tutorial}
+\date{Wednesday, March 13th, 2013}
+\author{Tobias Oetiker $<$tobi@oetiker.ch$>$}
+\newcommand\bs{\char '134}   %  a \ character for the \tt font
+\newcommand\lb{\char '173}   %  a { character for the \tt font
+\newcommand\rb{\char '175}   %  a } character for the \tt font
+\newcommand\ti{$\sim$}   %  a ~ character for the \tt font
+
+\begin{document}
+\maketitle
+
+The objective of this tutorial session is to help you get comfortable using
+RRDtool to write your own monitoring applications.
+
+In order to do some of the exercises you will need information which
+you do not have yet. There are three main sources from where you can
+acquire this information.
+
+\begin{itemize}
+\item The \href{http://oss.oetiker.ch/rrdtool}{rrdtool web site}.
+\item Or read the rrdtool unix manual pages.
+\item Ask me!
+\end{itemize}
+
+As you can see, there are no solutions printed on this sheet. I would
+propose though, that you your sollutions to me. I will then put them together
+mail them back to everyone who sent in their work.
+
+
+\newpage
+\section{Creating an RRD}
+\ex{Data Source Types}
+
+RRDtool stores and graphs numerical data. In order to do so
+properly you must provide some information about the nature of the
+data. RRDtool knows several different types of Data Sources (DS).
+
+\begin{work}
+  Read the rrdcreate manual page to identify the data source types
+  and write down some examples for each type.
+\end{work}
+
+\ex{Data Consolidation Methods}
+
+Once you have passed data on to RRDtool it gets stored in a data
+storage array (Round Robin Archive). Each RRD can contain several
+RRAs, working at different resolutions and using different data
+consolidation methods.
+
+\begin{work}
+  Find the different Data Consolidation methods currently supported in
+  RRDtool. This information can be found in the RRD create manual
+  page.
+\end{work}
+
+\ex{Data Validation}
+
+Storing invalid data can often be more of a problem than not storing
+anything at all. In order to help you ensure that only valid data gets
+into your Round Robin Database, RRDtool allows you to
+describe some properties of the data you intend to store. This allows
+RRDtool to throw out invalid input before it even enters the database.
+
+\begin{work}
+Identify the parameters to setup these safeguards. This information
+can be found in the rrdcreate manual page.\end{work}
+
+\ex{Database Setup}
+
+Having solved the exercises up this point you are now ready to setup a
+Round Robin Database. Use the command line tool\\
+\cmd{rrdtool} to work your magic. 
+
+\begin{work}
+  Create an RRD which accepts input from two COUNTER
+  data sources. The data sources provide new data every 300 seconds on
+  average. Allow for a maximal update interval of 600 seconds. The
+  input from both data-sources will always be between zero and 35
+  million.
+  
+  The RRD should store the data for 24 hours at 5 minute resolution
+  and for a month at one hour resolution. For the one hour resolution
+  you want to keep both the average and the 5 minute maximum data.
+
+\end{work}
+
+Use \cmd{rrdtool info database.rrd} to see the structure of the rrd file you
+just created.
+
+\ex{Coupling of Data Values}
+
+All values stored in a single RRD must be updated synchronously. Also,
+it is not trivial to add new data-sources to an existing RRD or remove
+old ones. In most cases it is sensible to create a new RRD for each
+data source unless you know that they are tightly coupled.
+
+\begin{work}
+  Think of some data sources which are tightly coupled in the sense that
+  they should be stored into the same RRD and of some which should NOT be
+  stored in the same RRD.
+\end{work}
+
+\newpage
+\section{RRD Update}
+\ex{The RRD Perl Interface}
+
+The recommended way to interact with an RRD is to use some scripting
+language and an rrdtool language bindings. There are language bindings for
+perl, python, ruby, tcl, lua and many other languages available.
+
+\begin{work}
+Convert the command line for creating the RRD from the last exercise
+in the previous section into a perl script.
+\end{work}
+
+\ex{The Error Messages in Perl}
+The RRDs commands do not complain when you call them with invalid
+arguments. Normally they just get ignored. To catch errors you must
+actively look for them. This is done with the \cmd{RRDs::error}
+function. The behaviour of other bindings may differ.
+
+\begin{work}
+Add error checking to your script and test it by providing the
+create command with invalid parameters.
+\end{work}
+
+\newpage
+\ex{Feeding Data into an RRD}
+In \cmd{/proc/net/snmp} you can find some counters regarding the
+traffic of your workstation. This pseudo file contains new data each time you read it.
+
+\begin{work}
+  Use the data from this file to populate the RRD created in the previous
+  exercise. Don't forget to add error checking to the update routine. Make
+  sure you 'fake' the update time by stepping 5 minutes ahead everytime you
+  update.
+\end{work}
+
+Use \cmd{rrdtool dump file.rrd} what data is stored in the rrd file.
+
+\ex{Data Re-Sampling}
+
+RRDtool re-samples any data you feed it to the base interval you set for the
+database. This means, unless your data arrives exactly at the end of each
+interval, your original data will not be preserved. People NOT understanding
+how this works is one of the main toppics on the rrdtool mailinglist.
+
+\begin{work}
+Get a grip on data resampling by creating a new rrd file and feeding it some
+test data to see how it handles the different cases.
+\end{work}
+
+\newpage
+\section{Creating graphs}
+
+Harvesting data and storing in RRDs alone won't help you get a
+promotion. What really interests people is getting graphs produced from
+this data.
+
+\ex{Line Graphs}
+
+
+\begin{work}
+Use the graph function to create a graph representing the data
+stored in your RRD. To start, use only \cmd{DEF:...} and \cmd{LINE1:...}
+and \cmd{--end now+2day} parameters and have RRDtool
+auto-configure the rest. 
+\end{work}
+
+\ex{GPRINT Exercise}
+A RRD graph can also show numerical data.
+
+\begin{work}
+  Use the \cmd{GPRINT} argument to show the maximum 5 minute values of
+  both data sources below the graph.
+\end{work}
+
+\ex{A Stack Graph}
+Lets assume the data in the RRD represents traffic seen on two
+different web servers which share the load of a busy web site.
+
+\begin{work}
+  Use the \cmd{AREA:} and \cmd{:STACK} function to place the data from
+  the first and second data-source on top of each other. This will
+  show the traffic produced by each server on its own as well as the
+  total traffic occurring on your web site.
+\end{work}
+
+\ex{Using RPN Math}
+
+The network traffic in /proc/net/snmp is in octets passed over the
+interface. Most people though will expect to see traffic data reported in
+bits instead of octets.
+
+\begin{work}
+Use the \cmd{CDEF:} function to multiply your data by 8
+before graphing it.
+\end{work}
+
+and while you are at it:
+
+\begin{work}
+Create  conditional \cmd{CDEF}s to change the color of a line depending on the current value.
+before graphing it.
+\end{work}
+
+\begin{work}
+Add two horizontal lines to the chart. One at the maximum value and the other at th $95\%$. Use the \cmd{VDEF} function for this.
+\ex{Smoothing}
+
+Over the years, the number of functions supported by rrdtools RPN engine has
+grown considerably. Trending and smoothing functions have been incorporated.
+
+\begin{work}
+For data that fluctuates widely, it may help to plot a moving average instead as this will make slow changes more obvious.
+Sample your the network traffic at 1 second interval and create a graph overlaying the original data with a 1 minute moving average.
+\end{work}
+
+\ex{Data Selection}
+
+You used the \cmd{DEF:} function to pull in data from an rrd file for graphing. The command supports several named parameters to better
+control the data that is read and to massage it to fit your needs.
+
+\begin{work}
+Draw a chart where you overlay the current data with data from a previous interval for comparison.
+\end{work}
+
+and while you are at it.
+
+\begin{work}
+Instruct DEF to resample your input data at a lower resolution than the original data, to cause a staircase effect.
+\end{work} 
+
+\newpage
+\section{Advanced Exercises}
+\ex{Alter RRD Parameters}
+Some parameters of an existing RRD can be changed quite easily using
+the update command.
+
+\begin{work}
+Use the update command to change the name of the two data sources in
+your RRD. Use dump to very that the changes were successful.
+\end{work}
+
+\ex{Web Charting}
+
+With browsers improving their abilities, rrdtools native charting abilities
+are not so important anymore. One might wish to draw his charts in the
+browser, using the \href{http://d3js.org/}{D3.js} library for example.
+
+\begin{work}
+Use the \cmd{xport} function to extract chart data from an rrd file and create a chart using the d3 library.
+\end{work} 
+
+\ex{Examine an RRD}
+
+If you are writing a frontend to RRDtool it might be necessary to
+find out about the configuration of an existing rrd file. The rrdinfo
+function helps you with this.
+
+\begin{work}
+  Use \texttt{info command} to fetch config data from an existing rrd
+  and convert it into command line which you could supply to rrdtool
+  create.
+\end{work}
+
+
+\end{document}
+
+
+
+
