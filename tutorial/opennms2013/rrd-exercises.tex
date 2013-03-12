@@ -28,20 +28,18 @@
 The objective of this tutorial session is to help you get comfortable using
 RRDtool to write your own monitoring applications.
 
-In order to do some of the exercises you will need information which
-you do not have yet. There are three main sources from where you can
-acquire this information.
+In order to do some of the exercises you will need information not found in this document.
+There are sever main sources from where you can
+acquire this information readily.
 
 \begin{itemize}
+\item Me (at least today).
 \item The \href{http://oss.oetiker.ch/rrdtool}{rrdtool web site}.
-\item Or read the rrdtool UNIX manual pages.
-\item Ask me!
+\item The rrdtool source on \url{github.com/oetiker/rrdtool-1.x}.
 \end{itemize}
 
-As you can see, there are no solutions printed on this sheet. I would
-propose though, that you your solutions to me. I will then put them together
-mail them back to everyone who sent in their work.
-
+Playing with RRDtool works best when you have some sample data to play with.
+You can find some on \url{github.com/oetiker/rrdtool-1.x/t/data}.
 
 \newpage
 \section{Creating an RRD}
@@ -196,7 +194,7 @@ Lets assume the data in the RRD represents traffic seen on two
 different web servers which share the load of a busy web site.
 
 \begin{work}
-  Use the \cmd{AREA:} and \cmd{:STACK} function to place the data from
+  Use the \cmd{AREA:} function and \cmd{:STACK} option to place the data from
   the first and second data-source on top of each other. This will
   show the traffic produced by each server on its own as well as the
   total traffic occurring on your web site.
@@ -222,6 +220,9 @@ before graphing it.
 
 \begin{work}
 Add two horizontal lines to the chart. One at the maximum value and the other at the $95\%$. Use the \cmd{VDEF} function for this.
+\end{work}
+
+
 \ex{Smoothing}
 
 Over the years, the number of functions supported by rrdtools RPN engine has
@@ -249,12 +250,12 @@ Instruct DEF to re-sample your input data at a lower resolution than the origina
 
 \newpage
 \section{Advanced Exercises}
-\ex{Compile Master}
+\ex{Compiling RRDtool Master}
 
-The RRDtool source code is hosted on github. \url{https://github.com/oetiker/rrdtool-1.x}. 
+RRDtool is developed in the open. When hunting down bugs or to test the latest features, it is helpful to be able to compile a copy yourself.
 
 \begin{work}
-Clone the github repo, checkout the master branch run autogen and compile your own copy of the latest rrdtool version.
+Clone the rrdtool github repo, checkout the master branch run autogen and compile your own copy of the latest rrdtool version.
 \end{work}
 
 \ex{Alter RRD Parameters}
