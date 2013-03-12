@@ -34,12 +34,12 @@ acquire this information.
 
 \begin{itemize}
 \item The \href{http://oss.oetiker.ch/rrdtool}{rrdtool web site}.
-\item Or read the rrdtool unix manual pages.
+\item Or read the rrdtool UNIX manual pages.
 \item Ask me!
 \end{itemize}
 
 As you can see, there are no solutions printed on this sheet. I would
-propose though, that you your sollutions to me. I will then put them together
+propose though, that you your solutions to me. I will then put them together
 mail them back to everyone who sent in their work.
 
 
@@ -148,7 +148,7 @@ traffic of your workstation. This pseudo file contains new data each time you re
 \begin{work}
   Use the data from this file to populate the RRD created in the previous
   exercise. Don't forget to add error checking to the update routine. Make
-  sure you 'fake' the update time by stepping 5 minutes ahead everytime you
+  sure you 'fake' the update time by stepping 5 minutes ahead every time you
   update.
 \end{work}
 
@@ -159,10 +159,10 @@ Use \cmd{rrdtool dump file.rrd} what data is stored in the rrd file.
 RRDtool re-samples any data you feed it to the base interval you set for the
 database. This means, unless your data arrives exactly at the end of each
 interval, your original data will not be preserved. People NOT understanding
-how this works is one of the main toppics on the rrdtool mailinglist.
+how this works is one of the main topics on the rrdtool mailing list.
 
 \begin{work}
-Get a grip on data resampling by creating a new rrd file and feeding it some
+Get a grip on data re-sampling by creating a new rrd file and feeding it some
 test data to see how it handles the different cases.
 \end{work}
 
@@ -221,7 +221,7 @@ before graphing it.
 \end{work}
 
 \begin{work}
-Add two horizontal lines to the chart. One at the maximum value and the other at th $95\%$. Use the \cmd{VDEF} function for this.
+Add two horizontal lines to the chart. One at the maximum value and the other at the $95\%$. Use the \cmd{VDEF} function for this.
 \ex{Smoothing}
 
 Over the years, the number of functions supported by rrdtools RPN engine has
@@ -244,11 +244,19 @@ Draw a chart where you overlay the current data with data from a previous interv
 and while you are at it.
 
 \begin{work}
-Instruct DEF to resample your input data at a lower resolution than the original data, to cause a staircase effect.
+Instruct DEF to re-sample your input data at a lower resolution than the original data, to cause a staircase effect.
 \end{work} 
 
 \newpage
 \section{Advanced Exercises}
+\ex{Compile Master}
+
+The RRDtool source code is hosted on github. \url{https://github.com/oetiker/rrdtool-1.x}. 
+
+\begin{work}
+Clone the github repo, checkout the master branch run autogen and compile your own copy of the latest rrdtool version.
+\end{work}
+
 \ex{Alter RRD Parameters}
 Some parameters of an existing RRD can be changed quite easily using
 the update command.
@@ -262,7 +270,7 @@ your RRD. Use dump to very that the changes were successful.
 
 With browsers improving their abilities, rrdtools native charting abilities
 are not so important anymore. One might wish to draw his charts in the
-browser, using the \href{http://d3js.org/}{D3.js} library for example.
+browser, using the \href{http://d3js.org/}{D3.js} library or one of the charting libraries based on it like Rickshaw or Nvd3.
 
 \begin{work}
 Use the \cmd{xport} function to extract chart data from an rrd file and create a chart using the d3 library.
@@ -270,7 +278,7 @@ Use the \cmd{xport} function to extract chart data from an rrd file and create a
 
 \ex{Examine an RRD}
 
-If you are writing a frontend to RRDtool it might be necessary to
+If you are writing a front end to RRDtool it might be necessary to
 find out about the configuration of an existing rrd file. The rrdinfo
 function helps you with this.
 
