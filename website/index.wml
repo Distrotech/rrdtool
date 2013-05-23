@@ -39,18 +39,15 @@ applications.</p>
 # href="http://n2.nabble.com/Supporting-Tobi%27s-OSS-work-in-2009-tp1660428p1660428.html">supporting
 # my OSS work</a> in 2009.</p>
 
+<h2>News</h2>
+
+For the lastest news regarding RRDtool, check the <a href="http://oss.oetiker.ch/rrdtool/forum.en.html#nabble-f937719">Announcements Mailinglist Archive</a>.
+
 <h2>Download</h2>
 
 <p>RRDtool is available for <a href="download.en.html">download</a> from
 this site. It compiles on a number of different Linux and Unix platforms as
 well as on Microsoft Windows.</p>
-
-<h2>RRDtool News Feeds</h2>
-
-<div>RRDtool Announcements feed <a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds2.feedburner.com/RrdtoolAnnouncements" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
-<div>RRDtool Bugs feed <a href="http://feeds2.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolBugs" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
-<div>RRDtool Wiki Updates <a href="http://feeds2.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolWikiUpdates" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
-<div>RRDtool Checkins <a href="http://feeds2.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/RRDtoolCheckins" rel="alternate" type="application/rss+xml">subscribe in a reader</a></div>
 
 <h2>Sponsorship and Appreciators</h2>
 

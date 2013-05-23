@@ -1,6 +1,7 @@
 #!/bin/sh
 sect=tut
-src=../../program
+src=/home/oetiker/checkouts/rrdtool-1.x
+(cd $src; git checkout 1.4)
 . ../bin/pod2wml.sh
 
 pod2descr() {
